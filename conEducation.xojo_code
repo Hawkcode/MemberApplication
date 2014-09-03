@@ -21,11 +21,13 @@ Begin WebContainer conEducation
    Visible         =   True
    Width           =   910
    ZIndex          =   1
+   _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
    _OfficialControl=   False
+   _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
    Begin WebLabel Label2
@@ -54,11 +56,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   108
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label3
@@ -87,11 +91,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   133
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label4
@@ -120,11 +126,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   123
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label5
@@ -153,11 +161,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   108
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighName
@@ -193,11 +203,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeName
@@ -233,11 +245,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechName
@@ -273,11 +287,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherName
@@ -313,11 +329,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label6
@@ -346,11 +364,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label7
@@ -379,11 +399,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighMajor
@@ -419,11 +441,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeMajor
@@ -459,11 +483,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechMajor
@@ -499,11 +525,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherMajor
@@ -539,11 +567,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label8
@@ -572,11 +602,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   100
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighFrom
@@ -612,11 +644,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeFrom
@@ -652,11 +686,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechFrom
@@ -692,11 +728,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherFrom
@@ -732,11 +770,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighTo
@@ -772,11 +812,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeTo
@@ -812,11 +854,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechTo
@@ -852,11 +896,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherTo
@@ -892,11 +938,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label9
@@ -925,11 +973,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label10
@@ -958,11 +1008,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   37
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label11
@@ -991,11 +1043,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   122
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighGrad
@@ -1031,11 +1085,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeGrad
@@ -1071,11 +1127,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechGrad
@@ -1111,11 +1169,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherGrad
@@ -1151,11 +1211,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label12
@@ -1184,11 +1246,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtHighDegree
@@ -1224,11 +1288,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCollegeDegree
@@ -1264,11 +1330,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTechDegree
@@ -1304,11 +1372,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtOtherDegree
@@ -1344,11 +1414,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label13
@@ -1377,11 +1449,13 @@ Begin WebContainer conEducation
       Visible         =   True
       Width           =   870
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
 End
@@ -1790,6 +1864,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="_DeclareLineRendered"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="_HorizontalPercent"
 		Group="Behavior"
 		Type="Double"
@@ -1814,6 +1894,11 @@ End
 		Name="_OfficialControl"
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="_OpenEventFired"
+		Group="Behavior"
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty

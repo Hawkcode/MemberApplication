@@ -21,11 +21,13 @@ Begin WebContainer conMemType
    Visible         =   True
    Width           =   910
    ZIndex          =   1
+   _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
    _OfficialControl=   False
+   _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
    Begin WebLabel Label1
@@ -54,11 +56,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   305
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebRectangle Rectangle1
@@ -84,11 +88,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   262
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebPopupMenu popDataBookformat
@@ -117,11 +123,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   164
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebPopupMenu popType
@@ -150,11 +158,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   164
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkSteele
@@ -182,11 +192,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkEducation
@@ -214,11 +226,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkResearch
@@ -246,11 +260,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label2
@@ -279,11 +295,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   102
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label3
@@ -312,11 +330,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAStudent
@@ -337,6 +357,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   9
       Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification."
@@ -345,11 +366,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblMemberType
@@ -378,11 +401,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   262
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label4
@@ -411,11 +436,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   124
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAAffiliate
@@ -436,6 +463,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   10
       Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for member-ship in any other grade."
@@ -444,11 +472,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAAssociate
@@ -469,6 +499,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   8
       Text            =   "Associate Member: Any individual involved in the design of plumbing systems or in plumbing engineering and not meeting the requirements for Full membership."
@@ -477,11 +508,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAFull
@@ -502,6 +535,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   6
       Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the So ciety Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
@@ -510,11 +544,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAGovernmental
@@ -535,6 +571,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   5
       Text            =   "Governmental Member: Anyone employed by municipal, state, or federal governments for one of the following reasons: A. Checking and/or inspection of plumbing plans and installations;\n\nB. The formulation of codes, rules, requirements and regulations pertaining to the planning, designing and installation of plumbing systems, or any portion of a plumbing system;\n\nC. Research and development of plumbing systems design criteria. Exception: Persons employed by a government agency for the purpose of designing and/or specifying plumbing systems, who shall be eligible to be Full or Associate members, provided they have fulfilled the experience required as outlined for each respective classification."
@@ -543,11 +580,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   476
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtASpecial
@@ -568,6 +607,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   11
       Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: Persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full Members or Associate Members, provided they have fulfilled the experience required as outlined for each respective classification."
@@ -576,11 +616,13 @@ Begin WebContainer conMemType
       Visible         =   False
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtADirection
@@ -601,6 +643,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       ReadOnly        =   True
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "1265093392"
       TabOrder        =   7
       Text            =   "Select a member type from the above drop down. \n\nThen select your Hand Book format and finally if you would like to make a contribution."
@@ -609,11 +652,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   483
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblMemshipCost
@@ -642,11 +687,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   101
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblTotalDonations
@@ -675,11 +722,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   112
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblGrandTotal
@@ -708,11 +757,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   112
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblDatabook
@@ -741,11 +792,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   101
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebRectangle Rectangle2
@@ -771,11 +824,13 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   112
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
 End
@@ -1233,6 +1288,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="_DeclareLineRendered"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="_HorizontalPercent"
 		Group="Behavior"
 		Type="Double"
@@ -1257,6 +1318,11 @@ End
 		Name="_OfficialControl"
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="_OpenEventFired"
+		Group="Behavior"
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty

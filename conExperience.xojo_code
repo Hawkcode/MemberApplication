@@ -21,11 +21,13 @@ Begin WebContainer conExperience
    Visible         =   True
    Width           =   910
    ZIndex          =   1
+   _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
    _OfficialControl=   False
+   _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
    Begin WebLabel Label1
@@ -54,11 +56,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   870
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom2
@@ -94,11 +98,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle2
@@ -134,11 +140,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass2
@@ -174,11 +182,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress2
@@ -214,11 +224,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo2
@@ -254,11 +266,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom
@@ -294,11 +308,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle
@@ -334,11 +350,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass
@@ -374,11 +392,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress
@@ -414,11 +434,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo
@@ -454,11 +476,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom4
@@ -494,11 +518,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle4
@@ -534,11 +560,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass4
@@ -574,11 +602,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress4
@@ -614,11 +644,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo4
@@ -654,11 +686,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom3
@@ -694,11 +728,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle3
@@ -734,11 +770,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass3
@@ -774,11 +812,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress3
@@ -814,11 +854,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo3
@@ -854,11 +896,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label2
@@ -887,11 +931,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   100
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label3
@@ -920,11 +966,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label4
@@ -953,11 +1001,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label5
@@ -986,11 +1036,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label6
@@ -1019,11 +1071,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   54
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label7
@@ -1052,11 +1106,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   641
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label9
@@ -1085,11 +1141,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   118
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription2
@@ -1125,11 +1183,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription
@@ -1165,11 +1225,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription4
@@ -1205,11 +1267,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription3
@@ -1245,11 +1309,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label10
@@ -1278,11 +1344,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label11
@@ -1311,11 +1379,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label12
@@ -1344,11 +1414,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree2
@@ -1384,11 +1456,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree
@@ -1424,11 +1498,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree4
@@ -1464,11 +1540,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree3
@@ -1504,11 +1582,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription5
@@ -1544,11 +1624,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom5
@@ -1584,11 +1666,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle5
@@ -1624,11 +1708,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass5
@@ -1664,11 +1750,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress5
@@ -1704,11 +1792,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo5
@@ -1744,11 +1834,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription7
@@ -1784,11 +1876,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom7
@@ -1824,11 +1918,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle7
@@ -1864,11 +1960,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass7
@@ -1904,11 +2002,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress7
@@ -1944,11 +2044,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo7
@@ -1984,11 +2086,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDescription6
@@ -2024,11 +2128,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   170
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtFrom6
@@ -2064,11 +2170,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTitle6
@@ -2104,11 +2212,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   121
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtClass6
@@ -2144,11 +2254,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   45
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtAddress6
@@ -2184,11 +2296,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   243
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtTo6
@@ -2224,11 +2338,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   47
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree5
@@ -2264,11 +2380,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree7
@@ -2304,11 +2422,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtDegree6
@@ -2344,11 +2464,13 @@ Begin WebContainer conExperience
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
 End
@@ -2717,6 +2839,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="_DeclareLineRendered"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="_HorizontalPercent"
 		Group="Behavior"
 		Type="Double"
@@ -2741,6 +2869,11 @@ End
 		Name="_OfficialControl"
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="_OpenEventFired"
+		Group="Behavior"
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty

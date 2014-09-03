@@ -21,11 +21,13 @@ Begin WebContainer conFinalInput
    Visible         =   True
    Width           =   910
    ZIndex          =   1
+   _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
    _OfficialControl=   False
+   _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
    Begin WebRectangle Rectangle2
@@ -51,11 +53,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   804
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebRectangle Rectangle1
@@ -81,11 +85,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   528
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label1
@@ -114,11 +120,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   804
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label2
@@ -147,11 +155,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   168
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtCertNumber
@@ -187,11 +197,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtPEState
@@ -227,11 +239,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   137
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label3
@@ -260,11 +274,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   50
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label4
@@ -293,11 +309,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   132
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label5
@@ -326,11 +344,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   81
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefName4
@@ -366,11 +386,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   213
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefName3
@@ -406,11 +428,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   213
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefName2
@@ -446,11 +470,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   213
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefName
@@ -486,11 +512,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   213
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefAddress
@@ -526,11 +554,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   382
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefAddress2
@@ -566,11 +596,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   382
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefAddress3
@@ -606,11 +638,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   382
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefAddress4
@@ -646,11 +680,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   382
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefPhone4
@@ -686,11 +722,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefPhone3
@@ -726,11 +764,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefPhone2
@@ -766,11 +806,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebTextField txtRefPhone
@@ -806,11 +848,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   180
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label6
@@ -839,11 +883,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   772
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label7
@@ -872,11 +918,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   81
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label8
@@ -905,11 +953,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   81
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel Label9
@@ -938,11 +988,13 @@ Begin WebContainer conFinalInput
       Visible         =   True
       Width           =   81
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
 End
@@ -1283,6 +1335,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="_DeclareLineRendered"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="_HorizontalPercent"
 		Group="Behavior"
 		Type="Double"
@@ -1307,6 +1365,11 @@ End
 		Name="_OfficialControl"
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="_OpenEventFired"
+		Group="Behavior"
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty

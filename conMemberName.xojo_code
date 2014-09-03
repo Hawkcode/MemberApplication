@@ -11,10 +11,10 @@ Begin WebContainer conMemberName
    LockBottom      =   True
    LockHorizontal  =   False
    LockLeft        =   True
-   LockRight       =   True
+   LockRight       =   False
    LockTop         =   True
    LockVertical    =   False
-   Style           =   "997821280"
+   Style           =   "144195174"
    TabOrder        =   0
    Top             =   0
    VerticalCenter  =   0
@@ -28,6 +28,36 @@ Begin WebContainer conMemberName
    _OfficialControl=   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
+   Begin WebRectangle Rectangle3
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   177
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   15
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "144195174"
+      TabOrder        =   -1
+      Top             =   188
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   433
+      ZIndex          =   1
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _VerticalPercent=   "0.0"
+   End
    Begin WebPopupMenu popNamePrefix
       Cursor          =   0
       Enabled         =   True
@@ -215,7 +245,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   15
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -228,7 +258,7 @@ Begin WebContainer conMemberName
       Style           =   "1126752408"
       TabOrder        =   2
       Text            =   "Preferred Mailing Address:"
-      Top             =   119
+      Top             =   120
       VerticalCenter  =   0
       Visible         =   True
       Width           =   178
@@ -301,7 +331,7 @@ Begin WebContainer conMemberName
       Style           =   "0"
       TabOrder        =   2
       Text            =   "Birthday M/D/YYYY:"
-      Top             =   80
+      Top             =   61
       VerticalCenter  =   0
       Visible         =   True
       Width           =   130
@@ -340,7 +370,7 @@ Begin WebContainer conMemberName
       Style           =   "816938816"
       TabOrder        =   4
       Text            =   ""
-      Top             =   80
+      Top             =   61
       Type            =   3
       VerticalCenter  =   0
       Visible         =   True
@@ -365,7 +395,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   195
+      Left            =   196
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -380,7 +410,7 @@ Begin WebContainer conMemberName
       Style           =   "816938816"
       TabOrder        =   4
       Text            =   ""
-      Top             =   80
+      Top             =   61
       Type            =   3
       VerticalCenter  =   0
       Visible         =   True
@@ -405,7 +435,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   233
+      Left            =   234
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -420,7 +450,7 @@ Begin WebContainer conMemberName
       Style           =   "816938816"
       TabOrder        =   4
       Text            =   ""
-      Top             =   80
+      Top             =   61
       Type            =   3
       VerticalCenter  =   0
       Visible         =   True
@@ -454,7 +484,7 @@ Begin WebContainer conMemberName
       Style           =   "1805079798"
       TabOrder        =   2
       Text            =   "/"
-      Top             =   79
+      Top             =   60
       VerticalCenter  =   0
       Visible         =   True
       Width           =   21
@@ -474,7 +504,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   220
+      Left            =   221
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -487,7 +517,7 @@ Begin WebContainer conMemberName
       Style           =   "1805079798"
       TabOrder        =   2
       Text            =   "/"
-      Top             =   79
+      Top             =   60
       VerticalCenter  =   0
       Visible         =   True
       Width           =   21
@@ -518,7 +548,7 @@ Begin WebContainer conMemberName
       Scope           =   0
       Style           =   "0"
       TabOrder        =   5
-      Top             =   80
+      Top             =   61
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -550,7 +580,7 @@ Begin WebContainer conMemberName
       Scope           =   0
       Style           =   "0"
       TabOrder        =   5
-      Top             =   80
+      Top             =   61
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -582,7 +612,7 @@ Begin WebContainer conMemberName
       Scope           =   0
       Style           =   "0"
       TabOrder        =   5
-      Top             =   80
+      Top             =   61
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -614,7 +644,7 @@ Begin WebContainer conMemberName
       Scope           =   0
       Style           =   "0"
       TabOrder        =   5
-      Top             =   80
+      Top             =   61
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -646,7 +676,7 @@ Begin WebContainer conMemberName
       Scope           =   0
       Style           =   "0"
       TabOrder        =   5
-      Top             =   80
+      Top             =   61
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -667,7 +697,7 @@ Begin WebContainer conMemberName
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   ""
-      Left            =   716
+      Left            =   672
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -680,7 +710,7 @@ Begin WebContainer conMemberName
       Style           =   "0"
       TabOrder        =   6
       Text            =   ""
-      Top             =   80
+      Top             =   61
       VerticalCenter  =   0
       Visible         =   True
       Width           =   164
@@ -700,7 +730,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   652
+      Left            =   608
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -713,7 +743,7 @@ Begin WebContainer conMemberName
       Style           =   "418528476"
       TabOrder        =   2
       Text            =   "Chapter:"
-      Top             =   80
+      Top             =   61
       VerticalCenter  =   0
       Visible         =   True
       Width           =   62
@@ -783,36 +813,6 @@ Begin WebContainer conMemberName
       VerticalCenter  =   0
       Visible         =   True
       Width           =   108
-      ZIndex          =   1
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebRectangle Rectangle1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   177
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   15
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "144195174"
-      TabOrder        =   -1
-      Top             =   187
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   433
       ZIndex          =   1
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
@@ -2048,7 +2048,7 @@ Begin WebContainer conMemberName
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   370
+      Left            =   369
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -2061,7 +2061,7 @@ Begin WebContainer conMemberName
       Style           =   "418528476"
       TabOrder        =   2
       Text            =   "Organizations:"
-      Top             =   118
+      Top             =   120
       VerticalCenter  =   0
       Visible         =   True
       Width           =   102
@@ -2416,7 +2416,7 @@ End
 		  
 		  oSQL.AutoBracket = False
 		  
-		  oSQL.AddTable "tblaspechaptercodes"
+		  oSQL.AddTable "tblASPEChapterCodes"
 		  oSQL.AddFields "ChapterName"
 		  oSQL.AddOrderClause "ChapterName"
 		  lsSQL = oSQL.SQL
@@ -2444,83 +2444,6 @@ End
 		  
 		  cboChapterName.ListIndex = -1
 		  
-		End Sub
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub SaveRecord()
-		  
-		  Dim lsStr as String
-		  Dim lnLen as Integer
-		  Dim oSQL as new cSmartSQL
-		  Dim rs as RecordSet
-		  
-		  
-		  'Me.MouseCursor = System.Cursors.Wait
-		  
-		  oSQL.StatementType = eStatementType.Type_Update
-		  
-		  
-		  oSql.ClearFields
-		  oSQL.ClearValues
-		  
-		  oSQL.AddTable "memapplications"
-		  
-		  
-		  Dim ldBDay As Date
-		  ldBDay = New Date
-		  ldBDay.Month = txtBDayMonth.text.Val
-		  ldBDay.Day = txtBDayDay.Text.Val
-		  ldBDay.Year = txtBDayYear.Text.Val
-		  
-		  
-		  oSQL.AddFields "prefix",                          "firstName",         "nickName",       "middleName",     "lastName",        "birthDate",          "resStreetAddress",        "resCity"
-		  oSQL.AddValues popNamePrefix.Text, txtFirst.Text, txtNick.Text, txtMiddle.Text, txtLast.Text, ldBDay.SQLDate, txtResStreetAddr.Text, txtResCity.Text
-		  
-		  oSQL.AddFields "resState", "                resZip",                "resCountry",               "homePhone",                "emailAddress"
-		  oSQL.AddValues txtResState.Text, txtResZip.Text, txtResCountry.Text, txtPhoneHome.Text, txtPrimaryEmail.Text
-		  
-		  
-		  oSQL.AddFields "busName",               "busTitle",                "busStreetAddress",         "busCity",               "busState"
-		  oSQL.AddValues txtBusName.text, txtBusTitle.Text, txtBusStreetAddr.Text, txtBusCity.Text, txtBusState.Text
-		  
-		  oSQL.AddFields "busZip",                "busCountry",               "busPhone",                "busFax",                   "busEmail",                         "certPE", "certPEng"
-		  oSQL.AddValues txtBusZip.Text, txtBusCountry.Text, txtPhoneBus.Text, txtPhoneFax.Text, txtSecondaryEmail.Text, chkPEng.Value
-		  
-		  Select Case conMemType1.cboDataBookformat.Text
-		  Case "CD"
-		    lsStr ="CD"
-		  Case "Softcover"
-		    lsStr ="SC"
-		  Case "CD & Softcover (Additional Cost)"
-		    lsStr ="BO"
-		  End
-		  
-		  oSQL.AddFields  "DataBookFormat", "busName",                "busTitle",              "busStreetAddress",           "busCity",               "busState"
-		  oSQL.AddValues lsStr,                      txtBusName.Text, txtBusTitle.Text, txtBusStreetAddr.Text, txtBusCity.Text, txtBusState
-		  
-		  oSQL.AddFields  "certCPD",            "orgASHRAE",             "orgASSE"                   ' "certGradEng",
-		  oSQL.AddValues chkCPD.Value, chkASHRAE.Value, chkASSE.Value
-		  
-		  oSQL.AddFields "orgNSPE",             "mailPref",                             "chapter"
-		  oSQL.AddValues chkNSPE.Value, radMail.SelectedCaption, cboChapterName.Text
-		  
-		  'oSQL.AddSimpleWhereClause "PersonID", txtPeopleID.text
-		  
-		  'rs = gDB.SQLSelect(oSQL.SQL)
-		  '
-		  '
-		  'gDB.Commit
-		  '
-		  '
-		  'if gDB.Error then
-		  'MsgBox gDB.ErrorMessage
-		  'end
-		  
-		  
-		  
-		  
-		  '"orgNSPE", "orgMech", "orgOther", "mailPref", "chapter",
 		End Sub
 	#tag EndMethod
 

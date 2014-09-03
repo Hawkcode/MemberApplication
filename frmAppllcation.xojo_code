@@ -26,12 +26,14 @@ Begin WebPage frmAppllcation
    Visible         =   True
    Width           =   950
    ZIndex          =   1
+   _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
    _ImplicitInstance=   False
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
    _OfficialControl=   False
+   _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
    Begin WebProgressBar prgProgress
@@ -60,11 +62,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   83
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin conProcessing Processing
@@ -91,11 +95,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -125,11 +131,13 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   607
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin conCreditCard CreditCard
@@ -156,11 +164,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -188,11 +198,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -220,11 +232,13 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   100
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebButton btnPrevious
@@ -251,11 +265,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   100
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin WebLabel lblRecNo
@@ -284,11 +300,13 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   100
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin conMemInfo Meminfo
@@ -316,11 +334,13 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -348,11 +368,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -380,11 +402,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -414,11 +438,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -447,11 +473,13 @@ Begin WebPage frmAppllcation
       Visible         =   False
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
@@ -481,11 +509,13 @@ Begin WebPage frmAppllcation
       Visible         =   True
       Width           =   32
       ZIndex          =   1
+      _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
       _IsEmbedded     =   False
       _Locked         =   False
       _NeedsRendering =   True
       _OfficialControl=   False
+      _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
    Begin SMTPServer SMTPServer1
@@ -646,6 +676,14 @@ End
 		  lsMsg = lsMsg +  rs.Field("birthDate").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>\n"
 		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Primary Email: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("emailAddress").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Secondary Email: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("busEmail").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Street Address: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resStreetAddress").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>\n"
@@ -668,10 +706,6 @@ End
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Phone: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("homePhone").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
-		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Email: </td><td><strong>"
-		  lsMsg = lsMsg +  rs.Field("emailAddress").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>\n"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Name: </td><td><strong>"
@@ -710,10 +744,6 @@ End
 		  lsMsg = lsMsg +  rs.Field("busFax").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>\n"
 		  
-		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Email: </td><td><strong>"
-		  lsMsg = lsMsg +  rs.Field("busEmail").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certPE").StringValue
