@@ -2608,7 +2608,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      InitialValue    =   "Past Member\nPE Magazine\nColleague/Employer\nASPE App\nWebsite\nAYP Networking Event \n50% Dues Promo\nOther"
+      InitialValue    =   "Past Member\nPE Magazine\nColleague/Employer\nASPE App\nWebsite\nAYP Networking Event \nCPD Program\nWorkshop or Webinar\n50% Dues Promo\nOther"
       Left            =   256
       ListIndex       =   -1
       LockBottom      =   False

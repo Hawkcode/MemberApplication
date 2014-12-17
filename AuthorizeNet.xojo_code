@@ -39,6 +39,7 @@ Protected Module AuthorizeNet
 		  
 		  'd.Value("x_Receipt_Link_URL") = "http://www.yoursite.com/cgi-bin/yourreceiptapp.cgi"
 		  
+		  S.ConnectionType = SSLSocket.TLSv1
 		  S.SetFormData(d)
 		  
 		  // This service simply returns the post data as the result
