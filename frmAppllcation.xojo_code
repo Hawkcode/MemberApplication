@@ -209,6 +209,7 @@ Begin WebPage frmAppllcation
       _VerticalPercent=   0.0
    End
    Begin WebButton btnNext
+      AutoDisable     =   False
       Caption         =   "Next>"
       Cursor          =   0
       Enabled         =   True
@@ -242,6 +243,7 @@ Begin WebPage frmAppllcation
       _VerticalPercent=   0.0
    End
    Begin WebButton btnPrevious
+      AutoDisable     =   False
       Caption         =   "<Previous"
       Cursor          =   0
       Enabled         =   True
@@ -529,10 +531,39 @@ Begin WebPage frmAppllcation
       LockedInPosition=   False
       Scope           =   0
       Secure          =   False
+      SMTPConnectionMode=   0
       Style           =   "-1"
       TabPanelIndex   =   0
       Top             =   20
       Width           =   32
+   End
+   Begin WebLabel lblVersion
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   13
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   183
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "-1"
+      TabOrder        =   12
+      Text            =   "Untitled"
+      Top             =   426
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   100
+      ZIndex          =   1
+      _NeedsRendering =   True
    End
 End
 #tag EndWebPage
@@ -543,7 +574,7 @@ End
 		  'if AppmbAffiliateGove then
 		  'MemType.popType.Text = "Affiliate"
 		  'end
-		  
+		  lblVersion.Text = "Build:" + Str(App.NonReleaseVersion)
 		End Sub
 	#tag EndEvent
 
@@ -1485,13 +1516,13 @@ End
 		  Dim lsDesc as String
 		  lsDesc = MemType.popType.Text + EndOfLine + MemType.popDataBookformat.Text
 		  if MemType.chkEducation.Value then
-		    lsDesc = EndOfLine + "Donation to Education: " + Str(App.gdDonationEducation)
+		    lsDesc = lsDesc + EndOfLine + "Donation to Education: " + Str(App.gdDonationEducation)
 		  end
 		  if MemType.chkResearch.Value then
-		    lsDesc = EndOfLine + "Donation to Research Foundation: " + Str(App.gdDonationResearch)
+		    lsDesc = lsDesc + EndOfLine + "Donation to Research Foundation: " + Str(App.gdDonationResearch)
 		  end
 		  if MemType.chkSteele.Value then
-		    lsDesc = EndOfLine + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
+		    lsDesc = lsDesc + EndOfLine + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
 		  end
 		  
 		  
@@ -1601,6 +1632,7 @@ End
 		    if bNext then
 		      'If not FinalInput.ValidateAll then return
 		      if not FinalInput.SaveFinalInput then return
+		      
 		      msCurrentScreen = "CreditCard"
 		    else
 		      msCurrentScreen = "Experience"
@@ -1634,6 +1666,8 @@ End
 		      
 		    else
 		      msCurrentScreen = "CreditCard"
+		      Processing.txtResult.Text = ""
+		      btnNext.enabled = True
 		    end
 		  end
 		  
@@ -1805,6 +1839,7 @@ End
 		  btnNext.Enabled = False
 		  System.DebugLog("Timer Start")
 		  SendAuthorizeNet
+		  me.Mode = 0
 		  prgProgress.Visible = False
 		  System.DebugLog("Timer end")
 		End Sub

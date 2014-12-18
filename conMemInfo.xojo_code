@@ -314,13 +314,13 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Multiline       =   False
       Scope           =   0
-      Style           =   "0"
+      Style           =   "1126752408"
       TabOrder        =   60
       Text            =   "Birthday M/D/YYYY:"
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   130
+      Width           =   135
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -2706,6 +2706,41 @@ Begin WebContainer conMemInfo
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel Label30
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   271
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "-1"
+      TabOrder        =   70
+      Text            =   "Leave Blank for USA"
+      Top             =   304
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   161
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
 End
 #tag EndWebPage
 
@@ -2739,14 +2774,12 @@ End
 		    Return lbValid
 		  end
 		  
-		  if lbObj.Name = "txtPhoneHome" or  lbObj.Name = "txtPhoneCell" then
+		  if lbObj.Name = "txtPhoneHome"  then
 		    if lbObj.Text = "" then
 		      txtPhoneHome.Style = EntryFieldsError
-		      txtPhoneCell.Style = EntryFieldsError
 		      lbValid = False
 		    else
 		      txtPhoneHome.Style = EntryFields
-		      txtPhoneCell.Style = EntryFields
 		    end
 		    
 		  end
@@ -2970,7 +3003,7 @@ End
 		  lbReturnVal = SetValid(DidValidate(txtBDayMonth), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtBDayDay), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtBDayYear), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtPhoneCell), lbReturnVal)
+		  'lbReturnVal = SetValid(DidValidate(txtPhoneCell), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtPhoneHome), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtPrimaryEmail), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtResCity), lbReturnVal)
@@ -3128,8 +3161,17 @@ End
 #tag Events txtPhoneCell
 	#tag Event
 		Sub LostFocus()
-		  Call DidValidate(Me)
+		  'Call DidValidate(Me)
 		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtResCountry
+	#tag Event
+		Sub LostFocus()
+		  if me.text = "USA" or me.Text = "United States" or me.text = "United States of America" or me.Text = "US" then
+		    me.Text = ""
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents

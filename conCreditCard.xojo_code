@@ -1454,6 +1454,7 @@ End
 		Sub Shown()
 		  txtCCNumber.SetFocus
 		  
+		  
 		End Sub
 	#tag EndEvent
 
