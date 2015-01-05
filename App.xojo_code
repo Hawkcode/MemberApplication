@@ -1,6 +1,13 @@
 #tag Class
 Protected Class App
 Inherits WebApplication
+	#tag Event
+		Sub Open(args() as String)
+		  self.Security.FrameEmbedding = WebAppSecurityOptions.FrameOptions.Allow
+		End Sub
+	#tag EndEvent
+
+
 	#tag Property, Flags = &h0
 		gdAffiliateMemberPrice As Double = 190
 	#tag EndProperty
