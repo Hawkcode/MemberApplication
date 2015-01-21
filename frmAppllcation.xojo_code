@@ -1648,9 +1648,9 @@ End
 		    
 		  Case "CreditCard"
 		    if bNext then
-		      msCurrentScreen = "Confirmation"
 		      if not CreditCard.ValidateAll then return
 		      If Not CreditCard.SaveCC then Return
+		      msCurrentScreen = "Confirmation"
 		    else
 		      if app.mbAffiliateGov then
 		        msCurrentScreen = "MemType"
