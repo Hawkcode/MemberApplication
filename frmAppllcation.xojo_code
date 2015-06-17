@@ -598,71 +598,71 @@ End
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Application ID: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("memappkwy").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Authorize.NET Transaction ID: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("TransactionID").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">AmountUSD: $</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("MemPrice").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  lsMsg = lsMsg +  "<tr><td width=""128""> <hr /></td><td><strong> <hr />"
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Billing Address: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingAddress").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">City: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingCity").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">State or Province: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingStateProvince").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Zip: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingZip").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Country: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingCountry").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Postal Code: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingPostalCode").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PhoneDay: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingPhoneDay").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Fax: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingFax").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">E-Mail: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingEmail").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Card Holders First Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("CardHolderFName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Card Holders Last Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("CardHolderLName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
 		  
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128""><strong>Application"
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Member Type: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("MemType").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Donations: </td><td><strong>"
 		  
@@ -681,7 +681,7 @@ End
 		    lsStr= lsStr + "Steele Scholorship"
 		  end
 		  lsMsg = lsMsg +  lsStr
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  Dim lsDBFormat as String
 		  Select Case rs.Field("DataBookFormat").StringValue
@@ -698,154 +698,154 @@ End
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Plumbing Engineering Design Hadbook Format: </td><td><strong>"
 		  lsMsg = lsMsg +  lsDBFormat
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("prefix").StringValue + " " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue  + " " + rs.Field("lastName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Nick Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("nickName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Birth Date: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("birthDate").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Primary Email: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("emailAddress").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Secondary Email: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busEmail").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Street Address: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resStreetAddress").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res City: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resCity").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res State: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resState").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Zip: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resZip").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Country: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resCountry").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Phone: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("homePhone").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Title: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busTitle").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Street address: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busStreetAddress").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus City: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busCity").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus State: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busState").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Zip: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busZip").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Country: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busCountry").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Phone: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busPhone").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Fax: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busFax").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certPE").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">P.Eng: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certPEng").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">CPD: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certCPD").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Graduate Enginee: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certGradEng").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">ASHRAE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgASHRAE").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PHCC: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgNAPHCC").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">ASSE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgASSE").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">MCCA: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgMCCA").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">NSPE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgNSPE").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PCA: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgPCA").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Mechanical and<br />Civil Engineers: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgMech").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Other: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("orgOther").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Mail Pref: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("mailPref").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">chapter: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("chapter").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Heard about ASPE: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("HeardAbout").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Previous Member:</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("prevMember").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "</table>"
 		  
@@ -857,9 +857,9 @@ End
 		  lsMsg = lsMsg +  "<td width=""20%"" rowspan=""2""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Course or Major</font></td>"
 		  lsMsg = lsMsg +  "<td colspan=""2""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Date (Mo/Yr)<br />"
 		  lsMsg = lsMsg +  "</font></td><td width=""12%"" rowspan=""2""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Graduation<br />"
-		  lsMsg = lsMsg +  "Date </font></td><td width=""17%"" rowspan=""2""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Degree or Diploma </font></td></tr>\n"
+		  lsMsg = lsMsg +  "Date </font></td><td width=""17%"" rowspan=""2""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Degree or Diploma </font></td></tr>"
 		  lsMsg = lsMsg +  "<tr><td width=""7%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">From</font></td>"
-		  lsMsg = lsMsg +  "<td width=""7%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">to</font></td></tr>\n"
+		  lsMsg = lsMsg +  "<td width=""7%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">to</font></td></tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><font size=""2"">High School </font></td>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -886,7 +886,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("highDegree").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><font size=""2"">College/University </font></td>"
@@ -914,7 +914,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("collegeDegree").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><font size=""2"">Technical School </font></td>"
@@ -942,7 +942,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("techDegree").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><font size=""2"">Others</font></td>"
@@ -970,7 +970,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("otherDegree").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "</table>"
 		  
@@ -985,7 +985,7 @@ End
 		  lsMsg = lsMsg +  "<td width=""12%"">&nbsp</td>"
 		  lsMsg = lsMsg +  "<td width=""16%"">&nbsp</td>"
 		  lsMsg = lsMsg +  "<td width=""18%"">&nbsp</td>"
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td width=""7%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">From</font></td>"
 		  lsMsg = lsMsg +  "<td width=""7%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">To</font></td>"
@@ -1025,7 +1025,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1056,7 +1056,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree2").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1087,7 +1087,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree3").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1118,7 +1118,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree4").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1149,7 +1149,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree5").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1180,7 +1180,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree6").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1211,7 +1211,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("expDegree7").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "</table>"
 		  
@@ -1221,28 +1221,28 @@ End
 		  'lsMsg = lsMsg +  " <table width=""40%"" border=""1"" align=""left"" cellpadding=""1"" cellspacing=""1"">"
 		  'lsMsg = lsMsg +  "<tr>"
 		  'lsMsg = lsMsg +  "<td colspan=""3""><font size=""2"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b>Registration (P.E.) </b></font></td>"
-		  'lsMsg = lsMsg +  "</tr>\n"
+		  'lsMsg = lsMsg +  "</tr>"
 		  'lsMsg = lsMsg +  "<tr>"
 		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">State</font></td>"
 		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Certificate No. </font></td>"
 		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Branch</font></td>"
-		  'lsMsg = lsMsg +  "</tr>\n"
+		  'lsMsg = lsMsg +  "</tr>"
 		  'lsMsg = lsMsg +  "<tr>"
 		  'lsMsg = lsMsg +  "<td>$_POST[regState]</td>"
 		  'lsMsg = lsMsg +  "<td>$_POST[regCertificate]</td>"
 		  'lsMsg = lsMsg +  "<td>$_POST[regBranch]</td>"
-		  'lsMsg = lsMsg +  "</tr>\n"
+		  'lsMsg = lsMsg +  "</tr>"
 		  'lsMsg = lsMsg +  "</table>"
 		  
 		  lsMsg = lsMsg +  "<table width=""40%""  border=""1"" cellspacing=""1"" cellpadding=""1"">"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td colspan=""3""><font size=""2"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b>Registration (P.E.) / (P.Eng)</b></font></td>"
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td width=""18%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">State</font></td>"
 		  lsMsg = lsMsg +  "<td width=""42%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Certificate No.</font></td>"
 		  lsMsg = lsMsg +  "<td width=""40%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Branch</font></td>"
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td>"
 		  lsMsg = lsMsg +  rs.Field("regState").StringValue
@@ -1256,7 +1256,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("regBranch").StringValue
 		  lsMsg = lsMsg +  "</td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "</table>"
 		  
 		  lsMsg = lsMsg +  "<hr>"
@@ -1266,12 +1266,12 @@ End
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td colspan=""3""><font face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b><font size=""2"">References</font><font size=""1""><br />"
 		  lsMsg = lsMsg +  "</font></b><font size=""1"">(References should be in engineering profession, ASPE members preferred. ASPE reservers the right to contact references.) </font></font></td>"
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  " <tr>"
 		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Name</font></td>"
 		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Address</font></td>"
 		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Telephone</font></td>"
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
 		  lsMsg = lsMsg +  rs.Field("refName").StringValue
@@ -1285,7 +1285,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("refPhone").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1300,7 +1300,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("refPhone2").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1315,7 +1315,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("refPhone3").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td><strong>"
@@ -1329,7 +1329,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("refPhone4").StringValue
 		  lsMsg = lsMsg +  "</strong></td>"
 		  
-		  lsMsg = lsMsg +  "</tr>\n"
+		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  " </table>"
 		  
 		  lsMsg = lsMsg +  "<hr>"
@@ -1338,23 +1338,23 @@ End
 		  lsMsg = lsMsg +  "<table border=""1"" cellspacing=""2"" cellpadding=""2"">"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Promo Code: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("promoCode").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Sponsor Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("sponsorName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Sponsor ID: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("sponsorID").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Maiden Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("maidenName").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Notes: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("notes").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>\n"
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  " </table>"
 		  lsMsg = lsMsg +  "</BODY>"
@@ -1521,15 +1521,15 @@ End
 		  'lsStr = DefineEncoding(lsStr, Encodings.UTF8)
 		  
 		  Dim lsDesc as String
-		  lsDesc = MemType.popType.Text + EndOfLine + MemType.popDataBookformat.Text
+		  lsDesc = "New Member Application " +MemType.popType.Text + " / " + MemType.popDataBookformat.Text
 		  if MemType.chkEducation.Value then
-		    lsDesc = lsDesc + EndOfLine + "Donation to Education: " + Str(App.gdDonationEducation)
+		    lsDesc = lsDesc + " / " + "Donation to Education: " + Str(App.gdDonationEducation)
 		  end
 		  if MemType.chkResearch.Value then
-		    lsDesc = lsDesc + EndOfLine + "Donation to Research Foundation: " + Str(App.gdDonationResearch)
+		    lsDesc = lsDesc + " / " + "Donation to Research Foundation: " + Str(App.gdDonationResearch)
 		  end
 		  if MemType.chkSteele.Value then
-		    lsDesc = lsDesc + EndOfLine + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
+		    lsDesc = lsDesc + " / " + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
 		  end
 		  
 		  
@@ -1556,6 +1556,7 @@ End
 		    dicResultCode.Value("TransActionID") = "1234567890"
 		    dicResultCode.Value("AVSResponse") = "All Match"
 		  else
+		    Call UpdateTransaction("Sent", "Waiting")
 		    dicResultCode = ProcessCC(dicAuth, False )
 		  end
 		  

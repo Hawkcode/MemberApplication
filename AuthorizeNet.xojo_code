@@ -83,7 +83,9 @@ Protected Module AuthorizeNet
 		    dicResultCode.Value("ResponseReasonCode") = ""
 		  end
 		  
-		  dicResultCode.Value("ResponseReasonText") = DataResult(3)
+		  if dicResultCode.Value("ResponseReasonCode") = "" then
+		    dicResultCode.Value("ResponseReasonText") = DataResult(3)
+		  end
 		  
 		  Select Case DataResult(5)
 		  Case "A"
