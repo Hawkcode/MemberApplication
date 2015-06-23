@@ -109,7 +109,7 @@ Begin WebContainer conConfirmation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   398
+      Left            =   397
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -902,7 +902,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   25
       Text            =   "Receipt will be sent to this address."
-      Top             =   315
+      Top             =   318
       VerticalCenter  =   0
       Visible         =   True
       Width           =   235

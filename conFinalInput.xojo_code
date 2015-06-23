@@ -861,7 +861,7 @@ Begin WebContainer conFinalInput
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   35
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648

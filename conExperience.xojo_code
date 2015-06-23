@@ -1104,7 +1104,7 @@ Begin WebContainer conExperience
       Top             =   317
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   641
+      Width           =   820
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0

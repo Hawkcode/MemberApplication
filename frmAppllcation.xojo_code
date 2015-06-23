@@ -1509,8 +1509,8 @@ End
 		  
 		  dicAuth = New Dictionary
 		  
-		  dicAuth.Value("PName") = "Ricky"
-		  dicAuth.Value("PTitle") = "Greatest Hits"
+		  'dicAuth.Value("PName") = "Ricky"
+		  'dicAuth.Value("PTitle") = "Greatest Hits"
 		  
 		  's.SetFormData(d)
 		  '
@@ -1532,6 +1532,7 @@ End
 		    lsDesc = lsDesc + " / " + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
 		  end
 		  
+		  msDesc = lsDesc
 		  
 		  dicAuth.Value("x_email") = CreditCard.txtCCEmail.Text
 		  dicAuth.Value("x_card_num") = CreditCard.txtCCNumber.Text
@@ -1556,7 +1557,7 @@ End
 		    dicResultCode.Value("TransActionID") = "1234567890"
 		    dicResultCode.Value("AVSResponse") = "All Match"
 		  else
-		    Call UpdateTransaction("Sent", "Waiting")
+		    Call UpdateTransaction("Sent", "None")
 		    dicResultCode = ProcessCC(dicAuth, False )
 		  end
 		  
@@ -1596,13 +1597,20 @@ End
 		  Select case msCurrentScreen
 		    
 		  Case "MemInfo"   '1
-		    if not MemInfo.ValidateAll then return
+		    if not MemInfo.ValidateAll then 
+		      Msgbox("Invalid Input: Look for fields outlined in red!")
+		      return
+		    end
 		    if not Meminfo.SaveMemInfo then return
 		    msCurrentScreen = "MemType"
 		    
 		  Case "MemType"  '2
 		    if bNext then
-		      if not MemType.ValidateAll then return
+		      if not MemType.ValidateAll then 
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      
 		      If not MemType.SaveMemType then Return
 		      if app.mbAffiliateGov then
 		        msCurrentScreen = "CreditCard"
@@ -1616,7 +1624,11 @@ End
 		    
 		  Case "Education"     '   3 if not Affiliate
 		    if bNext then
-		      if not Education.ValidateAll then return
+		      if not Education.ValidateAll then 
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      
 		      If not Education.SaveEducation then Return
 		      msCurrentScreen = "Experience"
 		    else
@@ -1626,7 +1638,11 @@ End
 		    
 		  Case "Experience"     '   3 if not Affiliate
 		    if bNext then
-		      If not Experience.ValidateAll then return
+		      If not Experience.ValidateAll then 
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      
 		      if not Experience.SaveExperience then return
 		      msCurrentScreen = "FinalInput"
 		    else
@@ -1649,7 +1665,11 @@ End
 		    
 		  Case "CreditCard"
 		    if bNext then
-		      if not CreditCard.ValidateAll then return
+		      if not CreditCard.ValidateAll then 
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      
 		      If Not CreditCard.SaveCC then Return
 		      msCurrentScreen = "Confirmation"
 		    else
@@ -1707,8 +1727,8 @@ End
 		  Dim lsExpDate as String
 		  
 		  
-		  oSQL.AddFields "TransactionID",     "ResultCode"
-		  oSQL.AddValues lsTransID,          lsResultCode
+		  oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
+		  oSQL.AddValues lsTransID,          lsResultCode, msDesc
 		  
 		  oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  
@@ -1783,6 +1803,10 @@ End
 			'MemInfo
 		#tag EndNote
 		msCurrentScreen As String = "MemInfo"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msDesc As String
 	#tag EndProperty
 
 	#tag Property, Flags = &h0

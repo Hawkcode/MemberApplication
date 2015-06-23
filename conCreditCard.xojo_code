@@ -811,7 +811,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   25
       Text            =   "Receipt will be sent to this address."
-      Top             =   315
+      Top             =   318
       VerticalCenter  =   0
       Visible         =   True
       Width           =   235
