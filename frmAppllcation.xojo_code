@@ -722,6 +722,18 @@ End
 		  lsMsg = lsMsg +  rs.Field("busEmail").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Cell Phone: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("CellPhone").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Text Messages: </td><td><strong>"
+		  if rs.Field("TextingOK").BooleanValue then
+		    lsMsg = lsMsg +  "Yes"
+		  else
+		    lsMsg = lsMsg +  "No"
+		  end
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Street Address: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("resStreetAddress").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -1597,7 +1609,7 @@ End
 		  Select case msCurrentScreen
 		    
 		  Case "MemInfo"   '1
-		    if not MemInfo.ValidateAll then 
+		    if not MemInfo.ValidateAll then
 		      Msgbox("Invalid Input: Look for fields outlined in red!")
 		      return
 		    end
@@ -1606,7 +1618,7 @@ End
 		    
 		  Case "MemType"  '2
 		    if bNext then
-		      if not MemType.ValidateAll then 
+		      if not MemType.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
 		        return
 		      end
@@ -1624,7 +1636,7 @@ End
 		    
 		  Case "Education"     '   3 if not Affiliate
 		    if bNext then
-		      if not Education.ValidateAll then 
+		      if not Education.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
 		        return
 		      end
@@ -1638,7 +1650,7 @@ End
 		    
 		  Case "Experience"     '   3 if not Affiliate
 		    if bNext then
-		      If not Experience.ValidateAll then 
+		      If not Experience.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
 		        return
 		      end
@@ -1665,7 +1677,7 @@ End
 		    
 		  Case "CreditCard"
 		    if bNext then
-		      if not CreditCard.ValidateAll then 
+		      if not CreditCard.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
 		        return
 		      end
