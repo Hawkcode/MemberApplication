@@ -400,7 +400,7 @@ Protected Module AuthorizeNet
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
-		Private msAuthNetTranKey As String = "2JAE6h7wt3L26kPw"
+		Private msAuthNetTranKey As String = "5Xq44jxHXw652Hu8"
 	#tag EndProperty
 
 

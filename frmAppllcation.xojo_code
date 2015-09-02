@@ -727,7 +727,7 @@ End
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Text Messages: </td><td><strong>"
-		  if rs.Field("TextingOK").BooleanValue then
+		  if rs.Field("TextingOptOut").BooleanValue then
 		    lsMsg = lsMsg +  "Yes"
 		  else
 		    lsMsg = lsMsg +  "No"

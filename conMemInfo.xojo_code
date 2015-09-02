@@ -121,7 +121,7 @@ Begin WebContainer conMemInfo
       Style           =   "1126752408"
       TabOrder        =   58
       Text            =   "Preferred Mailing Address:"
-      Top             =   117
+      Top             =   90
       VerticalCenter  =   0
       Visible         =   True
       Width           =   178
@@ -156,7 +156,7 @@ Begin WebContainer conMemInfo
       Style           =   "1126752408"
       TabOrder        =   61
       Text            =   "Birthday M/D/YYYY:"
-      Top             =   74
+      Top             =   47
       VerticalCenter  =   0
       Visible         =   True
       Width           =   135
@@ -195,9 +195,9 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   6
+      TabOrder        =   5
       Text            =   ""
-      Top             =   74
+      Top             =   47
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -237,9 +237,9 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   7
+      TabOrder        =   6
       Text            =   ""
-      Top             =   74
+      Top             =   47
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -279,9 +279,9 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   8
+      TabOrder        =   7
       Text            =   ""
-      Top             =   74
+      Top             =   47
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -317,7 +317,7 @@ Begin WebContainer conMemInfo
       Style           =   "1805079798"
       TabOrder        =   66
       Text            =   "/"
-      Top             =   73
+      Top             =   46
       VerticalCenter  =   0
       Visible         =   True
       Width           =   21
@@ -352,7 +352,7 @@ Begin WebContainer conMemInfo
       Style           =   "1805079798"
       TabOrder        =   64
       Text            =   "/"
-      Top             =   73
+      Top             =   46
       VerticalCenter  =   0
       Visible         =   True
       Width           =   21
@@ -384,8 +384,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   9
-      Top             =   74
+      TabOrder        =   8
+      Top             =   47
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -418,8 +418,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   10
-      Top             =   74
+      TabOrder        =   9
+      Top             =   47
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -452,8 +452,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   11
-      Top             =   74
+      TabOrder        =   10
+      Top             =   47
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -486,8 +486,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   12
-      Top             =   74
+      TabOrder        =   11
+      Top             =   47
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -521,9 +521,9 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "816938816"
-      TabOrder        =   14
+      TabOrder        =   13
       Text            =   ""
-      Top             =   74
+      Top             =   47
       VerticalCenter  =   0
       Visible         =   True
       Width           =   173
@@ -558,7 +558,7 @@ Begin WebContainer conMemInfo
       Style           =   "1126752408"
       TabOrder        =   52
       Text            =   "Chapter:"
-      Top             =   74
+      Top             =   47
       VerticalCenter  =   0
       Visible         =   True
       Width           =   62
@@ -592,8 +592,8 @@ Begin WebContainer conMemInfo
       RowCount        =   1
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   15
-      Top             =   117
+      TabOrder        =   14
+      Top             =   90
       VerticalCenter  =   0
       Visible         =   True
       Width           =   158
@@ -926,7 +926,7 @@ Begin WebContainer conMemInfo
       Style           =   "1126752408"
       TabOrder        =   48
       Text            =   "Primary Email:"
-      Top             =   154
+      Top             =   127
       VerticalCenter  =   0
       Visible         =   True
       Width           =   108
@@ -1003,7 +1003,7 @@ Begin WebContainer conMemInfo
       Style           =   "418528476"
       TabOrder        =   50
       Text            =   "Secondary Email:"
-      Top             =   154
+      Top             =   127
       VerticalCenter  =   0
       Visible         =   True
       Width           =   125
@@ -1042,9 +1042,9 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   24
+      TabOrder        =   23
       Text            =   ""
-      Top             =   153
+      Top             =   126
       Type            =   2
       VerticalCenter  =   0
       Visible         =   True
@@ -1084,9 +1084,9 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   25
+      TabOrder        =   24
       Text            =   ""
-      Top             =   154
+      Top             =   127
       Type            =   2
       VerticalCenter  =   0
       Visible         =   True
@@ -1407,7 +1407,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   460
+      Left            =   465
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1732,8 +1732,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   16
-      Top             =   104
+      TabOrder        =   15
+      Top             =   77
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1766,8 +1766,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   18
-      Top             =   104
+      TabOrder        =   17
+      Top             =   77
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1800,8 +1800,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   20
-      Top             =   104
+      TabOrder        =   19
+      Top             =   77
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1834,8 +1834,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   22
-      Top             =   104
+      TabOrder        =   21
+      Top             =   77
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1871,7 +1871,7 @@ Begin WebContainer conMemInfo
       Style           =   "1126752408"
       TabOrder        =   67
       Text            =   "Organizations:"
-      Top             =   118
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   True
       Width           =   102
@@ -2211,8 +2211,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   13
-      Top             =   74
+      TabOrder        =   12
+      Top             =   47
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2245,8 +2245,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   17
-      Top             =   128
+      TabOrder        =   16
+      Top             =   101
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2279,8 +2279,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   19
-      Top             =   128
+      TabOrder        =   18
+      Top             =   101
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2313,8 +2313,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   21
-      Top             =   128
+      TabOrder        =   20
+      Top             =   101
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2347,8 +2347,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   23
-      Top             =   128
+      TabOrder        =   22
+      Top             =   101
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2469,14 +2469,14 @@ Begin WebContainer conMemInfo
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkTexting
-      Caption         =   "I would like to receive membership renewal reminders and society related important announcements via text messages "
+      Caption         =   "I would like to Opt Out of receiving  membership renewal reminders and society related important announcements via text messages "
       Cursor          =   1
       Enabled         =   True
       Height          =   22
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   36
+      Left            =   15
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -2485,13 +2485,13 @@ Begin WebContainer conMemInfo
       LockTop         =   True
       LockVertical    =   False
       Scope           =   0
-      Style           =   "-1"
-      TabOrder        =   5
-      Top             =   47
+      Style           =   "0"
+      TabOrder        =   25
+      Top             =   153
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   845
+      Width           =   886
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -2949,7 +2949,7 @@ End
 		  oSQL.AddFields "orgNSPE",             "mailPref",                             "chapter",            "HeardAbout",            "certLEEDAP",       "orgMech"
 		  oSQL.AddValues chkNSPE.Value, radMail.SelectedCaption, cboChapterName.Text, cboHeardAbout.Text, chkLEEDAP.Value, chkMech.Value
 		  
-		  oSQL.AddFields "TextingOK",     "CellPhone"
+		  oSQL.AddFields "TextingOptOut",     "CellPhone"
 		  oSQL.AddValues chkTexting.value, txtPhoneCell.Text
 		  
 		  
