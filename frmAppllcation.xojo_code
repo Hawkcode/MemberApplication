@@ -126,7 +126,7 @@ Begin WebPage frmAppllcation
       Style           =   "816938816"
       TabOrder        =   0
       Text            =   "American Society of Plumbing Engineers Membership Application"
-      Top             =   14
+      Top             =   4
       VerticalCenter  =   0
       Visible         =   True
       Width           =   607
@@ -520,23 +520,6 @@ Begin WebPage frmAppllcation
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin SMTPServer SMTPServer1
-      CertificateFile =   
-      CertificatePassword=   ""
-      CertificateRejectionFile=   
-      ConnectionType  =   2
-      Height          =   32
-      Index           =   -2147483648
-      Left            =   20
-      LockedInPosition=   False
-      Scope           =   0
-      Secure          =   False
-      SMTPConnectionMode=   0
-      Style           =   "-1"
-      TabPanelIndex   =   0
-      Top             =   20
-      Width           =   32
-   End
    Begin WebLabel lblVersion
       Cursor          =   1
       Enabled         =   True
@@ -582,6 +565,10 @@ End
 		  'MemType.popType.Text = "Affiliate"
 		  'end
 		  lblVersion.Text = "Build:" + Str(App.NonReleaseVersion)
+		  
+		  SMTPServerMail = New SMTPSecureSocket
+		  AddHandler SMTPServerMail.MailSent, AddressOf MailSentEvent
+		  
 		End Sub
 	#tag EndEvent
 
@@ -788,10 +775,6 @@ End
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Phone: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busPhone").StringValue
-		  lsMsg = lsMsg +  "</strong></td></tr>"
-		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Fax: </td><td><strong>"
-		  lsMsg = lsMsg +  rs.Field("busFax").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
@@ -1274,75 +1257,75 @@ End
 		  lsMsg = lsMsg +  "<hr>"
 		  'lsMsg = lsMsg +  "<br>"
 		  
-		  lsMsg = lsMsg +  "<table width=""78%""  border=""1"" cellspacing=""1"" cellpadding=""1"">"
-		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td colspan=""3""><font face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b><font size=""2"">References</font><font size=""1""><br />"
-		  lsMsg = lsMsg +  "</font></b><font size=""1"">(References should be in engineering profession, ASPE members preferred. ASPE reservers the right to contact references.) </font></font></td>"
-		  lsMsg = lsMsg +  "</tr>"
-		  lsMsg = lsMsg +  " <tr>"
-		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Name</font></td>"
-		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Address</font></td>"
-		  lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Telephone</font></td>"
-		  lsMsg = lsMsg +  "</tr>"
-		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refName").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refAddress").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refPhone").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "</tr>"
-		  
-		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refName2").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refAddress2").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refPhone2").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "</tr>"
-		  
-		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refName3").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refAddress3").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refPhone3").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "</tr>"
-		  
-		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refName4").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refAddress4").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  lsMsg = lsMsg +  "<td><strong>"
-		  lsMsg = lsMsg +  rs.Field("refPhone4").StringValue
-		  lsMsg = lsMsg +  "</strong></td>"
-		  
-		  lsMsg = lsMsg +  "</tr>"
-		  lsMsg = lsMsg +  " </table>"
+		  'lsMsg = lsMsg +  "<table width=""78%""  border=""1"" cellspacing=""1"" cellpadding=""1"">"
+		  'lsMsg = lsMsg +  "<tr>"
+		  'lsMsg = lsMsg +  "<td colspan=""3""><font face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b><font size=""2"">References</font><font size=""1""><br />"
+		  'lsMsg = lsMsg +  "</font></b><font size=""1"">(References should be in engineering profession, ASPE members preferred. ASPE reservers the right to contact references.) </font></font></td>"
+		  'lsMsg = lsMsg +  "</tr>"
+		  'lsMsg = lsMsg +  " <tr>"
+		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Name</font></td>"
+		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Address</font></td>"
+		  'lsMsg = lsMsg +  "<td><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Telephone</font></td>"
+		  'lsMsg = lsMsg +  "</tr>"
+		  'lsMsg = lsMsg +  "<tr>"
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refName").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refAddress").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refPhone").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "</tr>"
+		  '
+		  'lsMsg = lsMsg +  "<tr>"
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refName2").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refAddress2").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refPhone2").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "</tr>"
+		  '
+		  'lsMsg = lsMsg +  "<tr>"
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refName3").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refAddress3").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refPhone3").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "</tr>"
+		  '
+		  'lsMsg = lsMsg +  "<tr>"
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refName4").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refAddress4").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  'lsMsg = lsMsg +  "<td><strong>"
+		  'lsMsg = lsMsg +  rs.Field("refPhone4").StringValue
+		  'lsMsg = lsMsg +  "</strong></td>"
+		  '
+		  'lsMsg = lsMsg +  "</tr>"
+		  'lsMsg = lsMsg +  " </table>"
 		  
 		  lsMsg = lsMsg +  "<hr>"
 		  'lsMsg = lsMsg +  "<br>"
@@ -1374,6 +1357,25 @@ End
 		  Return lsMsg
 		  
 		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub MailConnectionEstablished(Sender As SMTPSecureSocket, Greeting as String)
+		  'MsgBox("Connection Established: " + Greeting)
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub MailSentEvent(Sender As SMTPSecureSocket)
+		  Call UpdateTransaction("", "", "App Sent")
+		  'MsgBox("In Sent")
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub MailServerErrorEvent(Sender As SMTPSecureSocket, ErrorID as Integer,ErrorMessage as String, Email as EmailMessage)
+		  MsgBox("Error : " + ErrorMessage)
+		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
@@ -1410,9 +1412,9 @@ End
 		    Experience.Visible= True
 		    Experience.txtFrom.SetFocus
 		    
-		  Case "FinalInput"     '   3 if not Affiliate
-		    FinalInput.Visible= True
-		    FinalInput.txtPEState.SetFocus
+		    'Case "FinalInput"     '   3 if not Affiliate
+		    'FinalInput.Visible= True
+		    'FinalInput.txtPEState.SetFocus
 		    
 		  Case "CreditCard"
 		    CreditCard.Visible = True
@@ -1488,28 +1490,36 @@ End
 		  '
 		  rs = Session.sesDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
 		  
-		  'AddHandler SMTPServer.
+		  'AddHandler SMTPServerMail.
 		  
 		  
-		  SMTPServer = New SMTPServer1
-		  SMTPServer.Address = "localhost" 'csBulkMailSMTPServer
-		  SMTPServer.Port = 25 'cnBulkEmailPort
-		  SMTPServer.Username = ""   'csBulkMailSMTPUserID
-		  SMTPServer.Password = ""   'csBulkEmailSMTPPassword
-		  'SMTPServer.ConnectionType = SMTPSecureSocket.SSLv2
-		  'SMTPServer.Secure = True
-		  'SMTPServer.Connect
+		  SMTPServerMail.Address = "localhost" 'csBulkMailSMTPServerMail
+		  SMTPServerMail.Port = 25 'cnBulkEmailPort
+		  SMTPServerMail.Username = ""   'csBulkMailSMTPUserID
+		  SMTPServerMail.Password = ""   'csBulkEmailSMTPPassword
+		  'SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv2
+		  'SMTPServerMail.Secure = True
+		  'SMTPServerMail.Connect
 		  
-		  System.DebugLog("Last Error: " + Str(SMTPServer.LastErrorCode) )
+		  
+		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
 		  
 		  Msg.AddRecipient csEmailAddress
 		  System.DebugLog("Sending email to: " + csEmailAddress)
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()
-		  SMTPServer.Messages.Append( Msg)
-		  SMTPServer.SendMail
+		  SMTPServerMail.Messages.Append( Msg)
 		  
-		  System.DebugLog("Last Error: " + Str(SMTPServer.LastErrorCode) )
+		  'Call UpdateTransaction("", "", "Sending App")
+		  SMTPServerMail.SendMail
+		  
+		  
+		  While SMTPServerMail.BytesLeftToSend > 0
+		    SMTPServerMail.Poll
+		  WEnd
+		  'MsgBox("Out of Polling")
+		  
+		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
 		  
 		  
 		  
@@ -1569,7 +1579,7 @@ End
 		    dicResultCode.Value("TransActionID") = "1234567890"
 		    dicResultCode.Value("AVSResponse") = "All Match"
 		  else
-		    Call UpdateTransaction("Sent", "None")
+		    Call UpdateTransaction("Sent", "None", "Sent to Auth")
 		    dicResultCode = ProcessCC(dicAuth, False )
 		  end
 		  
@@ -1581,7 +1591,7 @@ End
 		    Processing.txtResult.Text =  Processing.txtResult.Text + dicResultCode.Value("AVSResponse")+ EndOfLine
 		    btnPrevious.Enabled = False
 		    btnNext.Visible = False
-		    if not UpdateTransaction( dicResultCode.Value("TransActionID"), "Approved") then
+		    if not UpdateTransaction( dicResultCode.Value("TransActionID"), "Approved", "Back From Auth") then
 		      MsgBox("Error Unable to Send Application, Your transaction did go through though.")
 		      Return
 		    end
@@ -1656,7 +1666,7 @@ End
 		      end
 		      
 		      if not Experience.SaveExperience then return
-		      msCurrentScreen = "FinalInput"
+		      msCurrentScreen = "CreditCard"
 		    else
 		      Education.mnCollege =0
 		      Education.mnTech = 0
@@ -1664,15 +1674,15 @@ End
 		      msCurrentScreen = "Education"
 		    end
 		    
-		  Case "FinalInput"     '   3 if not Affiliate
-		    if bNext then
-		      'If not FinalInput.ValidateAll then return
-		      if not FinalInput.SaveFinalInput then return
-		      
-		      msCurrentScreen = "CreditCard"
-		    else
-		      msCurrentScreen = "Experience"
-		    end
+		    'Case "FinalInput"     '   3 if not Affiliate
+		    'if bNext then
+		    ''If not FinalInput.ValidateAll then return
+		    'if not FinalInput.SaveFinalInput then return
+		    '
+		    'msCurrentScreen = "CreditCard"
+		    'else
+		    'msCurrentScreen = "Experience"
+		    'end
 		    
 		    
 		  Case "CreditCard"
@@ -1688,7 +1698,7 @@ End
 		      if app.mbAffiliateGov then
 		        msCurrentScreen = "MemType"
 		      else
-		        msCurrentScreen = "FinalInput"
+		        msCurrentScreen = "Education"
 		      end
 		    end
 		    
@@ -1719,7 +1729,7 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function UpdateTransaction(lsTransID as String, lsResultCode as String) As Boolean
+		Function UpdateTransaction(lsTransID as String, lsResultCode as String, lsTracking as String = "") As Boolean
 		  
 		  Dim lsStr as String
 		  Dim lnLen as Integer
@@ -1738,9 +1748,13 @@ End
 		  
 		  Dim lsExpDate as String
 		  
+		  if lsTransID <> "" and lsResultCode <> "" then
+		    oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
+		    oSQL.AddValues lsTransID,          lsResultCode, msDesc
+		  end
+		  oSQL.AddFields "Tracking"
+		  oSQL.AddValues lsTracking
 		  
-		  oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
-		  oSQL.AddValues lsTransID,          lsResultCode, msDesc
 		  
 		  oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  
@@ -1822,7 +1836,7 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		SMTPServer As SMTPSecureSocket
+		SMTPServerMail As SMTPSecureSocket
 	#tag EndProperty
 
 
@@ -1886,28 +1900,6 @@ End
 		  me.Mode = 0
 		  prgProgress.Visible = False
 		  System.DebugLog("Timer end")
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events SMTPServer1
-	#tag Event
-		Sub ServerError(ErrorID as integer, ErrorMessage as string, Email as EmailMessage)
-		  System.DebugLog("Server Error: " + ErrorMessage)
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub MessageSent(Email as EmailMessage)
-		  System.DebugLog("Mail sent")
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub ConnectionEstablished(greeting as string)
-		  System.DebugLog("Connection Made")
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub Error()
-		  System.DebugLog("Mail Error")
 		End Sub
 	#tag EndEvent
 #tag EndEvents

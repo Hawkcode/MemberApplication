@@ -2867,8 +2867,11 @@ End
 		  
 		  oSQL.AddTable "tblaspechaptercodes"
 		  oSQL.AddFields "ChapterName"
+		  oSQL.AddSimpleWhereClause "Inactive", 0
 		  oSQL.AddOrderClause "ChapterName"
 		  lsSQL = oSQL.SQL
+		  
+		  'lsSql = "Select ChapterName from tblaspechaptercodes where Inactive = 0 Order by ChapterName"
 		  
 		  rs = Session.sesDB.SQLSelect(lsSql)
 		  
