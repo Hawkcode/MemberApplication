@@ -555,6 +555,22 @@ Begin WebPage frmAppllcation
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin SMTPSecureSocket SMTPMail1
+      CertificateFile =   
+      CertificatePassword=   ""
+      CertificateRejectionFile=   
+      ConnectionType  =   3
+      Height          =   32
+      Index           =   -2147483648
+      Left            =   20
+      LockedInPosition=   False
+      Scope           =   0
+      Secure          =   False
+      SMTPConnectionMode=   0
+      Style           =   "-1"
+      Top             =   20
+      Width           =   32
+   End
 End
 #tag EndWebPage
 
@@ -566,8 +582,6 @@ End
 		  'end
 		  lblVersion.Text = "Build:" + Str(App.NonReleaseVersion)
 		  
-		  SMTPServerMail = New SMTPSecureSocket
-		  AddHandler SMTPServerMail.MailSent, AddressOf MailSentEvent
 		  
 		End Sub
 	#tag EndEvent
@@ -1367,13 +1381,12 @@ End
 
 	#tag Method, Flags = &h0
 		Sub MailSentEvent(Sender As SMTPSecureSocket)
-		  Call UpdateTransaction("", "", "App Sent")
-		  'MsgBox("In Sent")
+		  
 		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub MailServerErrorEvent(Sender As SMTPSecureSocket, ErrorID as Integer,ErrorMessage as String, Email as EmailMessage)
+		Sub MailServerErrorEvent(Sender As SMTPSecureSocket, ErrorID as Integer, ErrorMessage as String, Email as EmailMessage)
 		  MsgBox("Error : " + ErrorMessage)
 		End Sub
 	#tag EndMethod
@@ -1492,6 +1505,7 @@ End
 		  
 		  'AddHandler SMTPServerMail.
 		  
+		  SMTPServerMail = New SMTPMail1
 		  
 		  SMTPServerMail.Address = "localhost" 'csBulkMailSMTPServerMail
 		  SMTPServerMail.Port = 25 'cnBulkEmailPort
@@ -1513,10 +1527,9 @@ End
 		  'Call UpdateTransaction("", "", "Sending App")
 		  SMTPServerMail.SendMail
 		  
-		  
-		  While SMTPServerMail.BytesLeftToSend > 0
-		    SMTPServerMail.Poll
-		  WEnd
+		  'While SMTPServerMail.BytesLeftToSend > 0
+		  'SMTPServerMail.Poll
+		  'WEnd
 		  'MsgBox("Out of Polling")
 		  
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
@@ -1595,7 +1608,11 @@ End
 		      MsgBox("Error Unable to Send Application, Your transaction did go through though.")
 		      Return
 		    end
+		    Call UpdateTransaction("", "", "Sending App")
 		    SendApplication
+		    Call UpdateTransaction("", "", "App Sent")
+		    
+		    
 		  else
 		    Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
 		    Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
@@ -1900,6 +1917,14 @@ End
 		  me.Mode = 0
 		  prgProgress.Visible = False
 		  System.DebugLog("Timer end")
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events SMTPMail1
+	#tag Event
+		Sub MailSent()
+		  Call UpdateTransaction("", "", "App Sent")
+		  'MsgBox("In Sent")
 		End Sub
 	#tag EndEvent
 #tag EndEvents
