@@ -568,6 +568,7 @@ Begin WebPage frmAppllcation
       Secure          =   False
       SMTPConnectionMode=   0
       Style           =   "-1"
+      TabPanelIndex   =   0
       Top             =   20
       Width           =   32
    End

@@ -136,7 +136,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       Height          =   22
-      HelpTag         =   "Full\nAffiliate\nAssociate\nGovernmental\nSpecial\nStudent"
+      HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent\nuntitled"
@@ -839,6 +839,18 @@ End
 #tag WindowCode
 	#tag Event
 		Sub Shown()
+		  popType.DeleteAllRows
+		  
+		  popType.AddRow("Full")
+		  popType.AddRow("Affiliate")
+		  popType.AddRow("Associate")
+		  popType.AddRow("Governmental")
+		  popType.AddRow("Special")
+		  popType.AddRow("Student")
+		  
+		  
+		  
+		  
 		  popType.SetFocus
 		End Sub
 	#tag EndEvent
