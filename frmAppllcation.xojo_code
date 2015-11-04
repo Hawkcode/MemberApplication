@@ -572,6 +572,41 @@ Begin WebPage frmAppllcation
       Top             =   20
       Width           =   32
    End
+   Begin WebTimer QuitTimer
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   32
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   40
+      LockBottom      =   "False"
+      LockedInPosition=   False
+      LockHorizontal  =   "False"
+      LockLeft        =   "False"
+      LockRight       =   "False"
+      LockTop         =   "False"
+      LockVertical    =   "False"
+      Mode            =   0
+      Period          =   120000
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      TabPanelIndex   =   0
+      Top             =   40
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   32
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
 End
 #tag EndWebPage
 
@@ -1612,7 +1647,7 @@ End
 		    Call UpdateTransaction("", "", "Sending App")
 		    SendApplication
 		    Call UpdateTransaction("", "", "App Sent")
-		    
+		    QuitTimer.Mode = Timer.ModeSingle
 		    
 		  else
 		    Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
@@ -1926,6 +1961,13 @@ End
 		Sub MailSent()
 		  Call UpdateTransaction("", "", "App Sent")
 		  'MsgBox("In Sent")
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events QuitTimer
+	#tag Event
+		Sub Action()
+		  Session.Quit
 		End Sub
 	#tag EndEvent
 #tag EndEvents

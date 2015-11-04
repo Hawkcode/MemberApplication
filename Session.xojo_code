@@ -13,6 +13,13 @@ Inherits WebSession
 		    exit
 		  end
 		  
+		  Self.Timeout = 300 //1 Minute
+		End Sub
+	#tag EndEvent
+
+	#tag Event
+		Sub TimedOut()
+		  Self.Quit
 		End Sub
 	#tag EndEvent
 
