@@ -51,6 +51,7 @@ Begin WebContainer conExperience
       Style           =   "1005678785"
       TabOrder        =   41
       Text            =   "Experience / Registration"
+      TextAlign       =   0
       Top             =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -124,6 +125,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   7
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -166,6 +168,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   12
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -208,6 +211,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -250,6 +254,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   9
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -292,6 +297,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   8
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -334,6 +340,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   0
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -376,6 +383,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -418,6 +426,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   3
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -460,6 +469,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   2
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -502,6 +512,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   1
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -544,6 +555,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   24
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -586,6 +598,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   28
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -628,6 +641,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   27
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -670,6 +684,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   26
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -712,6 +727,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   25
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -754,6 +770,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   17
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -796,6 +813,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   21
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -838,6 +856,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   20
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -880,6 +899,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   19
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -922,6 +942,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   18
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -958,6 +979,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   44
       Text            =   "Date Mo/Yr"
+      TextAlign       =   0
       Top             =   22
       VerticalCenter  =   0
       Visible         =   True
@@ -993,6 +1015,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   45
       Text            =   "From"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1028,6 +1051,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   46
       Text            =   "To"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1063,6 +1087,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   47
       Text            =   "Firm Name/Address"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1098,6 +1123,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   48
       Text            =   "Class*"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1133,6 +1159,7 @@ Begin WebContainer conExperience
       Style           =   "0"
       TabOrder        =   43
       Text            =   "*Classification of Firm: A = Arch/Engineer or Cons. Engr | B = Govt. Agency | C = Mfr. or Mfr's. Rep."
+      TextAlign       =   0
       Top             =   239
       VerticalCenter  =   0
       Visible         =   True
@@ -1168,6 +1195,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   42
       Text            =   "Title"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1209,6 +1237,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   14
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -1251,6 +1280,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   5
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -1293,6 +1323,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   29
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -1335,6 +1366,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   22
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -1371,6 +1403,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   40
       Text            =   "Description"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1406,6 +1439,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   39
       Text            =   "Degree of"
+      TextAlign       =   0
       Top             =   22
       VerticalCenter  =   0
       Visible         =   True
@@ -1441,6 +1475,7 @@ Begin WebContainer conExperience
       Style           =   "745999595"
       TabOrder        =   38
       Text            =   "Responsibility"
+      TextAlign       =   0
       Top             =   45
       VerticalCenter  =   0
       Visible         =   True
@@ -1482,6 +1517,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   16
       Text            =   ""
+      TextAlign       =   0
       Top             =   93
       Type            =   0
       VerticalCenter  =   0
@@ -1524,6 +1560,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   6
       Text            =   ""
+      TextAlign       =   0
       Top             =   68
       Type            =   0
       VerticalCenter  =   0
@@ -1566,6 +1603,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   30
       Text            =   ""
+      TextAlign       =   0
       Top             =   142
       Type            =   0
       VerticalCenter  =   0
@@ -1608,6 +1646,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   23
       Text            =   ""
+      TextAlign       =   0
       Top             =   118
       Type            =   0
       VerticalCenter  =   0
@@ -1650,6 +1689,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   36
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1692,6 +1732,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   31
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1734,6 +1775,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   35
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1776,6 +1818,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   34
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1818,6 +1861,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   33
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1860,6 +1904,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   32
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -1902,6 +1947,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   61
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -1944,6 +1990,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   56
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -1986,6 +2033,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   60
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -2028,6 +2076,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   59
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -2070,6 +2119,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   58
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -2112,6 +2162,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   57
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -2154,6 +2205,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   54
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2196,6 +2248,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   49
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2238,6 +2291,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   53
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2280,6 +2334,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   52
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2322,6 +2377,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   51
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2364,6 +2420,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   50
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2406,6 +2463,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   37
       Text            =   ""
+      TextAlign       =   0
       Top             =   167
       Type            =   0
       VerticalCenter  =   0
@@ -2448,6 +2506,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   62
       Text            =   ""
+      TextAlign       =   0
       Top             =   216
       Type            =   0
       VerticalCenter  =   0
@@ -2490,6 +2549,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   55
       Text            =   ""
+      TextAlign       =   0
       Top             =   192
       Type            =   0
       VerticalCenter  =   0
@@ -2526,6 +2586,7 @@ Begin WebContainer conExperience
       Style           =   "418528476"
       TabOrder        =   15
       Text            =   "Registration (P.E. / P.Eng)"
+      TextAlign       =   0
       Top             =   271
       VerticalCenter  =   0
       Visible         =   True
@@ -2561,6 +2622,7 @@ Begin WebContainer conExperience
       Style           =   "418528476"
       TabOrder        =   13
       Text            =   "State:"
+      TextAlign       =   0
       Top             =   305
       VerticalCenter  =   0
       Visible         =   True
@@ -2596,6 +2658,7 @@ Begin WebContainer conExperience
       Style           =   "418528476"
       TabOrder        =   11
       Text            =   "Certificate Number:"
+      TextAlign       =   0
       Top             =   305
       VerticalCenter  =   0
       Visible         =   True
@@ -2637,6 +2700,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   64
       Text            =   ""
+      TextAlign       =   0
       Top             =   305
       Type            =   0
       VerticalCenter  =   0
@@ -2679,6 +2743,7 @@ Begin WebContainer conExperience
       Style           =   "1836658647"
       TabOrder        =   63
       Text            =   ""
+      TextAlign       =   0
       Top             =   305
       Type            =   0
       VerticalCenter  =   0

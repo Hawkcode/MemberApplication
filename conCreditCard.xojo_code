@@ -83,6 +83,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Total Charge:"
+      TextAlign       =   0
       Top             =   306
       VerticalCenter  =   0
       Visible         =   True
@@ -118,6 +119,7 @@ Begin WebContainer conCreditCard
       Style           =   "1005678785"
       TabOrder        =   6
       Text            =   "Credit Card Information"
+      TextAlign       =   0
       Top             =   14
       VerticalCenter  =   0
       Visible         =   True
@@ -159,6 +161,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   8
       Text            =   ""
+      TextAlign       =   0
       Top             =   158
       Type            =   0
       VerticalCenter  =   0
@@ -195,6 +198,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Street Address:"
+      TextAlign       =   0
       Top             =   158
       VerticalCenter  =   0
       Visible         =   True
@@ -236,6 +240,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   9
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -272,6 +277,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   17
       Text            =   "City, State Zip:"
+      TextAlign       =   0
       Top             =   214
       VerticalCenter  =   0
       Visible         =   True
@@ -313,6 +319,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -355,6 +362,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   11
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -397,6 +405,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   13
       Text            =   ""
+      TextAlign       =   0
       Top             =   265
       Type            =   0
       VerticalCenter  =   0
@@ -433,6 +442,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   27
       Text            =   "Phone:"
+      TextAlign       =   0
       Top             =   265
       VerticalCenter  =   0
       Visible         =   True
@@ -474,6 +484,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   12
       Text            =   ""
+      TextAlign       =   0
       Top             =   239
       Type            =   0
       VerticalCenter  =   0
@@ -510,6 +521,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   15
       Text            =   "Country:"
+      TextAlign       =   0
       Top             =   239
       VerticalCenter  =   0
       Visible         =   True
@@ -551,6 +563,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   5
       Text            =   ""
+      TextAlign       =   0
       Top             =   133
       Type            =   0
       VerticalCenter  =   0
@@ -587,6 +600,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   26
       Text            =   "Card Holder Last Name:"
+      TextAlign       =   0
       Top             =   133
       VerticalCenter  =   0
       Visible         =   True
@@ -628,6 +642,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
+      TextAlign       =   0
       Top             =   108
       Type            =   0
       VerticalCenter  =   0
@@ -664,6 +679,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   19
       Text            =   "Card Holder First Name:"
+      TextAlign       =   0
       Top             =   108
       VerticalCenter  =   0
       Visible         =   True
@@ -699,6 +715,7 @@ Begin WebContainer conCreditCard
       Style           =   "831680130"
       TabOrder        =   7
       Text            =   "Address must match the address the Credit Card company mails the statement to."
+      TextAlign       =   0
       Top             =   185
       VerticalCenter  =   0
       Visible         =   True
@@ -740,6 +757,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   14
       Text            =   ""
+      TextAlign       =   0
       Top             =   292
       Type            =   2
       VerticalCenter  =   0
@@ -776,6 +794,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   24
       Text            =   "Email:"
+      TextAlign       =   0
       Top             =   292
       VerticalCenter  =   0
       Visible         =   True
@@ -811,6 +830,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   25
       Text            =   "Receipt will be sent to this address."
+      TextAlign       =   0
       Top             =   318
       VerticalCenter  =   0
       Visible         =   True
@@ -852,6 +872,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   0
       Text            =   ""
+      TextAlign       =   0
       Top             =   48
       Type            =   0
       VerticalCenter  =   0
@@ -888,6 +909,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   20
       Text            =   "Credit Card Number:"
+      TextAlign       =   0
       Top             =   48
       VerticalCenter  =   0
       Visible         =   True
@@ -923,6 +945,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   21
       Text            =   "CVV Number:"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -964,6 +987,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   1
       Text            =   ""
+      TextAlign       =   0
       Top             =   74
       Type            =   0
       VerticalCenter  =   0
@@ -1000,6 +1024,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   22
       Text            =   "Expiration Date Month:"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -1041,6 +1066,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   2
       Text            =   ""
+      TextAlign       =   0
       Top             =   74
       Type            =   0
       VerticalCenter  =   0
@@ -1077,6 +1103,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   23
       Text            =   "Year (2 Digit):"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -1118,6 +1145,7 @@ Begin WebContainer conCreditCard
       Style           =   "1836658647"
       TabOrder        =   3
       Text            =   ""
+      TextAlign       =   0
       Top             =   74
       Type            =   0
       VerticalCenter  =   0
@@ -1154,6 +1182,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$000.00"
+      TextAlign       =   0
       Top             =   90
       VerticalCenter  =   0
       Visible         =   True
@@ -1189,6 +1218,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   214
       VerticalCenter  =   0
       Visible         =   True
@@ -1224,6 +1254,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   306
       VerticalCenter  =   0
       Visible         =   True
@@ -1259,6 +1290,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   56
       VerticalCenter  =   0
       Visible         =   True
@@ -1326,6 +1358,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "DB Format:"
+      TextAlign       =   0
       Top             =   56
       VerticalCenter  =   0
       Visible         =   True
@@ -1361,6 +1394,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Membership Type:"
+      TextAlign       =   0
       Top             =   90
       VerticalCenter  =   0
       Visible         =   True
@@ -1397,6 +1431,7 @@ Begin WebContainer conCreditCard
       Style           =   "1905985929"
       TabOrder        =   16
       Text            =   "Total \nDonations:"
+      TextAlign       =   0
       Top             =   142
       VerticalCenter  =   0
       Visible         =   True
@@ -1432,6 +1467,7 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Total Donation:"
+      TextAlign       =   0
       Top             =   214
       VerticalCenter  =   0
       Visible         =   True

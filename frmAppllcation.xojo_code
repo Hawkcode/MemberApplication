@@ -126,6 +126,7 @@ Begin WebPage frmAppllcation
       Style           =   "816938816"
       TabOrder        =   0
       Text            =   "American Society of Plumbing Engineers Membership Application"
+      TextAlign       =   0
       Top             =   4
       VerticalCenter  =   0
       Visible         =   True
@@ -297,6 +298,7 @@ Begin WebPage frmAppllcation
       Style           =   "-1"
       TabOrder        =   7
       Text            =   ""
+      TextAlign       =   0
       Top             =   426
       VerticalCenter  =   0
       Visible         =   True
@@ -488,11 +490,9 @@ Begin WebPage frmAppllcation
    Begin WebTimer Timer1
       Cursor          =   0
       Enabled         =   True
-      Height          =   32
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -506,10 +506,7 @@ Begin WebPage frmAppllcation
       Style           =   "-1"
       TabOrder        =   -1
       TabPanelIndex   =   0
-      Top             =   20
       VerticalCenter  =   0
-      Visible         =   True
-      Width           =   32
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -541,6 +538,7 @@ Begin WebPage frmAppllcation
       Style           =   "-1"
       TabOrder        =   12
       Text            =   "Untitled"
+      TextAlign       =   0
       Top             =   426
       VerticalCenter  =   0
       Visible         =   True
@@ -560,52 +558,43 @@ Begin WebPage frmAppllcation
       CertificatePassword=   ""
       CertificateRejectionFile=   
       ConnectionType  =   3
-      Height          =   32
       Index           =   -2147483648
-      Left            =   20
       LockedInPosition=   False
       Scope           =   0
       Secure          =   False
       SMTPConnectionMode=   0
       Style           =   "-1"
       TabPanelIndex   =   0
-      Top             =   20
-      Width           =   32
    End
    Begin WebTimer QuitTimer
       Cursor          =   0
       Enabled         =   True
-      Height          =   32
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   40
-      LockBottom      =   "False"
+      LockBottom      =   False
       LockedInPosition=   False
-      LockHorizontal  =   "False"
-      LockLeft        =   "False"
-      LockRight       =   "False"
-      LockTop         =   "False"
-      LockVertical    =   "False"
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   False
       Mode            =   0
       Period          =   120000
       Scope           =   0
       Style           =   "0"
       TabOrder        =   -1
       TabPanelIndex   =   0
-      Top             =   40
       VerticalCenter  =   0
-      Visible         =   True
-      Width           =   32
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
@@ -1554,6 +1543,7 @@ End
 		  
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
 		  
+		  Msg.FromAddress = "Membership@aspe.org"
 		  Msg.AddRecipient csEmailAddress
 		  System.DebugLog("Sending email to: " + csEmailAddress)
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
@@ -2011,6 +2001,12 @@ End
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="gbCCDone"
+		Group="Behavior"
+		InitialValue="True"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="Height"
 		Visible=true
 		Group="Behavior"
@@ -2094,6 +2090,17 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="msCurrentScreen"
+		Group="Behavior"
+		InitialValue="MemInfo"
+		Type="String"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msDesc"
+		Group="Behavior"
+		Type="String"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="Name"
 		Visible=true
 		Group="ID"
@@ -2149,6 +2156,12 @@ End
 		Type="Integer"
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="_DeclareLineRendered"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="_HorizontalPercent"
 		Group="Behavior"
 		Type="Double"
@@ -2179,6 +2192,11 @@ End
 		Name="_OfficialControl"
 		Group="Behavior"
 		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="_OpenEventFired"
+		Group="Behavior"
 		Type="Boolean"
 	#tag EndViewProperty
 	#tag ViewProperty

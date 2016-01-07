@@ -51,6 +51,7 @@ Begin WebContainer conEducation
       Style           =   "418528476"
       TabOrder        =   35
       Text            =   "High School:"
+      TextAlign       =   0
       Top             =   122
       VerticalCenter  =   0
       Visible         =   True
@@ -86,6 +87,7 @@ Begin WebContainer conEducation
       Style           =   "418528476"
       TabOrder        =   34
       Text            =   "College/University:"
+      TextAlign       =   0
       Top             =   147
       VerticalCenter  =   0
       Visible         =   True
@@ -121,6 +123,7 @@ Begin WebContainer conEducation
       Style           =   "418528476"
       TabOrder        =   33
       Text            =   "Technical School:"
+      TextAlign       =   0
       Top             =   172
       VerticalCenter  =   0
       Visible         =   True
@@ -156,6 +159,7 @@ Begin WebContainer conEducation
       Style           =   "418528476"
       TabOrder        =   32
       Text            =   "Others:"
+      TextAlign       =   0
       Top             =   196
       VerticalCenter  =   0
       Visible         =   True
@@ -197,6 +201,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   0
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -239,6 +244,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   6
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -281,6 +287,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   12
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -323,6 +330,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   18
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -359,6 +367,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   30
       Text            =   "Name"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -394,6 +403,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   29
       Text            =   "Course of Major"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -435,6 +445,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   1
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -477,6 +488,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   7
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -519,6 +531,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   13
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -561,6 +574,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   19
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -597,6 +611,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   28
       Text            =   "Date Mo/Yr"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -638,6 +653,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   2
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -680,6 +696,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   8
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -722,6 +739,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   14
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -764,6 +782,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   20
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -806,6 +825,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   3
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -848,6 +868,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   9
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -890,6 +911,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   15
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -932,6 +954,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   21
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -968,6 +991,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   27
       Text            =   "From"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -1003,6 +1027,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   25
       Text            =   "To"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -1038,6 +1063,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   26
       Text            =   "Graduation Date"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -1079,6 +1105,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -1121,6 +1148,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -1163,6 +1191,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   16
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -1205,6 +1234,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   22
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -1241,6 +1271,7 @@ Begin WebContainer conEducation
       Style           =   "745999595"
       TabOrder        =   31
       Text            =   "Degree or Diploma"
+      TextAlign       =   0
       Top             =   98
       VerticalCenter  =   0
       Visible         =   True
@@ -1282,6 +1313,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   5
       Text            =   ""
+      TextAlign       =   0
       Top             =   122
       Type            =   0
       VerticalCenter  =   0
@@ -1324,6 +1356,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   11
       Text            =   ""
+      TextAlign       =   0
       Top             =   147
       Type            =   0
       VerticalCenter  =   0
@@ -1366,6 +1399,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   17
       Text            =   ""
+      TextAlign       =   0
       Top             =   172
       Type            =   0
       VerticalCenter  =   0
@@ -1408,6 +1442,7 @@ Begin WebContainer conEducation
       Style           =   "1836658647"
       TabOrder        =   23
       Text            =   ""
+      TextAlign       =   0
       Top             =   196
       Type            =   0
       VerticalCenter  =   0
@@ -1444,6 +1479,7 @@ Begin WebContainer conEducation
       Style           =   "1005678785"
       TabOrder        =   36
       Text            =   "Education"
+      TextAlign       =   0
       Top             =   27
       VerticalCenter  =   0
       Visible         =   True

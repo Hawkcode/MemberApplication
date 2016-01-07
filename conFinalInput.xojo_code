@@ -115,6 +115,7 @@ Begin WebContainer conFinalInput
       Style           =   "1005678785"
       TabOrder        =   3
       Text            =   "Registration & References"
+      TextAlign       =   0
       Top             =   14
       VerticalCenter  =   0
       Visible         =   True
@@ -150,6 +151,7 @@ Begin WebContainer conFinalInput
       Style           =   "418528476"
       TabOrder        =   13
       Text            =   "Registration (P.E. / P.Eng)"
+      TextAlign       =   0
       Top             =   65
       VerticalCenter  =   0
       Visible         =   True
@@ -191,6 +193,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   2
       Text            =   ""
+      TextAlign       =   0
       Top             =   99
       Type            =   0
       VerticalCenter  =   0
@@ -233,6 +236,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   1
       Text            =   ""
+      TextAlign       =   0
       Top             =   99
       Type            =   0
       VerticalCenter  =   0
@@ -269,6 +273,7 @@ Begin WebContainer conFinalInput
       Style           =   "418528476"
       TabOrder        =   12
       Text            =   "State:"
+      TextAlign       =   0
       Top             =   99
       VerticalCenter  =   0
       Visible         =   True
@@ -304,6 +309,7 @@ Begin WebContainer conFinalInput
       Style           =   "418528476"
       TabOrder        =   11
       Text            =   "Certificate Number:"
+      TextAlign       =   0
       Top             =   99
       VerticalCenter  =   0
       Visible         =   True
@@ -339,6 +345,7 @@ Begin WebContainer conFinalInput
       Style           =   "418528476"
       TabOrder        =   10
       Text            =   "References:"
+      TextAlign       =   0
       Top             =   140
       VerticalCenter  =   0
       Visible         =   True
@@ -380,6 +387,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   20
       Text            =   ""
+      TextAlign       =   0
       Top             =   260
       Type            =   0
       VerticalCenter  =   0
@@ -422,6 +430,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   17
       Text            =   ""
+      TextAlign       =   0
       Top             =   236
       Type            =   0
       VerticalCenter  =   0
@@ -464,6 +473,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   7
       Text            =   ""
+      TextAlign       =   0
       Top             =   211
       Type            =   0
       VerticalCenter  =   0
@@ -506,6 +516,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
+      TextAlign       =   0
       Top             =   186
       Type            =   0
       VerticalCenter  =   0
@@ -548,6 +559,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   5
       Text            =   ""
+      TextAlign       =   0
       Top             =   186
       Type            =   0
       VerticalCenter  =   0
@@ -590,6 +602,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   8
       Text            =   ""
+      TextAlign       =   0
       Top             =   211
       Type            =   0
       VerticalCenter  =   0
@@ -632,6 +645,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   18
       Text            =   ""
+      TextAlign       =   0
       Top             =   236
       Type            =   0
       VerticalCenter  =   0
@@ -674,6 +688,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   21
       Text            =   ""
+      TextAlign       =   0
       Top             =   260
       Type            =   0
       VerticalCenter  =   0
@@ -716,6 +731,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   22
       Text            =   ""
+      TextAlign       =   0
       Top             =   260
       Type            =   0
       VerticalCenter  =   0
@@ -758,6 +774,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   19
       Text            =   ""
+      TextAlign       =   0
       Top             =   236
       Type            =   0
       VerticalCenter  =   0
@@ -800,6 +817,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   9
       Text            =   ""
+      TextAlign       =   0
       Top             =   211
       Type            =   0
       VerticalCenter  =   0
@@ -842,6 +860,7 @@ Begin WebContainer conFinalInput
       Style           =   "1836658647"
       TabOrder        =   6
       Text            =   ""
+      TextAlign       =   0
       Top             =   186
       Type            =   0
       VerticalCenter  =   0
@@ -878,6 +897,7 @@ Begin WebContainer conFinalInput
       Style           =   "1126752408"
       TabOrder        =   0
       Text            =   "References should be in engineering profession, ASPE members preferred. ASPE reservers the right to contact references."
+      TextAlign       =   0
       Top             =   283
       VerticalCenter  =   0
       Visible         =   True
@@ -913,6 +933,7 @@ Begin WebContainer conFinalInput
       Style           =   "745999595"
       TabOrder        =   14
       Text            =   "Name"
+      TextAlign       =   0
       Top             =   160
       VerticalCenter  =   0
       Visible         =   True
@@ -948,6 +969,7 @@ Begin WebContainer conFinalInput
       Style           =   "745999595"
       TabOrder        =   15
       Text            =   "Address"
+      TextAlign       =   0
       Top             =   160
       VerticalCenter  =   0
       Visible         =   True
@@ -983,6 +1005,7 @@ Begin WebContainer conFinalInput
       Style           =   "745999595"
       TabOrder        =   16
       Text            =   "Telephone"
+      TextAlign       =   0
       Top             =   160
       VerticalCenter  =   0
       Visible         =   True

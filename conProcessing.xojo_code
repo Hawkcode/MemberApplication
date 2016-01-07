@@ -51,6 +51,7 @@ Begin WebContainer conProcessing
       Style           =   "1005678785"
       TabOrder        =   9
       Text            =   "Processing"
+      TextAlign       =   0
       Top             =   14
       VerticalCenter  =   0
       Visible         =   True
@@ -87,6 +88,7 @@ Begin WebContainer conProcessing
       Style           =   "1126752408"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
       Visible         =   True

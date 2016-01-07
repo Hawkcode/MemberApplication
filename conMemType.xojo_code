@@ -51,6 +51,7 @@ Begin WebContainer conMemType
       Style           =   "1126752408"
       TabOrder        =   0
       Text            =   "Plumbing EngineernDesign Hand Book Format:"
+      TextAlign       =   0
       Top             =   23
       VerticalCenter  =   0
       Visible         =   True
@@ -290,6 +291,7 @@ Begin WebContainer conMemType
       Style           =   "418528476"
       TabOrder        =   1
       Text            =   "Contributions:"
+      TextAlign       =   0
       Top             =   79
       VerticalCenter  =   0
       Visible         =   True
@@ -325,6 +327,7 @@ Begin WebContainer conMemType
       Style           =   "219244006"
       TabOrder        =   15
       Text            =   "*Contributions to ASPE Education and Alfred Steel Funds are Strictly Voluntary and are not deductable as a charatable contribution but may be deducted as an ordinary and necessary business expence.\n**Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution."
+      TextAlign       =   0
       Top             =   209
       VerticalCenter  =   0
       Visible         =   True
@@ -361,6 +364,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   9
       Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -396,6 +400,7 @@ Begin WebContainer conMemType
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Member Type:"
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   True
@@ -431,6 +436,7 @@ Begin WebContainer conMemType
       Style           =   "1126752408"
       TabOrder        =   2
       Text            =   "Membership Type:"
+      TextAlign       =   0
       Top             =   23
       VerticalCenter  =   0
       Visible         =   True
@@ -467,6 +473,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   10
       Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for member-ship in any other grade."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -503,6 +510,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   8
       Text            =   "Associate Member: Any individual involved in the design of plumbing systems or in plumbing engineering and not meeting the requirements for Full membership."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -539,6 +547,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   6
       Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the So ciety Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -575,6 +584,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   5
       Text            =   "Governmental Member: Anyone employed by municipal, state, or federal governments for one of the following reasons: A. Checking and/or inspection of plumbing plans and installations;\n\nB. The formulation of codes, rules, requirements and regulations pertaining to the planning, designing and installation of plumbing systems, or any portion of a plumbing system;\n\nC. Research and development of plumbing systems design criteria. Exception: Persons employed by a government agency for the purpose of designing and/or specifying plumbing systems, who shall be eligible to be Full or Associate members, provided they have fulfilled the experience required as outlined for each respective classification."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -611,6 +621,7 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   11
       Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: Persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full Members or Associate Members, provided they have fulfilled the experience required as outlined for each respective classification."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   False
@@ -647,6 +658,7 @@ Begin WebContainer conMemType
       Style           =   "1265093392"
       TabOrder        =   7
       Text            =   "Select a member type from the above drop down. \n\nThen select your Hand Book format and finally if you would like to make a contribution."
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   True
@@ -682,6 +694,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   57
       VerticalCenter  =   0
       Visible         =   True
@@ -717,6 +730,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   181
       VerticalCenter  =   0
       Visible         =   True
@@ -752,6 +766,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   303
       VerticalCenter  =   0
       Visible         =   True
@@ -787,6 +802,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   23
       VerticalCenter  =   0
       Visible         =   True
