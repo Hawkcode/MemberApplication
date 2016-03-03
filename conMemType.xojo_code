@@ -38,7 +38,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   311
+      Left            =   546
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -50,12 +50,12 @@ Begin WebContainer conMemType
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   0
-      Text            =   "Plumbing EngineernDesign Hand Book Format:"
+      Text            =   "Choose format:"
       TextAlign       =   0
-      Top             =   23
+      Top             =   57
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   305
+      Width           =   115
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -106,7 +106,7 @@ Begin WebContainer conMemType
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "CD\nSoftcover\nCD & Softcover (Additional Cost)"
-      Left            =   613
+      Left            =   658
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -119,7 +119,7 @@ Begin WebContainer conMemType
       Style           =   "1836658647"
       TabOrder        =   3
       Text            =   ""
-      Top             =   23
+      Top             =   57
       VerticalCenter  =   0
       Visible         =   True
       Width           =   164
@@ -346,7 +346,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -365,7 +365,7 @@ Begin WebContainer conMemType
       TabOrder        =   9
       Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -387,7 +387,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   515
+      Left            =   538
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -401,7 +401,7 @@ Begin WebContainer conMemType
       TabOrder        =   16
       Text            =   "Member Type:"
       TextAlign       =   0
-      Top             =   57
+      Top             =   23
       VerticalCenter  =   0
       Visible         =   True
       Width           =   262
@@ -455,7 +455,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -474,7 +474,7 @@ Begin WebContainer conMemType
       TabOrder        =   10
       Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for member-ship in any other grade."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -492,7 +492,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -511,7 +511,7 @@ Begin WebContainer conMemType
       TabOrder        =   8
       Text            =   "Associate Member: Any individual involved in the design of plumbing systems or in plumbing engineering and not meeting the requirements for Full membership."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -529,7 +529,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -548,7 +548,7 @@ Begin WebContainer conMemType
       TabOrder        =   6
       Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the So ciety Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -566,7 +566,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -585,7 +585,7 @@ Begin WebContainer conMemType
       TabOrder        =   5
       Text            =   "Governmental Member: Anyone employed by municipal, state, or federal governments for one of the following reasons: A. Checking and/or inspection of plumbing plans and installations;\n\nB. The formulation of codes, rules, requirements and regulations pertaining to the planning, designing and installation of plumbing systems, or any portion of a plumbing system;\n\nC. Research and development of plumbing systems design criteria. Exception: Persons employed by a government agency for the purpose of designing and/or specifying plumbing systems, who shall be eligible to be Full or Associate members, provided they have fulfilled the experience required as outlined for each respective classification."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   476
@@ -603,7 +603,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -622,7 +622,7 @@ Begin WebContainer conMemType
       TabOrder        =   11
       Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: Persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full Members or Associate Members, provided they have fulfilled the experience required as outlined for each respective classification."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -640,7 +640,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -659,7 +659,7 @@ Begin WebContainer conMemType
       TabOrder        =   7
       Text            =   "Select a member type from the above drop down. \n\nThen select your Hand Book format and finally if you would like to make a contribution."
       TextAlign       =   0
-      Top             =   57
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   True
       Width           =   483
@@ -694,7 +694,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   57
       VerticalCenter  =   0
       Visible         =   True
@@ -730,8 +730,8 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      TextAlign       =   0
-      Top             =   181
+      TextAlign       =   3
+      Top             =   173
       VerticalCenter  =   0
       Visible         =   True
       Width           =   112
@@ -766,7 +766,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   303
       VerticalCenter  =   0
       Visible         =   True
@@ -802,7 +802,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   23
       VerticalCenter  =   0
       Visible         =   True
@@ -849,6 +849,35 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel lblPEDHB
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   215
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   40
+      Text            =   "Plumbing Engineering Design HB Vol 4 ships 2017"
+      TextAlign       =   3
+      Top             =   57
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   331
+      ZIndex          =   1
+      _NeedsRendering =   True
+   End
 End
 #tag EndWebPage
 
@@ -868,6 +897,19 @@ End
 		  
 		  
 		  popType.SetFocus
+		  
+		  if not Session.sesAspeDB.OpenASPEDB then return
+		  
+		  Dim rs as RecordSet
+		  dim lsSql as String = "Select PEDHForNewApps from __datadefaults;"
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  If Session.sesAspeDB.CheckDBError then return
+		  
+		  lblPEDHB.Text = rs.Field("PEDHForNewApps").StringValue
+		  
+		  
 		End Sub
 	#tag EndEvent
 

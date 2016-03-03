@@ -13,6 +13,12 @@ Inherits WebSession
 		    exit
 		  end
 		  
+		  sesAspeDB = New aspeDB
+		  if not sesAspeDB.OpenASPEDB then
+		    MsgBox("Unable to connect to ASPE's server, Please try later.")
+		    exit
+		  end
+		  
 		  Self.Timeout = 300 //1 Minute
 		End Sub
 	#tag EndEvent
@@ -30,6 +36,10 @@ Inherits WebSession
 
 	#tag Property, Flags = &h0
 		sbAffiliate As Boolean = True
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		sesAspeDB As aspeDB
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
