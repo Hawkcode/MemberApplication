@@ -2918,15 +2918,15 @@ End
 		  
 		  oSQL.AutoBracket = False
 		  
-		  oSQL.AddTable "tblaspechaptercodes"
-		  oSQL.AddFields "ChapterName"
-		  oSQL.AddSimpleWhereClause "Inactive", 0
-		  oSQL.AddOrderClause "ChapterName"
-		  lsSQL = oSQL.SQL
+		  'oSQL.AddTable "tblaspechaptercodes"
+		  'oSQL.AddFields "ChapterName"
+		  'oSQL.AddSimpleWhereClause "Inactive", 0
+		  'oSQL.AddOrderClause "ChapterName"
+		  'lsSQL = oSQL.SQL
+		  '
+		  lsSql = "Select ChapterName, Inactive from tblaspechaptercodes where Inactive = 0 Order by ChapterName"
 		  
-		  'lsSql = "Select ChapterName from tblaspechaptercodes where Inactive = 0 Order by ChapterName"
-		  
-		  rs = Session.sesDB.SQLSelect(lsSql)
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
 		  
 		  
 		  if rs = nil or rs.RecordCount = 0 then
@@ -2940,7 +2940,9 @@ End
 		  cboChapterName.DeleteAllRows
 		  
 		  While (Not rs.EOF)
-		    
+		    if rs.Field("ChapterName").StringValue = "East Tennessee" then
+		      break
+		    end
 		    cboChapterName.AddRow rs.Field("ChapterName").StringValue
 		    
 		    rs.MoveNext

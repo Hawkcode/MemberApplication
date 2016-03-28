@@ -1430,12 +1430,14 @@ End
 		  
 		  btnNext.Visible = True
 		  btnPrevious.Visible = True
+		  Session.ConfirmMessage = "If you leave this page, you will loose all your data. Do not use the Browser's Back Button"
 		  
 		  Select case msCurrentScreen
 		    
 		  Case "MemInfo"   '1
 		    MemInfo.Visible = True
 		    btnPrevious.Visible = False
+		    
 		    Meminfo.popNamePrefix.SetFocus
 		    
 		  Case "MemType"  '2
@@ -1502,6 +1504,7 @@ End
 		    btnNext.Caption = "Submit Order"
 		    
 		  Case "Processing"
+		    Session.ConfirmMessage = ""
 		    Processing.Visible = True
 		    gbCCDone = False
 		    btnNext.Enabled = False
