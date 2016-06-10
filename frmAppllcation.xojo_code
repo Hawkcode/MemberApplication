@@ -1547,7 +1547,19 @@ End
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
 		  
 		  Msg.FromAddress = "Membership@aspe.org"
+		  
+		  'dim s As  String
+		  'Dim i as Integer
+		  's = replaceAll(csEmailAddress,",",chr(13))
+		  's = replaceAll(s,chr(13)+chr(10),chr(13))
+		  'for i = 1 to countFields(s,chr(13))
+		  'Msg.addRecipient trim(nthField(s,chr(13),i))
+		  'next
+		  
 		  Msg.AddRecipient csEmailAddress
+		  'Msg.AddRecipient "Admin@aspe.org"
+		  'Msg.AddRecipient "RRodriguez@aspe.org"
+		  
 		  System.DebugLog("Sending email to: " + csEmailAddress)
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()
@@ -1973,7 +1985,7 @@ End
 		Type="Integer"
 		EditorType="Enum"
 		#tag EnumValues
-			"0 - Auto"
+			"0 - Automatic"
 			"1 - Standard Pointer"
 			"2 - Finger Pointer"
 			"3 - IBeam"
@@ -1984,10 +1996,10 @@ End
 			"8 - Arrow South"
 			"9 - Arrow East"
 			"10 - Arrow West"
-			"11 - Arrow North East"
-			"12 - Arrow North West"
-			"13 - Arrow South East"
-			"14 - Arrow South West"
+			"11 - Arrow Northeast"
+			"12 - Arrow Northwest"
+			"13 - Arrow Southeast"
+			"14 - Arrow Southwest"
 			"15 - Splitter East West"
 			"16 - Splitter North South"
 			"17 - Progress"

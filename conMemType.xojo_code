@@ -681,7 +681,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   827
+      Left            =   834
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -695,10 +695,10 @@ Begin WebContainer conMemType
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   3
-      Top             =   57
+      Top             =   23
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   63
+      Width           =   67
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -789,7 +789,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   789
+      Left            =   820
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -803,10 +803,10 @@ Begin WebContainer conMemType
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   3
-      Top             =   23
+      Top             =   57
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   101
+      Width           =   81
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1188,7 +1188,7 @@ End
 		Type="Integer"
 		EditorType="Enum"
 		#tag EnumValues
-			"0 - Auto"
+			"0 - Automatic"
 			"1 - Standard Pointer"
 			"2 - Finger Pointer"
 			"3 - IBeam"
@@ -1199,10 +1199,10 @@ End
 			"8 - Arrow South"
 			"9 - Arrow East"
 			"10 - Arrow West"
-			"11 - Arrow North East"
-			"12 - Arrow North West"
-			"13 - Arrow South East"
-			"14 - Arrow South West"
+			"11 - Arrow Northeast"
+			"12 - Arrow Northwest"
+			"13 - Arrow Southeast"
+			"14 - Arrow Southwest"
 			"15 - Splitter East West"
 			"16 - Splitter North South"
 			"17 - Progress"
