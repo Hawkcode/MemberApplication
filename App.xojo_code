@@ -29,6 +29,10 @@ Inherits WebApplication
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gdDonationPE As Double = 25
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gdDonationResearch As Double = 25
 	#tag EndProperty
 

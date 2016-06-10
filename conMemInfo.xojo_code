@@ -324,7 +324,7 @@ Begin WebContainer conMemInfo
       Style           =   "1805079798"
       TabOrder        =   66
       Text            =   "/"
-      TextAlign       =   0
+      TextAlign       =   2
       Top             =   46
       VerticalCenter  =   0
       Visible         =   True
@@ -360,7 +360,7 @@ Begin WebContainer conMemInfo
       Style           =   "1805079798"
       TabOrder        =   64
       Text            =   "/"
-      TextAlign       =   0
+      TextAlign       =   2
       Top             =   46
       VerticalCenter  =   0
       Visible         =   True
