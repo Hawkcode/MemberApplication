@@ -53,14 +53,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   262
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel Label1
       Cursor          =   1
@@ -736,14 +736,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkResearch
       Caption         =   "ASPE Research Foundation: $25.**"
@@ -770,14 +770,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkSteele
       Caption         =   "To ASPE National Alfred Steele Scholarship Program Fund. $25.*"
@@ -804,14 +804,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel Label5
       Cursor          =   1
@@ -840,14 +840,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   102
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkPEDon
       Caption         =   "PE Curriculum/Licensing Prgm: $25"
@@ -874,16 +874,16 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   238
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
-   Begin WebTextArea TextArea1
+   Begin WebTextArea TextAreaDonation
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -904,14 +904,21 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "219244006"
       TabOrder        =   41
-      Text            =   "*Contributions to ASPE Education and Alfred Steel Funds are Strictly Voluntary and are not deductable as a charatable contribution but may be deducted as an ordinary and necessary business expence.\n\n**Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution."
+      Text            =   "*Contributions to ASPE Education and Alfred Steel Funds are Strictly Voluntary and are not deductable as a charatable contribution but may be deducted as an ordinary and necessary business expense.\n\n**Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution."
       TextAlign       =   0
       Top             =   228
       VerticalCenter  =   0
       Visible         =   True
       Width           =   248
       ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage

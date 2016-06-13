@@ -87,6 +87,12 @@ Inherits WebApplication
 			Type="Integer"
 		#tag EndViewProperty
 		#tag ViewProperty
+			Name="gdDonationPE"
+			Group="Behavior"
+			InitialValue="25"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="gdDonationResearch"
 			Group="Behavior"
 			InitialValue="25"
