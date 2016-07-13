@@ -706,6 +706,9 @@ End
 		  if  rs.Field("DonationSteele").StringValue = "1" then
 		    lsStr= lsStr + "Steele Scholorship"
 		  end
+		  if  rs.Field("DonationPE").StringValue = "1" then
+		    lsStr= lsStr + "PE Curriculum/Licensing Prgm"
+		  end
 		  lsMsg = lsMsg +  lsStr
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -1473,6 +1476,9 @@ End
 		    if MemType.chkSteele.Value then
 		      CreditCard.lblDonations.text = CreditCard.lblDonations.text + "Alfred Steel Scholorship" + EndOfLine
 		    end
+		    if MemType.chkPEDon.Value then
+		      CreditCard.lblDonations.text = CreditCard.lblDonations.text + "PE Curriculum/Licensing Prgm" + EndOfLine
+		    end
 		    CreditCard.lblTotalDonations.Text = MemType.lblTotalDonations.Text
 		    CreditCard.lblGrandTotal.Text = MemType.lblGrandTotal.Text
 		    
@@ -1607,6 +1613,10 @@ End
 		  if MemType.chkSteele.Value then
 		    lsDesc = lsDesc + " / " + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
 		  end
+		  if MemType.chkPEDon.Value then
+		    lsDesc = lsDesc + " / " + "PE Curriculum/Licensing Prgm: " + Str(App.gdDonationPE)
+		  end
+		  
 		  
 		  msDesc = lsDesc
 		  

@@ -904,7 +904,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "219244006"
       TabOrder        =   41
-      Text            =   "*Contributions to ASPE Education and Alfred Steel Funds are Strictly Voluntary and are not deductable as a charatable contribution but may be deducted as an ordinary and necessary business expense.\n\n**Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution."
+      Text            =   "Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense."
       TextAlign       =   0
       Top             =   228
       VerticalCenter  =   0
@@ -1000,8 +1000,8 @@ End
 		  end
 		  
 		  
-		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele"
-		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value
+		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
+		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
 		  oSQL.AddFields "MemPrice"
 		  oSQL.AddValues mdTotalCost
@@ -1123,6 +1123,12 @@ End
 		  Return lbRetVal
 		End Function
 	#tag EndMethod
+
+
+	#tag Note, Name = Untitled
+		
+		Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense.
+	#tag EndNote
 
 
 	#tag Property, Flags = &h0
