@@ -1651,8 +1651,20 @@ End
 		  '
 		  if dicResultCode.Value("ResponseCode")  = "Approved" then
 		    Processing.txtResult.Text = "Result: Transaction Approved"+ EndOfLine
-		    Processing.txtResult.Text =  Processing.txtResult.Text + "TransActionID: " + dicResultCode.Value("TransActionID")+ EndOfLine
-		    Processing.txtResult.Text =  Processing.txtResult.Text + dicResultCode.Value("AVSResponse")+ EndOfLine
+		    Try
+		      Processing.txtResult.Text =  Processing.txtResult.Text + "TransActionID: " + dicResultCode.Value("TransActionID")+ EndOfLine
+		    catch e as KeyNotFoundException
+		      app.WriteLog("Err 101401: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, TransActionID Key not found! ")
+		      
+		    end Try
+		    
+		    try
+		      Processing.txtResult.Text =  Processing.txtResult.Text + dicResultCode.Value("AVSResponse")+ EndOfLine
+		    catch e as KeyNotFoundException
+		      app.WriteLog("Err 101402: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, AVSResponse Key not found! ")
+		      
+		    end Try
+		    
 		    btnPrevious.Enabled = False
 		    btnNext.Visible = False
 		    if not UpdateTransaction( dicResultCode.Value("TransActionID"), "Approved", "Back From Auth") then
@@ -1662,12 +1674,19 @@ End
 		    Call UpdateTransaction("", "", "Sending App")
 		    SendApplication
 		    Call UpdateTransaction("", "", "App Sent")
+		    Processing.lblConfirmation.Visible = True
+		    
 		    QuitTimer.Mode = Timer.ModeSingle
 		    
 		  else
 		    Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
 		    Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
-		    Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
+		    try
+		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
+		    catch e as KeyNotFoundException
+		      app.WriteLog("Err 101403: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, ResponseReasonText Key not found! ")
+		      
+		    end Try
 		    if dicResultCode.HasKey("AVSResponse") then
 		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("AVSResponse") + EndOfLine
 		    end

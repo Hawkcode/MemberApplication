@@ -34,7 +34,7 @@ Begin WebContainer conProcessing
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   27
+      Height          =   38
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -102,6 +102,35 @@ Begin WebContainer conProcessing
       _OfficialControl=   False
       _OpenEventFired =   False
       _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblConfirmation
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   79
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   262
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   0
+      Style           =   "1005678785"
+      TabOrder        =   11
+      Text            =   "Your application has been recieved and will be processed within 2 weeks."
+      TextAlign       =   0
+      Top             =   255
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   387
+      ZIndex          =   1
+      _NeedsRendering =   True
    End
 End
 #tag EndWebPage
