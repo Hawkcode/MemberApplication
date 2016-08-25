@@ -1402,6 +1402,20 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub LoadEmails()
+		  Dim rs as RecordSet
+		  dim lsSql as String = "Select EmailNewApplication from __datadefaults;"
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  If Session.sesAspeDB.CheckDBError then return
+		  
+		  msEmailAddress = Split(rs.Field("EmailNewApplication").StringValue, ";")
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub MailConnectionEstablished(Sender As SMTPSecureSocket, Greeting as String)
 		  'MsgBox("Connection Established: " + Greeting)
 		End Sub
@@ -1556,17 +1570,18 @@ End
 		  
 		  'dim s As  String
 		  'Dim i as Integer
-		  's = replaceAll(csEmailAddress,",",chr(13))
+		  's = replaceAll(msEmailAddress,",",chr(13))
 		  's = replaceAll(s,chr(13)+chr(10),chr(13))
 		  'for i = 1 to countFields(s,chr(13))
 		  'Msg.addRecipient trim(nthField(s,chr(13),i))
 		  'next
-		  
-		  Msg.AddRecipient csEmailAddress
+		  LoadEmails
+		  For Each email As String In msEmailAddress
+		    Msg.AddRecipient email
+		  Next
 		  'Msg.AddRecipient "Admin@aspe.org"
 		  'Msg.AddRecipient "RRodriguez@aspe.org"
 		  
-		  System.DebugLog("Sending email to: " + csEmailAddress)
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()
 		  SMTPServerMail.Messages.Append( Msg)
@@ -1681,12 +1696,15 @@ End
 		  else
 		    Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
 		    Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
-		    try
+		    if dicResultCode.HasKey("ResponseReasonText") then
 		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
-		    catch e as KeyNotFoundException
-		      app.WriteLog("Err 101403: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, ResponseReasonText Key not found! ")
-		      
-		    end Try
+		    end
+		    'try
+		    'Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
+		    'catch e as KeyNotFoundException
+		    'app.WriteLog("Err 101403: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, ResponseReasonText Key not found! ")
+		    '
+		    'end Try
 		    if dicResultCode.HasKey("AVSResponse") then
 		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("AVSResponse") + EndOfLine
 		    end
@@ -1923,6 +1941,10 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		msEmailAddress() As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		SMTPServerMail As SMTPSecureSocket
 	#tag EndProperty
 
@@ -1937,9 +1959,6 @@ End
 	#tag EndConstant
 
 	#tag Constant, Name = csBulkMailSMTPUserID, Type = String, Dynamic = False, Default = \"aspenationalrich@gmail.com", Scope = Public
-	#tag EndConstant
-
-	#tag Constant, Name = csEmailAddress, Type = String, Dynamic = False, Default = \"Admin@aspe.org", Scope = Public
 	#tag EndConstant
 
 
