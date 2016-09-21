@@ -156,6 +156,7 @@ Begin WebPage frmAppllcation
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      mdDiscount      =   0.0
       Scope           =   0
       ScrollbarsVisible=   0
       Style           =   "997821280"
@@ -632,6 +633,14 @@ End
 		  lsMsg = lsMsg +  "<tr><td width=""128"">AmountUSD: $</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("MemPrice").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  if CreditCard.txtCoupon.text <> "" then
+		    lsMsg = lsMsg +  "<tr><td width=""128"">Coupon Applied: $</td><td><strong>"
+		    lsMsg = lsMsg +  CreditCard.txtCoupon.text + " for " + CreditCard.lblDiscount.text
+		    lsMsg = lsMsg +  "</strong></td></tr>"
+		  end
+		  
+		  
 		  lsMsg = lsMsg +  "<tr><td width=""128""> <hr /></td><td><strong> <hr />"
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -1517,7 +1526,8 @@ End
 		    Confirmation.lblMemshipType.Text  = CreditCard.lblMemshipType.Text
 		    Confirmation.lblMemshipCost.Text = CreditCard.lblMemshipCost.Text
 		    Confirmation.lblDonations.text = CreditCard.lblDonations.text
-		    Confirmation.lblGrandTotal.Text = MemType.lblGrandTotal.Text
+		    Confirmation.lblDiscount.text = CreditCard.lblDiscount.text
+		    Confirmation.lblGrandTotal.Text = CreditCard.lblGrandTotal.Text
 		    Confirmation.lblTotalDonations.Text = CreditCard.lblTotalDonations.Text
 		    
 		    Confirmation.Visible= True

@@ -1091,6 +1091,8 @@ End
 		  
 		  mdTotalCost = mdTotalCost + ldTotalDonations
 		  
+		  Session.gdTotalCost = mdTotalCost
+		  
 		  lblGrandTotal.Text = Format(mdTotalCost, "\$###0.00")
 		  
 		  

@@ -33,6 +33,10 @@ Inherits WebSession
 
 
 	#tag Property, Flags = &h0
+		gdTotalCost As Double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gnRecNo As Integer = 0
 	#tag EndProperty
 
@@ -97,6 +101,7 @@ Inherits WebSession
 				"8 - Android"
 				"9 - Blackberry"
 				"10 - OperaMini"
+				"11 - Epiphany"
 			#tag EndEnumValues
 		#tag EndViewProperty
 		#tag ViewProperty
@@ -204,6 +209,7 @@ Inherits WebSession
 				"10 - iPad"
 				"11 - AndroidTablet"
 				"12 - AndroidPhone"
+				"13 - RaspberryPi"
 			#tag EndEnumValues
 		#tag EndViewProperty
 		#tag ViewProperty
@@ -229,6 +235,7 @@ Inherits WebSession
 				"2 - Gecko"
 				"3 - Trident"
 				"4 - Presto"
+				"5 - EdgeHTML"
 			#tag EndEnumValues
 		#tag EndViewProperty
 		#tag ViewProperty
@@ -236,6 +243,11 @@ Inherits WebSession
 			Group="Behavior"
 			InitialValue="True"
 			Type="Boolean"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="ScaleFactor"
+			Group="Behavior"
+			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="StatusMessage"

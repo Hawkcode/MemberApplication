@@ -15,7 +15,7 @@ Inherits WebApplication
 		Function UnhandledException(Error As RuntimeException) As Boolean
 		  dim ls as String
 		  
-		  ls = "Runtime Exception: " + Error.Type + EndOfLine + _
+		  ls = "Runtime Exception: " + "Err 08261235: Email = " + frmAppllcation.CreditCard.txtCCEmail.Text + " " + Error.Type + EndOfLine + _
 		  "                           Reason: " + error.Reason + EndOfLine + _
 		  "                     Error Number: " + error.ErrorNumber.ToText + EndOfLine + _
 		  "                          Message: " + error.Message + EndOfLine + _

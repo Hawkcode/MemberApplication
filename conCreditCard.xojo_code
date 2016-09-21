@@ -37,7 +37,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   580
+      Left            =   570
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -946,7 +946,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   21
       Text            =   "CVV Number:"
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   120
@@ -988,7 +988,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   1
       Text            =   ""
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1025,7 +1025,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   22
       Text            =   "Expiration Date Month:"
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   156
@@ -1067,7 +1067,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   2
       Text            =   ""
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1104,7 +1104,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   23
       Text            =   "Year (2 Digit):"
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   96
@@ -1146,7 +1146,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   3
       Text            =   ""
       TextAlign       =   0
-      Top             =   74
+      Top             =   76
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1183,7 +1183,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$000.00"
       TextAlign       =   0
-      Top             =   90
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   66
@@ -1219,7 +1219,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   0
-      Top             =   214
+      Top             =   170
       VerticalCenter  =   0
       Visible         =   True
       Width           =   77
@@ -1395,7 +1395,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "Membership Type:"
       TextAlign       =   0
-      Top             =   90
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   184
@@ -1432,7 +1432,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "Total \nDonations:"
       TextAlign       =   0
-      Top             =   142
+      Top             =   97
       VerticalCenter  =   0
       Visible         =   True
       Width           =   175
@@ -1468,10 +1468,221 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "Total Donation:"
       TextAlign       =   0
-      Top             =   214
+      Top             =   170
       VerticalCenter  =   0
       Visible         =   True
       Width           =   184
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label18
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   581
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   28
+      Text            =   "Coupon Code:"
+      TextAlign       =   0
+      Top             =   204
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   120
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtCoupon
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   "Not required"
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   704
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   0
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   204
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   79
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebButton btnCoupon
+      AutoDisable     =   False
+      Caption         =   "Apply Coupon"
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   622
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   1
+      Top             =   243
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   127
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebProgressWheel ProgressWheel1
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   32
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   751
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      Top             =   239
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   32
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblDiscount
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   False
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   795
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   0
+      Top             =   243
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   77
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTimer Timer1
+      Cursor          =   0
+      Enabled         =   True
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   False
+      Mode            =   0
+      Period          =   50
+      Scope           =   0
+      Style           =   "-1"
+      TabOrder        =   -1
+      VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1524,6 +1735,87 @@ End
 		  
 		  
 		End Function
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Sub ExecuteCoupon()
+		  Dim rs As RecordSet
+		  dim lsSql As string
+		  lsSql = "Select * from System_Discounts where coupon = '" + txtCoupon.Text + "' and ItemNumbers = 295"
+		  
+		  rs = Session.sesDB.SQLSelect(lsSql)
+		  
+		  if Session.sesDB.CheckDBError then 
+		    txtCoupon.Text = ""
+		    ProgressWheel1.Visible = False
+		    exit
+		  end
+		  
+		  if rs.RecordCount = 0 then
+		    txtCoupon.Text = ""
+		    Msgbox("No Coupons found")
+		    ProgressWheel1.Visible = False
+		    exit
+		  end
+		  
+		  if rs.Field("DateValidFrom").DateValue > Today then
+		    txtCoupon.Text = ""
+		    MsgBox("This coupon is not active yet")
+		    ProgressWheel1.Visible = False
+		    Exit
+		  end
+		  
+		  if rs.Field("DateValidTo").DateValue < Today then
+		    txtCoupon.Text = ""
+		    MsgBox("This coupon has expired")
+		    ProgressWheel1.Visible = False
+		    Exit
+		  end
+		  
+		  if rs.Field("CouponValid").IntegerValue > 1 then
+		    txtCoupon.Text = ""
+		    MsgBox("This coupon is no longer valid")
+		    ProgressWheel1.Visible = False
+		    Exit
+		  end
+		  
+		  if rs.Field("ItemNumbers").StringValue <> "295" and rs.Field("ItemNumbers").StringValue <> ",0," then 
+		    
+		    txtCoupon.Text = ""
+		    MsgBox("This coupon cannot be used for this item!")
+		    ProgressWheel1.Visible = False
+		    exit
+		    
+		  end
+		  
+		  
+		  'if Session.gbIsMember then
+		  'if rs.Field("MemDollarAmount").DoubleValue > 0 then
+		  'Session.gdTotalCost = Session.gdTotalCost - (rs.Field("MemDollarAmount").DoubleValue)
+		  'else
+		  'Session.gdTotalCost = Session.gdTotalCost - (Session.gdTotalCost * rs.Field("MemPercentOff").DoubleValue)
+		  'end
+		  'else
+		  Dim ldDollarOff as Double
+		  if rs.Field("NonDollarAmount").DoubleValue > 0 then
+		    Session.gdTotalCost = Session.gdTotalCost - (rs.Field("NonDollarAmount").DoubleValue)
+		    ldDollarOff = rs.Field("NonDollarAmount").DoubleValue * -1
+		  else
+		    Session.gdTotalCost = Session.gdTotalCost - (Session.gdTotalCost * rs.Field("NonPercentOff").DoubleValue)
+		    ldDollarOff = (Session.gdTotalCost * rs.Field("NonPercentOff").DoubleValue) * -1
+		  end
+		  'end
+		  lblDiscount.Text = Format(ldDollarOff, "\$-###.00")
+		  
+		  lblGrandTotal.Text = Format(Session.gdTotalCost, "\$###.00")
+		  frmAppllcation.MemType.lblGrandTotal.Text = lblGrandTotal.Text
+		  btnCoupon.Enabled = False
+		  txtCoupon.Enabled = False
+		  
+		  ProgressWheel1.Visible = False
+		  
+		  
+		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
@@ -1616,6 +1908,11 @@ End
 		  
 		End Function
 	#tag EndMethod
+
+
+	#tag Property, Flags = &h0
+		mdDiscount As Double
+	#tag EndProperty
 
 
 #tag EndWindowCode
@@ -1728,6 +2025,36 @@ End
 		Sub LostFocus()
 		  Call DidValidate(Me)
 		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtCoupon
+	#tag Event
+		Sub LostFocus()
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnCoupon
+	#tag Event
+		Sub Action()
+		  
+		  ProgressWheel1.Visible = True
+		  App.DoEvents
+		  Timer1.Period = 50
+		  Timer1.mode = timer.ModeSingle
+		  
+		  
+		  
+		  
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events Timer1
+	#tag Event
+		Sub Action()
+		  ExecuteCoupon
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -1845,6 +2172,11 @@ End
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdDiscount"
+		Group="Behavior"
+		Type="Double"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"

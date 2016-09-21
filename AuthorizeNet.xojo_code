@@ -49,7 +49,7 @@ Protected Module AuthorizeNet
 		    //developer.authorize.net/tools/paramdump/index.php
 		    result = S.Post("https://test.authorize.net/gateway/transact.dll", 30) // Synchronous
 		  else
-		    result = S.Post("https://secure.authorize.net/gateway/transact.dll", 30) // Synchronous
+		    result = S.Post("https://secure.authorize.net/gateway/transact.dll", 90) // Synchronous
 		  end
 		  
 		  result = DefineEncoding(result, Encodings.UTF8)
