@@ -1090,7 +1090,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   426
+      Left            =   430
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1107,7 +1107,7 @@ Begin WebContainer conCreditCard
       Top             =   76
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   96
+      Width           =   92
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1130,7 +1130,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   519
+      Left            =   523
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -1183,7 +1183,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$000.00"
       TextAlign       =   0
-      Top             =   76
+      Top             =   86
       VerticalCenter  =   0
       Visible         =   True
       Width           =   66
@@ -1219,7 +1219,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   0
-      Top             =   170
+      Top             =   179
       VerticalCenter  =   0
       Visible         =   True
       Width           =   77
@@ -1377,11 +1377,11 @@ Begin WebContainer conCreditCard
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   41
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   599
+      Left            =   581
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1394,11 +1394,11 @@ Begin WebContainer conCreditCard
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Membership Type:"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   76
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   184
+      Width           =   202
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1432,7 +1432,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "Total \nDonations:"
       TextAlign       =   0
-      Top             =   97
+      Top             =   114
       VerticalCenter  =   0
       Visible         =   True
       Width           =   175
@@ -1468,7 +1468,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "Total Donation:"
       TextAlign       =   0
-      Top             =   170
+      Top             =   179
       VerticalCenter  =   0
       Visible         =   True
       Width           =   184
@@ -1741,7 +1741,7 @@ End
 		Sub ExecuteCoupon()
 		  Dim rs As RecordSet
 		  dim lsSql As string
-		  lsSql = "Select * from System_Discounts where coupon = '" + txtCoupon.Text + "' and ItemNumbers = 295"
+		  lsSql = "Select * from System_Discounts where coupon = '" + txtCoupon.Text + "' " 'and ItemNumbers = 295"
 		  
 		  rs = Session.sesDB.SQLSelect(lsSql)
 		  
@@ -1779,7 +1779,7 @@ End
 		    Exit
 		  end
 		  
-		  if rs.Field("ItemNumbers").StringValue <> "295" and rs.Field("ItemNumbers").StringValue <> ",0," then 
+		  if (rs.Field("ItemNumbers").StringValue <> "")  then 
 		    
 		    txtCoupon.Text = ""
 		    MsgBox("This coupon cannot be used for this item!")
@@ -1796,14 +1796,32 @@ End
 		  'Session.gdTotalCost = Session.gdTotalCost - (Session.gdTotalCost * rs.Field("MemPercentOff").DoubleValue)
 		  'end
 		  'else
+		  
+		  
 		  Dim ldDollarOff as Double
-		  if rs.Field("NonDollarAmount").DoubleValue > 0 then
-		    Session.gdTotalCost = Session.gdTotalCost - (rs.Field("NonDollarAmount").DoubleValue)
-		    ldDollarOff = rs.Field("NonDollarAmount").DoubleValue * -1
-		  else
-		    Session.gdTotalCost = Session.gdTotalCost - (Session.gdTotalCost * rs.Field("NonPercentOff").DoubleValue)
-		    ldDollarOff = (Session.gdTotalCost * rs.Field("NonPercentOff").DoubleValue) * -1
+		  Select Case frmAppllcation.MemType.popType.Text
+		  Case "Full"
+		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
+		  case "Associate"
+		    ldDollarOff = rs.Field("MembershipDiscountAssociate").DoubleValue
+		  Case "Affiliate"
+		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
+		  Case "Special"
+		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
+		  Case "Governmental"
+		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
+		  Case "Student"
+		    MsgBox("This coupon is not valid for students!")
+		    ProgressWheel1.Visible = False
+		    Exit
+		    
 		  end
+		  
+		  
+		  
+		  
+		  Session.gdTotalCost = Session.gdTotalCost - ldDollarOff
+		  ldDollarOff = ldDollarOff * -1
 		  'end
 		  lblDiscount.Text = Format(ldDollarOff, "\$-###.00")
 		  
@@ -2055,6 +2073,7 @@ End
 	#tag Event
 		Sub Action()
 		  ExecuteCoupon
+		  me.Mode = timer.ModeOff
 		End Sub
 	#tag EndEvent
 #tag EndEvents

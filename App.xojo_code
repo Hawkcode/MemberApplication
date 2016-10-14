@@ -50,7 +50,15 @@ Inherits WebApplication
 
 
 	#tag Property, Flags = &h0
+		gdAffiliateCoupon As Double = -90
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gdAffiliateMemberPrice As Double = 190
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		gdAssociateCoupon As Double = -70
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -78,11 +86,23 @@ Inherits WebApplication
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gdFullCoupon As Double = -90
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gdFullMemberPrice As Double = 190
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gdGovernCoupon As Double = -90
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gdGovernmental As Double = 190
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		gdSpecialCoupon As Double = -90
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
