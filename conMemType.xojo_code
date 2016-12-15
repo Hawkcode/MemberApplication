@@ -30,49 +30,14 @@ Begin WebContainer conMemType
    _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
-   Begin WebLabel Label1
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   311
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "1126752408"
-      TabOrder        =   0
-      Text            =   "Plumbing EngineernDesign Hand Book Format:"
-      Top             =   23
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   305
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebRectangle Rectangle1
+   Begin WebRectangle Rectangle3
       Cursor          =   0
       Enabled         =   True
       Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   515
+      Left            =   525
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -97,6 +62,42 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel Label1
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   546
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   0
+      Text            =   "Choose format:"
+      TextAlign       =   0
+      Top             =   57
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   115
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
    Begin WebPopupMenu popDataBookformat
       Cursor          =   0
       Enabled         =   True
@@ -105,7 +106,7 @@ Begin WebContainer conMemType
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "CD\nSoftcover\nCD & Softcover (Additional Cost)"
-      Left            =   613
+      Left            =   658
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -118,7 +119,7 @@ Begin WebContainer conMemType
       Style           =   "1836658647"
       TabOrder        =   3
       Text            =   ""
-      Top             =   23
+      Top             =   57
       VerticalCenter  =   0
       Visible         =   True
       Width           =   164
@@ -136,7 +137,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       Height          =   22
-      HelpTag         =   "Full\nAffiliate\nAssociate\nGovernmental\nSpecial\nStudent"
+      HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent\nuntitled"
@@ -167,183 +168,11 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebCheckbox chkSteele
-      Caption         =   "To ASPE National Alfred Steele Scholarship Program Fund. $25.*"
-      Cursor          =   1
-      Enabled         =   True
-      Height          =   37
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   523
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "0"
-      TabOrder        =   12
-      Top             =   109
-      Value           =   False
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   238
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebCheckbox chkEducation
-      Caption         =   "ASPE Educational Fund: $25.*"
-      Cursor          =   1
-      Enabled         =   True
-      Height          =   26
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   523
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "0"
-      TabOrder        =   13
-      Top             =   148
-      Value           =   False
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   238
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebCheckbox chkResearch
-      Caption         =   "ASPE Research Foundation: $25.**"
-      Cursor          =   1
-      Enabled         =   True
-      Height          =   37
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   523
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "0"
-      TabOrder        =   14
-      Top             =   173
-      Value           =   False
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   238
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label2
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   523
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   1
-      Text            =   "Contributions:"
-      Top             =   79
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   102
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label3
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   116
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   523
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   True
-      Scope           =   0
-      Style           =   "219244006"
-      TabOrder        =   15
-      Text            =   "*Contributions to ASPE Education and Alfred Steel Funds are Strictly Voluntary and are not deductable as a charatable contribution but may be deducted as an ordinary and necessary business expence.\n**Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution."
-      Top             =   209
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   238
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
    Begin WebTextArea txtAStudent
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -361,7 +190,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   9
       Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -383,7 +213,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   515
+      Left            =   538
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -396,7 +226,8 @@ Begin WebContainer conMemType
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Member Type:"
-      Top             =   57
+      TextAlign       =   0
+      Top             =   23
       VerticalCenter  =   0
       Visible         =   True
       Width           =   262
@@ -431,6 +262,7 @@ Begin WebContainer conMemType
       Style           =   "1126752408"
       TabOrder        =   2
       Text            =   "Membership Type:"
+      TextAlign       =   0
       Top             =   23
       VerticalCenter  =   0
       Visible         =   True
@@ -449,7 +281,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -467,7 +299,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   10
       Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for member-ship in any other grade."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -485,7 +318,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -503,7 +336,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   8
       Text            =   "Associate Member: Any individual involved in the design of plumbing systems or in plumbing engineering and not meeting the requirements for Full membership."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -521,7 +355,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -539,7 +373,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   6
       Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the So ciety Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -557,7 +392,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -575,7 +410,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   5
       Text            =   "Governmental Member: Anyone employed by municipal, state, or federal governments for one of the following reasons: A. Checking and/or inspection of plumbing plans and installations;\n\nB. The formulation of codes, rules, requirements and regulations pertaining to the planning, designing and installation of plumbing systems, or any portion of a plumbing system;\n\nC. Research and development of plumbing systems design criteria. Exception: Persons employed by a government agency for the purpose of designing and/or specifying plumbing systems, who shall be eligible to be Full or Associate members, provided they have fulfilled the experience required as outlined for each respective classification."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   476
@@ -593,7 +429,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -611,7 +447,8 @@ Begin WebContainer conMemType
       Style           =   "144195174"
       TabOrder        =   11
       Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: Persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full Members or Associate Members, provided they have fulfilled the experience required as outlined for each respective classification."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   False
       Width           =   483
@@ -629,7 +466,7 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   280
+      Height          =   246
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -647,7 +484,8 @@ Begin WebContainer conMemType
       Style           =   "1265093392"
       TabOrder        =   7
       Text            =   "Select a member type from the above drop down. \n\nThen select your Hand Book format and finally if you would like to make a contribution."
-      Top             =   57
+      TextAlign       =   0
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   True
       Width           =   483
@@ -669,7 +507,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   789
+      Left            =   834
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -682,10 +520,11 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      Top             =   57
+      TextAlign       =   3
+      Top             =   23
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   101
+      Width           =   67
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -717,7 +556,8 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      Top             =   181
+      TextAlign       =   3
+      Top             =   204
       VerticalCenter  =   0
       Visible         =   True
       Width           =   112
@@ -752,6 +592,7 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   3
       Top             =   303
       VerticalCenter  =   0
       Visible         =   True
@@ -774,7 +615,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   789
+      Left            =   820
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -787,10 +628,11 @@ Begin WebContainer conMemType
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
-      Top             =   23
+      TextAlign       =   3
+      Top             =   57
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   101
+      Width           =   81
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -833,13 +675,283 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel lblPEDHB
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   189
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   40
+      Text            =   "Plumbing Engineering Design HB Vol 4 ships 2017"
+      TextAlign       =   3
+      Top             =   57
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   357
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebCheckbox chkEducation
+      Caption         =   "ASPE Educational Fund: $25.*"
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   26
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   533
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   3
+      Top             =   137
+      Value           =   False
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   238
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebCheckbox chkResearch
+      Caption         =   "ASPE Research Foundation: $25.**"
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   37
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   533
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   4
+      Top             =   162
+      Value           =   False
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   238
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebCheckbox chkSteele
+      Caption         =   "To ASPE National Alfred Steele Scholarship Program Fund. $25.*"
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   37
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   533
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   2
+      Top             =   102
+      Value           =   False
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   238
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label5
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   531
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   6
+      Text            =   "Contributions:"
+      TextAlign       =   0
+      Top             =   79
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   102
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebCheckbox chkPEDon
+      Caption         =   "PE Curriculum/Licensing Prgm: $25"
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   37
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   533
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   4
+      Top             =   190
+      Value           =   False
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   238
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextArea TextAreaDonation
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   False
+      Height          =   100
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   531
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      ReadOnly        =   True
+      Scope           =   0
+      ScrollPosition  =   0
+      Style           =   "219244006"
+      TabOrder        =   41
+      Text            =   "*Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution.\n\n**Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense."
+      TextAlign       =   0
+      Top             =   228
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   248
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
 End
 #tag EndWebPage
 
 #tag WindowCode
 	#tag Event
 		Sub Shown()
+		  popType.DeleteAllRows
+		  
+		  popType.AddRow("Full")
+		  popType.AddRow("Affiliate")
+		  popType.AddRow("Associate")
+		  popType.AddRow("Governmental")
+		  popType.AddRow("Special")
+		  popType.AddRow("Student")
+		  
+		  
+		  
+		  
 		  popType.SetFocus
+		  
+		  if not Session.sesAspeDB.OpenASPEDB then return
+		  
+		  Dim rs as RecordSet
+		  dim lsSql as String = "Select PEDHForNewApps from __datadefaults;"
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  If Session.sesAspeDB.CheckDBError then return
+		  
+		  lblPEDHB.Text = rs.Field("PEDHForNewApps").StringValue
+		  
+		  
 		End Sub
 	#tag EndEvent
 
@@ -888,8 +1000,8 @@ End
 		  end
 		  
 		  
-		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele"
-		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value
+		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
+		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
 		  oSQL.AddFields "MemPrice"
 		  oSQL.AddValues mdTotalCost
@@ -971,9 +1083,15 @@ End
 		    ldTotalDonations = ldTotalDonations + App.gdDonationResearch
 		  end
 		  
+		  If chkPEDon.Value then
+		    ldTotalDonations = ldTotalDonations + App.gdDonationPE
+		  end
+		  
 		  lblTotalDonations.Text = Format(ldTotalDonations, "\$###0.00")
 		  
 		  mdTotalCost = mdTotalCost + ldTotalDonations
+		  
+		  Session.gdTotalCost = mdTotalCost
 		  
 		  lblGrandTotal.Text = Format(mdTotalCost, "\$###0.00")
 		  
@@ -1007,6 +1125,12 @@ End
 		  Return lbRetVal
 		End Function
 	#tag EndMethod
+
+
+	#tag Note, Name = Untitled
+		
+		Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense.
+	#tag EndNote
 
 
 	#tag Property, Flags = &h0
@@ -1081,13 +1205,6 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events chkSteele
-	#tag Event
-		Sub ValueChanged()
-		  UpdateTotal
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events chkEducation
 	#tag Event
 		Sub ValueChanged()
@@ -1096,6 +1213,20 @@ End
 	#tag EndEvent
 #tag EndEvents
 #tag Events chkResearch
+	#tag Event
+		Sub ValueChanged()
+		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkSteele
+	#tag Event
+		Sub ValueChanged()
+		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkPEDon
 	#tag Event
 		Sub ValueChanged()
 		  UpdateTotal
@@ -1111,7 +1242,7 @@ End
 		Type="Integer"
 		EditorType="Enum"
 		#tag EnumValues
-			"0 - Auto"
+			"0 - Automatic"
 			"1 - Standard Pointer"
 			"2 - Finger Pointer"
 			"3 - IBeam"
@@ -1122,10 +1253,10 @@ End
 			"8 - Arrow South"
 			"9 - Arrow East"
 			"10 - Arrow West"
-			"11 - Arrow North East"
-			"12 - Arrow North West"
-			"13 - Arrow South East"
-			"14 - Arrow South West"
+			"11 - Arrow Northeast"
+			"12 - Arrow Northwest"
+			"13 - Arrow Southeast"
+			"14 - Arrow Southwest"
 			"15 - Splitter East West"
 			"16 - Splitter North South"
 			"17 - Progress"

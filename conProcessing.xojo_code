@@ -34,7 +34,7 @@ Begin WebContainer conProcessing
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   27
+      Height          =   38
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -51,6 +51,7 @@ Begin WebContainer conProcessing
       Style           =   "1005678785"
       TabOrder        =   9
       Text            =   "Processing"
+      TextAlign       =   0
       Top             =   14
       VerticalCenter  =   0
       Visible         =   True
@@ -87,9 +88,46 @@ Begin WebContainer conProcessing
       Style           =   "1126752408"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
       Visible         =   True
+      Width           =   387
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblConfirmation
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   79
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   262
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   0
+      Style           =   "1005678785"
+      TabOrder        =   11
+      Text            =   "Your application has been recieved and will be processed within 2 weeks."
+      TextAlign       =   0
+      Top             =   255
+      VerticalCenter  =   0
+      Visible         =   False
       Width           =   387
       ZIndex          =   1
       _DeclareLineRendered=   False
@@ -116,7 +154,7 @@ End
 		Type="Integer"
 		EditorType="Enum"
 		#tag EnumValues
-			"0 - Auto"
+			"0 - Automatic"
 			"1 - Standard Pointer"
 			"2 - Finger Pointer"
 			"3 - IBeam"
@@ -127,10 +165,10 @@ End
 			"8 - Arrow South"
 			"9 - Arrow East"
 			"10 - Arrow West"
-			"11 - Arrow North East"
-			"12 - Arrow North West"
-			"13 - Arrow South East"
-			"14 - Arrow South West"
+			"11 - Arrow Northeast"
+			"12 - Arrow Northwest"
+			"13 - Arrow Southeast"
+			"14 - Arrow Southwest"
 			"15 - Splitter East West"
 			"16 - Splitter North South"
 			"17 - Progress"

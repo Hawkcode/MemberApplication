@@ -83,6 +83,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   22
       Text            =   "Expiration Date Month:"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -109,7 +110,7 @@ Begin WebContainer conConfirmation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   398
+      Left            =   397
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -124,6 +125,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   2
       Text            =   ""
+      TextAlign       =   0
       Top             =   74
       Type            =   0
       VerticalCenter  =   0
@@ -166,6 +168,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   1
       Text            =   ""
+      TextAlign       =   0
       Top             =   74
       Type            =   0
       VerticalCenter  =   0
@@ -208,6 +211,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   11
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -250,6 +254,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   8
       Text            =   ""
+      TextAlign       =   0
       Top             =   158
       Type            =   0
       VerticalCenter  =   0
@@ -292,6 +297,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   10
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -334,6 +340,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   13
       Text            =   ""
+      TextAlign       =   0
       Top             =   265
       Type            =   0
       VerticalCenter  =   0
@@ -376,6 +383,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   0
       Text            =   ""
+      TextAlign       =   0
       Top             =   48
       Type            =   0
       VerticalCenter  =   0
@@ -418,6 +426,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   5
       Text            =   ""
+      TextAlign       =   0
       Top             =   133
       Type            =   0
       VerticalCenter  =   0
@@ -460,6 +469,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   4
       Text            =   ""
+      TextAlign       =   0
       Top             =   108
       Type            =   0
       VerticalCenter  =   0
@@ -502,6 +512,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   14
       Text            =   ""
+      TextAlign       =   0
       Top             =   292
       Type            =   2
       VerticalCenter  =   0
@@ -544,6 +555,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   12
       Text            =   ""
+      TextAlign       =   0
       Top             =   239
       Type            =   0
       VerticalCenter  =   0
@@ -586,6 +598,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   9
       Text            =   ""
+      TextAlign       =   0
       Top             =   214
       Type            =   0
       VerticalCenter  =   0
@@ -622,6 +635,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   26
       Text            =   "Card Holder Last Name:"
+      TextAlign       =   0
       Top             =   133
       VerticalCenter  =   0
       Visible         =   True
@@ -657,6 +671,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   15
       Text            =   "Country:"
+      TextAlign       =   0
       Top             =   239
       VerticalCenter  =   0
       Visible         =   True
@@ -692,6 +707,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   27
       Text            =   "Phone:"
+      TextAlign       =   0
       Top             =   265
       VerticalCenter  =   0
       Visible         =   True
@@ -727,6 +743,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   17
       Text            =   "City, State Zip:"
+      TextAlign       =   0
       Top             =   214
       VerticalCenter  =   0
       Visible         =   True
@@ -762,6 +779,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Street Address:"
+      TextAlign       =   0
       Top             =   158
       VerticalCenter  =   0
       Visible         =   True
@@ -797,6 +815,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   23
       Text            =   "Year (2 Digit):"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -832,6 +851,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   21
       Text            =   "CVV Number:"
+      TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
       Visible         =   True
@@ -867,6 +887,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   20
       Text            =   "Credit Card Number:"
+      TextAlign       =   0
       Top             =   48
       VerticalCenter  =   0
       Visible         =   True
@@ -902,7 +923,8 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   25
       Text            =   "Receipt will be sent to this address."
-      Top             =   315
+      TextAlign       =   0
+      Top             =   318
       VerticalCenter  =   0
       Visible         =   True
       Width           =   235
@@ -937,6 +959,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   24
       Text            =   "Email:"
+      TextAlign       =   0
       Top             =   292
       VerticalCenter  =   0
       Visible         =   True
@@ -972,6 +995,7 @@ Begin WebContainer conConfirmation
       Style           =   "831680130"
       TabOrder        =   7
       Text            =   "Address must match the address the Credit Card company mails the statement to."
+      TextAlign       =   0
       Top             =   185
       VerticalCenter  =   0
       Visible         =   True
@@ -1007,6 +1031,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   19
       Text            =   "Card Holder First Name:"
+      TextAlign       =   0
       Top             =   108
       VerticalCenter  =   0
       Visible         =   True
@@ -1042,6 +1067,7 @@ Begin WebContainer conConfirmation
       Style           =   "1005678785"
       TabOrder        =   9
       Text            =   "Confirmation"
+      TextAlign       =   0
       Top             =   11
       VerticalCenter  =   0
       Visible         =   True
@@ -1083,6 +1109,7 @@ Begin WebContainer conConfirmation
       Style           =   "1126752408"
       TabOrder        =   3
       Text            =   ""
+      TextAlign       =   0
       Top             =   71
       Type            =   0
       VerticalCenter  =   0
@@ -1119,6 +1146,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Total Charge:"
+      TextAlign       =   0
       Top             =   306
       VerticalCenter  =   0
       Visible         =   True
@@ -1154,6 +1182,7 @@ Begin WebContainer conConfirmation
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$000.00"
+      TextAlign       =   0
       Top             =   90
       VerticalCenter  =   0
       Visible         =   True
@@ -1189,6 +1218,7 @@ Begin WebContainer conConfirmation
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   214
       VerticalCenter  =   0
       Visible         =   True
@@ -1224,6 +1254,7 @@ Begin WebContainer conConfirmation
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   306
       VerticalCenter  =   0
       Visible         =   True
@@ -1259,6 +1290,7 @@ Begin WebContainer conConfirmation
       Style           =   "776128260"
       TabOrder        =   16
       Text            =   "$0.00"
+      TextAlign       =   0
       Top             =   56
       VerticalCenter  =   0
       Visible         =   True
@@ -1326,6 +1358,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "DB Format:"
+      TextAlign       =   0
       Top             =   56
       VerticalCenter  =   0
       Visible         =   True
@@ -1361,6 +1394,7 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Membership Type:"
+      TextAlign       =   0
       Top             =   90
       VerticalCenter  =   0
       Visible         =   True
@@ -1397,6 +1431,7 @@ Begin WebContainer conConfirmation
       Style           =   "1905985929"
       TabOrder        =   16
       Text            =   "Total \nDonations:"
+      TextAlign       =   0
       Top             =   142
       VerticalCenter  =   0
       Visible         =   True
@@ -1432,7 +1467,80 @@ Begin WebContainer conConfirmation
       Style           =   "418528476"
       TabOrder        =   16
       Text            =   "Total Donation:"
+      TextAlign       =   0
       Top             =   214
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   184
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblDiscount
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   False
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   795
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   0
+      Top             =   265
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   77
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblMemshipType3
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   599
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   16
+      Text            =   "Total Discount:"
+      TextAlign       =   0
+      Top             =   265
       VerticalCenter  =   0
       Visible         =   True
       Width           =   184
@@ -1575,7 +1683,7 @@ End
 		Type="Integer"
 		EditorType="Enum"
 		#tag EnumValues
-			"0 - Auto"
+			"0 - Automatic"
 			"1 - Standard Pointer"
 			"2 - Finger Pointer"
 			"3 - IBeam"
@@ -1586,10 +1694,10 @@ End
 			"8 - Arrow South"
 			"9 - Arrow East"
 			"10 - Arrow West"
-			"11 - Arrow North East"
-			"12 - Arrow North West"
-			"13 - Arrow South East"
-			"14 - Arrow South West"
+			"11 - Arrow Northeast"
+			"12 - Arrow Northwest"
+			"13 - Arrow Southeast"
+			"14 - Arrow Southwest"
 			"15 - Splitter East West"
 			"16 - Splitter North South"
 			"17 - Progress"

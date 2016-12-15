@@ -49,7 +49,7 @@ Protected Module AuthorizeNet
 		    //developer.authorize.net/tools/paramdump/index.php
 		    result = S.Post("https://test.authorize.net/gateway/transact.dll", 30) // Synchronous
 		  else
-		    result = S.Post("https://secure.authorize.net/gateway/transact.dll", 30) // Synchronous
+		    result = S.Post("https://secure.authorize.net/gateway/transact.dll", 90) // Synchronous
 		  end
 		  
 		  result = DefineEncoding(result, Encodings.UTF8)
@@ -83,7 +83,9 @@ Protected Module AuthorizeNet
 		    dicResultCode.Value("ResponseReasonCode") = ""
 		  end
 		  
-		  dicResultCode.Value("ResponseReasonText") = DataResult(3)
+		  if dicResultCode.Value("ResponseReasonCode") = "" then
+		    dicResultCode.Value("ResponseReasonText") = DataResult(3)
+		  end
 		  
 		  Select Case DataResult(5)
 		  Case "A"
@@ -398,7 +400,7 @@ Protected Module AuthorizeNet
 	#tag EndProperty
 
 	#tag Property, Flags = &h21
-		Private msAuthNetTranKey As String = "2JAE6h7wt3L26kPw"
+		Private msAuthNetTranKey As String = "5Xq44jxHXw652Hu8"
 	#tag EndProperty
 
 
