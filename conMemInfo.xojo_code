@@ -529,7 +529,7 @@ Begin WebContainer conMemInfo
       LockTop         =   True
       LockVertical    =   False
       Scope           =   0
-      Style           =   "816938816"
+      Style           =   "1836658647"
       TabOrder        =   13
       Text            =   ""
       Top             =   47
@@ -2427,10 +2427,10 @@ Begin WebContainer conMemInfo
       LockTop         =   True
       LockVertical    =   False
       Scope           =   0
-      Style           =   "816938816"
+      Style           =   "1836658647"
       TabOrder        =   26
       Text            =   ""
-      Top             =   188
+      Top             =   177
       VerticalCenter  =   0
       Visible         =   True
       Width           =   173
@@ -2466,7 +2466,7 @@ Begin WebContainer conMemInfo
       TabOrder        =   51
       Text            =   "How did you hear about ASPE:"
       TextAlign       =   0
-      Top             =   188
+      Top             =   177
       VerticalCenter  =   0
       Visible         =   True
       Width           =   205
@@ -2793,6 +2793,85 @@ Begin WebContainer conMemInfo
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel lblSponser
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   60
+      Text            =   "WOA Sponsor:"
+      TextAlign       =   0
+      Top             =   203
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   106
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebTextField txtSponser
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   132
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   "False"
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   34
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   203
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   317
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
 End
 #tag EndWebPage
 
@@ -2800,6 +2879,7 @@ End
 	#tag Event
 		Sub Open()
 		  LoadChapters
+		  LoadHeardAbout
 		  
 		End Sub
 	#tag EndEvent
@@ -2955,6 +3035,47 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub LoadHeardAbout()
+		  Dim lsSql as String
+		  Dim rs as RecordSet
+		  Dim oSQL as new cSmartSQL
+		  
+		  oSQL.AutoBracket = False
+		  
+		  'oSQL.AddTable "tblaspechaptercodes"
+		  'oSQL.AddFields "ChapterName"
+		  'oSQL.AddSimpleWhereClause "Inactive", 0
+		  'oSQL.AddOrderClause "ChapterName"
+		  'lsSQL = oSQL.SQL
+		  '
+		  lsSql = "Select Item from tblheardabout  Order by Item"
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  
+		  if rs = nil or rs.RecordCount = 0 then
+		    MsgBox( "No Items Found found")
+		    return
+		  end
+		  
+		  'rs.MoveFirst
+		  
+		  
+		  cboHeardAbout.DeleteAllRows
+		  
+		  While (Not rs.EOF)
+		    cboHeardAbout.AddRow rs.Field("Item").StringValue
+		    
+		    rs.MoveNext
+		    
+		  Wend
+		  
+		  cboHeardAbout.ListIndex = -1
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Function SaveMemInfo() As Boolean
 		  
 		  Dim lsStr as String
@@ -2989,8 +3110,8 @@ End
 		  oSQL.AddFields "prefix",                       "firstName",  "nickName",  "middleName",  "lastName",   "birthDate",         "resStreetAddress",        "resCity"
 		  oSQL.AddValues popNamePrefix.Text, txtFirst.Text, txtNick.Text, txtMiddle.Text, txtLast.Text, ldBDay.SQLDate, txtResStreetAddr.Text, txtResCity.Text
 		  
-		  oSQL.AddFields "resState", "            resZip",           "resCountry",            "homePhone",            "emailAddress"
-		  oSQL.AddValues txtResState.Text, txtResZip.Text, txtResCountry.Text, txtPhoneHome.Text, txtPrimaryEmail.Text
+		  oSQL.AddFields "resState", "            resZip",           "resCountry",            "homePhone",            "emailAddress",        "Sponser"
+		  oSQL.AddValues txtResState.Text, txtResZip.Text, txtResCountry.Text, txtPhoneHome.Text, txtPrimaryEmail.Text, txtSponser.Text
 		  
 		  
 		  oSQL.AddFields "busName",           "busTitle",          "busStreetAddress",      "busCity",           "busState"
@@ -3240,8 +3361,21 @@ End
 		    me.Style = EntryFieldsError
 		  else
 		    me.Style = EntryFields
+		    txtSponser.SetFocus
 		  end
 		  
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub SelectionChanged()
+		  if me.Text = "WOA Membership Drive" then
+		    txtSponser.Visible = True
+		    lblSponser.Visible = True
+		    'txtSponser.SetFocus
+		  else
+		    txtSponser.Visible = False
+		    lblSponser.Visible = False
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -3257,6 +3391,13 @@ End
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtSponser
+	#tag Event
+		Sub LostFocus()
 		  
 		End Sub
 	#tag EndEvent
@@ -3399,6 +3540,8 @@ End
 			"0 - Automatic"
 			"1 - Always"
 			"2 - Never"
+			"3 - Vertical"
+			"4 - Horizontal"
 		#tag EndEnumValues
 	#tag EndViewProperty
 	#tag ViewProperty

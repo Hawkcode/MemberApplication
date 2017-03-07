@@ -81,7 +81,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   25
       Text            =   "Total Charge:"
       TextAlign       =   0
       Top             =   306
@@ -275,7 +275,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   17
+      TabOrder        =   27
       Text            =   "City, State Zip:"
       TextAlign       =   0
       Top             =   214
@@ -440,7 +440,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   27
+      TabOrder        =   36
       Text            =   "Phone:"
       TextAlign       =   0
       Top             =   265
@@ -598,7 +598,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   26
+      TabOrder        =   35
       Text            =   "Card Holder Last Name:"
       TextAlign       =   0
       Top             =   133
@@ -677,7 +677,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   19
+      TabOrder        =   28
       Text            =   "Card Holder First Name:"
       TextAlign       =   0
       Top             =   108
@@ -792,7 +792,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   24
+      TabOrder        =   33
       Text            =   "Email:"
       TextAlign       =   0
       Top             =   292
@@ -828,7 +828,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   25
+      TabOrder        =   34
       Text            =   "Receipt will be sent to this address."
       TextAlign       =   0
       Top             =   318
@@ -907,7 +907,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   20
+      TabOrder        =   29
       Text            =   "Credit Card Number:"
       TextAlign       =   0
       Top             =   48
@@ -943,7 +943,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   21
+      TabOrder        =   30
       Text            =   "CVV Number:"
       TextAlign       =   0
       Top             =   76
@@ -1022,7 +1022,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   22
+      TabOrder        =   31
       Text            =   "Expiration Date Month:"
       TextAlign       =   0
       Top             =   76
@@ -1101,7 +1101,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   23
+      TabOrder        =   32
       Text            =   "Year (2 Digit):"
       TextAlign       =   0
       Top             =   76
@@ -1180,7 +1180,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   17
       Text            =   "$000.00"
       TextAlign       =   0
       Top             =   86
@@ -1216,7 +1216,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   18
       Text            =   "$0.00"
       TextAlign       =   0
       Top             =   179
@@ -1252,7 +1252,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   19
       Text            =   "$0.00"
       TextAlign       =   0
       Top             =   306
@@ -1288,7 +1288,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   20
       Text            =   "$0.00"
       TextAlign       =   0
       Top             =   56
@@ -1356,7 +1356,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   21
       Text            =   "DB Format:"
       TextAlign       =   0
       Top             =   56
@@ -1392,7 +1392,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   22
       Text            =   "Membership Type:"
       TextAlign       =   3
       Top             =   76
@@ -1429,7 +1429,7 @@ Begin WebContainer conCreditCard
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1905985929"
-      TabOrder        =   16
+      TabOrder        =   23
       Text            =   "Total \nDonations:"
       TextAlign       =   0
       Top             =   114
@@ -1465,7 +1465,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   24
       Text            =   "Total Donation:"
       TextAlign       =   0
       Top             =   179
@@ -1501,7 +1501,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   28
+      TabOrder        =   37
       Text            =   "Coupon Code:"
       TextAlign       =   0
       Top             =   204
@@ -1543,7 +1543,7 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   0
+      TabOrder        =   38
       Text            =   ""
       TextAlign       =   0
       Top             =   204
@@ -1580,7 +1580,7 @@ Begin WebContainer conCreditCard
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   1
+      TabOrder        =   39
       Top             =   243
       VerticalCenter  =   0
       Visible         =   True
@@ -1647,7 +1647,7 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   26
       Text            =   "$0.00"
       TextAlign       =   0
       Top             =   243
@@ -2214,6 +2214,8 @@ End
 			"0 - Automatic"
 			"1 - Always"
 			"2 - Never"
+			"3 - Vertical"
+			"4 - Horizontal"
 		#tag EndEnumValues
 	#tag EndViewProperty
 	#tag ViewProperty

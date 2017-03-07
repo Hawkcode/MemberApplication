@@ -889,6 +889,10 @@ End
 		  lsMsg = lsMsg +  rs.Field("HeardAbout").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Sponsor: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("Sponser").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Previous Member:</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("prevMember").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -1590,7 +1594,7 @@ End
 		    Msg.AddRecipient email
 		  Next
 		  'Msg.AddRecipient "Admin@aspe.org"
-		  'Msg.AddRecipient "RRodriguez@aspe.org"
+		  'Msg.AddRecipient "rich@aspe.org"
 		  
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()

@@ -5,7 +5,7 @@ Inherits WebStyle
 		text-align=center
 		text-decoration=false false false false false
 		text-font=System
-		text-size=110%
+		text-size=100%
 	#tag EndWebStyleStateGroup
 	#tag WebStyleStateGroup
 	#tag EndWebStyleStateGroup

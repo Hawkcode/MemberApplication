@@ -1,6 +1,6 @@
 #tag WebStyle
 WebStyle EntryFieldsError
-Inherits EntryFields
+Inherits WebStyle
 	#tag WebStyleStateGroup
 		border-top=2px solid FF0E10FF
 		border-left=2px solid FF0E10FF

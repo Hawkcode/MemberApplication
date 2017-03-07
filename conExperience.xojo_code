@@ -3085,6 +3085,8 @@ End
 			"0 - Automatic"
 			"1 - Always"
 			"2 - Never"
+			"3 - Vertical"
+			"4 - Horizontal"
 		#tag EndEnumValues
 	#tag EndViewProperty
 	#tag ViewProperty

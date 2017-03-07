@@ -1,5 +1,5 @@
 Type=Web
-RBProjectVersion=2016.03
+RBProjectVersion=2016.041
 MinIDEVersion=20110400
 Class=App;App.xojo_code;&h7708405;&h0;false
 WebSession=Session;Session.xojo_code;&h756F629E;&h0;false
@@ -69,6 +69,7 @@ OSXBundleID=org.aspe.memapplication
 DebuggerCommandLine=
 UseGDIPlus=False
 UseBuildsFolder=True
+CopyRedistNextToWindowsEXE=False
 IsWebProject=True
 WebDebugPort=8080
 WebLivePort=-1
