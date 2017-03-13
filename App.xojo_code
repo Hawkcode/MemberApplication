@@ -120,9 +120,21 @@ Inherits WebApplication
 
 	#tag ViewBehavior
 		#tag ViewProperty
+			Name="gdAffiliateCoupon"
+			Group="Behavior"
+			InitialValue="-90"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="gdAffiliateMemberPrice"
 			Group="Behavior"
 			InitialValue="190"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="gdAssociateCoupon"
+			Group="Behavior"
+			InitialValue="-70"
 			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
@@ -162,15 +174,33 @@ Inherits WebApplication
 			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
+			Name="gdFullCoupon"
+			Group="Behavior"
+			InitialValue="-90"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="gdFullMemberPrice"
 			Group="Behavior"
 			InitialValue="190"
 			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
+			Name="gdGovernCoupon"
+			Group="Behavior"
+			InitialValue="-90"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="gdGovernmental"
 			Group="Behavior"
 			InitialValue="190"
+			Type="Double"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="gdSpecialCoupon"
+			Group="Behavior"
+			InitialValue="-90"
 			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
