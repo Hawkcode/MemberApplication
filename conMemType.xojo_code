@@ -62,7 +62,7 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label1
+   Begin WebLabel lblChooseFormat
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
@@ -87,7 +87,7 @@ Begin WebContainer conMemType
       Top             =   57
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   115
+      Width           =   100
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -140,7 +140,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent\nuntitled"
+      InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent"
       Left            =   135
       ListIndex       =   -1
       LockBottom      =   False
@@ -1116,11 +1116,13 @@ End
 		  else
 		    popType.Style = EntryFields
 		  end
-		  if popDataBookformat.ListIndex < 0 then
-		    popDataBookformat.Style = EntryFieldsError
-		    lbRetVal = False
-		  else
-		    popDataBookformat.Style = EntryFields
+		  if popDataBookformat.Visible then
+		    if popDataBookformat.ListIndex < 0 then
+		      popDataBookformat.Style = EntryFieldsError
+		      lbRetVal = False
+		    else
+		      popDataBookformat.Style = EntryFields
+		    end
 		  end
 		  Return lbRetVal
 		End Function
@@ -1163,6 +1165,10 @@ End
 		  HideDescriptions
 		  app.mbAffiliateGov = False
 		  
+		  lblChooseFormat.Visible = True
+		  lblDatabook.Visible = True
+		  popDataBookformat.Visible = True
+		  lblPEDHB.Visible = True
 		  
 		  txtADirection.Visible = False
 		  Select Case popType.Text
@@ -1187,6 +1193,10 @@ End
 		  Case "Student"
 		    txtAStudent.Visible = True
 		    lblMemberType.Text = "Member Type: Student"
+		    lblChooseFormat.Visible = False
+		    lblDatabook.Visible = False
+		    popDataBookformat.Visible = False
+		    lblPEDHB.Visible = False
 		  end
 		  
 		  lblMemberType.Text = "Member Type selected " + popType.Text + ":"

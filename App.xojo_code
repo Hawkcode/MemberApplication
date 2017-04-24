@@ -62,7 +62,7 @@ Inherits WebApplication
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		gdAssociateMemberPrice As Double = 170
+		gdAssociateMemberPrice As Double = 190
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
