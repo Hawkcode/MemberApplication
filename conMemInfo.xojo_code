@@ -30,6 +30,42 @@ Begin WebContainer conMemInfo
    _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
+   Begin WebLabel Label31
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   47
+      Text            =   "Prefix:"
+      TextAlign       =   0
+      Top             =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   108
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
    Begin WebLabel Label1
       Cursor          =   1
       Enabled         =   True
@@ -3208,6 +3244,15 @@ End
 		  'lbReturnVal = SetValid(DidValidate(txtSecondaryEmail), lbReturnVal)
 		  'lbReturnVal = SetValid((cboChapterName.ListIndex >=0), lbReturnVal)
 		  
+		  if (popNamePrefix.ListIndex >=0) then
+		    popNamePrefix.Style = EntryFields
+		  else
+		    popNamePrefix.Style = EntryFieldsError
+		    lbReturnVal = False
+		  end
+		  
+		  
+		  
 		  if (cboChapterName.ListIndex >=0) then
 		    cboChapterName.Style = EntryFields
 		  else
@@ -3376,6 +3421,18 @@ End
 		    txtSponser.Visible = False
 		    lblSponser.Visible = False
 		  end
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events popNamePrefix
+	#tag Event
+		Sub LostFocus()
+		  if me.ListIndex < 0 then
+		    me.Style = EntryFieldsError
+		  else
+		    me.Style = EntryFields
+		  end
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
