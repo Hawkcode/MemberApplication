@@ -189,7 +189,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   9
-      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification."
+      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: A transcript will be requested."
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0

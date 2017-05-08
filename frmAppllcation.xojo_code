@@ -722,16 +722,19 @@ End
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  Dim lsDBFormat as String
-		  Select Case rs.Field("DataBookFormat").StringValue
-		  Case "CD"
-		    lsDBFormat = "CD-ROM"
-		    
-		  Case "SC"
-		    lsDBFormat = "Soft Cover"
-		    
-		  Case "BO"
-		    lsDBFormat = "Both Soft Cover and CD-ROM"
-		    
+		  
+		  if rs.Field("MemType").StringValue <> "Student" then
+		    Select Case rs.Field("DataBookFormat").StringValue
+		    Case "CD"
+		      lsDBFormat = "CD-ROM"
+		      
+		    Case "SC"
+		      lsDBFormat = "Soft Cover"
+		      
+		    Case "BO"
+		      lsDBFormat = "Both Soft Cover and CD-ROM"
+		      
+		    end
 		  end
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Plumbing Engineering Design Hadbook Format: </td><td><strong>"
