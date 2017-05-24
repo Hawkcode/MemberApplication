@@ -688,6 +688,9 @@ End
 		  lsMsg = lsMsg +  rs.Field("CardHolderLName").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Expense Type: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("ExpenceType").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  
 		  
@@ -842,6 +845,14 @@ End
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">CPD: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certCPD").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">CPDT: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("certCPDT").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">GPD: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("certGPD").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Graduate Enginee: </td><td><strong>"
