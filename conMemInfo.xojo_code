@@ -3012,7 +3012,7 @@ Begin WebContainer conMemInfo
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebPopupMenu cboExpenseType
+   Begin WebPopupMenu cboExpenceType
       Cursor          =   0
       Enabled         =   True
       Height          =   22
@@ -3304,7 +3304,7 @@ End
 		  oSQL.AddValues chkNSPE.Value, radMail.SelectedCaption, cboChapterName.Text, cboHeardAbout.Text, chkLEEDAP.Value, chkMech.Value
 		  
 		  oSQL.AddFields "TextingOptOut",     "CellPhone",      "certCPDT",      "certGPD",       "ExpenceType"
-		  oSQL.AddValues chkTexting.value, txtPhoneCell.Text, chkCPDT.Value, chkGPD.Value, cboExpenseType.Text
+		  oSQL.AddValues chkTexting.value, txtPhoneCell.Text, chkCPDT.Value, chkGPD.Value, cboExpenceType.Text
 		  
 		  
 		  if Session.gnRecNo <> 0 then
@@ -3399,10 +3399,10 @@ End
 		    lbReturnVal = False
 		  end
 		  
-		  if (cboExpenseType.ListIndex > 0) then
-		    cboExpenseType.Style = EntryFields
+		  if (cboExpenceType.ListIndex > 0) then
+		    cboExpenceType.Style = EntryFields
 		  else
-		    cboExpenseType.Style = EntryFieldsError
+		    cboExpenceType.Style = EntryFieldsError
 		    lbReturnVal = False
 		  end
 		  
@@ -3605,7 +3605,7 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events cboExpenseType
+#tag Events cboExpenceType
 	#tag Event
 		Sub LostFocus()
 		  if me.ListIndex = 0 then

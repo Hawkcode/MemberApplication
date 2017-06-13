@@ -39,7 +39,7 @@ Protected Module AuthorizeNet
 		  
 		  'd.Value("x_Receipt_Link_URL") = "http://www.yoursite.com/cgi-bin/yourreceiptapp.cgi"
 		  
-		  S.ConnectionType = SSLSocket.TLSv1
+		  S.ConnectionType = SSLSocket.TLSv12   'RSA
 		  S.SetFormData(d)
 		  
 		  // This service simply returns the post data as the result
@@ -117,7 +117,7 @@ Protected Module AuthorizeNet
 		  dicResultCode.Value("TransActionID")  = DataResult(6)
 		  
 		  Return dicResultCode
-		  'MsgBox(result)
+		  'MsgBox(result) 
 		End Function
 	#tag EndMethod
 

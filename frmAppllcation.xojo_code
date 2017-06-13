@@ -630,6 +630,11 @@ End
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Authorize.NET Transaction ID: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("TransactionID").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">CC Result: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("ResultCode").StringValue
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">AmountUSD: $</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("MemPrice").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -688,7 +693,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("CardHolderLName").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Expense Type: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Expence Type: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("ExpenceType").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -1688,9 +1693,11 @@ End
 		  else
 		    Call UpdateTransaction("Sent", "None", "Sent to Auth")
 		    dicResultCode = ProcessCC(dicAuth, False )
+		    'dicResultCode.value("ResponseCode")  = ""
+		    
 		  end
 		  
-		  'Moved to CCDone
+		  '
 		  '
 		  if dicResultCode.Value("ResponseCode")  = "Approved" then
 		    Processing.txtResult.Text = "Result: Transaction Approved"+ EndOfLine
@@ -1722,10 +1729,24 @@ End
 		    QuitTimer.Mode = Timer.ModeSingle
 		    
 		  else
-		    Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
-		    Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
-		    if dicResultCode.HasKey("ResponseReasonText") then
-		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
+		    if dicResultCode.Value("ResponseCode") = "" then
+		      Call UpdateTransaction("No Responce", "", "Sent to Auth")
+		    else  
+		      if dicResultCode.HasKey("ResponseReasonCode") then
+		        Call UpdateTransaction("No ID", dicResultCode.Value("ResponseReasonCode"), "Back From Auth") 
+		      Else
+		        Call UpdateTransaction("No ID", dicResultCode.Value("ResponseCode"), "Back From Auth") 
+		      end
+		    end
+		    SendApplication
+		    if dicResultCode.Value("ResponseCode") = "" then
+		      Processing.txtResult.Text = "Result: "+ "Internal Error, contact Membership@aspe.org" + EndOfLine
+		    else
+		      Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
+		      Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseCode") + EndOfLine + EndOfLine
+		    end
+		    if dicResultCode.HasKey("ResponseReasonCode") then
+		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
 		    end
 		    'try
 		    'Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
@@ -1881,10 +1902,9 @@ End
 		  
 		  Dim lsExpDate as String
 		  
-		  if lsTransID <> "" and lsResultCode <> "" then
-		    oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
-		    oSQL.AddValues lsTransID,          lsResultCode, msDesc
-		  end
+		  oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
+		  oSQL.AddValues lsTransID,          lsResultCode, msDesc
+		  
 		  oSQL.AddFields "Tracking"
 		  oSQL.AddValues lsTracking
 		  
