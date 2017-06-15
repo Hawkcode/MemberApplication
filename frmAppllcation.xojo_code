@@ -1902,8 +1902,13 @@ End
 		  
 		  Dim lsExpDate as String
 		  
-		  oSQL.AddFields "TransactionID",     "ResultCode", "Donations"
-		  oSQL.AddValues lsTransID,          lsResultCode, msDesc
+		  if lsTransID <> "" then
+		    oSQL.AddFields "TransactionID"
+		    oSQL.AddValues lsTransID
+		  end
+		  
+		  oSQL.AddFields "ResultCode", "Donations"
+		  oSQL.AddValues   lsResultCode, msDesc
 		  
 		  oSQL.AddFields "Tracking"
 		  oSQL.AddValues lsTracking
