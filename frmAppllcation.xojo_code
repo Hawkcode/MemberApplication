@@ -317,7 +317,7 @@ Begin WebPage frmAppllcation
    Begin conMemInfo Meminfo
       Cursor          =   0
       Enabled         =   True
-      Height          =   374
+      Height          =   393
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -334,7 +334,7 @@ Begin WebPage frmAppllcation
       ScrollbarsVisible=   0
       Style           =   "997821280"
       TabOrder        =   1
-      Top             =   48
+      Top             =   29
       VerticalCenter  =   0
       Visible         =   True
       Width           =   910
@@ -838,6 +838,28 @@ End
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Phone: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busPhone").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Specialty </td><td><strong>"
+		  lsStr = ""
+		  if  rs.Field("Plumbing").StringValue = "1" then
+		    lsStr= "Plumbing<br/>"
+		  end
+		  if  rs.Field("FireProtection").StringValue = "1" then
+		    lsStr= lsStr + "Fire Protection<br/>"
+		  end
+		  
+		  if  rs.Field("HVAC").StringValue = "1" then
+		    lsStr= lsStr + "HVAC<br/>"
+		  end
+		  if  rs.Field("MedGas").StringValue = "1" then
+		    lsStr= lsStr + "MedGas"
+		  end
+		  lsMsg = lsMsg + lsStr
+		  
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  
 		  
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">PE: </td><td><strong>"
