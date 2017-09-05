@@ -3054,7 +3054,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   24
+      Left            =   16
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3070,14 +3070,14 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   525
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkPlumbing
       Caption         =   "Plumbing"
@@ -3087,7 +3087,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   159
+      Left            =   151
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3104,14 +3104,14 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   92
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkFireProtection
       Caption         =   "Fire Protection"
@@ -3121,7 +3121,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   261
+      Left            =   253
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3138,14 +3138,14 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   124
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkHVAC
       Caption         =   "HVAC"
@@ -3155,7 +3155,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   387
+      Left            =   379
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3172,14 +3172,14 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   76
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkMedGas
       Caption         =   "Med Gas"
@@ -3189,7 +3189,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   462
+      Left            =   454
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3206,14 +3206,14 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   85
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel Label34
       Cursor          =   1
@@ -3223,7 +3223,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   29
+      Left            =   21
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -3242,14 +3242,43 @@ Begin WebContainer conMemInfo
       Visible         =   True
       Width           =   118
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label35
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   553
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "343801855"
+      TabOrder        =   83
+      Text            =   "ASPE can not ship to PO boxes."
+      TextAlign       =   2
+      Top             =   172
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   335
+      ZIndex          =   1
+      _NeedsRendering =   True
    End
 End
 #tag EndWebPage
