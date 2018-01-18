@@ -84,15 +84,11 @@ Inherits MySQLCommunityServer
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		gsPasswordWS As String = "2fEzdTCdi"
+		gsPasswordWS As String = "fr3eCave97!!"
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		gsUserName As String
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		gsUserNameWS As String = "d7upgradedb"
+		gsUserNameWS As String = "aspe_d7upgradedb"
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -189,6 +185,12 @@ Inherits MySQLCommunityServer
 			Visible=true
 			Type="Integer"
 			EditorType="Integer"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SecureAuth"
+			Visible=true
+			Type="Boolean"
+			EditorType="Boolean"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLAuthority"

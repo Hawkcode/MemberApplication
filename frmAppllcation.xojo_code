@@ -693,7 +693,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("CardHolderLName").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Expence Type: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Expense Type: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("ExpenceType").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  

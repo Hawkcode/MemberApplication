@@ -19,7 +19,7 @@ Inherits WebSession
 		    exit
 		  end
 		  
-		  Self.Timeout = 300 //5 Minute
+		  'Self.Timeout = 300 //5 Minute
 		  
 		  
 		End Sub
@@ -125,6 +125,11 @@ Inherits WebSession
 				"0 - AJAX"
 				"1 - WebSocket"
 			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="gdTotalCost"
+			Group="Behavior"
+			Type="Double"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="GMTOffset"
@@ -283,6 +288,12 @@ Inherits WebSession
 			Name="URL"
 			Group="Behavior"
 			Type="String"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="_baseurl"
+			Group="Behavior"
+			Type="string"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
