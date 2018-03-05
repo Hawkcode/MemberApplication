@@ -1410,6 +1410,7 @@ Begin WebContainer conCreditCard
       _VerticalPercent=   0.0
    End
    Begin WebTextArea lblDonations
+      CueText         =   ""
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   False

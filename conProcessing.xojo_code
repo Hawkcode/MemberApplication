@@ -67,6 +67,7 @@ Begin WebContainer conProcessing
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtResult
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   True

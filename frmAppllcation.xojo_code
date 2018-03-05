@@ -621,8 +621,30 @@ End
 		  
 		  
 		  rs = Session.sesDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
-		  lsMsg = "<body><table border=""1"" cellspacing=""2"" cellpadding=""2"">"
+		  lsMsg = "<body>"
+		  lsMsg = lsMsg +  "<table width=""94%"" border=""1"">"
+		  lsMsg = lsMsg +  "<tbody><tr>"
+		  lsMsg = lsMsg +  "<td width=""29%"" height=""38""><p>American Society of Plumbing Engineers<br> Member Rating Analysis</p></td>"
+		  lsMsg = lsMsg +  "<td width=""25%""><p><span style=""font-size: 80%;"">*Indicates additional years needed for full<br>"
+		  lsMsg = lsMsg +  "**Indicates proof of time or full time enrollment plumbing rel College or University</span></p></td>"
+		  lsMsg = lsMsg +  "<td width=""46%""><table border=""1"">"
+		  lsMsg = lsMsg +  "<tbody><tr>"
+		  lsMsg = lsMsg +  "<td width=""43"" style=""text-align: center; font-size: 80%;""><strong>CLASS</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""79"" style=""text-align: center; font-size: 80%;""><strong>EDU/LIC/EXP</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""30""><strong style=""text-align: center; font-size: 80%;"">Total</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""88"" style=""text-align: center; font-size: 80%;""><strong>FULL/ASSOC *</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""97"" style=""text-align: center; font-size: 80%;""><strong>CLASSS OTHR**</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""36""><strong style=""text-align: center; font-size: 80%;"">TYPE</strong></td>"
+		  lsMsg = lsMsg +  "</tr><tr>"
+		  lsMsg = lsMsg +  "<td style=""text-align: center"">A</td>"
+		  lsMsg = lsMsg +  "<td></td>"
+		  lsMsg = lsMsg +  "<td></td>"
+		  lsMsg = lsMsg +  "<td>   </td>"
+		  lsMsg = lsMsg +  "<td></td>"
+		  lsMsg = lsMsg +  "<td></td>"
+		  lsMsg = lsMsg +  "</tr></tbody></table></td></tr></tbody></table>"
 		  
+		  lsMsg = lsMsg +  "<table border=""1"" cellspacing=""2"" cellpadding=""2"">"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Application ID: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("memappkwy").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"

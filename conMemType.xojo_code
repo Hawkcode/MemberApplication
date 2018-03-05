@@ -169,6 +169,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAStudent
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -278,6 +279,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAAffiliate
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -315,6 +317,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAAssociate
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -352,6 +355,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAFull
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -389,6 +393,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtAGovernmental
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -426,6 +431,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtASpecial
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -463,6 +469,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea txtADirection
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
@@ -884,6 +891,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebTextArea TextAreaDonation
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
