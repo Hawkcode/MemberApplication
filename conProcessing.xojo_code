@@ -52,7 +52,7 @@ Begin WebContainer conProcessing
       TabOrder        =   9
       Text            =   "Processing"
       TextAlign       =   0
-      Top             =   14
+      Top             =   0
       VerticalCenter  =   0
       Visible         =   True
       Width           =   870
@@ -90,7 +90,7 @@ Begin WebContainer conProcessing
       TabOrder        =   10
       Text            =   ""
       TextAlign       =   0
-      Top             =   91
+      Top             =   60
       VerticalCenter  =   0
       Visible         =   True
       Width           =   387
@@ -108,7 +108,7 @@ Begin WebContainer conProcessing
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   79
+      Height          =   53
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -126,7 +126,7 @@ Begin WebContainer conProcessing
       TabOrder        =   11
       Text            =   "Your application has been recieved and will be processed within 2 weeks."
       TextAlign       =   0
-      Top             =   255
+      Top             =   289
       VerticalCenter  =   0
       Visible         =   False
       Width           =   387
@@ -139,6 +139,42 @@ Begin WebContainer conProcessing
       _OfficialControl=   False
       _OpenEventFired =   False
       _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblCloseWarning
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   53
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   262
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   0
+      Style           =   "343801855"
+      TabOrder        =   11
+      Text            =   "Please do not close this window till instructed to do so."
+      TextAlign       =   0
+      Top             =   224
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   387
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
    End
 End
 #tag EndWebPage

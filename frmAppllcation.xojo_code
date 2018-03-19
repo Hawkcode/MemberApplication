@@ -1632,14 +1632,23 @@ End
 		  
 		  SMTPServerMail = New SMTPMail1
 		  
-		  SMTPServerMail.Address = "localhost" 'csBulkMailSMTPServerMail
-		  SMTPServerMail.Port = 25 'cnBulkEmailPort
-		  SMTPServerMail.Username = ""   'csBulkMailSMTPUserID
-		  SMTPServerMail.Password = ""   'csBulkEmailSMTPPassword
-		  'SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv2
-		  'SMTPServerMail.Secure = True
-		  'SMTPServerMail.Connect
-		  
+		  if DebugBuild then
+		    
+		    SMTPServerMail.Address = "express-relay.jangosmtp.net" 'csBulkMailSMTPServerMail
+		    SMTPServerMail.Port = 25 'cnBulkEmailPort
+		    SMTPServerMail.Username = "aspechamp"   'csBulkMailSMTPUserID
+		    SMTPServerMail.Password = "AsPe6400"   'csBulkEmailSMTPPassword
+		    SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv23
+		    'SMTPServerMail.Secure = True
+		    'SMTPServerMail.Connect
+		  else
+		    SMTPServerMail.Address = "localhost" 'csBulkMailSMTPServerMail
+		    SMTPServerMail.Port = 25 'cnBulkEmailPort
+		    SMTPServerMail.Username = ""   'csBulkMailSMTPUserID
+		    SMTPServerMail.Password = ""   'csBulkEmailSMTPPassword
+		    'SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv2
+		    
+		  end
 		  
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
 		  
@@ -2103,6 +2112,8 @@ End
 		  me.Mode = 0
 		  prgProgress.Visible = False
 		  System.DebugLog("Timer end")
+		  Processing.lblCloseWarning.Text = "It is now safe to Close this Window."
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2111,6 +2122,11 @@ End
 		Sub MailSent()
 		  Call UpdateTransaction("", "", "App Sent")
 		  'MsgBox("In Sent")
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub MessageSent(Email as EmailMessage)
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
