@@ -1681,6 +1681,7 @@ End
 		  'MsgBox("Out of Polling")
 		  
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
+		  Processing.lblCloseWarning.Text = "It is now safe to Close this Window."
 		  
 		  
 		  
@@ -1779,7 +1780,7 @@ End
 		    Call UpdateTransaction("", "", "App Sent")
 		    Processing.lblConfirmation.Visible = True
 		    
-		    QuitTimer.Mode = Timer.ModeSingle
+		    'QuitTimer.Mode = Timer.ModeSingle
 		    
 		  else
 		    if dicResultCode.Value("ResponseCode") = "" then
@@ -1791,7 +1792,7 @@ End
 		        Call UpdateTransaction("No ID", dicResultCode.Value("ResponseCode"), "Back From Auth") 
 		      end
 		    end
-		    SendApplication
+		    'SendApplication
 		    if dicResultCode.Value("ResponseCode") = "" then
 		      Processing.txtResult.Text = "Result: "+ "Internal Error, contact Membership@aspe.org" + EndOfLine
 		    else
@@ -1960,8 +1961,13 @@ End
 		    oSQL.AddValues lsTransID
 		  end
 		  
-		  oSQL.AddFields "ResultCode", "Donations"
-		  oSQL.AddValues   lsResultCode, msDesc
+		  if lsResultCode <> "" then
+		    oSQL.AddFields "ResultCode", "Donations"
+		    oSQL.AddValues   lsResultCode, msDesc
+		  end
+		  
+		  oSQL.AddFields "Donations"
+		  oSQL.AddValues   msDesc
 		  
 		  oSQL.AddFields "Tracking"
 		  oSQL.AddValues lsTracking
@@ -2112,7 +2118,6 @@ End
 		  me.Mode = 0
 		  prgProgress.Visible = False
 		  System.DebugLog("Timer end")
-		  Processing.lblCloseWarning.Text = "It is now safe to Close this Window."
 		  
 		End Sub
 	#tag EndEvent

@@ -112,7 +112,7 @@ Begin WebContainer conProcessing
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   262
+      Left            =   240
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -129,7 +129,7 @@ Begin WebContainer conProcessing
       Top             =   289
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   387
+      Width           =   429
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -167,14 +167,14 @@ Begin WebContainer conProcessing
       Visible         =   True
       Width           =   387
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
