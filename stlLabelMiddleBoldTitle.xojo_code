@@ -4,7 +4,7 @@ Inherits stlRectBG
 	#tag WebStyleStateGroup
 		text-align=center
 		text-decoration=True false false false false
-		text-size=150%
+		text-size=130%
 	#tag EndWebStyleStateGroup
 	#tag WebStyleStateGroup
 	#tag EndWebStyleStateGroup

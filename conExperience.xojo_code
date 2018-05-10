@@ -66,38 +66,6 @@ Begin WebContainer conExperience
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebRectangle Rectangle1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   66
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   207
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "144195174"
-      TabOrder        =   -1
-      Top             =   280
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   528
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
    Begin WebTextField txtFrom2
       AutoCapitalize  =   True
       AutoComplete    =   True
@@ -1142,7 +1110,7 @@ Begin WebContainer conExperience
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   20
+      Height          =   63
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -1154,16 +1122,16 @@ Begin WebContainer conExperience
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Multiline       =   False
+      Multiline       =   True
       Scope           =   0
       Style           =   "0"
       TabOrder        =   43
-      Text            =   "*Classification of Firm: A = Arch/Engineer or Cons. Engr | B = Govt. Agency | C = Mfr. or Mfr's. Rep."
-      TextAlign       =   0
+      Text            =   "*Classification of Firm: A = Arch/Engineer or Cons. Engr | B = Govt. Agency | C = Mfr. or Mfr's. Rep.\n\nA minimum of 3 are required."
+      TextAlign       =   2
       Top             =   239
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   820
+      Width           =   870
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -2565,200 +2533,6 @@ Begin WebContainer conExperience
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label13
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   225
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   15
-      Text            =   "Registration (P.E. / P.Eng)"
-      TextAlign       =   0
-      Top             =   271
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   168
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label14
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   218
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   13
-      Text            =   "State:"
-      TextAlign       =   0
-      Top             =   305
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   50
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label15
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   433
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   11
-      Text            =   "Certificate Number:"
-      TextAlign       =   0
-      Top             =   305
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   132
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCertNumber
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   565
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   64
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   305
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   137
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtPEState
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   269
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   63
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   305
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   137
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
 End
 #tag EndWebPage
 
@@ -2812,8 +2586,6 @@ End
 		  
 		  oSQL.AddTable "memapplications"
 		  
-		  oSQL.AddFields "regState",               "regCertificate"
-		  oSQL.AddValues txtPEState.Text, txtCertNumber.Text
 		  
 		  oSQL.AddFields "expFrom",      "expFrom2",    "expFrom3",     "expFrom4",     "expFrom5",     "expFrom6",     "expFrom7"
 		  oSQL.AddValues txtFrom.Text, txtFrom2.Text, txtFrom3.Text, txtFrom4.Text, txtFrom5.Text, txtFrom6.Text, txtFrom7.Text
@@ -2886,7 +2658,21 @@ End
 		  lbReturnVal = SetValid(DidValidate(txtDescription), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtTitle), lbReturnVal)
 		  
+		  lbReturnVal = SetValid(DidValidate(txtFrom2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtTo2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtAddress2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtClass2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtDegree2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtDescription2), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtTitle2), lbReturnVal)
 		  
+		  lbReturnVal = SetValid(DidValidate(txtFrom3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtTo3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtAddress3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtClass3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtDegree3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtDescription3), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtTitle3), lbReturnVal)
 		  
 		  Return lbReturnVal
 		  
@@ -2943,13 +2729,6 @@ End
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtPEState
-	#tag Event
-		Sub LostFocus()
-		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents

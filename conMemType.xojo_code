@@ -37,7 +37,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   525
+      Left            =   432
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -51,7 +51,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   262
+      Width           =   355
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -141,7 +141,7 @@ Begin WebContainer conMemType
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent"
-      Left            =   135
+      Left            =   136
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -154,48 +154,10 @@ Begin WebContainer conMemType
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
-      Top             =   23
+      Top             =   20
       VerticalCenter  =   0
       Visible         =   True
       Width           =   164
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextArea txtAStudent
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   False
-      Height          =   246
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      ReadOnly        =   True
-      Scope           =   0
-      ScrollPosition  =   0
-      Style           =   "144195174"
-      TabOrder        =   9
-      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: A transcript will be requested."
-      TextAlign       =   0
-      Top             =   91
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   483
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -305,7 +267,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   483
+      Width           =   400
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -343,7 +305,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   483
+      Width           =   400
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -381,7 +343,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   483
+      Width           =   400
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -419,7 +381,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   476
+      Width           =   400
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -457,7 +419,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   483
+      Width           =   401
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -495,7 +457,7 @@ Begin WebContainer conMemType
       Top             =   91
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   483
+      Width           =   400
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -550,7 +512,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   789
+      Left            =   799
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -564,10 +526,10 @@ Begin WebContainer conMemType
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   3
-      Top             =   204
+      Top             =   225
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   112
+      Width           =   102
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -690,7 +652,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   189
+      Left            =   162
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -719,14 +681,14 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkEducation
-      Caption         =   "ASPE Educational Fund: $25.*"
+      Caption         =   "ASPE Educational Fund*:"
       Cursor          =   1
       Enabled         =   True
       Height          =   26
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   533
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -737,7 +699,7 @@ Begin WebContainer conMemType
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   3
-      Top             =   137
+      Top             =   121
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -753,14 +715,14 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkResearch
-      Caption         =   "ASPE Research Foundation: $25.**"
+      Caption         =   "ASPE Research Foundation**:"
       Cursor          =   1
       Enabled         =   True
-      Height          =   37
+      Height          =   26
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   533
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -771,7 +733,7 @@ Begin WebContainer conMemType
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   4
-      Top             =   162
+      Top             =   145
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -787,14 +749,14 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkSteele
-      Caption         =   "To ASPE National Alfred Steele Scholarship Program Fund. $25.*"
+      Caption         =   "ASPE Alfred Steele Scholarship Program Fund*:"
       Cursor          =   1
       Enabled         =   True
-      Height          =   37
+      Height          =   26
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   533
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -805,11 +767,11 @@ Begin WebContainer conMemType
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   2
-      Top             =   102
+      Top             =   97
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   238
+      Width           =   306
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -857,14 +819,14 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkPEDon
-      Caption         =   "PE Curriculum/Licensing Prgm: $25"
+      Caption         =   "PE Curriculum/Licensing Prgm:"
       Cursor          =   1
       Enabled         =   True
-      Height          =   37
+      Height          =   26
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   533
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -875,7 +837,7 @@ Begin WebContainer conMemType
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   4
-      Top             =   190
+      Top             =   169
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -895,11 +857,11 @@ Begin WebContainer conMemType
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   False
-      Height          =   100
+      Height          =   118
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   531
+      Left            =   449
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -914,10 +876,10 @@ Begin WebContainer conMemType
       TabOrder        =   41
       Text            =   "*Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution.\n\n**Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business Expence."
       TextAlign       =   0
-      Top             =   228
+      Top             =   207
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   248
+      Width           =   332
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -927,6 +889,426 @@ Begin WebContainer conMemType
       _OfficialControl=   False
       _OpenEventFired =   False
       _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtSteeleDonations
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   1
+      Enabled         =   False
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   827
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   ""
+      TextAlign       =   3
+      Top             =   97
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   74
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtEducationDonations
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   1
+      Enabled         =   False
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   827
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   ""
+      TextAlign       =   3
+      Top             =   121
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   74
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtRFDonations
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   1
+      Enabled         =   False
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   827
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   ""
+      TextAlign       =   3
+      Top             =   145
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   74
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtCurriculumDonations
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   1
+      Enabled         =   False
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   827
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   ""
+      TextAlign       =   3
+      Top             =   169
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   74
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebSeparator Separator1
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   2
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      Top             =   225
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   100
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextArea txtAStudent
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   False
+      Height          =   246
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      ReadOnly        =   True
+      Scope           =   0
+      ScrollPosition  =   0
+      Style           =   "1126752408"
+      TabOrder        =   9
+      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: You will be rquired to upload a transcript. You will have download access to the Plumbing Engineer Hand Books."
+      TextAlign       =   0
+      Top             =   91
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   400
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebButton btnUploadTrans
+      AutoDisable     =   False
+      Caption         =   "Upload Transcript"
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   136
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   42
+      Top             =   303
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   153
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblMemshipCost1
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$"
+      TextAlign       =   3
+      Top             =   97
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   28
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblMemshipCost2
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$"
+      TextAlign       =   3
+      Top             =   121
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   28
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblMemshipCost3
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$"
+      TextAlign       =   3
+      Top             =   145
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   28
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblMemshipCost4
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$"
+      TextAlign       =   3
+      Top             =   169
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   28
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
    End
 End
 #tag EndWebPage
@@ -972,6 +1354,9 @@ End
 		  txtAGovernmental.Visible = False
 		  txtASpecial.Visible = False
 		  txtAStudent.Visible = False
+		  popDataBookformat.Visible = True
+		  lblChooseFormat.Visible = True
+		  btnUploadTrans.Visible = False
 		End Sub
 	#tag EndMethod
 
@@ -1080,19 +1465,19 @@ End
 		  Dim ldTotalDonations as Double = 0
 		  
 		  If chkEducation.Value then
-		    ldTotalDonations = ldTotalDonations + App.gdDonationEducation
+		    ldTotalDonations = ldTotalDonations + txtEducationDonations.Text.Val
 		  end
 		  
 		  If chkSteele.Value then
-		    ldTotalDonations = ldTotalDonations + App.gdDonationSteele
+		    ldTotalDonations = ldTotalDonations + txtSteeleDonations.Text.Val
 		  end
 		  
 		  If chkResearch.Value then
-		    ldTotalDonations = ldTotalDonations + App.gdDonationResearch
+		    ldTotalDonations = ldTotalDonations + txtRFDonations.Text.Val
 		  end
 		  
 		  If chkPEDon.Value then
-		    ldTotalDonations = ldTotalDonations + App.gdDonationPE
+		    ldTotalDonations = ldTotalDonations + txtCurriculumDonations.Text.Val
 		  end
 		  
 		  lblTotalDonations.Text = Format(ldTotalDonations, "\$###0.00")
@@ -1124,6 +1509,11 @@ End
 		  else
 		    popType.Style = EntryFields
 		  end
+		  if popType.Text = "Student" and Not frmAppllcation.gbTrascriptUploaded  then 
+		    lbRetVal = False
+		    btnUploadTrans.Style = EntryFieldsError
+		  end
+		  
 		  if popDataBookformat.Visible then
 		    if popDataBookformat.ListIndex < 0 then
 		      popDataBookformat.Style = EntryFieldsError
@@ -1200,6 +1590,9 @@ End
 		    lblMemberType.Text = "Member Type: Special"
 		  Case "Student"
 		    txtAStudent.Visible = True
+		    btnUploadTrans.Visible = True
+		    lblDatabook.Visible = False
+		    lblDatabook.Visible = False
 		    lblMemberType.Text = "Member Type: Student"
 		    lblChooseFormat.Visible = False
 		    lblDatabook.Visible = False
@@ -1226,28 +1619,89 @@ End
 #tag Events chkEducation
 	#tag Event
 		Sub ValueChanged()
-		  UpdateTotal
+		  if me.Value then
+		    txtEducationDonations.Enabled = True
+		    txtEducationDonations.SetFocus
+		  else
+		    txtEducationDonations.text = ""
+		    UpdateTotal
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events chkResearch
 	#tag Event
 		Sub ValueChanged()
-		  UpdateTotal
+		  
+		  if me.Value then
+		    txtRFDonations.Enabled = True
+		    txtRFDonations.SetFocus
+		  else
+		    txtRFDonations.text = ""
+		    UpdateTotal
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events chkSteele
 	#tag Event
 		Sub ValueChanged()
-		  UpdateTotal
+		  if me.Value then
+		    txtSteeleDonations.Enabled = True
+		    txtSteeleDonations.SetFocus
+		  else
+		    txtSteeleDonations.text = ""
+		    UpdateTotal
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
 #tag Events chkPEDon
 	#tag Event
 		Sub ValueChanged()
+		  if me.Value then
+		    txtCurriculumDonations.Enabled = True
+		    txtCurriculumDonations.SetFocus
+		  else
+		    txtCurriculumDonations.text = ""
+		    UpdateTotal
+		  end
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtSteeleDonations
+	#tag Event
+		Sub LostFocus()
 		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtEducationDonations
+	#tag Event
+		Sub LostFocus()
+		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtRFDonations
+	#tag Event
+		Sub LostFocus()
+		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtCurriculumDonations
+	#tag Event
+		Sub LostFocus()
+		  UpdateTotal
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnUploadTrans
+	#tag Event
+		Sub Action()
+		  Dim ul as new dlgUploadFile
+		  ul.Show
 		End Sub
 	#tag EndEvent
 #tag EndEvents

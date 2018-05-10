@@ -36,41 +36,6 @@ Begin WebPage frmAppllcation
    _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
-   Begin WebProgressBar prgProgress
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Indeterminate   =   True
-      Index           =   -2147483648
-      Left            =   826
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Maximum         =   0
-      Scope           =   0
-      Style           =   "-1"
-      TabOrder        =   -1
-      Top             =   426
-      Value           =   100
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   83
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
    Begin conProcessing Processing
       Cursor          =   0
       Enabled         =   True
@@ -210,6 +175,394 @@ Begin WebPage frmAppllcation
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel lblRecNo
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   7
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   426
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   100
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin conExperience Experience
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   374
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "997821280"
+      TabOrder        =   3
+      Top             =   33
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin conFinalInput FinalInput
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   374
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "997821280"
+      TabOrder        =   9
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin conEducation Education
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   374
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      mnCollege       =   0
+      mnTech          =   0
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "997821280"
+      TabOrder        =   8
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin conMemType MemType
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   374
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      mdTotalCost     =   0
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "997821280"
+      TabOrder        =   2
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTimer Timer1
+      Cursor          =   0
+      Enabled         =   True
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   False
+      Mode            =   0
+      Period          =   1000
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      TabPanelIndex   =   0
+      VerticalCenter  =   0
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblVersion
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   13
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   183
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   12
+      Text            =   "Untitled"
+      TextAlign       =   0
+      Top             =   426
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   100
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin SMTPSecureSocket SMTPMail1
+      CertificateFile =   
+      CertificatePassword=   ""
+      CertificateRejectionFile=   
+      ConnectionType  =   3
+      Index           =   -2147483648
+      LockedInPosition=   False
+      Scope           =   0
+      Secure          =   False
+      SMTPConnectionMode=   0
+      Style           =   "0"
+      TabPanelIndex   =   0
+   End
+   Begin WebTimer QuitTimer
+      Cursor          =   0
+      Enabled         =   True
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   False
+      Mode            =   0
+      Period          =   120000
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      TabPanelIndex   =   0
+      VerticalCenter  =   0
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin conDetails Details
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   373
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "0"
+      TabOrder        =   13
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin conMemInfo MemInfo
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   393
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   21
+      lnErrorCount    =   -1
+      LockBottom      =   True
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "0"
+      TabOrder        =   14
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   909
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebProgressBar prgProgress
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   20
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Indeterminate   =   True
+      Index           =   -2147483648
+      Left            =   826
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Maximum         =   0
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   -1
+      Top             =   426
+      Value           =   100
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   83
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
    Begin WebButton btnNext
       AutoDisable     =   False
       Caption         =   "Next>"
@@ -278,325 +631,6 @@ Begin WebPage frmAppllcation
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel lblRecNo
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "-1"
-      TabOrder        =   7
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   426
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   100
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin conMemInfo Meminfo
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   393
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      lnErrorCount    =   -1
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      ScrollbarsVisible=   0
-      Style           =   "997821280"
-      TabOrder        =   1
-      Top             =   29
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   910
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin conExperience Experience
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   374
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      ScrollbarsVisible=   0
-      Style           =   "997821280"
-      TabOrder        =   3
-      Top             =   48
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   910
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin conFinalInput FinalInput
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   374
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      ScrollbarsVisible=   0
-      Style           =   "997821280"
-      TabOrder        =   9
-      Top             =   48
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   910
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin conEducation Education
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   374
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      mnCollege       =   0
-      mnTech          =   0
-      Scope           =   0
-      ScrollbarsVisible=   0
-      Style           =   "997821280"
-      TabOrder        =   8
-      Top             =   48
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   910
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin conMemType MemType
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   374
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      mdTotalCost     =   0
-      Scope           =   0
-      ScrollbarsVisible=   0
-      Style           =   "997821280"
-      TabOrder        =   2
-      Top             =   48
-      VerticalCenter  =   0
-      Visible         =   False
-      Width           =   910
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTimer Timer1
-      Cursor          =   0
-      Enabled         =   True
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      LockVertical    =   False
-      Mode            =   0
-      Period          =   1000
-      Scope           =   0
-      Style           =   "-1"
-      TabOrder        =   -1
-      TabPanelIndex   =   0
-      VerticalCenter  =   0
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblVersion
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   13
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   183
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "-1"
-      TabOrder        =   12
-      Text            =   "Untitled"
-      TextAlign       =   0
-      Top             =   426
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   100
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin SMTPSecureSocket SMTPMail1
-      CertificateFile =   
-      CertificatePassword=   ""
-      CertificateRejectionFile=   
-      ConnectionType  =   3
-      Index           =   -2147483648
-      LockedInPosition=   False
-      Scope           =   0
-      Secure          =   False
-      SMTPConnectionMode=   0
-      Style           =   "-1"
-      TabPanelIndex   =   0
-   End
-   Begin WebTimer QuitTimer
-      Cursor          =   0
-      Enabled         =   True
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      LockVertical    =   False
-      Mode            =   0
-      Period          =   120000
-      Scope           =   0
-      Style           =   "0"
-      TabOrder        =   -1
-      TabPanelIndex   =   0
-      VerticalCenter  =   0
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
 End
 #tag EndWebPage
 
@@ -631,7 +665,7 @@ End
 		  lsMsg = lsMsg +  "<tbody><tr>"
 		  lsMsg = lsMsg +  "<td width=""43"" style=""text-align: center; font-size: 80%;""><strong>CLASS</strong></td>"
 		  lsMsg = lsMsg +  "<td width=""79"" style=""text-align: center; font-size: 80%;""><strong>EDU/LIC/EXP</strong></td>"
-		  lsMsg = lsMsg +  "<td width=""30""><strong style=""text-align: center; font-size: 80%;"">Total</strong></td>"
+		  lsMsg = lsMsg +  "<td width=""30"" style=""text-align: center; font-size: 80%;""><strong >Total</strong></strong ></td>"
 		  lsMsg = lsMsg +  "<td width=""88"" style=""text-align: center; font-size: 80%;""><strong>FULL/ASSOC *</strong></td>"
 		  lsMsg = lsMsg +  "<td width=""97"" style=""text-align: center; font-size: 80%;""><strong>CLASSS OTHR**</strong></td>"
 		  lsMsg = lsMsg +  "<td width=""36""><strong style=""text-align: center; font-size: 80%;"">TYPE</strong></td>"
@@ -642,7 +676,7 @@ End
 		  lsMsg = lsMsg +  "<td>   </td>"
 		  lsMsg = lsMsg +  "<td></td>"
 		  lsMsg = lsMsg +  "<td></td>"
-		  lsMsg = lsMsg +  "</tr></tbody></table></td></tr></tbody></table>"
+		  lsMsg = lsMsg +  "</tbody></table></td></tbody></table>"
 		  
 		  lsMsg = lsMsg +  "<table border=""1"" cellspacing=""2"" cellpadding=""2"">"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Application ID: </td><td><strong>"
@@ -736,17 +770,17 @@ End
 		  Dim lsStr as String
 		  lsStr = ""
 		  if  rs.Field("DonationEducation").StringValue = "1" then
-		    lsStr= "Education Fund<br/>"
+		    lsStr= "Education Fund - " + frmAppllcation.MemType.txtEducationDonations.text + "<br/>"
 		  end
 		  if  rs.Field("DonationResearch").StringValue = "1" then
-		    lsStr= lsStr + "Research Foundation<br/>"
+		    lsStr= lsStr + "Research Foundation - " + frmAppllcation.MemType.txtRFDonations.text + "<br/>"
 		  end
 		  
 		  if  rs.Field("DonationSteele").StringValue = "1" then
-		    lsStr= lsStr + "Steele Scholorship"
+		    lsStr= lsStr + "Steele Scholorship - " + frmAppllcation.MemType.txtSteeleDonations.text + "<br/>"
 		  end
 		  if  rs.Field("DonationPE").StringValue = "1" then
-		    lsStr= lsStr + "PE Curriculum/Licensing Prgm"
+		    lsStr= lsStr + "PE Curriculum/Licensing Prgm - " + frmAppllcation.MemType.txtCurriculumDonations.text + "<br/>"
 		  end
 		  lsMsg = lsMsg +  lsStr
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -806,7 +840,7 @@ End
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res Street Address: </td><td><strong>"
-		  lsMsg = lsMsg +  rs.Field("resStreetAddress").StringValue
+		  lsMsg = lsMsg +  rs.Field("resStreetAddress").StringValue.ReplaceAll(Chr(10), "</br>")
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Res City: </td><td><strong>"
@@ -829,7 +863,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("homePhone").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Name: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Company Name: </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busName").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -838,7 +872,7 @@ End
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Street address: </td><td><strong>"
-		  lsMsg = lsMsg +  rs.Field("busStreetAddress").StringValue
+		  lsMsg = lsMsg +  rs.Field("busStreetAddress").StringValue.ReplaceAll(Chr(10), "</br>")
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus City: </td><td><strong>"
@@ -861,6 +895,24 @@ End
 		  lsMsg = lsMsg +  rs.Field("busPhone").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
+		  if rs.Field("MemType").StringValue = "Student" then
+		    lsMsg = lsMsg +  "<tr><td width=""128"">Student Transcript: </td><td><strong>"
+		    lsMsg = lsMsg +  rs.Field("Transcript").StringValue
+		    lsMsg = lsMsg +  "</strong></td></tr>"
+		  end
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Join WOA: </td><td><strong>"
+		  if rs.Field("JoinWOA").StringValue = "1" then
+		    lsMsg = lsMsg +  "Yes"
+		  else
+		    lsMsg = lsMsg +  "No"
+		  end
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Looking For: </td><td><strong>"
+		  lsMsg = lsMsg +  rs.Field("LookingFor").StringValue.ReplaceAll(Chr(10), "</br>")
+		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Specialty </td><td><strong>"
 		  lsStr = ""
@@ -877,6 +929,10 @@ End
 		  if  rs.Field("MedGas").StringValue = "1" then
 		    lsStr= lsStr + "MedGas"
 		  end
+		  
+		  
+		  
+		  
 		  lsMsg = lsMsg + lsStr
 		  
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -1352,22 +1408,14 @@ End
 		  lsMsg = lsMsg +  "<td colspan=""3""><font size=""2"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular""><b>Registration (P.E.) / (P.Eng)</b></font></td>"
 		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
-		  lsMsg = lsMsg +  "<td width=""18%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">State</font></td>"
-		  lsMsg = lsMsg +  "<td width=""42%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Certificate No.</font></td>"
-		  lsMsg = lsMsg +  "<td width=""40%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Branch</font></td>"
+		  lsMsg = lsMsg +  "<td width=""18%""><font size=""1"" face=""Arial,Helvetica,Geneva,Swiss,SunSans-Regular"">Certificate No.& State</font></td>"
 		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "<tr>"
 		  lsMsg = lsMsg +  "<td>"
 		  lsMsg = lsMsg +  rs.Field("regState").StringValue
 		  lsMsg = lsMsg +  "</td>"
 		  
-		  lsMsg = lsMsg +  "<td>"
-		  lsMsg = lsMsg +  rs.Field("regCertificate").StringValue
-		  lsMsg = lsMsg +  "</td>"
 		  
-		  lsMsg = lsMsg +  "<td>"
-		  lsMsg = lsMsg +  rs.Field("regBranch").StringValue
-		  lsMsg = lsMsg +  "</td>"
 		  
 		  lsMsg = lsMsg +  "</tr>"
 		  lsMsg = lsMsg +  "</table>"
@@ -1513,6 +1561,7 @@ End
 		Sub MoveToPage(Skip as Boolean = False)
 		  If Skip then return
 		  MemInfo.Visible = False
+		  Details.Visible = False
 		  MemType.Visible = False
 		  Experience.Visible = False
 		  CreditCard.Visible = False
@@ -1532,6 +1581,10 @@ End
 		    btnPrevious.Visible = False
 		    
 		    Meminfo.popNamePrefix.SetFocus
+		    
+		  Case "Details"  '1a
+		    Details.Visible= True
+		    Details.txtResStreetAddr.SetFocus
 		    
 		  Case "MemType"  '2
 		    MemType.Visible= True
@@ -1637,7 +1690,7 @@ End
 		    SMTPServerMail.Address = "express-relay.jangosmtp.net" 'csBulkMailSMTPServerMail
 		    SMTPServerMail.Port = 25 'cnBulkEmailPort
 		    SMTPServerMail.Username = "aspechamp"   'csBulkMailSMTPUserID
-		    SMTPServerMail.Password = "AsPe6400"   'csBulkEmailSMTPPassword
+		    SMTPServerMail.Password = "AspE86142980"   'csBulkEmailSMTPPassword
 		    SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv23
 		    'SMTPServerMail.Secure = True
 		    'SMTPServerMail.Connect
@@ -1665,7 +1718,9 @@ End
 		  For Each email As String In msEmailAddress
 		    Msg.AddRecipient email
 		  Next
-		  'Msg.AddRecipient "Admin@aspe.org"
+		  if DebugBuild then
+		    Msg.AddRecipient "Rich@RAlbrecht.net"
+		  end
 		  'Msg.AddRecipient "rich@aspe.org"
 		  
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
@@ -1822,7 +1877,7 @@ End
 		Sub SetNextPage(bNext as Boolean)
 		  'prgProgressVisible = True
 		  'if bNext then btnNext.enabled = False
-		  
+		  'break
 		  
 		  Select case msCurrentScreen
 		    
@@ -1832,7 +1887,24 @@ End
 		      return
 		    end
 		    if not Meminfo.SaveMemInfo then return
-		    msCurrentScreen = "MemType"
+		    msCurrentScreen = "Details"
+		    
+		  Case "Details"
+		    if bNext then
+		      if not Details.ValidateAll then
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      
+		      if not Details.ValidateAll then
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      if not Details.SaveMemInfo then return
+		      msCurrentScreen = "MemType"
+		    else
+		      msCurrentScreen = "MemInfo"
+		    end
 		    
 		  Case "MemType"  '2
 		    if bNext then
@@ -1848,7 +1920,7 @@ End
 		        msCurrentScreen = "Education"
 		      end
 		    else
-		      msCurrentScreen = "MemInfo"
+		      msCurrentScreen = "Details"
 		      'btnPrevious.Visible = False
 		    end
 		    
@@ -2042,6 +2114,10 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gbTrascriptUploaded As Boolean = False
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		#tag Note
 			'MemInfo
 		#tag EndNote
@@ -2076,38 +2152,6 @@ End
 
 #tag EndWindowCode
 
-#tag Events btnNext
-	#tag Event
-		Sub Action()
-		  'me.Enabled = False
-		  SetNextPage(True)
-		  
-		  'HTMLViewer1.LoadPage(lsStr)
-		  
-		  'me.ExecuteJavaScript("window.open('../test/test.php?Name=Tom&Title=Dick','_self');")
-		  'me.ExecuteJavaScript("alert('Hello!');")
-		  
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub MouseUp(X As Integer, Y As Integer, Details As REALbasic.MouseEvent)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events btnPrevious
-	#tag Event
-		Sub Action()
-		  SetNextPage(False)
-		  
-		  'HTMLViewer1.LoadPage(lsStr)
-		  
-		  'me.ExecuteJavaScript("window.open('../test/test.php?Name=Tom&Title=Dick','_self');")
-		  'me.ExecuteJavaScript("alert('Hello!');")
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events Timer1
 	#tag Event
 		Sub Action()
@@ -2139,6 +2183,38 @@ End
 	#tag Event
 		Sub Action()
 		  Session.Quit
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnNext
+	#tag Event
+		Sub Action()
+		  'me.Enabled = False
+		  SetNextPage(True)
+		  
+		  'HTMLViewer1.LoadPage(lsStr)
+		  
+		  'me.ExecuteJavaScript("window.open('../test/test.php?Name=Tom&Title=Dick','_self');")
+		  'me.ExecuteJavaScript("alert('Hello!');")
+		  
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub MouseUp(X As Integer, Y As Integer, Details As REALbasic.MouseEvent)
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events btnPrevious
+	#tag Event
+		Sub Action()
+		  SetNextPage(False)
+		  
+		  'HTMLViewer1.LoadPage(lsStr)
+		  
+		  'me.ExecuteJavaScript("window.open('../test/test.php?Name=Tom&Title=Dick','_self');")
+		  'me.ExecuteJavaScript("alert('Hello!');")
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2391,5 +2467,11 @@ End
 		Name="_VerticalPercent"
 		Group="Behavior"
 		Type="Double"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="gbTrascriptUploaded"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
 	#tag EndViewProperty
 #tag EndViewBehavior

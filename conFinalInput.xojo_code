@@ -48,42 +48,10 @@ Begin WebContainer conFinalInput
       Scope           =   0
       Style           =   "144195174"
       TabOrder        =   -1
-      Top             =   152
+      Top             =   91
       VerticalCenter  =   0
       Visible         =   True
       Width           =   804
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebRectangle Rectangle1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   66
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   191
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "144195174"
-      TabOrder        =   -1
-      Top             =   74
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   528
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -130,200 +98,6 @@ Begin WebContainer conFinalInput
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label2
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   209
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   13
-      Text            =   "Registration (P.E. / P.Eng)"
-      TextAlign       =   0
-      Top             =   65
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   168
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCertNumber
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   549
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   2
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   99
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   137
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtPEState
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   253
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   1
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   99
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   137
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label3
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   202
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   12
-      Text            =   "State:"
-      TextAlign       =   0
-      Top             =   99
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   50
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label4
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   417
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   11
-      Text            =   "Certificate Number:"
-      TextAlign       =   0
-      Top             =   99
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   132
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
    Begin WebLabel Label5
       Cursor          =   1
       Enabled         =   True
@@ -346,7 +120,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   10
       Text            =   "References:"
       TextAlign       =   0
-      Top             =   140
+      Top             =   79
       VerticalCenter  =   0
       Visible         =   True
       Width           =   81
@@ -388,7 +162,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   20
       Text            =   ""
       TextAlign       =   0
-      Top             =   260
+      Top             =   199
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -431,7 +205,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   17
       Text            =   ""
       TextAlign       =   0
-      Top             =   236
+      Top             =   175
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -474,7 +248,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   7
       Text            =   ""
       TextAlign       =   0
-      Top             =   211
+      Top             =   150
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -517,7 +291,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   4
       Text            =   ""
       TextAlign       =   0
-      Top             =   186
+      Top             =   125
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -560,7 +334,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   5
       Text            =   ""
       TextAlign       =   0
-      Top             =   186
+      Top             =   125
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -603,7 +377,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   8
       Text            =   ""
       TextAlign       =   0
-      Top             =   211
+      Top             =   150
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -646,7 +420,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   18
       Text            =   ""
       TextAlign       =   0
-      Top             =   236
+      Top             =   175
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -689,7 +463,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   21
       Text            =   ""
       TextAlign       =   0
-      Top             =   260
+      Top             =   199
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -732,7 +506,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   22
       Text            =   ""
       TextAlign       =   0
-      Top             =   260
+      Top             =   199
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -775,7 +549,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   19
       Text            =   ""
       TextAlign       =   0
-      Top             =   236
+      Top             =   175
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -818,7 +592,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   9
       Text            =   ""
       TextAlign       =   0
-      Top             =   211
+      Top             =   150
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -861,7 +635,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   6
       Text            =   ""
       TextAlign       =   0
-      Top             =   186
+      Top             =   125
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -898,7 +672,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   0
       Text            =   "References should be in engineering profession, ASPE members preferred. ASPE reservers the right to contact references."
       TextAlign       =   0
-      Top             =   283
+      Top             =   222
       VerticalCenter  =   0
       Visible         =   True
       Width           =   772
@@ -934,7 +708,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   14
       Text            =   "Name"
       TextAlign       =   0
-      Top             =   160
+      Top             =   99
       VerticalCenter  =   0
       Visible         =   True
       Width           =   81
@@ -970,7 +744,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   15
       Text            =   "Address"
       TextAlign       =   0
-      Top             =   160
+      Top             =   99
       VerticalCenter  =   0
       Visible         =   True
       Width           =   81
@@ -1006,7 +780,7 @@ Begin WebContainer conFinalInput
       TabOrder        =   16
       Text            =   "Telephone"
       TextAlign       =   0
-      Top             =   160
+      Top             =   99
       VerticalCenter  =   0
       Visible         =   True
       Width           =   81
@@ -1026,7 +800,7 @@ End
 #tag WindowCode
 	#tag Event
 		Sub Shown()
-		  txtPEState.SetFocus
+		  txtRefName.SetFocus
 		End Sub
 	#tag EndEvent
 
@@ -1079,9 +853,6 @@ End
 		  oSQL.ClearValues
 		  
 		  oSQL.AddTable "memapplications"
-		  
-		  oSQL.AddFields "regState",               "regCertificate"
-		  oSQL.AddValues txtPEState.Text, txtCertNumber.Text
 		  
 		  
 		  oSQL.AddFields "refName",               "refAddress",          "refPhone"
@@ -1150,13 +921,6 @@ End
 
 #tag EndWindowCode
 
-#tag Events txtPEState
-	#tag Event
-		Sub LostFocus()
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events txtRefName
 	#tag Event
 		Sub LostFocus()

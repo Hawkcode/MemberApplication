@@ -1,5 +1,5 @@
 #tag WebPage
-Begin WebContainer conCreditCard
+Begin WebContainer conDetails
    Compatibility   =   ""
    Cursor          =   0
    Enabled         =   True
@@ -33,11 +33,11 @@ Begin WebContainer conCreditCard
    Begin WebRectangle Rectangle2
       Cursor          =   0
       Enabled         =   True
-      Height          =   282
+      Height          =   250
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   570
+      Left            =   462
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -46,12 +46,12 @@ Begin WebContainer conCreditCard
       LockTop         =   True
       LockVertical    =   False
       Scope           =   0
-      Style           =   "997821280"
+      Style           =   "144195174"
       TabOrder        =   -1
-      Top             =   48
+      Top             =   20
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   310
+      Width           =   433
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -62,7 +62,75 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel lblMemshipType1
+   Begin WebRectangle Rectangle1
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   198
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   8
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "144195174"
+      TabOrder        =   -1
+      Top             =   20
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   442
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label19
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   60
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   471
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   66
+      Text            =   "Street Address:"
+      TextAlign       =   0
+      Top             =   85
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   77
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label20
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
@@ -70,7 +138,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   610
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -81,13 +149,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   25
-      Text            =   "Total Charge:"
+      TabOrder        =   60
+      Text            =   "Company:"
       TextAlign       =   0
-      Top             =   306
+      Top             =   9
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   184
+      Width           =   73
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -98,7 +166,7 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label1
+   Begin WebLabel Label22
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
@@ -106,7 +174,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   20
+      Left            =   468
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -116,14 +184,14 @@ Begin WebContainer conCreditCard
       LockVertical    =   False
       Multiline       =   False
       Scope           =   0
-      Style           =   "1005678785"
-      TabOrder        =   6
-      Text            =   "Credit Card Information"
+      Style           =   "418528476"
+      TabOrder        =   79
+      Text            =   "Phone:"
       TextAlign       =   0
-      Top             =   14
+      Top             =   235
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   870
+      Width           =   75
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -134,7 +202,115 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebTextField txtCCStreetAddr
+   Begin WebLabel Label25
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   487
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   61
+      Text            =   "Title:"
+      TextAlign       =   0
+      Top             =   33
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   61
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label26
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   487
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   63
+      Text            =   "Name:"
+      TextAlign       =   0
+      Top             =   58
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   61
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label27
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   468
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   76
+      Text            =   "Country:"
+      TextAlign       =   0
+      Top             =   210
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   80
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtBusCity
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
@@ -146,7 +322,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   195
+      Left            =   552
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -159,10 +335,10 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   8
+      TabOrder        =   70
       Text            =   ""
       TextAlign       =   0
-      Top             =   158
+      Top             =   160
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -177,47 +353,11 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label2
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   84
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   16
-      Text            =   "Street Address:"
-      TextAlign       =   0
-      Top             =   158
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   104
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCCity
+   Begin WebTextField txtBusCountry
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
-      CueText         =   ""
+      CueText         =   "Leave Blank for USA"
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   True
@@ -225,7 +365,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   195
+      Left            =   552
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -238,14 +378,14 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   9
+      TabOrder        =   77
       Text            =   ""
       TextAlign       =   0
-      Top             =   214
+      Top             =   210
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   93
+      Width           =   312
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -256,43 +396,7 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label4
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   85
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   27
-      Text            =   "City, State Zip:"
-      TextAlign       =   0
-      Top             =   214
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   104
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCState
+   Begin WebTextField txtBusName
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
@@ -304,7 +408,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   300
+      Left            =   552
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -317,10 +421,53 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   10
+      TabOrder        =   64
       Text            =   ""
       TextAlign       =   0
-      Top             =   214
+      Top             =   58
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtBusState
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   552
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   71
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   185
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -335,20 +482,16 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebTextField txtCCZip
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
+   Begin WebTextArea txtBusStreetAddr
       CueText         =   ""
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   74
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   345
-      LimitText       =   0
+      Left            =   552
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -356,18 +499,17 @@ Begin WebContainer conCreditCard
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Password        =   False
       ReadOnly        =   False
       Scope           =   0
+      ScrollPosition  =   0
       Style           =   "1836658647"
-      TabOrder        =   11
+      TabOrder        =   67
       Text            =   ""
       TextAlign       =   0
-      Top             =   214
-      Type            =   0
+      Top             =   83
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   65
+      Width           =   312
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -378,7 +520,7 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebTextField txtCCPhoneHome
+   Begin WebTextField txtBusTitle
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
@@ -390,7 +532,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   195
+      Left            =   552
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -403,10 +545,96 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   13
+      TabOrder        =   62
       Text            =   ""
       TextAlign       =   0
-      Top             =   265
+      Top             =   33
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtBusZip
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   713
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   72
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   185
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   151
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtPhoneBus
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   552
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   80
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   235
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -421,7 +649,7 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label5
+   Begin WebLabel Label35
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
@@ -429,7 +657,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   84
+      Left            =   46
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -439,136 +667,14 @@ Begin WebContainer conCreditCard
       LockVertical    =   False
       Multiline       =   False
       Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   36
-      Text            =   "Phone:"
-      TextAlign       =   0
-      Top             =   265
+      Style           =   "343801855"
+      TabOrder        =   83
+      Text            =   "ASPE can not ship to PO boxes."
+      TextAlign       =   2
+      Top             =   247
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   104
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCCountry
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   195
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   12
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   239
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   215
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label7
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   84
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   15
-      Text            =   "Country:"
-      TextAlign       =   0
-      Top             =   239
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   104
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCLast
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   195
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   5
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   133
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
+      Width           =   335
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -587,7 +693,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   20
+      Left            =   17
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -598,56 +704,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   35
-      Text            =   "Card Holder Last Name:"
+      TabOrder        =   65
+      Text            =   "Street Address:"
       TextAlign       =   0
-      Top             =   133
+      Top             =   33
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   169
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCFirst
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   195
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   4
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   108
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
+      Width           =   104
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -666,7 +729,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   20
+      Left            =   17
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -677,13 +740,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   28
-      Text            =   "Card Holder First Name:"
+      TabOrder        =   59
+      Text            =   "Residence:"
       TextAlign       =   0
-      Top             =   108
+      Top             =   9
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   170
+      Width           =   80
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -702,86 +765,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   33
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "831680130"
-      TabOrder        =   7
-      Text            =   "Address must match the address the Credit Card company mails the statement to."
-      TextAlign       =   0
-      Top             =   185
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   554
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCEmail
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   196
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   14
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   292
-      Type            =   2
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   315
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label12
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   134
+      Left            =   28
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -792,207 +776,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   33
-      Text            =   "Email:"
+      TabOrder        =   68
+      Text            =   "City:"
       TextAlign       =   0
-      Top             =   292
+      Top             =   110
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   54
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label13
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   225
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   34
-      Text            =   "Receipt will be sent to this address."
-      TextAlign       =   0
-      Top             =   318
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   235
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCCNumber
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   195
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   0
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   48
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label14
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   20
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   29
-      Text            =   "Credit Card Number:"
-      TextAlign       =   0
-      Top             =   48
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   170
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label15
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   70
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   30
-      Text            =   "CVV Number:"
-      TextAlign       =   0
-      Top             =   76
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   120
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCVV
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   195
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   1
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   76
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   45
+      Width           =   93
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1011,7 +801,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   245
+      Left            =   28
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1022,56 +812,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   31
-      Text            =   "Expiration Date Month:"
+      TabOrder        =   73
+      Text            =   "Phone Home:"
       TextAlign       =   0
-      Top             =   76
+      Top             =   186
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   156
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtExpMonth
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   398
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   2
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   76
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   28
+      Width           =   93
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1090,7 +837,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   430
+      Left            =   264
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1101,13 +848,13 @@ Begin WebContainer conCreditCard
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   32
-      Text            =   "Year (2 Digit):"
+      TabOrder        =   78
+      Text            =   "Cell:"
       TextAlign       =   0
-      Top             =   76
+      Top             =   186
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   92
+      Width           =   38
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1118,7 +865,43 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebTextField txtExpYear
+   Begin WebLabel Label28
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   28
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   74
+      Text            =   "Country:"
+      TextAlign       =   0
+      Top             =   160
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   93
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtPhoneCell
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
@@ -1130,7 +913,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   523
+      Left            =   310
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -1143,446 +926,11 @@ Begin WebContainer conCreditCard
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   3
+      TabOrder        =   58
       Text            =   ""
       TextAlign       =   0
-      Top             =   76
+      Top             =   186
       Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   28
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblMemshipCost
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   806
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "776128260"
-      TabOrder        =   17
-      Text            =   "$000.00"
-      TextAlign       =   0
-      Top             =   86
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   66
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblTotalDonations
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   False
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   795
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "776128260"
-      TabOrder        =   18
-      Text            =   "$0.00"
-      TextAlign       =   0
-      Top             =   179
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   77
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblGrandTotal
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   760
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "776128260"
-      TabOrder        =   19
-      Text            =   "$0.00"
-      TextAlign       =   0
-      Top             =   306
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   112
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblDatabook
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   816
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "776128260"
-      TabOrder        =   20
-      Text            =   "$0.00"
-      TextAlign       =   0
-      Top             =   56
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   56
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebRectangle Rectangle1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   1
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   702
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   -1
-      Top             =   306
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   170
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblDBChoice
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   682
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   21
-      Text            =   "DB Format:"
-      TextAlign       =   0
-      Top             =   56
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   101
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblMemshipType
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   41
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   581
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   22
-      Text            =   "Membership Type:"
-      TextAlign       =   3
-      Top             =   76
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   202
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextArea lblDonations
-      CueText         =   ""
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   False
-      Height          =   70
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   591
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      ReadOnly        =   True
-      Scope           =   0
-      ScrollPosition  =   0
-      Style           =   "1905985929"
-      TabOrder        =   23
-      Text            =   "Total \nDonations:"
-      TextAlign       =   0
-      Top             =   114
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   175
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel lblMemshipType2
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   599
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   24
-      Text            =   "Total Donation:"
-      TextAlign       =   0
-      Top             =   179
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   184
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebLabel Label18
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   581
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "418528476"
-      TabOrder        =   37
-      Text            =   "Coupon Code:"
-      TextAlign       =   0
-      Top             =   204
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   120
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtCoupon
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   "Not required"
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   704
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   38
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   204
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   79
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebButton btnCoupon
-      AutoDisable     =   False
-      Caption         =   "Apply Coupon"
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   622
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   0
-      Style           =   "0"
-      TabOrder        =   39
-      Top             =   243
       VerticalCenter  =   0
       Visible         =   True
       Width           =   127
@@ -1596,14 +944,20 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebProgressWheel ProgressWheel1
+   Begin WebTextField txtPhoneHome
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
       Cursor          =   0
       Enabled         =   True
-      Height          =   32
+      HasFocusRing    =   True
+      Height          =   22
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   751
+      Left            =   125
+      LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1611,14 +965,18 @@ Begin WebContainer conCreditCard
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
       Scope           =   0
-      Style           =   "0"
-      TabOrder        =   -1
-      Top             =   239
+      Style           =   "1836658647"
+      TabOrder        =   57
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   186
       Type            =   0
       VerticalCenter  =   0
-      Visible         =   False
-      Width           =   32
+      Visible         =   True
+      Width           =   127
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1629,15 +987,225 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel lblDiscount
-      Cursor          =   1
+   Begin WebTextField txtResCity
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
       Enabled         =   True
-      HasFocusRing    =   False
+      HasFocusRing    =   True
       Height          =   22
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   795
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   53
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   110
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResCountry
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   "Leave Blank for USA"
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   56
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   160
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResState
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   54
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   135
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   33
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextArea txtResStreetAddr
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   74
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      ReadOnly        =   False
+      Scope           =   0
+      ScrollPosition  =   0
+      Style           =   "1836658647"
+      TabOrder        =   52
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   33
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResZip
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   282
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   55
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   135
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   151
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label3
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   46
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1647,14 +1215,14 @@ Begin WebContainer conCreditCard
       LockVertical    =   False
       Multiline       =   False
       Scope           =   0
-      Style           =   "776128260"
-      TabOrder        =   26
-      Text            =   "$0.00"
+      Style           =   "1126752408"
+      TabOrder        =   24
+      Text            =   "Preferred Mailing Address:"
       TextAlign       =   0
-      Top             =   243
+      Top             =   223
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   77
+      Width           =   178
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1665,25 +1233,247 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebTimer Timer1
-      Cursor          =   0
+   Begin WebRadioGroup radMail
+      ColumnCount     =   2
+      Cursor          =   1
       Enabled         =   True
+      Height          =   22
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
+      InitialValue    =   "`Home`,`True`,``,`True`,`True`	`Business`,`True`,``,`False`,`True`"
+      Left            =   241
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
-      LockLeft        =   False
+      LockLeft        =   True
       LockRight       =   False
-      LockTop         =   False
+      LockTop         =   True
       LockVertical    =   False
-      Mode            =   0
-      Period          =   50
+      RowCount        =   1
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   -1
+      TabOrder        =   25
+      Top             =   222
       VerticalCenter  =   0
+      Visible         =   True
+      Width           =   158
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label13
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   20
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   163
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   68
+      Text            =   " Zip / Postal Code:"
+      TextAlign       =   0
+      Top             =   135
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   118
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label12
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   28
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   68
+      Text            =   "State:"
+      TextAlign       =   0
+      Top             =   133
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   93
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label29
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   478
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   68
+      Text            =   "State:"
+      TextAlign       =   0
+      Top             =   185
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   70
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label14
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   588
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   68
+      Text            =   " Zip / Postal Code:"
+      TextAlign       =   0
+      Top             =   188
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   122
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label30
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   478
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   68
+      Text            =   "City:"
+      TextAlign       =   0
+      Top             =   160
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   70
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label1
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   55
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   8
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   0
+      Style           =   "1005678785"
+      TabOrder        =   84
+      Text            =   "Please make sure your address is correct. Including any Suite or Floor number. If ASPE has to reship, you will be responsible for the cost of reshipping the new member packet."
+      TextAlign       =   0
+      Top             =   282
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   882
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1698,22 +1488,9 @@ End
 #tag EndWebPage
 
 #tag WindowCode
-	#tag Event
-		Sub Shown()
-		  txtCCNumber.SetFocus
-		  
-		  
-		End Sub
-	#tag EndEvent
-
-
 	#tag Method, Flags = &h0
-		Function DidValidate(lbObj as WebTextField, lbNoError as Boolean = True) As Boolean
+		Function DidValidate(lbObj as WebTextField) As Boolean
 		  'Returns true if field validated
-		  
-		  if Not lbNoError then
-		    return lbNoError
-		  end
 		  
 		  Dim ln as Integer
 		  Dim lbValid as boolean
@@ -1722,6 +1499,19 @@ End
 		  
 		  
 		  lbObj.Style = EntryFields
+		  if lbObj.Name = "txtSecondaryEmail" and lbObj.Text = "" then
+		    Return lbValid
+		  end
+		  
+		  if lbObj.Name = "txtPhoneHome"  then
+		    if lbObj.Text = "" then
+		      txtPhoneHome.Style = EntryFieldsError
+		      lbValid = False
+		    else
+		      txtPhoneHome.Style = EntryFields
+		      Return True
+		    end
+		  end
 		  
 		  
 		  
@@ -1731,6 +1521,16 @@ End
 		  end
 		  
 		  
+		  Select Case lbObj.Name
+		    
+		  Case "txtPrimaryEmail", "txtSecondaryEmail"
+		    
+		    If not ValidateEmail(lbObj.Text) then
+		      lbObj.Style = EntryFieldsError
+		      lbValid = False
+		    end
+		    
+		  end
 		  
 		  Return lbValid
 		  
@@ -1739,112 +1539,32 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub ExecuteCoupon()
-		  Dim rs As RecordSet
-		  dim lsSql As string
-		  lsSql = "Select * from System_Discounts where coupon = '" + txtCoupon.Text + "' " 'and ItemNumbers = 295"
+		Function DidValidateArea(lbObj as WebTextArea) As Boolean
 		  
-		  rs = Session.sesDB.SQLSelect(lsSql)
-		  
-		  if Session.sesDB.CheckDBError then 
-		    txtCoupon.Text = ""
-		    ProgressWheel1.Visible = False
-		    exit
+		  if lbObj.Text = "" then
+		    lbObj.Style = EntryFieldsError
+		    Return False
 		  end
 		  
-		  if rs.RecordCount = 0 then
-		    txtCoupon.Text = ""
-		    Msgbox("No Coupons found")
-		    ProgressWheel1.Visible = False
-		    exit
-		  end
-		  
-		  if rs.Field("DateValidFrom").DateValue > Today then
-		    txtCoupon.Text = ""
-		    MsgBox("This coupon is not active yet")
-		    ProgressWheel1.Visible = False
-		    Exit
-		  end
-		  
-		  if rs.Field("DateValidTo").DateValue < Today then
-		    txtCoupon.Text = ""
-		    MsgBox("This coupon has expired")
-		    ProgressWheel1.Visible = False
-		    Exit
-		  end
-		  
-		  if rs.Field("CouponValid").IntegerValue > 1 then
-		    txtCoupon.Text = ""
-		    MsgBox("This coupon is no longer valid")
-		    ProgressWheel1.Visible = False
-		    Exit
-		  end
-		  
-		  if (rs.Field("ItemNumbers").StringValue <> "")  then 
-		    
-		    txtCoupon.Text = ""
-		    MsgBox("This coupon cannot be used for this item!")
-		    ProgressWheel1.Visible = False
-		    exit
-		    
+		  if (lbObj.Text.InStr(0, "PO Box") > 0) or (lbObj.Text.InStr(0, "P.O.")> 0 ) then
+		    lbObj.Style = EntryFieldsError
+		    Return False
 		  end
 		  
 		  
-		  'if Session.gbIsMember then
-		  'if rs.Field("MemDollarAmount").DoubleValue > 0 then
-		  'Session.gdTotalCost = Session.gdTotalCost - (rs.Field("MemDollarAmount").DoubleValue)
-		  'else
-		  'Session.gdTotalCost = Session.gdTotalCost - (Session.gdTotalCost * rs.Field("MemPercentOff").DoubleValue)
-		  'end
-		  'else
-		  
-		  
-		  Dim ldDollarOff as Double
-		  Select Case frmAppllcation.MemType.popType.Text
-		  Case "Full"
-		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
-		  case "Associate"
-		    ldDollarOff = rs.Field("MembershipDiscountAssociate").DoubleValue
-		  Case "Affiliate"
-		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
-		  Case "Special"
-		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
-		  Case "Governmental"
-		    ldDollarOff = rs.Field("MembershipFullDiscount").DoubleValue
-		  Case "Student"
-		    MsgBox("This coupon is not valid for students!")
-		    ProgressWheel1.Visible = False
-		    Exit
-		    
-		  end
-		  
-		  
-		  
-		  
-		  Session.gdTotalCost = Session.gdTotalCost - ldDollarOff
-		  ldDollarOff = ldDollarOff * -1
-		  'end
-		  lblDiscount.Text = Format(ldDollarOff, "\$-###.00")
-		  
-		  lblGrandTotal.Text = Format(Session.gdTotalCost, "\$###.00")
-		  frmAppllcation.MemType.lblGrandTotal.Text = lblGrandTotal.Text
-		  btnCoupon.Enabled = False
-		  txtCoupon.Enabled = False
-		  
-		  ProgressWheel1.Visible = False
-		  
-		  
-		End Sub
+		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function SaveCC() As Boolean
+		Function SaveMemInfo() As Boolean
 		  
 		  Dim lsStr as String
 		  Dim lnLen as Integer
 		  Dim oSQL as new cSmartSQL
 		  Dim rs as RecordSet
+		  Dim lnRecNo as Integer
 		  
+		  lnRecNo = Session.gnRecNo
 		  
 		  'Me.MouseCursor = System.Cursors.Wait
 		  
@@ -1859,14 +1579,32 @@ End
 		  
 		  oSQL.AddTable "memapplications"
 		  
-		  Dim lsExpDate as String
-		  lsExpDate = txtExpMonth.text + txtExpYear.Text
+		  dim lsPrefered as string
+		  if radMail.CellSelected(0, 1) then 
+		    lsPrefered = "Work" 'radMail.CellCaption(0,1)
+		  else
+		    lsPrefered = "Home" 'radMail.CellCaption(0,0)
+		  end
 		  
-		  oSQL.AddFields "CardHolderFName", "CardHolderLName", "CreditCard",                      "ExpirationDate", "BillingAddress",      "BillingCity"
-		  oSQL.AddValues txtCCFirst.Text,       txtCCLast.Text,        txtCCNumber.Text.Right(4), lsExpDate,     txtCCStreetAddr.Text, txtCCCity.Text
+		  oSQL.AddFields "resStreetAddress",        "resCity"',          "mailPref"
+		  oSQL.AddValues txtResStreetAddr.Text , txtResCity.Text', 
 		  
-		  oSQL.AddFields "BillingStateProvince", "BillingZip", "BillingCountry",   "BillingPostalCode", "BillingPhoneDay",   "BillingEmail"
-		  oSQL.AddValues txtCCState.Text, txtCCZip.Text,   txtCCCountry.Text,txtCCZip.Text,   txtCCPhoneHome.Text, txtCCEmail.Text
+		  oSQL.AddFields "resState", "            resZip",           "resCountry",            "homePhone"
+		  oSQL.AddValues txtResState.Text, txtResZip.Text, txtResCountry.Text, txtPhoneHome.Text
+		  
+		  
+		  oSQL.AddFields "busName",           "busTitle",          "busStreetAddress",      "busCity",           "busState"
+		  oSQL.AddValues txtBusName.text, txtBusTitle.Text, txtBusStreetAddr.Text, txtBusCity.Text, txtBusState.Text
+		  
+		  oSQL.AddFields "busZip",             "busCountry",          "busPhone"
+		  oSQL.AddValues txtBusZip.Text, txtBusCountry.Text, txtPhoneBus.Text
+		  
+		  
+		  
+		  oSQL.AddFields "CellPhone"
+		  oSQL.AddValues txtPhoneCell.Text
+		  
+		  
 		  
 		  if Session.gnRecNo <> 0 then
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
@@ -1876,6 +1614,8 @@ End
 		  
 		  if Session.gnRecNo = 0 then
 		    Session.gnRecNo = Session.sesDB.LastID("memapplications")
+		    lnRecNo = Session.gnRecNo
+		    
 		  end
 		  
 		  
@@ -1889,54 +1629,75 @@ End
 		  Return True
 		  
 		  
-		  
-		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h1
-		Protected Function SetValid(lbValid as Boolean, lbReturnVal as Boolean) As Boolean
-		  if lbReturnVal then
-		    lbReturnVal = lbValid
-		  end
-		  Return lbReturnVal
 		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Function ValidateAll() As Boolean
+		  'loop through controls to validate each one.
+		  
 		  Dim lnX, lnCount As Integer
 		  Dim IbValid, lbReturnVal as Boolean
 		  lbReturnVal = True
 		  
+		  if radMail.CellSelected(0,0) then
+		    if txtResStreetAddr.Text.InStr(0, "PO Box") > 0 then
+		      txtResStreetAddr.Style = EntryFieldsError
+		      lbReturnVal = False
+		    end
+		  else
+		     if txtBusStreetAddr.Text.InStr(0, "PO Box") > 0 then
+		      txtBusStreetAddr.Style = EntryFieldsError
+		      lbReturnVal = False
+		    end
+		  end
 		  
-		  lbReturnVal = SetValid(DidValidate(txtCCCity), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCEmail), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCFirst), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCLast), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCNumber), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCPhoneHome), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCState), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCStreetAddr), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCCZip), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtCVV), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtExpMonth), lbReturnVal)
-		  lbReturnVal = SetValid(DidValidate(txtExpYear), lbReturnVal)
+		  if not lbReturnVal then
+		    MsgBox("PO Box is not allowed in primary address.")
+		    lbReturnVal = True
+		  else
+		    txtBusStreetAddr.Style = EntryFields
+		    txtResStreetAddr.Style = EntryFields
+		  end
+		  
+		  'lbReturnVal = SetValid(DidValidate(txtFirst), lbReturnVal)
+		  '
+		  'if (popNamePrefix.ListIndex >=0) then
+		  'popNamePrefix.Style = EntryFields
+		  'else
+		  'popNamePrefix.Style = EntryFieldsError
+		  'lbReturnVal = False
+		  'end
 		  
 		  Return lbReturnVal
+		  
+		  
+		  
 		  
 		  
 		End Function
 	#tag EndMethod
 
 
-	#tag Property, Flags = &h0
-		mdDiscount As Double
-	#tag EndProperty
-
-
 #tag EndWindowCode
 
-#tag Events txtCCStreetAddr
+#tag Events txtBusStreetAddr
+	#tag Event
+		Sub LostFocus()
+		  Call DidValidateArea(Me)
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtPhoneCell
+	#tag Event
+		Sub LostFocus()
+		  'Call DidValidate(Me)
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtPhoneHome
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
@@ -1944,7 +1705,7 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events txtCCCity
+#tag Events txtResCity
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
@@ -1952,94 +1713,16 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events txtCCState
+#tag Events txtResCountry
 	#tag Event
 		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCZip
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCPhoneHome
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCLast
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCFirst
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCEmail
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCCNumber
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtCVV
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtExpMonth
-	#tag Event
-		Sub LostFocus()
-		  Dim lbValid as Boolean  = True
-		  
-		  If IsNumeric(me.Text) then
-		    If me.Text.Val < 10 and me.Text.Val >0 and me.Text.Len = 1 Then
-		      me.Text = "0" + me.Text
-		      
-		    elseif me.Text.Val < 1 or me.Text.Val > 12 then
-		      lbValid = False
-		    end
-		  else
-		    lbValid = False
-		  end
-		  
-		  
-		  if Not DidValidate(Me, lbValid) then
-		    me.SetFocus
+		  if me.text = "USA" or me.Text = "United States" or me.text = "United States of America" or me.Text = "US" then
+		    me.Text = ""
 		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events txtExpYear
+#tag Events txtResState
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
@@ -2047,34 +1730,26 @@ End
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events txtCoupon
+#tag Events txtResStreetAddr
 	#tag Event
 		Sub LostFocus()
+		  Call DidValidateArea(Me)
 		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events btnCoupon
+#tag Events txtResZip
 	#tag Event
-		Sub Action()
-		  
-		  ProgressWheel1.Visible = True
-		  App.DoEvents
-		  Timer1.Period = 50
-		  Timer1.mode = timer.ModeSingle
-		  
-		  
-		  
-		  
+		Sub LostFocus()
+		  Call DidValidate(Me)
 		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
-#tag Events Timer1
+#tag Events radMail
 	#tag Event
-		Sub Action()
-		  ExecuteCoupon
-		  me.Mode = timer.ModeOff
+		Sub SelectionChanged()
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2192,11 +1867,6 @@ End
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="mdDiscount"
-		Group="Behavior"
-		Type="Double"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"
