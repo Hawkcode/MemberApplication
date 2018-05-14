@@ -676,7 +676,7 @@ End
 		  lsMsg = lsMsg +  "<td>   </td>"
 		  lsMsg = lsMsg +  "<td></td>"
 		  lsMsg = lsMsg +  "<td></td>"
-		  lsMsg = lsMsg +  "</tbody></table></td></tbody></table>"
+		  lsMsg = lsMsg +  "</tbody></table></td></tbody></table><p></p>"
 		  
 		  lsMsg = lsMsg +  "<table border=""1"" cellspacing=""2"" cellpadding=""2"">"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Application ID: </td><td><strong>"
@@ -729,7 +729,8 @@ End
 		  lsMsg = lsMsg +  rs.Field("BillingPostalCode").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">PhoneDay: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">PhoneDay:" 
+		  lsMsg = lsMsg +  "</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("BillingPhoneDay").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -871,7 +872,8 @@ End
 		  lsMsg = lsMsg +  rs.Field("busTitle").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Street address: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Bus Street address:"
+		  lsMsg = lsMsg +  "</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("busStreetAddress").StringValue.ReplaceAll(Chr(10), "</br>")
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
@@ -944,7 +946,7 @@ End
 		  lsMsg = lsMsg +  rs.Field("certPE").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  
-		  lsMsg = lsMsg +  "<tr><td width=""128"">P.Eng: </td><td><strong>"
+		  lsMsg = lsMsg +  "<tr><td width=""128"">P.Eng:  </td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("certPEng").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
 		  

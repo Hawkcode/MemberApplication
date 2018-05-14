@@ -1646,7 +1646,7 @@ End
 		      lbReturnVal = False
 		    end
 		  else
-		     if txtBusStreetAddr.Text.InStr(0, "PO Box") > 0 then
+		    if txtBusStreetAddr.Text.InStr(0, "PO Box") > 0 then
 		      txtBusStreetAddr.Style = EntryFieldsError
 		      lbReturnVal = False
 		    end

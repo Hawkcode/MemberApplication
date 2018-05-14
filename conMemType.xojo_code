@@ -1193,14 +1193,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   28
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblMemshipCost2
       Cursor          =   1
@@ -1229,14 +1229,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   28
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblMemshipCost3
       Cursor          =   1
@@ -1265,14 +1265,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   28
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblMemshipCost4
       Cursor          =   1
@@ -1301,14 +1301,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   28
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
