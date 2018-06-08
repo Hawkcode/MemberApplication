@@ -113,7 +113,7 @@ Begin WebContainer conDetails
       Multiline       =   True
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   66
+      TabOrder        =   16
       Text            =   "Street Address:"
       TextAlign       =   0
       Top             =   85
@@ -149,7 +149,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   60
+      TabOrder        =   10
       Text            =   "Company:"
       TextAlign       =   0
       Top             =   9
@@ -185,7 +185,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   79
+      TabOrder        =   32
       Text            =   "Phone:"
       TextAlign       =   0
       Top             =   235
@@ -221,7 +221,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   61
+      TabOrder        =   11
       Text            =   "Title:"
       TextAlign       =   0
       Top             =   33
@@ -257,7 +257,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   63
+      TabOrder        =   13
       Text            =   "Name:"
       TextAlign       =   0
       Top             =   58
@@ -293,7 +293,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   76
+      TabOrder        =   30
       Text            =   "Country:"
       TextAlign       =   0
       Top             =   210
@@ -335,53 +335,10 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   70
+      TabOrder        =   24
       Text            =   ""
       TextAlign       =   0
       Top             =   160
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtBusCountry
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   "Leave Blank for USA"
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   552
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   77
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   210
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -421,7 +378,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   64
+      TabOrder        =   14
       Text            =   ""
       TextAlign       =   0
       Top             =   58
@@ -464,7 +421,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   71
+      TabOrder        =   25
       Text            =   ""
       TextAlign       =   0
       Top             =   185
@@ -503,7 +460,7 @@ Begin WebContainer conDetails
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1836658647"
-      TabOrder        =   67
+      TabOrder        =   17
       Text            =   ""
       TextAlign       =   0
       Top             =   83
@@ -545,7 +502,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   62
+      TabOrder        =   12
       Text            =   ""
       TextAlign       =   0
       Top             =   33
@@ -588,7 +545,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   72
+      TabOrder        =   26
       Text            =   ""
       TextAlign       =   0
       Top             =   185
@@ -631,7 +588,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   80
+      TabOrder        =   33
       Text            =   ""
       TextAlign       =   0
       Top             =   235
@@ -668,7 +625,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "343801855"
-      TabOrder        =   83
+      TabOrder        =   34
       Text            =   "ASPE can not ship to PO boxes."
       TextAlign       =   2
       Top             =   247
@@ -704,7 +661,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   65
+      TabOrder        =   15
       Text            =   "Street Address:"
       TextAlign       =   0
       Top             =   33
@@ -740,7 +697,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   59
+      TabOrder        =   9
       Text            =   "Residence:"
       TextAlign       =   0
       Top             =   9
@@ -776,7 +733,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   22
       Text            =   "City:"
       TextAlign       =   0
       Top             =   110
@@ -812,7 +769,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   73
+      TabOrder        =   28
       Text            =   "Phone Home:"
       TextAlign       =   0
       Top             =   186
@@ -848,7 +805,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   78
+      TabOrder        =   31
       Text            =   "Cell:"
       TextAlign       =   0
       Top             =   186
@@ -884,7 +841,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   74
+      TabOrder        =   29
       Text            =   "Country:"
       TextAlign       =   0
       Top             =   160
@@ -926,7 +883,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   58
+      TabOrder        =   8
       Text            =   ""
       TextAlign       =   0
       Top             =   186
@@ -969,7 +926,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   57
+      TabOrder        =   7
       Text            =   ""
       TextAlign       =   0
       Top             =   186
@@ -1012,53 +969,10 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   53
+      TabOrder        =   3
       Text            =   ""
       TextAlign       =   0
       Top             =   110
-      Type            =   0
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextField txtResCountry
-      AutoCapitalize  =   True
-      AutoComplete    =   True
-      AutoCorrect     =   True
-      CueText         =   "Leave Blank for USA"
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   125
-      LimitText       =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Password        =   False
-      ReadOnly        =   False
-      Scope           =   0
-      Style           =   "1836658647"
-      TabOrder        =   56
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   160
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1098,7 +1012,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   54
+      TabOrder        =   4
       Text            =   ""
       TextAlign       =   0
       Top             =   135
@@ -1137,7 +1051,7 @@ Begin WebContainer conDetails
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1836658647"
-      TabOrder        =   52
+      TabOrder        =   2
       Text            =   ""
       TextAlign       =   0
       Top             =   33
@@ -1166,7 +1080,7 @@ Begin WebContainer conDetails
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   282
+      Left            =   286
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -1179,7 +1093,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   55
+      TabOrder        =   5
       Text            =   ""
       TextAlign       =   0
       Top             =   135
@@ -1216,7 +1130,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   24
+      TabOrder        =   0
       Text            =   "Preferred Mailing Address:"
       TextAlign       =   0
       Top             =   223
@@ -1253,7 +1167,7 @@ Begin WebContainer conDetails
       RowCount        =   1
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   25
+      TabOrder        =   1
       Top             =   222
       VerticalCenter  =   0
       Visible         =   True
@@ -1287,7 +1201,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   23
       Text            =   " Zip / Postal Code:"
       TextAlign       =   0
       Top             =   135
@@ -1323,7 +1237,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   21
       Text            =   "State:"
       TextAlign       =   0
       Top             =   133
@@ -1359,7 +1273,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   20
       Text            =   "State:"
       TextAlign       =   0
       Top             =   185
@@ -1395,7 +1309,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   19
       Text            =   " Zip / Postal Code:"
       TextAlign       =   0
       Top             =   188
@@ -1431,7 +1345,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   68
+      TabOrder        =   18
       Text            =   "City:"
       TextAlign       =   0
       Top             =   160
@@ -1467,7 +1381,7 @@ Begin WebContainer conDetails
       Multiline       =   True
       Scope           =   0
       Style           =   "1005678785"
-      TabOrder        =   84
+      TabOrder        =   35
       Text            =   "Please make sure your address is correct. Including any Suite or Floor number. If ASPE has to reship, you will be responsible for the cost of reshipping the new member packet."
       TextAlign       =   0
       Top             =   282
@@ -1483,6 +1397,60 @@ Begin WebContainer conDetails
       _OfficialControl=   False
       _OpenEventFired =   False
       _VerticalPercent=   0.0
+   End
+   Begin CountryCodePopup popResCountryCode
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   20
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      InitialValue    =   ""
+      Left            =   125
+      ListIndex       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   6
+      Top             =   161
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _NeedsRendering =   True
+   End
+   Begin CountryCodePopup popBusCountryCode
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   20
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      InitialValue    =   ""
+      Left            =   552
+      ListIndex       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   27
+      Top             =   210
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _NeedsRendering =   True
    End
 End
 #tag EndWebPage
@@ -1586,18 +1554,30 @@ End
 		    lsPrefered = "Home" 'radMail.CellCaption(0,0)
 		  end
 		  
+		  Session.gsAddressPref = lsPrefered
+		  
 		  oSQL.AddFields "resStreetAddress",        "resCity"',          "mailPref"
 		  oSQL.AddValues txtResStreetAddr.Text , txtResCity.Text', 
 		  
+		  lsStr = popResCountryCode.Text
+		  if lsStr = "United States" then
+		    lsStr = ""
+		  end
+		  
 		  oSQL.AddFields "resState", "            resZip",           "resCountry",            "homePhone"
-		  oSQL.AddValues txtResState.Text, txtResZip.Text, txtResCountry.Text, txtPhoneHome.Text
+		  oSQL.AddValues txtResState.Text, txtResZip.Text, lsStr, txtPhoneHome.Text
 		  
 		  
 		  oSQL.AddFields "busName",           "busTitle",          "busStreetAddress",      "busCity",           "busState"
 		  oSQL.AddValues txtBusName.text, txtBusTitle.Text, txtBusStreetAddr.Text, txtBusCity.Text, txtBusState.Text
 		  
+		  lsStr = popBusCountryCode.Text
+		  if lsStr = "United States" then
+		    lsStr = ""
+		  end
+		  
 		  oSQL.AddFields "busZip",             "busCountry",          "busPhone"
-		  oSQL.AddValues txtBusZip.Text, txtBusCountry.Text, txtPhoneBus.Text
+		  oSQL.AddValues txtBusZip.Text,  lsStr, txtPhoneBus.Text
 		  
 		  
 		  
@@ -1710,15 +1690,6 @@ End
 		Sub LostFocus()
 		  Call DidValidate(Me)
 		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtResCountry
-	#tag Event
-		Sub LostFocus()
-		  if me.text = "USA" or me.Text = "United States" or me.text = "United States of America" or me.Text = "US" then
-		    me.Text = ""
-		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -33,7 +33,7 @@ Begin WebContainer conCreditCard
    Begin WebRectangle Rectangle2
       Cursor          =   0
       Enabled         =   True
-      Height          =   282
+      Height          =   307
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -84,7 +84,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   25
       Text            =   "Total Charge:"
       TextAlign       =   0
-      Top             =   306
+      Top             =   331
       VerticalCenter  =   0
       Visible         =   True
       Width           =   184
@@ -120,7 +120,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   6
       Text            =   "Credit Card Information"
       TextAlign       =   0
-      Top             =   14
+      Top             =   20
       VerticalCenter  =   0
       Visible         =   True
       Width           =   870
@@ -1255,7 +1255,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   19
       Text            =   "$0.00"
       TextAlign       =   0
-      Top             =   306
+      Top             =   331
       VerticalCenter  =   0
       Visible         =   True
       Width           =   112
@@ -1323,7 +1323,7 @@ Begin WebContainer conCreditCard
       Scope           =   0
       Style           =   "1836658647"
       TabOrder        =   -1
-      Top             =   306
+      Top             =   330
       VerticalCenter  =   0
       Visible         =   True
       Width           =   170
@@ -1551,7 +1551,7 @@ Begin WebContainer conCreditCard
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   79
+      Width           =   92
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1693,6 +1693,150 @@ Begin WebContainer conCreditCard
       _OfficialControl=   False
       _OpenEventFired =   False
       _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblForShipping
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   610
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   16
+      Text            =   "Foriegn Shipping:"
+      TextAlign       =   0
+      Top             =   273
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   129
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblForTotalShipping
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   806
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   3
+      Top             =   277
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   67
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblForDiscount
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   610
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "418528476"
+      TabOrder        =   16
+      Text            =   "Foriegn Discount:"
+      TextAlign       =   0
+      Top             =   299
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   129
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblForDiscountAmount
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   806
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   3
+      Top             =   303
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   67
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
    End
 End
 #tag EndWebPage
@@ -1930,7 +2074,19 @@ End
 
 
 	#tag Property, Flags = &h0
+		mbForiegn As Boolean = False
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		mdDiscount As Double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdForPercent As Integer = 35
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdShipping As Double = 0
 	#tag EndProperty
 
 
@@ -2310,6 +2466,24 @@ End
 	#tag ViewProperty
 		Name="_VerticalPercent"
 		Group="Behavior"
+		Type="Double"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdForPercent"
+		Group="Behavior"
+		InitialValue="35"
+		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mbForiegn"
+		Group="Behavior"
+		InitialValue="False"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdShipping"
+		Group="Behavior"
+		InitialValue="0"
 		Type="Double"
 	#tag EndViewProperty
 #tag EndViewBehavior

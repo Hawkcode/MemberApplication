@@ -41,6 +41,10 @@ Inherits WebSession
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gsAddressPref As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		sbAffiliate As Boolean = True
 	#tag EndProperty
 

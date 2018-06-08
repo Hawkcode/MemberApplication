@@ -631,6 +631,40 @@ Begin WebPage frmAppllcation
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin conShipping Shipping
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   373
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      ScrollbarsVisible=   0
+      Style           =   "0"
+      TabOrder        =   15
+      Top             =   29
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   910
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
 End
 #tag EndWebPage
 
@@ -1571,6 +1605,7 @@ End
 		  Processing.Visible = False
 		  FinalInput.Visible = False
 		  Education.Visible = False
+		  Shipping.Visible = False
 		  
 		  btnNext.Visible = True
 		  btnPrevious.Visible = True
@@ -1587,6 +1622,9 @@ End
 		  Case "Details"  '1a
 		    Details.Visible= True
 		    Details.txtResStreetAddr.SetFocus
+		    
+		  Case "Shipping"  '1a
+		    Shipping.Visible= True
 		    
 		  Case "MemType"  '2
 		    MemType.Visible= True
@@ -1626,6 +1664,18 @@ End
 		    end
 		    CreditCard.lblTotalDonations.Text = MemType.lblTotalDonations.Text
 		    CreditCard.lblGrandTotal.Text = MemType.lblGrandTotal.Text
+		    if CreditCard.mbForiegn then
+		      CreditCard.lblForDiscount.Visible = True
+		      CreditCard.lblForDiscountAmount.Visible = True
+		      CreditCard.lblForShipping.Visible = True
+		      CreditCard.lblForTotalShipping.Visible = True
+		    else
+		      CreditCard.lblForDiscount.Visible = False
+		      CreditCard.lblForDiscountAmount.Visible = False
+		      CreditCard.lblForShipping.Visible = False
+		      CreditCard.lblForTotalShipping.Visible = False
+		    end
+		    
 		    
 		    
 		  Case "Confirmation"
@@ -1903,10 +1953,40 @@ End
 		        return
 		      end
 		      if not Details.SaveMemInfo then return
-		      msCurrentScreen = "MemType"
+		      if Session.gsAddressPref = "Work" then
+		        if Details.popBusCountryCode.Text <> "United States" and Details.popBusCountryCode.Text <> "Canada" then 
+		          msCurrentScreen = "Shipping"
+		          CreditCard.mbForiegn = True
+		        else
+		          msCurrentScreen = "MemType"
+		          CreditCard.mbForiegn = False
+		        end
+		      else
+		        if Details.popResCountryCode.Text <> "United States" and Details.popResCountryCode.Text <> "Canada" then 
+		          msCurrentScreen = "Shipping"
+		          CreditCard.mbForiegn = True
+		        else
+		          msCurrentScreen = "MemType"
+		          CreditCard.mbForiegn = False
+		        end
+		      end
 		    else
 		      msCurrentScreen = "MemInfo"
 		    end
+		    
+		  Case "Shipping"
+		    if bNext then
+		      
+		      if not Details.ValidateAll then
+		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        return
+		      end
+		      if not Details.SaveMemInfo then return
+		      msCurrentScreen = "MemType"
+		    else
+		      msCurrentScreen = "Details"
+		    end
+		    
 		    
 		  Case "MemType"  '2
 		    if bNext then
@@ -1922,7 +2002,24 @@ End
 		        msCurrentScreen = "Education"
 		      end
 		    else
-		      msCurrentScreen = "Details"
+		      if Session.gsAddressPref = "Work" then
+		        if Details.popBusCountryCode.Text <> "United States" and Details.popBusCountryCode.Text <> "Canada" then 
+		          msCurrentScreen = "Shipping"
+		          CreditCard.mbForiegn = True
+		        else
+		          msCurrentScreen = "Details"
+		          CreditCard.mbForiegn = False
+		        end
+		      else
+		        if Details.popResCountryCode.Text <> "United States" and Details.popResCountryCode.Text <> "Canada" then 
+		          msCurrentScreen = "Shipping"
+		          CreditCard.mbForiegn = True
+		        else
+		          msCurrentScreen = "Details"
+		          CreditCard.mbForiegn = False
+		        end
+		      end
+		      
 		      'btnPrevious.Visible = False
 		    end
 		    

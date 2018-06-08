@@ -1534,7 +1534,7 @@ End
 
 
 	#tag Property, Flags = &h0
-		mdTotalCost As Integer = 0
+		mdTotalCost As Double = 0
 	#tag EndProperty
 
 
