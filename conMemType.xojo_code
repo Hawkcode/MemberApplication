@@ -105,7 +105,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      InitialValue    =   "CD\nSoftcover\nCD & Softcover (Additional Cost)"
+      InitialValue    =   "CD\nSoftcover\nCD & Softcover (Additional Cost)\nDownload"
       Left            =   658
       ListIndex       =   -1
       LockBottom      =   False
@@ -1354,7 +1354,7 @@ End
 		  txtAGovernmental.Visible = False
 		  txtASpecial.Visible = False
 		  txtAStudent.Visible = False
-		  popDataBookformat.Visible = True
+		  popDataBookformat.Visible = not frmAppllcation.CreditCard.mbCantShip 'True
 		  lblChooseFormat.Visible = True
 		  btnUploadTrans.Visible = False
 		End Sub
@@ -1431,19 +1431,24 @@ End
 		  mdTotalCost = 0
 		  app.mbAffiliateGov = False
 		  
+		  dim mdPercent as Double = 1.00 
+		  If frmAppllcation.CreditCard.mbForiegn then
+		    mdPercent =  1.00 - (frmAppllcation.CreditCard.mdForPercent * .01)
+		  end
+		  
 		  Select Case popType.Text
 		  Case "Full"
-		    mdTotalCost = App.gdFullMemberPrice
+		    mdTotalCost = App.gdFullMemberPrice * mdPercent
 		  case "Associate"
-		    mdTotalCost = App.gdAssociateMemberPrice
+		    mdTotalCost = App.gdAssociateMemberPrice * mdPercent
 		  Case "Affiliate"
 		    app.mbAffiliateGov = True
-		    mdTotalCost = App.gdAffiliateMemberPrice
+		    mdTotalCost = App.gdAffiliateMemberPrice * mdPercent
 		  Case "Special"
-		    mdTotalCost = App.gdSpecialMemberPrice
+		    mdTotalCost = App.gdSpecialMemberPrice * mdPercent
 		  Case "Governmental"
 		    app.mbAffiliateGov = True
-		    mdTotalCost = App.gdGovernmental
+		    mdTotalCost = App.gdGovernmental * mdPercent
 		  Case "Student"
 		    mdTotalCost = App.gdStudentMemberPrice
 		    
@@ -1453,12 +1458,15 @@ End
 		  
 		  Dim ldDataBook as Double
 		  
+		  
 		  If popDataBookformat.Text = "CD & Softcover (Additional Cost)" then
 		    ldDataBook = App.gdDataBookBoth
 		    lblDatabook.Text = Format(App.gdDataBookBoth, "\$###0.00")
 		  else
 		    ldDataBook =0
 		    lblDatabook.Text = "$0.00"
+		    
+		    
 		  end
 		  mdTotalCost = mdTotalCost + ldDataBook
 		  
@@ -1483,6 +1491,11 @@ End
 		  lblTotalDonations.Text = Format(ldTotalDonations, "\$###0.00")
 		  
 		  mdTotalCost = mdTotalCost + ldTotalDonations
+		  
+		  
+		  If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
+		    mdTotalCost = mdTotalCost + frmAppllcation.CreditCard.mdShipping
+		  end
 		  
 		  Session.gdTotalCost = mdTotalCost
 		  
@@ -1562,10 +1575,12 @@ End
 		Sub SelectionChanged()
 		  HideDescriptions
 		  app.mbAffiliateGov = False
+		  popDataBookformat.Enabled = True
+		  popDataBookformat.ListIndex = -1
 		  
 		  lblChooseFormat.Visible = True
 		  lblDatabook.Visible = True
-		  popDataBookformat.Visible = True
+		  popDataBookformat.Visible = not frmAppllcation.CreditCard.mbCantShip 'True
 		  lblPEDHB.Visible = True
 		  
 		  txtADirection.Visible = False
@@ -1596,7 +1611,10 @@ End
 		    lblMemberType.Text = "Member Type: Student"
 		    lblChooseFormat.Visible = False
 		    lblDatabook.Visible = False
-		    popDataBookformat.Visible = False
+		    
+		    popDataBookformat.SetPopMenuValue"Download"
+		    popDataBookformat.Enabled = False
+		    
 		    lblPEDHB.Visible = False
 		  end
 		  
@@ -1824,7 +1842,7 @@ End
 		Name="mdTotalCost"
 		Group="Behavior"
 		InitialValue="0"
-		Type="Integer"
+		Type="Double"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Name"

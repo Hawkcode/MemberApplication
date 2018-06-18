@@ -40,6 +40,7 @@ WebStyle=stlLabelRightTextArea;stlLabelRightTextArea.xojo_code;&h00000000719B098
 WebStyle=stlLabelLeft;stlLabelLeft.xojo_code;&h000000004328E098;&h0000000000000000;false
 WebStyle=stlLabelMiddleBold;stlLabelMiddleBold.xojo_code;&h000000002C770CEB;&h0000000000000000;false
 WebStyle=stlLabelMiddleBoldRed;stlLabelMiddleBoldRed.xojo_code;&h00000000147DFFFF;&h0000000000000000;false
+WebStyle=stlLabelMiddleRed;stlLabelMiddleRed.xojo_code;&h000000003986C7FF;&h0000000000000000;false
 WebStyle=stlLabelMiddleBoldTitle;stlLabelMiddleBoldTitle.xojo_code;&h000000003BF170C1;&h0000000000000000;false
 WebStyle=stlLabelLeftItalSmall;stlLabelLeftItalSmall.xojo_code;&h000000000D1165E6;&h0000000000000000;false
 WebStyle=stlRect;stlRect.xojo_code;&h0000000008983E66;&h0000000000000000;false

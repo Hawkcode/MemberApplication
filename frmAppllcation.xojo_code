@@ -121,7 +121,10 @@ Begin WebPage frmAppllcation
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      mbForiegn       =   False
       mdDiscount      =   0.0
+      mdForPercent    =   35
+      mdShipping      =   0.0
       Scope           =   0
       ScrollbarsVisible=   0
       Style           =   "997821280"
@@ -330,7 +333,7 @@ Begin WebPage frmAppllcation
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      mdTotalCost     =   0
+      mdTotalCost     =   0.0
       Scope           =   0
       ScrollbarsVisible=   0
       Style           =   "997821280"
@@ -1664,17 +1667,26 @@ End
 		    end
 		    CreditCard.lblTotalDonations.Text = MemType.lblTotalDonations.Text
 		    CreditCard.lblGrandTotal.Text = MemType.lblGrandTotal.Text
+		    
+		    CreditCard.txtCCNumber.SetFocus
 		    if CreditCard.mbForiegn then
 		      CreditCard.lblForDiscount.Visible = True
 		      CreditCard.lblForDiscountAmount.Visible = True
-		      CreditCard.lblForShipping.Visible = True
-		      CreditCard.lblForTotalShipping.Visible = True
+		      CreditCard.lblForShipping.Visible = Not CreditCard.mbCantShip
+		      CreditCard.lblForTotalShipping.Visible = Not CreditCard.mbCantShip
+		      CreditCard.lblForTotalShipping.Text = Format(CreditCard.mdShipping, "\$###0.00")
+		      CreditCard.lblForDiscountAmount.Text = Format(CreditCard.mdForPercent, "##0.00\%")
+		      if CreditCard.lblDBChoice.Text = "Download:" then
+		        CreditCard.lblForShipping.Visible = False
+		        CreditCard.lblForTotalShipping.Visible = False
+		      end
 		    else
 		      CreditCard.lblForDiscount.Visible = False
 		      CreditCard.lblForDiscountAmount.Visible = False
 		      CreditCard.lblForShipping.Visible = False
 		      CreditCard.lblForTotalShipping.Visible = False
 		    end
+		    
 		    
 		    
 		    
@@ -1943,10 +1955,6 @@ End
 		    
 		  Case "Details"
 		    if bNext then
-		      if not Details.ValidateAll then
-		        Msgbox("Invalid Input: Look for fields outlined in red!")
-		        return
-		      end
 		      
 		      if not Details.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
@@ -1957,6 +1965,9 @@ End
 		        if Details.popBusCountryCode.Text <> "United States" and Details.popBusCountryCode.Text <> "Canada" then 
 		          msCurrentScreen = "Shipping"
 		          CreditCard.mbForiegn = True
+		          CreditCard.msCountry = Details.popBusCountryCode.RowTag(Details.popBusCountryCode.ListIndex)
+		          CreditCard.msPostalCode = Details.txtBusZip.Text
+		          frmAppllcation.Shipping.CalculateShipping
 		        else
 		          msCurrentScreen = "MemType"
 		          CreditCard.mbForiegn = False
@@ -1965,6 +1976,9 @@ End
 		        if Details.popResCountryCode.Text <> "United States" and Details.popResCountryCode.Text <> "Canada" then 
 		          msCurrentScreen = "Shipping"
 		          CreditCard.mbForiegn = True
+		          CreditCard.msCountry = Details.popResCountryCode.RowTag(Details.popResCountryCode.ListIndex)
+		          CreditCard.msPostalCode = Details.txtResZip.Text
+		          frmAppllcation.Shipping.CalculateShipping
 		        else
 		          msCurrentScreen = "MemType"
 		          CreditCard.mbForiegn = False

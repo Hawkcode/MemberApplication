@@ -1721,14 +1721,14 @@ Begin WebContainer conCreditCard
       Visible         =   False
       Width           =   129
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblForTotalShipping
       Cursor          =   1
@@ -1757,14 +1757,14 @@ Begin WebContainer conCreditCard
       Visible         =   False
       Width           =   67
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblForDiscount
       Cursor          =   1
@@ -1786,21 +1786,21 @@ Begin WebContainer conCreditCard
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   16
-      Text            =   "Foriegn Discount:"
+      Text            =   "Foriegn % Discount:"
       TextAlign       =   0
       Top             =   299
       VerticalCenter  =   0
       Visible         =   False
       Width           =   129
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblForDiscountAmount
       Cursor          =   1
@@ -1829,28 +1829,19 @@ Begin WebContainer conCreditCard
       Visible         =   False
       Width           =   67
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
 
 #tag WindowCode
-	#tag Event
-		Sub Shown()
-		  txtCCNumber.SetFocus
-		  
-		  
-		End Sub
-	#tag EndEvent
-
-
 	#tag Method, Flags = &h0
 		Function DidValidate(lbObj as WebTextField, lbNoError as Boolean = True) As Boolean
 		  'Returns true if field validated
@@ -2074,6 +2065,10 @@ End
 
 
 	#tag Property, Flags = &h0
+		mbCantShip As Boolean
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		mbForiegn As Boolean = False
 	#tag EndProperty
 
@@ -2087,6 +2082,30 @@ End
 
 	#tag Property, Flags = &h0
 		mdShipping As Double = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msCountry As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msHeight As String = "1.5"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msLength As String = "13"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msPostalCode As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msWeight As String = "4"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msWidth As String = "12"
 	#tag EndProperty
 
 
@@ -2485,5 +2504,50 @@ End
 		Group="Behavior"
 		InitialValue="0"
 		Type="Double"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msCountry"
+		Group="Behavior"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mbCantShip"
+		Group="Behavior"
+		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msPostalCode"
+		Group="Behavior"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msLength"
+		Group="Behavior"
+		InitialValue="13"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msHeight"
+		Group="Behavior"
+		InitialValue="1.5"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msWidth"
+		Group="Behavior"
+		InitialValue="12"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msWeight"
+		Group="Behavior"
+		InitialValue="4"
+		Type="String"
+		EditorType="MultiLineEditor"
 	#tag EndViewProperty
 #tag EndViewBehavior
