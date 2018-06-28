@@ -150,7 +150,7 @@ Begin WebContainer conDetails
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   10
-      Text            =   "Company:"
+      Text            =   "Business:"
       TextAlign       =   0
       Top             =   9
       VerticalCenter  =   0
@@ -246,7 +246,7 @@ Begin WebContainer conDetails
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   487
+      Left            =   471
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -258,12 +258,12 @@ Begin WebContainer conDetails
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   13
-      Text            =   "Name:"
-      TextAlign       =   0
+      Text            =   "Bus. Name:"
+      TextAlign       =   1
       Top             =   58
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   61
+      Width           =   81
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -610,11 +610,11 @@ Begin WebContainer conDetails
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   32
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   46
+      Left            =   8
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -626,12 +626,12 @@ Begin WebContainer conDetails
       Scope           =   0
       Style           =   "343801855"
       TabOrder        =   34
-      Text            =   "ASPE can not ship to PO boxes."
+      Text            =   "ASPE is unable to ship to PO boxes."
       TextAlign       =   2
       Top             =   247
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   335
+      Width           =   442
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1155,8 +1155,8 @@ Begin WebContainer conDetails
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      InitialValue    =   "`Home`,`True`,``,`True`,`True`	`Business`,`True`,``,`False`,`True`"
-      Left            =   241
+      InitialValue    =   "`Residence`,`True`,``,`True`,`True`	`Business`,`True`,``,`False`,`True`"
+      Left            =   217
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1171,7 +1171,7 @@ Begin WebContainer conDetails
       Top             =   222
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   158
+      Width           =   182
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1382,7 +1382,7 @@ Begin WebContainer conDetails
       Scope           =   0
       Style           =   "1005678785"
       TabOrder        =   35
-      Text            =   "Please make sure your address is correct. Including any Suite or Floor number. If ASPE has to reship, you will be responsible for the cost of reshipping the new member packet."
+      Text            =   "Please make sure your address is correct. Including any suite or floor numbers. If ASPE has to reship, you will be responsible for the cost of reshipping the new member packet."
       TextAlign       =   0
       Top             =   282
       VerticalCenter  =   0
@@ -1649,8 +1649,8 @@ End
 		  end
 		  
 		  if not lbReturnVal then
-		    MsgBox("PO Box is not allowed in primary address.")
-		    lbReturnVal = True
+		    MsgBox("PO Box is not allowed in primary address. ASPE only ships to a physical address.")
+		    lbReturnVal = False
 		  else
 		    txtBusStreetAddr.Style = EntryFields
 		    txtResStreetAddr.Style = EntryFields

@@ -262,7 +262,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   10
-      Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for member-ship in any other grade."
+      Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for membership in any other category."
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
@@ -338,7 +338,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   6
-      Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the So ciety Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
+      Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the Society Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
@@ -414,7 +414,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "144195174"
       TabOrder        =   11
-      Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: Persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full Members or Associate Members, provided they have fulfilled the experience required as outlined for each respective classification."
+      Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full or Associate, provided they have fulfilled the experience required as outlined for each respective classification."
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
@@ -452,7 +452,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "1265093392"
       TabOrder        =   7
-      Text            =   "Select a member type from the above drop down. \n\nThen select your Hand Book format and finally if you would like to make a contribution."
+      Text            =   "Select a member category type from the above drop down. \n\nThen select your handbook format and if you would like to make a contribution."
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
@@ -715,7 +715,7 @@ Begin WebContainer conMemType
       _VerticalPercent=   0.0
    End
    Begin WebCheckbox chkResearch
-      Caption         =   "ASPE Research Foundation**:"
+      Caption         =   "ASPE Education & Research Foundation**:"
       Cursor          =   1
       Enabled         =   True
       Height          =   26
@@ -737,7 +737,7 @@ Begin WebContainer conMemType
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   238
+      Width           =   288
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -874,7 +874,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "219244006"
       TabOrder        =   41
-      Text            =   "*Contributions to The ASPE Research Foundation are Strictly Voluntary and are tax deductable as a charatable contribution.\n\n**Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are Strictly Voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business Expence."
+      Text            =   "*Contributions to The ASPE Education & Research Foundation are strictly voluntary and are tax deductable as a charatable contribution.\n\n**Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are strictly voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense."
       TextAlign       =   0
       Top             =   207
       VerticalCenter  =   0
@@ -1116,7 +1116,7 @@ Begin WebContainer conMemType
       ScrollPosition  =   0
       Style           =   "1126752408"
       TabOrder        =   9
-      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: You will be rquired to upload a transcript. You will have download access to the Plumbing Engineer Hand Books."
+      Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: You will be required to upload a transcript and supply your college or university's definition of a full-time student. You will have access to the electronic version of ""Plumbing Engineer Design Handbooks."""
       TextAlign       =   0
       Top             =   91
       VerticalCenter  =   0
@@ -1354,7 +1354,7 @@ End
 		  txtAGovernmental.Visible = False
 		  txtASpecial.Visible = False
 		  txtAStudent.Visible = False
-		  popDataBookformat.Visible = not frmAppllcation.CreditCard.mbCantShip 'True
+		  popDataBookformat.Visible = True
 		  lblChooseFormat.Visible = True
 		  btnUploadTrans.Visible = False
 		End Sub
@@ -1390,6 +1390,8 @@ End
 		    lsStr = "CD"
 		  Case "Softcover"
 		    lsStr = "SC"
+		  Case "Download"
+		    lsStr = "DL"
 		  end
 		  
 		  
@@ -1575,12 +1577,17 @@ End
 		Sub SelectionChanged()
 		  HideDescriptions
 		  app.mbAffiliateGov = False
-		  popDataBookformat.Enabled = True
-		  popDataBookformat.ListIndex = -1
+		  
+		  If frmAppllcation.CreditCard.mbCantShip then
+		    popDataBookformat.SetPopMenuValue("Download")
+		    popDataBookformat.Enabled = False
+		  else
+		    popDataBookformat.Enabled = True
+		    popDataBookformat.ListIndex = -1
+		  end
 		  
 		  lblChooseFormat.Visible = True
 		  lblDatabook.Visible = True
-		  popDataBookformat.Visible = not frmAppllcation.CreditCard.mbCantShip 'True
 		  lblPEDHB.Visible = True
 		  
 		  txtADirection.Visible = False

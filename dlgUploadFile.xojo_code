@@ -162,7 +162,7 @@ Begin WebDialog dlgUploadFile
       Scope           =   0
       Style           =   "0"
       TabOrder        =   2
-      Text            =   "Upload Financial Report"
+      Text            =   "Upload Transcript"
       TextAlign       =   2
       Top             =   5
       VerticalCenter  =   0
@@ -288,7 +288,9 @@ End
 		      
 		      saveTrans = uploadFolder.Child(lsFileName)
 		      
-		      msLink = "http://xo/MemApplication/Transcripts/" + lsFileName
+		      'RSA!
+		      'msLink = "http://aspe.org/xo/MemApplication/Transcripts/" + lsFileName
+		      msLink = "http://aspe.org/xo/MembershipApplicationDemo/Transcripts/" + lsFileName
 		      
 		      uFile.Save(saveTrans)
 		      

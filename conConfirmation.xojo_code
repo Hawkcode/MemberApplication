@@ -82,7 +82,7 @@ Begin WebContainer conConfirmation
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   22
-      Text            =   "Expiration Date Month:"
+      Text            =   "Expiration Month (MM):"
       TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
@@ -814,7 +814,7 @@ Begin WebContainer conConfirmation
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   23
-      Text            =   "Year (2 Digit):"
+      Text            =   "Year (YY):"
       TextAlign       =   0
       Top             =   74
       VerticalCenter  =   0
@@ -910,7 +910,7 @@ Begin WebContainer conConfirmation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   225
+      Left            =   166
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -922,12 +922,12 @@ Begin WebContainer conConfirmation
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   25
-      Text            =   "Receipt will be sent to this address."
+      Text            =   "Receipt will be emailed to this address."
       TextAlign       =   0
       Top             =   318
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   235
+      Width           =   294
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -994,7 +994,7 @@ Begin WebContainer conConfirmation
       Scope           =   0
       Style           =   "831680130"
       TabOrder        =   7
-      Text            =   "Address must match the address the Credit Card company mails the statement to."
+      Text            =   "Address must match the address the credit card company mails the statement to."
       TextAlign       =   0
       Top             =   185
       VerticalCenter  =   0
@@ -1357,7 +1357,7 @@ Begin WebContainer conConfirmation
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   16
-      Text            =   "DB Format:"
+      Text            =   "Handbook Format:"
       TextAlign       =   0
       Top             =   56
       VerticalCenter  =   0
@@ -1414,7 +1414,7 @@ Begin WebContainer conConfirmation
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   70
+      Height          =   88
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -1433,10 +1433,10 @@ Begin WebContainer conConfirmation
       TabOrder        =   16
       Text            =   "Total \nDonations:"
       TextAlign       =   0
-      Top             =   142
+      Top             =   124
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   175
+      Width           =   228
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0

@@ -50,7 +50,7 @@ Begin WebContainer conShipping
       Scope           =   0
       Style           =   "997821280"
       TabOrder        =   0
-      Text            =   "Since you are located outside the United States and Canada, you will receive a discounted membership fee. This allows you to download the Plumbing Engineering Design Handbooks for the cost of your membership.\n\nIf you would like to receive the softbound books, you will have to pay an additional shipping fee. This fee will apply to all Handbook releases.\n\nAlso, if there is an error in your address and the package is returned to ASPE, you will have to pay an additional shipping charge once the address is corrected.\n\nYou will be responsible for all duties and custom charges."
+      Text            =   "Since you are located outside the United States and Canada, you will receive a discounted membership fee. This allows you to download the ""Plumbing Engineering Design Handbooks"" for the cost of your membership.\n\nIf you would like to receive the softbound books, you will have to pay an additional shipping fee. This fee will apply to all handbook releases.\n\nAlso, if there is an error in your address and the package is returned to ASPE, you will have to pay an additional shipping charge once the address is corrected.\n\nYou will be responsible for all duties and custom charges."
       TextAlign       =   0
       Top             =   13
       VerticalCenter  =   0
@@ -93,7 +93,14 @@ Begin WebContainer conShipping
       Visible         =   True
       Width           =   910
       ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
@@ -139,15 +146,16 @@ End
 		  Next
 		  if req.ChargeTotal = "" then
 		    lblShipping.text = ""
-		    MsgBox("I'm sorry we are unaable to ship to your location. You may of course download all materials.")
+		    lblShipping.text ="I'm sorry we are unable to ship to your location. You are still permitted to all materials."
 		    frmAppllcation.CreditCard.mbCantShip = True
 		  else
 		    ldTotal = req.ChargeTotal.Val + 10.00
 		    frmAppllcation.CreditCard.mdShipping = ldTotal
-		    lblShipping.text = "If you elect to have Items Shipped to you rather than downloaded your charge will be: " + EndOfLine + EndOfLine +_ 
-		    Format(ldTotal, "\$###0.00") + " Using: " + Services(lnCnt, 0) 
+		    lblShipping.text = "If you elect to have your member packet and handbook shipped to you rather than downloaded your charge will be: " + EndOfLine + EndOfLine +_ 
+		    Format(ldTotal, "\$###0.00") + " using " + Services(lnCnt, 0) 
 		    'ResultLabel.text = ResultLabel.text + req.ChargeCurrencyCode + chr(10) + req.AlertMessage
 		    'lblShipping.text = lblShipping.text + EndOfLine EndOfLine + Format(ldTotal, "\$###0.00")
+		    frmAppllcation.CreditCard.mbCantShip = False
 		    
 		    lblShipping.Visible=true
 		    
@@ -158,8 +166,6 @@ End
 
 #tag EndWindowCode
 
-#tag Events Label1
-#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Cursor"

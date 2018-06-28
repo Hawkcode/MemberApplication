@@ -50,7 +50,7 @@ Begin WebContainer conProcessing
       Scope           =   0
       Style           =   "1005678785"
       TabOrder        =   9
-      Text            =   "Processing"
+      Text            =   "Processing..."
       TextAlign       =   0
       Top             =   0
       VerticalCenter  =   0
@@ -124,7 +124,7 @@ Begin WebContainer conProcessing
       Scope           =   0
       Style           =   "1005678785"
       TabOrder        =   11
-      Text            =   "Your application has been recieved and will be processed within 2 weeks."
+      Text            =   "Your application has been received and will be processed within 2 weeks."
       TextAlign       =   0
       Top             =   289
       VerticalCenter  =   0
@@ -160,7 +160,7 @@ Begin WebContainer conProcessing
       Scope           =   0
       Style           =   "343801855"
       TabOrder        =   11
-      Text            =   "Please do not close this window till instructed to do so."
+      Text            =   "Please do not close this window until instructed to do so."
       TextAlign       =   0
       Top             =   224
       VerticalCenter  =   0

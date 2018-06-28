@@ -121,10 +121,17 @@ Begin WebPage frmAppllcation
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      mbCantShip      =   False
       mbForiegn       =   False
       mdDiscount      =   0.0
       mdForPercent    =   35
       mdShipping      =   0.0
+      msCountry       =   ""
+      msHeight        =   "1.5"
+      msLength        =   "13"
+      msPostalCode    =   ""
+      msWeight        =   "4"
+      msWidth         =   "12"
       Scope           =   0
       ScrollbarsVisible=   0
       Style           =   "997821280"
@@ -811,7 +818,7 @@ End
 		    lsStr= "Education Fund - " + frmAppllcation.MemType.txtEducationDonations.text + "<br/>"
 		  end
 		  if  rs.Field("DonationResearch").StringValue = "1" then
-		    lsStr= lsStr + "Research Foundation - " + frmAppllcation.MemType.txtRFDonations.text + "<br/>"
+		    lsStr= lsStr + "Education & Research Foundation - " + frmAppllcation.MemType.txtRFDonations.text + "<br/>"
 		  end
 		  
 		  if  rs.Field("DonationSteele").StringValue = "1" then
@@ -825,18 +832,20 @@ End
 		  
 		  Dim lsDBFormat as String
 		  
-		  if rs.Field("MemType").StringValue <> "Student" then
-		    Select Case rs.Field("DataBookFormat").StringValue
-		    Case "CD"
-		      lsDBFormat = "CD-ROM"
-		      
-		    Case "SC"
-		      lsDBFormat = "Soft Cover"
-		      
-		    Case "BO"
-		      lsDBFormat = "Both Soft Cover and CD-ROM"
-		      
-		    end
+		  Select Case rs.Field("DataBookFormat").StringValue
+		  Case "CD"
+		    lsDBFormat = "CD-ROM"
+		    
+		  Case "SC"
+		    lsDBFormat = "Soft Cover"
+		    
+		  Case "BO"
+		    lsDBFormat = "Both Soft Cover and CD-ROM"
+		    
+		  Case "DL"
+		    lsDBFormat = "Download"
+		    
+		    
 		  end
 		  
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Plumbing Engineering Design Hadbook Format: </td><td><strong>"
@@ -1632,6 +1641,16 @@ End
 		  Case "MemType"  '2
 		    MemType.Visible= True
 		    MemType.popType.SetFocus
+		    If frmAppllcation.CreditCard.mbCantShip then
+		      MemType.popDataBookformat.SetPopMenuValue("Download")
+		      MemType.popDataBookformat.Enabled = False
+		    else
+		      if MemType.popDataBookformat.ListIndex > 0 then
+		        MemType.popDataBookformat.Enabled = True
+		        'MemType.popDataBookformat.ListIndex = -1
+		      end
+		    end
+		    
 		    
 		  Case "Education"     '   3 if not Affiliate
 		    Education.Visible= True
@@ -1657,7 +1676,7 @@ End
 		      CreditCard.lblDonations.text = "Education Fund" + EndOfLine
 		    end
 		    if MemType.chkResearch.Value then
-		      CreditCard.lblDonations.text = CreditCard.lblDonations.text + "Research Foundation" + EndOfLine
+		      CreditCard.lblDonations.text = CreditCard.lblDonations.text + "Education & Research Foundation" + EndOfLine
 		    end
 		    if MemType.chkSteele.Value then
 		      CreditCard.lblDonations.text = CreditCard.lblDonations.text + "Alfred Steel Scholorship" + EndOfLine
@@ -1675,7 +1694,7 @@ End
 		      CreditCard.lblForShipping.Visible = Not CreditCard.mbCantShip
 		      CreditCard.lblForTotalShipping.Visible = Not CreditCard.mbCantShip
 		      CreditCard.lblForTotalShipping.Text = Format(CreditCard.mdShipping, "\$###0.00")
-		      CreditCard.lblForDiscountAmount.Text = Format(CreditCard.mdForPercent, "##0.00\%")
+		      CreditCard.lblForDiscountAmount.Text = Format(CreditCard.mdForPercent, "##0\%")
 		      if CreditCard.lblDBChoice.Text = "Download:" then
 		        CreditCard.lblForShipping.Visible = False
 		        CreditCard.lblForTotalShipping.Visible = False
@@ -1800,7 +1819,7 @@ End
 		  'MsgBox("Out of Polling")
 		  
 		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
-		  Processing.lblCloseWarning.Text = "It is now safe to Close this Window."
+		  Processing.lblCloseWarning.Text = "It is now safe to close this window."
 		  
 		  
 		  
@@ -1961,6 +1980,7 @@ End
 		        return
 		      end
 		      if not Details.SaveMemInfo then return
+		      
 		      if Session.gsAddressPref = "Work" then
 		        if Details.popBusCountryCode.Text <> "United States" and Details.popBusCountryCode.Text <> "Canada" then 
 		          msCurrentScreen = "Shipping"
@@ -2113,6 +2133,8 @@ End
 		      btnNext.enabled = True
 		    end
 		  end
+		  
+		  
 		  
 		  MoveToPage
 		  if bNext and msCurrentScreen <>   "Processing" then btnNext.enabled = True
