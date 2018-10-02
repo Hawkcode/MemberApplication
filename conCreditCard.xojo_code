@@ -1182,8 +1182,8 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   17
       Text            =   "$000.00"
-      TextAlign       =   0
-      Top             =   86
+      TextAlign       =   3
+      Top             =   82
       VerticalCenter  =   0
       Visible         =   True
       Width           =   66
@@ -1218,7 +1218,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   18
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   179
       VerticalCenter  =   0
       Visible         =   True
@@ -1254,7 +1254,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   19
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   331
       VerticalCenter  =   0
       Visible         =   True
@@ -1277,7 +1277,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   816
+      Left            =   817
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1290,8 +1290,8 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   20
       Text            =   "$0.00"
-      TextAlign       =   0
-      Top             =   56
+      TextAlign       =   3
+      Top             =   54
       VerticalCenter  =   0
       Visible         =   True
       Width           =   56
@@ -1650,7 +1650,7 @@ Begin WebContainer conCreditCard
       Style           =   "776128260"
       TabOrder        =   26
       Text            =   "$0.00"
-      TextAlign       =   0
+      TextAlign       =   3
       Top             =   243
       VerticalCenter  =   0
       Visible         =   True
@@ -1719,7 +1719,7 @@ Begin WebContainer conCreditCard
       Top             =   273
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   129
+      Width           =   202
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1752,7 +1752,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   3
-      Top             =   277
+      Top             =   273
       VerticalCenter  =   0
       Visible         =   False
       Width           =   67
@@ -1774,7 +1774,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   610
+      Left            =   581
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1786,12 +1786,12 @@ Begin WebContainer conCreditCard
       Scope           =   0
       Style           =   "418528476"
       TabOrder        =   16
-      Text            =   "Foriegn % Discount:"
+      Text            =   "Multi year discount reflected above:"
       TextAlign       =   0
       Top             =   299
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   129
+      Width           =   231
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1824,7 +1824,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   16
       Text            =   "$0.00"
       TextAlign       =   3
-      Top             =   303
+      Top             =   299
       VerticalCenter  =   0
       Visible         =   False
       Width           =   67
@@ -2081,7 +2081,23 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		mdMulti1YearPercent As Integer = 1
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdMulti2YearPercent As Integer = 5
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdMulti3YearPercent As Integer = 10
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		mdShipping As Double = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mnMultYearNumOf As Integer = 1
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -2549,5 +2565,29 @@ End
 		InitialValue="4"
 		Type="String"
 		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdMulti1YearPercent"
+		Group="Behavior"
+		InitialValue="1"
+		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdMulti2YearPercent"
+		Group="Behavior"
+		InitialValue="5"
+		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdMulti3YearPercent"
+		Group="Behavior"
+		InitialValue="10"
+		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mnMultYearNumOf"
+		Group="Behavior"
+		InitialValue="1"
+		Type="Integer"
 	#tag EndViewProperty
 #tag EndViewBehavior

@@ -141,7 +141,7 @@ Begin WebContainer conMemType
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent"
-      Left            =   136
+      Left            =   135
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -154,7 +154,7 @@ Begin WebContainer conMemType
       Style           =   "1836658647"
       TabOrder        =   4
       Text            =   ""
-      Top             =   20
+      Top             =   7
       VerticalCenter  =   0
       Visible         =   True
       Width           =   164
@@ -212,7 +212,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   8
+      Left            =   7
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -226,7 +226,7 @@ Begin WebContainer conMemType
       TabOrder        =   2
       Text            =   "Membership Type:"
       TextAlign       =   0
-      Top             =   23
+      Top             =   10
       VerticalCenter  =   0
       Visible         =   True
       Width           =   124
@@ -666,7 +666,7 @@ Begin WebContainer conMemType
       TabOrder        =   40
       Text            =   "Plumbing Engineering Design HB Vol 4 ships 2017"
       TextAlign       =   3
-      Top             =   57
+      Top             =   63
       VerticalCenter  =   0
       Visible         =   True
       Width           =   357
@@ -1310,6 +1310,223 @@ Begin WebContainer conMemType
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel Label1
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   44
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   2
+      Style           =   "0"
+      TabOrder        =   44
+      Text            =   "Number of years:"
+      TextAlign       =   3
+      Top             =   41
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   126
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebPopupMenu popYears
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      InitialValue    =   "1\n2\n3"
+      Left            =   174
+      ListIndex       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      Style           =   "0"
+      TabOrder        =   45
+      Text            =   ""
+      Top             =   41
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   48
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextArea txtMultiYear
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   False
+      Height          =   246
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      ReadOnly        =   True
+      Scope           =   0
+      ScrollPosition  =   0
+      Style           =   "1126752408"
+      TabOrder        =   9
+      Text            =   "Existing members in good standing and all new members are eligible to sign up for a discounted multiple-year membership. \n\nA 1-year membership is the standard dues of $190. \n\nA 2-year membership receives a 5% discount (dues are $361). \n\nA 3-year membership receives a 10% discount (dues are $513)."
+      TextAlign       =   0
+      Top             =   91
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   400
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblMultiYearDiscount
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   234
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "% Distount"
+      TextAlign       =   1
+      Top             =   41
+      VerticalCenter  =   0
+      Visible         =   False
+      Width           =   236
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel lblDiscout
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   3
+      Top             =   273
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   102
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
+   Begin WebLabel lblShipping
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   799
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "776128260"
+      TabOrder        =   16
+      Text            =   "$0.00"
+      TextAlign       =   3
+      Top             =   248
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   102
+      ZIndex          =   1
+      _DeclareLineRendered=   "False"
+      _HorizontalPercent=   "0.0"
+      _IsEmbedded     =   "False"
+      _Locked         =   "False"
+      _NeedsRendering =   True
+      _OfficialControl=   "False"
+      _OpenEventFired =   "False"
+      _VerticalPercent=   "0.0"
+   End
 End
 #tag EndWebPage
 
@@ -1324,7 +1541,6 @@ End
 		  popType.AddRow("Governmental")
 		  popType.AddRow("Special")
 		  popType.AddRow("Student")
-		  
 		  
 		  
 		  
@@ -1357,6 +1573,7 @@ End
 		  popDataBookformat.Visible = True
 		  lblChooseFormat.Visible = True
 		  btnUploadTrans.Visible = False
+		  txtMultiYear.Visible = False
 		End Sub
 	#tag EndMethod
 
@@ -1436,27 +1653,50 @@ End
 		  dim mdPercent as Double = 1.00 
 		  If frmAppllcation.CreditCard.mbForiegn then
 		    mdPercent =  1.00 - (frmAppllcation.CreditCard.mdForPercent * .01)
+		  else
+		    Select Case popYears.Text
+		    Case "2"
+		      mdPercent =1.00 - ( frmAppllcation.CreditCard.mdMulti2YearPercent * .01)
+		    Case "3"
+		      mdPercent = 1.00 - (frmAppllcation.CreditCard.mdMulti3YearPercent * .01)
+		    end
 		  end
+		  
+		  mdDiscountAmmount = 0
 		  
 		  Select Case popType.Text
 		  Case "Full"
-		    mdTotalCost = App.gdFullMemberPrice * mdPercent
+		    lblMemshipCost.Text = Format(App.gdFullMemberPrice, "\$###0.00")
+		    mdTotalCost = (App.gdFullMemberPrice * popYears.text.val) * mdPercent
+		    mdDiscountAmmount = App.gdFullMemberPrice  * popYears.text.val - ((App.gdFullMemberPrice * popYears.text.val) * mdPercent)
 		  case "Associate"
-		    mdTotalCost = App.gdAssociateMemberPrice * mdPercent
+		    lblMemshipCost.Text = Format(App.gdAssociateMemberPrice, "\$###0.00")
+		    mdTotalCost = (App.gdAssociateMemberPrice * popYears.text.val) * mdPercent 
+		    mdDiscountAmmount = App.gdAssociateMemberPrice  * popYears.text.val - ((App.gdAssociateMemberPrice * popYears.text.val) * mdPercent)
 		  Case "Affiliate"
+		    lblMemshipCost.Text = Format(App.gdAffiliateMemberPrice, "\$###0.00")
 		    app.mbAffiliateGov = True
-		    mdTotalCost = App.gdAffiliateMemberPrice * mdPercent
+		    mdTotalCost = (App.gdAffiliateMemberPrice * popYears.text.val) * mdPercent
+		    mdDiscountAmmount = App.gdAffiliateMemberPrice  * popYears.text.val - ((App.gdAffiliateMemberPrice * popYears.text.val) * mdPercent)
 		  Case "Special"
-		    mdTotalCost = App.gdSpecialMemberPrice * mdPercent
+		    lblMemshipCost.Text = Format(App.gdSpecialMemberPrice, "\$###0.00")
+		    mdTotalCost = (App.gdSpecialMemberPrice * popYears.text.val) * mdPercent
+		    mdDiscountAmmount = App.gdSpecialMemberPrice  * popYears.text.val - ((App.gdSpecialMemberPrice * popYears.text.val) * mdPercent)
 		  Case "Governmental"
+		    lblMemshipCost.Text = Format(App.gdGovernmental, "\$###0.00")
 		    app.mbAffiliateGov = True
-		    mdTotalCost = App.gdGovernmental * mdPercent
+		    mdTotalCost = (App.gdGovernmental * popYears.text.val) * mdPercent
+		    mdDiscountAmmount = App.gdGovernmental  * popYears.text.val - ((App.gdGovernmental * popYears.text.val) * mdPercent)
 		  Case "Student"
 		    mdTotalCost = App.gdStudentMemberPrice
 		    
 		  end
 		  
-		  lblMemshipCost.Text = Format(mdTotalCost, "\$###0.00")
+		  'lblMemshipCost.Text = Format(mdTotalCost, "\$###0.00")
+		  
+		  lblDiscout.Text = Format(mdDiscountAmmount * -1 , "\$-###0.00")
+		  lblShipping.text = Format(frmAppllcation.CreditCard.mdShipping, "\$###0.00")
+		  lblShipping.Visible = True
 		  
 		  Dim ldDataBook as Double
 		  
@@ -1497,6 +1737,8 @@ End
 		  
 		  If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
 		    mdTotalCost = mdTotalCost + frmAppllcation.CreditCard.mdShipping
+		  else
+		    lblShipping.Visible = False
 		  end
 		  
 		  Session.gdTotalCost = mdTotalCost
@@ -1549,6 +1791,10 @@ End
 
 
 	#tag Property, Flags = &h0
+		mdDiscountAmmount As Double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		mdTotalCost As Double = 0
 	#tag EndProperty
 
@@ -1590,8 +1836,21 @@ End
 		  lblDatabook.Visible = True
 		  lblPEDHB.Visible = True
 		  
+		  if me.ListIndex < 5 then
+		    popYears.enabled = True
+		  else
+		    popYears.ListIndex = 0
+		    popYears.enabled = False
+		  end
+		  
+		  if frmAppllcation.Creditcard.mbForiegn then
+		    popYears.ListIndex = 0
+		    popYears.enabled = False
+		  end
+		  
 		  txtADirection.Visible = False
-		  Select Case popType.Text
+		  
+		  Select Case me.Text
 		    
 		  Case "Full"
 		    txtAFull.Visible = True
@@ -1727,6 +1986,38 @@ End
 		Sub Action()
 		  Dim ul as new dlgUploadFile
 		  ul.Show
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events popYears
+	#tag Event
+		Sub SelectionChanged()
+		  
+		  frmAppllcation.CreditCard.mnMultYearNumOf = popYears.Text.Val
+		  HideDescriptions
+		  lblMultiYearDiscount.Visible = False
+		  
+		  Select case  me.Text
+		  Case "1"
+		    frmAppllcation.CreditCard.mnMultYearNumOf = 1
+		  Case "2"
+		    lblMultiYearDiscount.Text = "5% Multi-Year Discount"
+		    lblMultiYearDiscount.Visible = True
+		    txtMultiYear.Visible = True
+		    frmAppllcation.CreditCard.mnMultYearNumOf = 2
+		  Case "3"
+		    lblMultiYearDiscount.Text = "10% Multi-Year Discount"
+		    lblMultiYearDiscount.Visible = True
+		    txtMultiYear.Visible = True
+		    frmAppllcation.CreditCard.mnMultYearNumOf = 3
+		  else
+		    lblMultiYearDiscount.Visible = False
+		    txtADirection.Visible = True
+		    txtMultiYear.Visible = False
+		  End
+		  
+		  UpdateTotal
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -1962,6 +2253,11 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_VerticalPercent"
+		Group="Behavior"
+		Type="Double"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdDiscountAmmount"
 		Group="Behavior"
 		Type="Double"
 	#tag EndViewProperty

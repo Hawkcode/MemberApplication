@@ -125,7 +125,11 @@ Begin WebPage frmAppllcation
       mbForiegn       =   False
       mdDiscount      =   0.0
       mdForPercent    =   35
+      mdMulti1YearPercent=   1
+      mdMulti2YearPercent=   5
+      mdMulti3YearPercent=   10
       mdShipping      =   0.0
+      mnMultYearNumOf =   1
       msCountry       =   ""
       msHeight        =   "1.5"
       msLength        =   "13"
@@ -1639,6 +1643,13 @@ End
 		    Shipping.Visible= True
 		    
 		  Case "MemType"  '2
+		    if frmAppllcation.CreditCard.mbForiegn then
+		      MemType.popYears.enabled = false
+		      MemType.popYears.ListIndex = 0
+		    else
+		      MemType.popYears.enabled = True
+		      MemType.popYears.ListIndex = 0
+		    End
 		    MemType.Visible= True
 		    MemType.popType.SetFocus
 		    If frmAppllcation.CreditCard.mbCantShip then
@@ -1650,7 +1661,7 @@ End
 		        'MemType.popDataBookformat.ListIndex = -1
 		      end
 		    end
-		    
+		    MemType.UpdateTotal
 		    
 		  Case "Education"     '   3 if not Affiliate
 		    Education.Visible= True
@@ -1670,6 +1681,7 @@ End
 		    CreditCard.lblDBChoice.Text = MemType.popDataBookformat.Text + ":"
 		    CreditCard.lblDatabook.Text = MemType.lblDatabook.Text
 		    CreditCard.lblMemshipType.Text  = "Membership Type " + MemType.popType.Text  + ":"
+		    
 		    CreditCard.lblMemshipCost.Text = MemType.lblMemshipCost.Text
 		    CreditCard.lblDonations.text = ""
 		    if MemType.chkEducation.Value then
@@ -1689,22 +1701,47 @@ End
 		    
 		    CreditCard.txtCCNumber.SetFocus
 		    if CreditCard.mbForiegn then
+		      CreditCard.lblForDiscountAmount.Text = MemType.lblDiscout.Text
+		      
+		      Confirmation.lblDiscountDesc.Text = "Foriegn Discount:"
 		      CreditCard.lblForDiscount.Visible = True
+		      CreditCard.lblForDiscount.Text = "Foriegn % Discount:"
 		      CreditCard.lblForDiscountAmount.Visible = True
 		      CreditCard.lblForShipping.Visible = Not CreditCard.mbCantShip
+		      Confirmation.lblForShipping.Visible = Not CreditCard.mbCantShip
 		      CreditCard.lblForTotalShipping.Visible = Not CreditCard.mbCantShip
 		      CreditCard.lblForTotalShipping.Text = Format(CreditCard.mdShipping, "\$###0.00")
-		      CreditCard.lblForDiscountAmount.Text = Format(CreditCard.mdForPercent, "##0\%")
+		      'CreditCard.lblForDiscountAmount.Text = Format(CreditCard.lblForDiscountAmount.Text.Val, "\$###0.00")
 		      if CreditCard.lblDBChoice.Text = "Download:" then
 		        CreditCard.lblForShipping.Visible = False
 		        CreditCard.lblForTotalShipping.Visible = False
 		      end
 		    else
-		      CreditCard.lblForDiscount.Visible = False
-		      CreditCard.lblForDiscountAmount.Visible = False
-		      CreditCard.lblForShipping.Visible = False
-		      CreditCard.lblForTotalShipping.Visible = False
+		      if CreditCard.mnMultYearNumOf > 1 then
+		        CreditCard.lblForShipping.text = ""
+		        CreditCard.lblForTotalShipping.Text = ""
+		        Select Case CreditCard.mnMultYearNumOf
+		        case 2
+		          CreditCard.lblForDiscountAmount.Text = Format(MemType.mdDiscountAmmount * -1, "-##0.00")
+		        case 3
+		          CreditCard.lblForDiscountAmount.Text = Format(MemType.mdDiscountAmmount * -1, "-##0.00")
+		        end
+		        CreditCard.lblForDiscount.Text = "Multi year discount: "
+		        Confirmation.lblDiscountDesc.Text = "Multi year discount: "
+		        
+		        CreditCard.lblForDiscount.Visible = True
+		        CreditCard.lblForDiscountAmount.Visible = True
+		      else
+		        
+		        CreditCard.lblForDiscount.Visible = False
+		        CreditCard.lblForDiscountAmount.Visible = False
+		        CreditCard.lblForShipping.Visible = False
+		        CreditCard.lblForTotalShipping.Visible = False
+		      end
 		    end
+		    
+		    btnNext.Caption = "Next"
+		    
 		    
 		    
 		    
@@ -1730,6 +1767,10 @@ End
 		    Confirmation.lblMemshipCost.Text = CreditCard.lblMemshipCost.Text
 		    Confirmation.lblDonations.text = CreditCard.lblDonations.text
 		    Confirmation.lblDiscount.text = CreditCard.lblDiscount.text
+		    Confirmation.lblForTotalShipping.Visible = CreditCard.lblForTotalShipping.Visible
+		    Confirmation.lblForTotalShipping.Text = CreditCard.lblForTotalShipping.Text
+		    Confirmation.lblMultiYearDiscount.Text = CreditCard.lblForDiscountAmount.text
+		    
 		    Confirmation.lblGrandTotal.Text = CreditCard.lblGrandTotal.Text
 		    Confirmation.lblTotalDonations.Text = CreditCard.lblTotalDonations.Text
 		    
