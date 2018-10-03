@@ -1482,14 +1482,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   102
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebLabel lblShipping
       Cursor          =   1
@@ -1518,14 +1518,14 @@ Begin WebContainer conMemType
       Visible         =   True
       Width           =   102
       ZIndex          =   1
-      _DeclareLineRendered=   "False"
-      _HorizontalPercent=   "0.0"
-      _IsEmbedded     =   "False"
-      _Locked         =   "False"
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   "False"
-      _OpenEventFired =   "False"
-      _VerticalPercent=   "0.0"
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
@@ -1611,12 +1611,16 @@ End
 		    lsStr = "DL"
 		  end
 		  
+		  Dim lbIsMultiYear As Boolean = frmAppllcation.CreditCard.mnMultYearNumOf > 1
+		  Dim lnNumMultiYear As Integer = frmAppllcation.CreditCard.mnMultYearNumOf
+		  Dim lbIsForiegn As Boolean = frmAppllcation.CreditCard.mbForiegn
+		  
 		  
 		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
 		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
-		  oSQL.AddFields "MemPrice"
-		  oSQL.AddValues mdTotalCost
+		  oSQL.AddFields "MemPrice",    "IsMultiYear",  "NumMultiYear",    "IsForiegn",   "ForShipCost"
+		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost
 		  
 		  if Session.gnRecNo <> 0 then
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
@@ -1737,8 +1741,10 @@ End
 		  
 		  If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
 		    mdTotalCost = mdTotalCost + frmAppllcation.CreditCard.mdShipping
+		    mdForShippingCost = frmAppllcation.CreditCard.mdShipping
 		  else
 		    lblShipping.Visible = False
+		    mdForShippingCost = 0
 		  end
 		  
 		  Session.gdTotalCost = mdTotalCost
@@ -1792,6 +1798,10 @@ End
 
 	#tag Property, Flags = &h0
 		mdDiscountAmmount As Double
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdForShippingCost As Integer
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -2260,5 +2270,10 @@ End
 		Name="mdDiscountAmmount"
 		Group="Behavior"
 		Type="Double"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdForShippingCost"
+		Group="Behavior"
+		Type="Integer"
 	#tag EndViewProperty
 #tag EndViewBehavior

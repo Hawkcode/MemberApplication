@@ -344,6 +344,7 @@ Begin WebPage frmAppllcation
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
+      mdDiscountAmmount=   0.0
       mdTotalCost     =   0.0
       Scope           =   0
       ScrollbarsVisible=   0
@@ -724,7 +725,7 @@ End
 		  lsMsg = lsMsg +  "<td>   </td>"
 		  lsMsg = lsMsg +  "<td></td>"
 		  lsMsg = lsMsg +  "<td></td>"
-		  lsMsg = lsMsg +  "</tbody></table></td></tbody></table><p></p>"
+		  lsMsg = lsMsg +  "</tbody></table></td>></tr></tbody></table><p></p>"
 		  
 		  lsMsg = lsMsg +  "<table border=""1"" cellspacing=""2"" cellpadding=""2"">"
 		  lsMsg = lsMsg +  "<tr><td width=""128"">Application ID: </td><td><strong>"
@@ -742,6 +743,30 @@ End
 		  lsMsg = lsMsg +  "<tr><td width=""128"">AmountUSD: $</td><td><strong>"
 		  lsMsg = lsMsg +  rs.Field("MemPrice").StringValue
 		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  lsMsg = lsMsg +  "<tr><td width=""128"">Is this Multi Year</td><td><strong>"
+		  If rs.Field("IsMultiYear").BooleanValue then
+		    lsMsg = lsMsg +  "<Strong>This is Multi year!"
+		  else
+		    lsMsg = lsMsg +  "<Strong>Not Multi-Year"
+		  end
+		  lsMsg = lsMsg +  "</strong></td></tr>"
+		  
+		  if rs.Field("IsMultiYear").BooleanValue then
+		    lsMsg = lsMsg +  "<tr><td width=""128"">Number of years</td><td><strong>"
+		    lsMsg = lsMsg +  rs.Field("NumMultiYear").StringValue
+		    lsMsg = lsMsg +  "</strong></td></tr>"
+		  end
+		  
+		  if rs.Field("IsForiegn").BooleanValue then
+		    lsMsg = lsMsg +  "<tr><td width=""128"">Foriegn Shipping Cost:</td><td><strong>"
+		    lsMsg = lsMsg +  rs.Field("ForShipCost").StringValue
+		    lsMsg = lsMsg +  "</strong></td></tr>"
+		  end
+		  
+		  
+		  
+		  
 		  
 		  if CreditCard.txtCoupon.text <> "" then
 		    lsMsg = lsMsg +  "<tr><td width=""128"">Coupon Applied: $</td><td><strong>"
