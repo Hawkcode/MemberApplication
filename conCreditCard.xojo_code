@@ -1671,6 +1671,7 @@ Begin WebContainer conCreditCard
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
+      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1683,6 +1684,7 @@ Begin WebContainer conCreditCard
       Scope           =   0
       Style           =   "0"
       TabOrder        =   -1
+      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False

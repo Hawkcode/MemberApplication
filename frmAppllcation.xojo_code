@@ -345,6 +345,7 @@ Begin WebPage frmAppllcation
       LockTop         =   True
       LockVertical    =   False
       mdDiscountAmmount=   0.0
+      mdForShippingCost=   0
       mdTotalCost     =   0.0
       Scope           =   0
       ScrollbarsVisible=   0
@@ -371,6 +372,7 @@ Begin WebPage frmAppllcation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
+      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -384,6 +386,7 @@ Begin WebPage frmAppllcation
       Style           =   "0"
       TabOrder        =   -1
       TabPanelIndex   =   0
+      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False
@@ -437,12 +440,14 @@ Begin WebPage frmAppllcation
       CertificateRejectionFile=   
       ConnectionType  =   3
       Index           =   -2147483648
+      Left            =   0.0
       LockedInPosition=   False
       Scope           =   0
       Secure          =   False
       SMTPConnectionMode=   0
       Style           =   "0"
       TabPanelIndex   =   0
+      Top             =   0.0
    End
    Begin WebTimer QuitTimer
       Cursor          =   0
@@ -450,6 +455,7 @@ Begin WebPage frmAppllcation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
+      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -463,6 +469,7 @@ Begin WebPage frmAppllcation
       Style           =   "0"
       TabOrder        =   -1
       TabPanelIndex   =   0
+      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False
