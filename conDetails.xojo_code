@@ -1572,8 +1572,8 @@ End
 		  
 		  Session.gsAddressPref = lsPrefered
 		  
-		  oSQL.AddFields "resStreetAddress",        "resCity"',          "mailPref"
-		  oSQL.AddValues txtResStreetAddr.Text , txtResCity.Text', 
+		  oSQL.AddFields "resStreetAddress",        "resCity",          "mailPref"
+		  oSQL.AddValues txtResStreetAddr.Text , txtResCity.Text, lsPrefered  
 		  
 		  lsStr = popResCountryCode.Text
 		  if lsStr = "United States" then
