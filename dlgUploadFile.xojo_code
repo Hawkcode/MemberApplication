@@ -289,14 +289,18 @@ End
 		      saveTrans = uploadFolder.Child(lsFileName)
 		      
 		      'RSA!
-		      'msLink = "http://aspe.org/xo/MemApplication/Transcripts/" + lsFileName
-		      msLink = "http://aspe.org/xo/MembershipApplicationDemo/Transcripts/" + lsFileName
+		      '
+		      msLink = "http://aspe.org/xo/MemApplication/Transcripts/" + lsFileName
+		      'msLink = "http://aspe.org/xo/MembershipApplicationDemo/Transcripts/" + lsFileName
+		      
 		      
 		      uFile.Save(saveTrans)
 		      
 		      fldUploadedFiles.Append(saveTrans)
 		      
 		      lnCnt = lnCnt + 1
+		      'saveTrans = msLink.
+		      
 		    Catch err As IOException
 		      MsgBox(" Upload failed: Insufficient permissions to save files to " + uploadFolder.NativePath)
 		      Exit For

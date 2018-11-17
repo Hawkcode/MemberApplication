@@ -1536,6 +1536,7 @@ End
 		  end
 		  
 		  
+		  Return True
 		End Function
 	#tag EndMethod
 
@@ -1628,6 +1629,15 @@ End
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h1
+		Protected Function SetValid(lbValid as Boolean, lbReturnVal as Boolean) As Boolean
+		  if lbReturnVal then
+		    lbReturnVal = lbValid
+		  end
+		  Return lbReturnVal
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function ValidateAll() As Boolean
 		  'loop through controls to validate each one.
@@ -1635,6 +1645,23 @@ End
 		  Dim lnX, lnCount As Integer
 		  Dim IbValid, lbReturnVal as Boolean
 		  lbReturnVal = True
+		  
+		  lnCount = Self.ControlCount - 1
+		  
+		  'for lnX = 0 to lnCount
+		  'IbValid = False
+		  'if WebContainer.ControlAtIndex(lnX) IsA WebTextField then
+		  'IbValid = DidValidate(WebContainer.ControlAtIndex(lnX).Name)
+		  'end
+		  'if WebContainer.ControlAtIndex(lnX) IsA WebPopupMenu then
+		  'IbValid = (WebPopupMenu(WebContainer.ControlAtIndex(lnX)).ListIndex > -)
+		  'end
+		  'if not IbValid then
+		  'lbReturnVal = IbValid
+		  'end
+		  '
+		  'next
+		  
 		  
 		  if radMail.CellSelected(0,0) then
 		    if txtResStreetAddr.Text.InStr(0, "PO Box") > 0 then
@@ -1656,8 +1683,25 @@ End
 		    txtResStreetAddr.Style = EntryFields
 		  end
 		  
-		  'lbReturnVal = SetValid(DidValidate(txtFirst), lbReturnVal)
-		  '
+		  
+		  if radMail.CellSelected(0, 1) then 
+		    lbReturnVal = SetValid(DidValidateArea(txtBusStreetAddr), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtBusCity), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtBusState), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtBusZip), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtPhoneBus), lbReturnVal)
+		    lbReturnVal = SetValid(popBusCountryCode.ListIndex <> -1, lbReturnVal)
+		  else
+		    lbReturnVal = SetValid(DidValidateArea(txtResStreetAddr), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtPhoneHome), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtResCity), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtResState), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtResZip), lbReturnVal)
+		    lbReturnVal = SetValid(popResCountryCode.ListIndex <> -1, lbReturnVal)
+		  end
+		  
+		  
+		  
 		  'if (popNamePrefix.ListIndex >=0) then
 		  'popNamePrefix.Style = EntryFields
 		  'else

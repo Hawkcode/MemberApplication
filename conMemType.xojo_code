@@ -105,7 +105,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      InitialValue    =   "CD\nSoftcover\nCD & Softcover (Additional Cost)\nDownload"
+      InitialValue    =   "Download\nSoftcover\nCD & Softcover (Additional Cost)\nCD"
       Left            =   658
       ListIndex       =   -1
       LockBottom      =   False

@@ -1846,7 +1846,7 @@ End
 		    SMTPServerMail.Address = "express-relay.jangosmtp.net" 'csBulkMailSMTPServerMail
 		    SMTPServerMail.Port = 25 'cnBulkEmailPort
 		    SMTPServerMail.Username = "aspechamp"   'csBulkMailSMTPUserID
-		    SMTPServerMail.Password = "AspE86142980"   'csBulkEmailSMTPPassword
+		    SMTPServerMail.Password = "JCNtTNCoNzTJYX7aAJyaxVdA"   'csBulkEmailSMTPPassword
 		    SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv23
 		    'SMTPServerMail.Secure = True
 		    'SMTPServerMail.Connect
@@ -1876,6 +1876,8 @@ End
 		  Next
 		  if DebugBuild then
 		    Msg.AddRecipient "Rich@RAlbrecht.net"
+		    Msg.AddRecipient "Rich@aspe.org"
+		    
 		  end
 		  'Msg.AddRecipient "rich@aspe.org"
 		  
@@ -2134,6 +2136,7 @@ End
 		    if bNext then
 		      if not Education.ValidateAll then
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
+		        btnNext.SetFocus
 		        return
 		      end
 		      
