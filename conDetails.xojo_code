@@ -14,6 +14,7 @@ Begin WebContainer conDetails
    LockRight       =   True
    LockTop         =   True
    LockVertical    =   False
+   ScrollbarsVisible=   0
    Style           =   "997821280"
    TabOrder        =   0
    Top             =   0
@@ -1407,6 +1408,7 @@ Begin WebContainer conDetails
       Index           =   -2147483648
       InitialValue    =   ""
       Left            =   125
+      ListCount       =   0
       ListIndex       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -1442,6 +1444,7 @@ Begin WebContainer conDetails
       Index           =   -2147483648
       InitialValue    =   ""
       Left            =   552
+      ListCount       =   0
       ListIndex       =   0
       LockBottom      =   False
       LockedInPosition=   False

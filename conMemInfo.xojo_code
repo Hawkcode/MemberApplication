@@ -14,6 +14,7 @@ Begin WebContainer conMemInfo
    LockRight       =   True
    LockTop         =   True
    LockVertical    =   False
+   ScrollbarsVisible=   0
    Style           =   "997821280"
    TabOrder        =   0
    Top             =   0
@@ -1128,6 +1129,7 @@ Begin WebContainer conMemInfo
       Index           =   -2147483648
       InitialValue    =   "Past Member\nPE Magazine\nColleague/Employer\nASPE App\nWebsite\nAYP Networking Event \nCPD Program\nWorkshop or Webinar\n50% Dues Promo\nOther"
       Left            =   205
+      ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -1233,6 +1235,7 @@ Begin WebContainer conMemInfo
       Index           =   -2147483648
       InitialValue    =   "Mr.\nMs.\nMiss\nMrs.\nDr."
       Left            =   20
+      ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -1519,6 +1522,7 @@ Begin WebContainer conMemInfo
       Index           =   -2147483648
       InitialValue    =   ""
       Left            =   763
+      ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -1658,6 +1662,7 @@ Begin WebContainer conMemInfo
       Index           =   -2147483648
       InitialValue    =   "Expense Type\nPersonal\nBusiness"
       Left            =   187
+      ListCount       =   0
       ListIndex       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -2171,7 +2176,7 @@ Begin WebContainer conMemInfo
       Text            =   "For more information on ASPE's programs click here."
       TextAlign       =   0
       Top             =   234
-      URL             =   "http://www.xojo.com/"
+      URL             =   "https://www.aspe.org/benefits"
       VerticalCenter  =   0
       Visible         =   True
       Width           =   362
