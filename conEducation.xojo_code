@@ -14,6 +14,7 @@ Begin WebContainer conEducation
    LockRight       =   True
    LockTop         =   True
    LockVertical    =   False
+   ScrollbarsVisible=   0
    Style           =   "997821280"
    TabOrder        =   0
    Top             =   0

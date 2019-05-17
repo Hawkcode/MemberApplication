@@ -27,7 +27,7 @@ Inherits WebSession
 
 	#tag Event
 		Sub TimedOut()
-		  Self.Quit
+		  'Self.Quit
 		End Sub
 	#tag EndEvent
 
@@ -320,6 +320,11 @@ Inherits WebSession
 				"0 - AJAX"
 				"1 - WebSocket"
 			#tag EndEnumValues
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="gsAddressPref"
+			Group="Behavior"
+			Type="String"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

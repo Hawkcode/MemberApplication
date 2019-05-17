@@ -4,6 +4,14 @@ Inherits WebApplication
 	#tag Event
 		Sub Open(args() as String)
 		  self.Security.FrameEmbedding = WebAppSecurityOptions.FrameOptions.Allow
+		  
+		  if not registerMBSPlugin("Richard Albrecht", "MBS Complete", 202011, "KR0R3JxLXSQGzARierrGgBYGcSTaCvfWR1kIPsZNOxEnk3gBXfEbp4zIkz1xMIo=") then
+		    MsgBox "MBS Plugin serial not valid?"
+		  end if
+		  
+		  
+		  
+		  
 		  'App.AutoQuit = True
 		  'App.Timeout = 1
 		  'App.SessionTimeout = 1

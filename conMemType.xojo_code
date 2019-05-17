@@ -14,6 +14,7 @@ Begin WebContainer conMemType
    LockRight       =   True
    LockTop         =   True
    LockVertical    =   False
+   ScrollbarsVisible=   0
    Style           =   "997821280"
    TabOrder        =   0
    Top             =   0
@@ -107,6 +108,7 @@ Begin WebContainer conMemType
       Index           =   -2147483648
       InitialValue    =   "Download\nSoftcover\nCD & Softcover (Additional Cost)\nCD"
       Left            =   658
+      ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -142,6 +144,7 @@ Begin WebContainer conMemType
       Index           =   -2147483648
       InitialValue    =   "Full\nAssociate\nAffiliate\nGovernmental\nSpecial\nStudent"
       Left            =   135
+      ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
       LockedInPosition=   False
@@ -1355,6 +1358,7 @@ Begin WebContainer conMemType
       Index           =   -2147483648
       InitialValue    =   "1\n2\n3"
       Left            =   174
+      ListCount       =   0
       ListIndex       =   0
       LockBottom      =   False
       LockedInPosition=   False

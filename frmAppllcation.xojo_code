@@ -1940,7 +1940,10 @@ End
 		  dicAuth.Value("x_exp_date") = CreditCard.txtExpMonth.Text + CreditCard.txtExpYear.Text
 		  dicAuth.Value("x_card_code") = CreditCard.txtCVV.Text
 		  dicAuth.Value("x_description") = lsDesc
-		  dicAuth.Value("x_amount") = CreditCard.lblGrandTotal.Text
+		  
+		  
+		  dicAuth.Value("x_amount") = CreditCard.lblGrandTotal.Text.Mid(2)
+		  
 		  dicAuth.Value("x_first_name") = CreditCard.txtCCFirst.Text
 		  dicAuth.Value("x_last_name") = CreditCard.txtCCLast.Text
 		  dicAuth.Value("x_address") = CreditCard.txtCCStreetAddr.Text
@@ -1949,6 +1952,24 @@ End
 		  dicAuth.Value("x_zip") = CreditCard.txtCCZip.Text
 		  dicAuth.Value("x_phone") = CreditCard.txtCCPhoneHome.Text
 		  dicAuth.Value("x_country") = CreditCard.txtCCCountry.Text
+		  
+		  if DebugBuild then
+		    system.DebugLog( dicAuth.Lookup("x_email", "") + "-x_email")
+		    system.DebugLog( dicAuth.Lookup("x_card_num", "")  + "-x_card_num")
+		    system.DebugLog( dicAuth.Lookup("x_exp_date", "")  + "-x_exp_date")
+		    system.DebugLog( dicAuth.Lookup("x_card_code", "") + "-x_card_code")
+		    system.DebugLog( dicAuth.Lookup("x_description", "") + "-x_description")
+		    system.DebugLog( dicAuth.Lookup("x_amount", "")  + "-x_amount")
+		    system.DebugLog( dicAuth.Lookup("x_first_name", "")  + "-x_first_name")
+		    system.DebugLog( dicAuth.Lookup("x_last_name", "") + "-x_last_name")
+		    system.DebugLog( dicAuth.Lookup("x_address", "") + "-x_address")
+		    system.DebugLog( dicAuth.Lookup("x_city", "")  + "-x_city")
+		    system.DebugLog( dicAuth.Lookup("x_state", "") + "-x_state")
+		    system.DebugLog( dicAuth.Lookup("x_zip", "") + "-x_zip")
+		    system.DebugLog( dicAuth.Lookup("x_phone", "")  + "-x_phone")
+		    system.DebugLog( dicAuth.Lookup("x_country", "") + "-x_country")
+		    
+		  end
 		  
 		  
 		  Dim dicResultCode as New Dictionary
@@ -1988,9 +2009,9 @@ End
 		      MsgBox("Error Unable to Send Application, Your transaction did go through though.")
 		      Return
 		    end
-		    Call UpdateTransaction("", "", "Sending App")
+		    Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved", "Sending App")
 		    SendApplication
-		    Call UpdateTransaction("", "", "App Sent")
+		    Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved",  "App Sent")
 		    Processing.lblConfirmation.Visible = True
 		    
 		    'QuitTimer.Mode = Timer.ModeSingle
@@ -2393,7 +2414,7 @@ End
 #tag Events QuitTimer
 	#tag Event
 		Sub Action()
-		  Session.Quit
+		  'Session.Quit
 		End Sub
 	#tag EndEvent
 #tag EndEvents
