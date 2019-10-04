@@ -710,7 +710,7 @@ End
 		  Dim lsMsg as String
 		  
 		  
-		  rs = Session.sesDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
+		  rs = Session.sesAspeDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
 		  lsMsg = "<body>"
 		  lsMsg = lsMsg +  "<table width=""94%"" border=""1"">"
 		  lsMsg = lsMsg +  "<tbody><tr>"
@@ -1624,6 +1624,25 @@ End
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
+		Sub LoadEmailSettings()
+		  Dim rs as RecordSet
+		  dim lsSql as String = "Select * from __dataDefaults;"
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  if Session.sesAspeDB.CheckDBError("Can't load email settings!") then return
+		  
+		  
+		  csBulkMailSMTPUserID = rs.Field("BulkEmailUser").StringValue
+		  csBulkMailSMTPServer = rs.Field("BulkEmailServer").StringValue
+		  csBulkEmailSMTPPassword = rs.Field("BulkEmailPW").StringValue
+		  cnBulkEmailPort = rs.Field("BulkEmailPort").IntegerValue
+		  
+		  
+		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
 		Sub MailConnectionEstablished(Sender As SMTPSecureSocket, Greeting as String)
 		  'MsgBox("Connection Established: " + Greeting)
 		End Sub
@@ -1831,35 +1850,38 @@ End
 		Sub SendApplication()
 		  Dim rs as RecordSet
 		  Dim Msg as New EmailMessage
-		  
+		  LoadEmailSettings
 		  System.DebugLog("In Send Application")
 		  
+		  
+		  #if TargetXojoCloud then
+		    mfwPort = New XojoCloud.FirewallPort(cnBulkEmailPort, XojoCloud.FirewallPort.Direction.Outgoing)
+		    mfwPort.Open() // This call is synchronous
+		    If not mfwPort.isOpen() Then
+		      
+		      MsgBox("FirewallPort is not Open")
+		      return
+		      // Do what you need to do
+		      'fwp.Close() // Optional, but if you will not using the port, we recommend it.
+		    End If
+		  #Endif
+		  
 		  '
-		  rs = Session.sesDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
+		  rs = Session.sesAspeDB.SQLSelect("Select * from memapplications where memappkwy = " + Str(Session.gnRecNo))
 		  
 		  'AddHandler SMTPServerMail.
 		  
-		  SMTPServerMail = New SMTPMail1
+		  SMTPServer = New SMTPMail1
 		  
-		  if DebugBuild then
-		    
-		    SMTPServerMail.Address = "express-relay.jangosmtp.net" 'csBulkMailSMTPServerMail
-		    SMTPServerMail.Port = 25 'cnBulkEmailPort
-		    SMTPServerMail.Username = "aspechamp"   'csBulkMailSMTPUserID
-		    SMTPServerMail.Password = "JCNtTNCoNzTJYX7aAJyaxVdA"   'csBulkEmailSMTPPassword
-		    SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv23
-		    'SMTPServerMail.Secure = True
-		    'SMTPServerMail.Connect
-		  else
-		    SMTPServerMail.Address = "localhost" 'csBulkMailSMTPServerMail
-		    SMTPServerMail.Port = 25 'cnBulkEmailPort
-		    SMTPServerMail.Username = ""   'csBulkMailSMTPUserID
-		    SMTPServerMail.Password = ""   'csBulkEmailSMTPPassword
-		    'SMTPServerMail.ConnectionType = SMTPSecureSocket.SSLv2
-		    
-		  end
 		  
-		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
+		  SMTPServer.Address = csBulkMailSMTPServer
+		  SMTPServer.Port = cnBulkEmailPort
+		  SMTPServer.Username = csBulkMailSMTPUserID
+		  SMTPServer.Password = csBulkEmailSMTPPassword
+		  
+		  ' Not needed when deployed
+		  SMTPServer.ConnectionType = SMTPSecureSocket.SSLv23
+		  System.DebugLog("Last Error: " + Str(SMTPServer.LastErrorCode) )
 		  
 		  Msg.FromAddress = "Membership@aspe.org"
 		  
@@ -1883,17 +1905,17 @@ End
 		  
 		  Msg.subject = "Application Form - " + rs.Field("lastName").StringValue + ", " + rs.Field("firstName").StringValue + " " + rs.Field("middleName").StringValue
 		  Msg.BodyHTML = CreateMsg()
-		  SMTPServerMail.Messages.Append( Msg)
+		  SMTPServer.Messages.Append( Msg)
 		  
 		  'Call UpdateTransaction("", "", "Sending App")
-		  SMTPServerMail.SendMail
+		  SMTPServer.SendMail
 		  
 		  'While SMTPServerMail.BytesLeftToSend > 0
 		  'SMTPServerMail.Poll
 		  'WEnd
 		  'MsgBox("Out of Polling")
 		  
-		  System.DebugLog("Last Error: " + Str(SMTPServerMail.LastErrorCode) )
+		  System.DebugLog("Last Error: " + Str(SMTPServer.LastErrorCode) )
 		  Processing.lblCloseWarning.Text = "It is now safe to close this window."
 		  
 		  
@@ -2279,12 +2301,12 @@ End
 		  
 		  oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  
-		  Session.sesDB.SQLExecute(oSQL.SQL)
+		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
 		  
 		  
 		  
-		  if Session.sesDB.CheckDBError then
-		    MsgBox(Session.sesDB.ErrorMessage)
+		  if Session.sesAspeDB.CheckDBError then
+		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end
 		  
@@ -2349,6 +2371,10 @@ End
 		gbTrascriptUploaded As Boolean = False
 	#tag EndProperty
 
+	#tag Property, Flags = &h21
+		Private mfwPort As XojoCloud.FirewallPort
+	#tag EndProperty
+
 	#tag Property, Flags = &h0
 		#tag Note
 			'MemInfo
@@ -2365,21 +2391,8 @@ End
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
-		SMTPServerMail As SMTPSecureSocket
+		SMTPServer As SMTPSecureSocket
 	#tag EndProperty
-
-
-	#tag Constant, Name = cnBulkEmailPort, Type = Double, Dynamic = False, Default = \"465", Scope = Public
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkEmailSMTPPassword, Type = String, Dynamic = False, Default = \"aspe8614", Scope = Public
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkMailSMTPServer, Type = String, Dynamic = False, Default = \"smtp.gmail.com", Scope = Public
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkMailSMTPUserID, Type = String, Dynamic = False, Default = \"aspenationalrich@gmail.com", Scope = Public
-	#tag EndConstant
 
 
 #tag EndWindowCode

@@ -904,6 +904,22 @@ Protected Module mdGlobals
 
 
 	#tag Property, Flags = &h0
+		cnBulkEmailPort As Integer
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		csBulkEmailSMTPPassword As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		csBulkMailSMTPServer As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		csBulkMailSMTPUserID As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gbClose As Boolean = False
 	#tag EndProperty
 
@@ -1098,29 +1114,6 @@ Protected Module mdGlobals
 	#tag Property, Flags = &h0
 		gTempPID As Integer
 	#tag EndProperty
-
-
-	#tag Constant, Name = cnBulkEmailEmailPort, Type = Double, Dynamic = False, Default = \"", Scope = Public
-		#Tag Instance, Platform = Any, Language = Default, Definition  = \"465"
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkEmailSMTPPassword, Type = String, Dynamic = False, Default = \"", Scope = Public
-		#Tag Instance, Platform = Any, Language = Default, Definition  = \"wolfmail"
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkMailSMTPServer, Type = String, Dynamic = False, Default = \"", Scope = Public
-		#Tag Instance, Platform = Any, Language = Default, Definition  = \"relay.jangosmtp.net"
-	#tag EndConstant
-
-	#tag Constant, Name = csBulkMailSMTPUserID, Type = String, Dynamic = False, Default = \"", Scope = Public
-		#Tag Instance, Platform = Any, Language = Default, Definition  = \"aspechamp"
-	#tag EndConstant
-
-	#tag Constant, Name = Untitled, Type = , Dynamic = False, Default = \"", Scope = Public
-	#tag EndConstant
-
-	#tag Constant, Name = Untitled1, Type = , Dynamic = False, Default = \"", Scope = Public
-	#tag EndConstant
 
 
 	#tag ViewBehavior

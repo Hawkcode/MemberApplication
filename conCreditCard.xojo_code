@@ -1882,9 +1882,9 @@ End
 		  dim lsSql As string
 		  lsSql = "Select * from System_Discounts where coupon = '" + txtCoupon.Text + "' " 'and ItemNumbers = 295"
 		  
-		  rs = Session.sesDB.SQLSelect(lsSql)
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
 		  
-		  if Session.sesDB.CheckDBError then 
+		  if Session.sesAspeDB.CheckDBError then 
 		    txtCoupon.Text = ""
 		    ProgressWheel1.Visible = False
 		    exit
@@ -2010,15 +2010,15 @@ End
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  end
 		  
-		  Session.sesDB.SQLExecute(oSQL.SQL)
+		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
 		  
 		  if Session.gnRecNo = 0 then
-		    Session.gnRecNo = Session.sesDB.LastID("memapplications")
+		    Session.gnRecNo = Session.sesAspeDB.LastID("memapplications")
 		  end
 		  
 		  
-		  if Session.sesDB.CheckDBError then
-		    MsgBox(Session.sesDB.ErrorMessage)
+		  if Session.sesAspeDB.CheckDBError then
+		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end
 		  

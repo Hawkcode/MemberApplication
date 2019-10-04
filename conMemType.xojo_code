@@ -1629,18 +1629,18 @@ End
 		  if Session.gnRecNo <> 0 then
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  else
-		    Session.gnRecNo = Session.sesDB.LastID("memapplications")
+		    Session.gnRecNo = Session.sesAspeDB.LastID("memapplications")
 		  end
 		  
-		  Session.sesDB.SQLExecute(oSQL.SQL)
+		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
 		  
 		  if Session.gnRecNo = 0 then
-		    Session.gnRecNo = Session.sesDB.LastID("memapplications")
+		    Session.gnRecNo = Session.sesAspeDB.LastID("memapplications")
 		  end
 		  
 		  
-		  if Session.sesDB.CheckDBError then
-		    MsgBox(Session.sesDB.ErrorMessage)
+		  if Session.sesAspeDB.CheckDBError then
+		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end
 		  

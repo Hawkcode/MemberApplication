@@ -221,8 +221,8 @@ End
 		  oSQL.ClearWhereClause
 		  oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  
-		  Session.sesDB.SQLExecute(oSQL.SQL)
-		  if Session.sesDB.CheckDBError("DB1054") then
+		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
+		  if Session.sesAspeDB.CheckDBError("DB1054") then
 		    Return 
 		  end
 		  

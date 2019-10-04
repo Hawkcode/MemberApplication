@@ -8,10 +8,10 @@ Inherits WebSession
 		  'appmbAffiliateGove = True
 		  'end
 		  
-		  sesDB = New WebDB
-		  if not sesDB.OpenDB then
-		    exit
-		  end
+		  'sesDB = New WebDB
+		  'if not sesDB.OpenDB then
+		  'exit
+		  'end
 		  
 		  sesAspeDB = New aspeDB
 		  if not sesAspeDB.OpenASPEDB then
@@ -19,7 +19,7 @@ Inherits WebSession
 		    exit
 		  end
 		  
-		  'Self.Timeout = 300 //5 Minute
+		  Self.Timeout = 600 
 		  
 		  
 		End Sub
@@ -27,7 +27,7 @@ Inherits WebSession
 
 	#tag Event
 		Sub TimedOut()
-		  'Self.Quit
+		  Self.Quit
 		End Sub
 	#tag EndEvent
 
@@ -325,6 +325,7 @@ Inherits WebSession
 			Name="gsAddressPref"
 			Group="Behavior"
 			Type="String"
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class
