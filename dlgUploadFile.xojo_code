@@ -290,10 +290,10 @@ End
 		      
 		      'RSA!
 		      '
-		      msLink = "http://aspe.org/xo/MemApplication/Transcripts/" + lsFileName
+		      msLink = "https://165.227.81.51/MemApplication/Transcripts/" + lsFileName
 		      'msLink = "http://aspe.org/xo/MembershipApplicationDemo/Transcripts/" + lsFileName
 		      
-		      
+		      'Msgbox(msLink)
 		      uFile.Save(saveTrans)
 		      
 		      fldUploadedFiles.Append(saveTrans)
