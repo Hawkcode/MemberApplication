@@ -2152,44 +2152,6 @@ Begin WebContainer conMemInfo
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin WebLink Link1
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   442
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   False
-      Scope           =   2
-      Style           =   "0"
-      TabOrder        =   57
-      Target          =   2
-      Text            =   "For more information on ASPE's programs click here."
-      TextAlign       =   0
-      Top             =   234
-      URL             =   "https://www.aspe.org/benefits"
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   362
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
 End
 #tag EndWebPage
 

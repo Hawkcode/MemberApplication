@@ -82,7 +82,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   0
+      TabOrder        =   7
       Text            =   "Choose format:"
       TextAlign       =   0
       Top             =   57
@@ -119,7 +119,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   3
+      TabOrder        =   8
       Text            =   ""
       Top             =   57
       VerticalCenter  =   0
@@ -155,7 +155,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   4
+      TabOrder        =   1
       Text            =   ""
       Top             =   7
       VerticalCenter  =   0
@@ -190,7 +190,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   2
       Text            =   "Member Type:"
       TextAlign       =   0
       Top             =   23
@@ -226,7 +226,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   2
+      TabOrder        =   0
       Text            =   "Membership Type:"
       TextAlign       =   0
       Top             =   10
@@ -264,7 +264,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "144195174"
-      TabOrder        =   10
+      TabOrder        =   12
       Text            =   "Affiliate Member: Any individual involved in producing or marketing a plumbing product who does not meet any of the qualifications for membership in any other category."
       TextAlign       =   0
       Top             =   91
@@ -302,7 +302,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "144195174"
-      TabOrder        =   8
+      TabOrder        =   13
       Text            =   "Associate Member: Any individual involved in the design of plumbing systems or in plumbing engineering and not meeting the requirements for Full membership."
       TextAlign       =   0
       Top             =   91
@@ -340,7 +340,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "144195174"
-      TabOrder        =   6
+      TabOrder        =   14
       Text            =   "Full: Eight (8) years of experience in plumbing engineering or related engineering field, a minimum of four (4) years of which must have been in a position of responsibility for the design of plumbing systems or in a position of responsibility for the design of systems and components related to, or incorporated within, plumbing engineered and designed systems.\nA maximum of four (4) years of experience may be waived by the Society Vice President, Membership for: (a) Education: one-half (2) year for each completed year in a curriculum related to plumbing engineering; (b) Engineering Registration: four (4) years for Professional Engineer registration in a field that includes plumbing engineering; (c) CPD certification: two (2) years. "
       TextAlign       =   0
       Top             =   91
@@ -378,7 +378,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "144195174"
-      TabOrder        =   5
+      TabOrder        =   15
       Text            =   "Governmental Member: Anyone employed by municipal, state, or federal governments for one of the following reasons: A. Checking and/or inspection of plumbing plans and installations;\n\nB. The formulation of codes, rules, requirements and regulations pertaining to the planning, designing and installation of plumbing systems, or any portion of a plumbing system;\n\nC. Research and development of plumbing systems design criteria. Exception: Persons employed by a government agency for the purpose of designing and/or specifying plumbing systems, who shall be eligible to be Full or Associate members, provided they have fulfilled the experience required as outlined for each respective classification."
       TextAlign       =   0
       Top             =   91
@@ -416,7 +416,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "144195174"
-      TabOrder        =   11
+      TabOrder        =   16
       Text            =   "Special Member: Anyone employed by or doing business as a contractor or having a special interest in plumbing design who does not meet any of the qualifications for membership in any other grade. Exception: persons employed by contractors or separate divisions of contractors for the exclusive purpose of designing and/or specifying plumbing systems shall be eligible for membership as Full or Associate, provided they have fulfilled the experience required as outlined for each respective classification."
       TextAlign       =   0
       Top             =   91
@@ -454,7 +454,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1265093392"
-      TabOrder        =   7
+      TabOrder        =   17
       Text            =   "Select a member category type from the above drop down. \n\nThen select your handbook format and if you would like to make a contribution."
       TextAlign       =   0
       Top             =   91
@@ -490,7 +490,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   3
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   23
@@ -526,7 +526,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   33
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   225
@@ -562,7 +562,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   37
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   303
@@ -598,7 +598,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   9
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   57
@@ -666,7 +666,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   40
+      TabOrder        =   10
       Text            =   "Plumbing Engineering Design HB Vol 4 ships 2017"
       TextAlign       =   3
       Top             =   63
@@ -701,8 +701,8 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   3
-      Top             =   121
+      TabOrder        =   23
+      Top             =   126
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -735,8 +735,8 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   4
-      Top             =   145
+      TabOrder        =   26
+      Top             =   150
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -769,8 +769,8 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   2
-      Top             =   97
+      TabOrder        =   20
+      Top             =   102
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -804,7 +804,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   6
+      TabOrder        =   11
       Text            =   "Contributions:"
       TextAlign       =   0
       Top             =   79
@@ -839,8 +839,8 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   4
-      Top             =   169
+      TabOrder        =   29
+      Top             =   174
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -876,7 +876,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "219244006"
-      TabOrder        =   41
+      TabOrder        =   32
       Text            =   "*Contributions to The ASPE Education & Research Foundation are strictly voluntary and are tax deductable as a charatable contribution.\n\n**Contributions to ASPE Education (create education programs for membership) and Alfred Steele Scholarship (to award college scholarships) and PE Curriculum/Licensing (create future curriculum and licensing opportunities for membership) Funds are strictly voluntary and are not deductible as a charitable contribution but may be deductible as an ordinary and necessary business expense."
       TextAlign       =   0
       Top             =   207
@@ -918,10 +918,10 @@ Begin WebContainer conMemType
       ReadOnly        =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   22
       Text            =   ""
       TextAlign       =   3
-      Top             =   97
+      Top             =   101
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -961,10 +961,10 @@ Begin WebContainer conMemType
       ReadOnly        =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   25
       Text            =   ""
       TextAlign       =   3
-      Top             =   121
+      Top             =   125
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1004,10 +1004,10 @@ Begin WebContainer conMemType
       ReadOnly        =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   28
       Text            =   ""
       TextAlign       =   3
-      Top             =   145
+      Top             =   149
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1047,10 +1047,10 @@ Begin WebContainer conMemType
       ReadOnly        =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   31
       Text            =   ""
       TextAlign       =   3
-      Top             =   169
+      Top             =   174
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -1118,7 +1118,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1126752408"
-      TabOrder        =   9
+      TabOrder        =   18
       Text            =   "Student Member: Any individual attending a recognized university, college, community college, vocational, or technical trade school full time or part time in a curriculum related to plumbing design. Student Members are considered to be an introductory level to the Society. Student membership shall be limited to five (5) years after which time the membership shall be upgraded to an applicable membership classification as deemed appropri ate by the Society. Other member classifications shall not be permitted to downgrade to a Student Member classification.\n\nPlease note: You will be required to upload a transcript and supply your college or university's definition of a full-time student. You will have access to the electronic version of ""Plumbing Engineer Design Handbooks."""
       TextAlign       =   0
       Top             =   91
@@ -1154,7 +1154,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   42
+      TabOrder        =   36
       Top             =   303
       VerticalCenter  =   0
       Visible         =   False
@@ -1188,10 +1188,10 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   21
       Text            =   "$"
       TextAlign       =   3
-      Top             =   97
+      Top             =   101
       VerticalCenter  =   0
       Visible         =   True
       Width           =   28
@@ -1224,10 +1224,10 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   24
       Text            =   "$"
       TextAlign       =   3
-      Top             =   121
+      Top             =   125
       VerticalCenter  =   0
       Visible         =   True
       Width           =   28
@@ -1260,10 +1260,10 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   27
       Text            =   "$"
       TextAlign       =   3
-      Top             =   145
+      Top             =   149
       VerticalCenter  =   0
       Visible         =   True
       Width           =   28
@@ -1296,10 +1296,10 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   30
       Text            =   "$"
       TextAlign       =   3
-      Top             =   169
+      Top             =   174
       VerticalCenter  =   0
       Visible         =   True
       Width           =   28
@@ -1332,7 +1332,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   2
       Style           =   "0"
-      TabOrder        =   44
+      TabOrder        =   4
       Text            =   "Number of years:"
       TextAlign       =   3
       Top             =   41
@@ -1369,7 +1369,7 @@ Begin WebContainer conMemType
       LockVertical    =   False
       Scope           =   2
       Style           =   "0"
-      TabOrder        =   45
+      TabOrder        =   5
       Text            =   ""
       Top             =   41
       VerticalCenter  =   0
@@ -1406,7 +1406,7 @@ Begin WebContainer conMemType
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "1126752408"
-      TabOrder        =   9
+      TabOrder        =   19
       Text            =   "Existing members in good standing and all new members are eligible to sign up for a discounted multiple-year membership. \n\nA 1-year membership is the standard dues of $190. \n\nA 2-year membership receives a 5% discount (dues are $361). \n\nA 3-year membership receives a 10% discount (dues are $513)."
       TextAlign       =   0
       Top             =   91
@@ -1442,7 +1442,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   6
       Text            =   "% Distount"
       TextAlign       =   1
       Top             =   41
@@ -1478,7 +1478,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   35
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   273
@@ -1514,7 +1514,7 @@ Begin WebContainer conMemType
       Multiline       =   False
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   16
+      TabOrder        =   34
       Text            =   "$0.00"
       TextAlign       =   3
       Top             =   248
@@ -1620,11 +1620,12 @@ End
 		  Dim lbIsForiegn As Boolean = frmAppllcation.CreditCard.mbForiegn
 		  
 		  
-		  oSQL.AddFields "MemType",      "DataBookFormat",            "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
-		  oSQL.AddValues popType.Text, lsStr, chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
+		  oSQL.AddFields "MemType",      "DataBookFormat",  "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
+		  oSQL.AddValues popType.Text, lsStr,                           chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
-		  oSQL.AddFields "MemPrice",    "IsMultiYear",  "NumMultiYear",    "IsForiegn",   "ForShipCost"
-		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost
+		  oSQL.AddFields "MemPrice",    "IsMultiYear",  "NumMultiYear",    "IsForiegn",   "ForShipCost", "Donations",  "TotalDonations"
+		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost, frmAppllcation.msDesc, lblTotalDonations.Text
+		  
 		  
 		  if Session.gnRecNo <> 0 then
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
@@ -1701,6 +1702,7 @@ End
 		  end
 		  
 		  'lblMemshipCost.Text = Format(mdTotalCost, "\$###0.00")
+		  frmAppllcation.CreditCard.mdTotalMembershipCost = mdTotalCost
 		  
 		  lblDiscout.Text = Format(mdDiscountAmmount * -1 , "\$-###0.00")
 		  lblShipping.text = Format(frmAppllcation.CreditCard.mdShipping, "\$###0.00")
@@ -1710,14 +1712,24 @@ End
 		  
 		  
 		  If popDataBookformat.Text = "CD & Softcover (Additional Cost)" then
-		    ldDataBook = App.gdDataBookBoth
-		    lblDatabook.Text = Format(App.gdDataBookBoth, "\$###0.00")
+		    If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
+		      ldDataBook = frmAppllcation.CreditCard.mdShipping
+		      mdForShippingCost = frmAppllcation.CreditCard.mdShipping
+		      
+		    else
+		      ldDataBook = App.gdDataBookBoth * popYears.Text.Val
+		      lblShipping.Visible = False
+		      mdForShippingCost = 0
+		    end
+		    lblDatabook.Text = Format(ldDataBook, "\$###0.00")
 		  else
 		    ldDataBook =0
 		    lblDatabook.Text = "$0.00"
-		    
+		    lblShipping.Visible = False
+		    mdForShippingCost = 0
 		    
 		  end
+		  
 		  mdTotalCost = mdTotalCost + ldDataBook
 		  
 		  Dim ldTotalDonations as Double = 0
@@ -1743,17 +1755,27 @@ End
 		  mdTotalCost = mdTotalCost + ldTotalDonations
 		  
 		  
-		  If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
-		    mdTotalCost = mdTotalCost + frmAppllcation.CreditCard.mdShipping
-		    mdForShippingCost = frmAppllcation.CreditCard.mdShipping
-		  else
-		    lblShipping.Visible = False
-		    mdForShippingCost = 0
-		  end
 		  
 		  Session.gdTotalCost = mdTotalCost
 		  
 		  lblGrandTotal.Text = Format(mdTotalCost, "\$###0.00")
+		  
+		  frmAppllcation.msDesc = "New Member Application " +frmAppllcation.MemType.popType.Text + " / " + frmAppllcation.MemType.popDataBookformat.Text + _
+		  " " + lblDatabook.Text
+		  if frmAppllcation.MemType.chkEducation.Value then
+		    frmAppllcation.msDesc = frmAppllcation.msDesc + " / " + "Donation to Education: " + frmAppllcation.MemType.txtEducationDonations.Text
+		  end
+		  if frmAppllcation.MemType.chkResearch.Value then
+		    frmAppllcation.msDesc = frmAppllcation.msDesc + " / " + "Donation to Research Foundation: " + frmAppllcation.MemType.txtRFDonations.Text
+		  end
+		  if frmAppllcation.MemType.chkSteele.Value then
+		    frmAppllcation.msDesc = frmAppllcation.msDesc + " / " + "Donation to Alfred Steele Scholarship: " + frmAppllcation.MemType.txtSteeleDonations.Text
+		  end
+		  if frmAppllcation.MemType.chkPEDon.Value then
+		    frmAppllcation.msDesc = frmAppllcation.msDesc + " / " + "PE Curriculum/Licensing Prgm: " + frmAppllcation.MemType.txtCurriculumDonations.Text
+		  end
+		  
+		  
 		  
 		  
 		  

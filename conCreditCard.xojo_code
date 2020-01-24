@@ -1342,7 +1342,7 @@ Begin WebContainer conCreditCard
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   34
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -1360,7 +1360,7 @@ Begin WebContainer conCreditCard
       TabOrder        =   21
       Text            =   "Handbook Format:"
       TextAlign       =   0
-      Top             =   56
+      Top             =   54
       VerticalCenter  =   0
       Visible         =   True
       Width           =   202
@@ -2006,6 +2006,19 @@ End
 		  oSQL.AddFields "BillingStateProvince", "BillingZip", "BillingCountry",   "BillingPostalCode", "BillingPhoneDay",   "BillingEmail"
 		  oSQL.AddValues txtCCState.Text, txtCCZip.Text,   txtCCCountry.Text,txtCCZip.Text,   txtCCPhoneHome.Text, txtCCEmail.Text
 		  
+		  oSQL.AddFields "DonationSteele", "DonationEducation", "DonationResearch", "DonationPE"
+		  oSQL.AddValues frmAppllcation.MemType.chkSteele.Value, frmAppllcation.MemType.chkEducation.Value, frmAppllcation.MemType.chkResearch.Value,   _ 
+		  frmAppllcation.MemType.chkPEDon.Value
+		  
+		  oSQL.AddFields  "expenceType",                                                      "NumMultiYear",     "IsMultiYear",              "IsForiegn",  "ForShipCost",  "MemPrice"
+		  oSQL.AddValues frmAppllcation.MemInfo.cboExpenceType.Text, frmAppllcation.MemType.popYears.Text.Val, frmAppllcation.MemType.popYears.Text.Val > 1,_
+		    mbForiegn,  mdShipping,       mdTotalMembershipCost
+		  
+		  oSQL.AddFields  "Donations",                       "DataBookFormat",                                                              "TotalDonations", "DataBookCost"
+		  oSQL.AddValues  frmAppllcation.msDesc,        frmAppllcation.MemType.popDataBookformat.Text, _
+		   frmAppllcation.MemType.lblTotalDonations.Text.Replace("$", ""), _
+		  frmAppllcation.MemType.lblDatabook.Text.Replace("$", "")
+		  
 		  if Session.gnRecNo <> 0 then
 		    oSQL.AddSimpleWhereClause "memappkwy", Session.gnRecNo
 		  end
@@ -2097,6 +2110,10 @@ End
 
 	#tag Property, Flags = &h0
 		mdShipping As Double = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		mdTotalMembershipCost As Double
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -2592,5 +2609,10 @@ End
 		Group="Behavior"
 		InitialValue="1"
 		Type="Integer"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdTotalMembershipCost"
+		Group="Behavior"
+		Type="Double"
 	#tag EndViewProperty
 #tag EndViewBehavior

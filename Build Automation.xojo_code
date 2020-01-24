@@ -4,6 +4,10 @@
 				End
 			End
 			Begin BuildStepList Mac OS X
+				Begin IDEScriptBuildStep Script1 , AppliesTo = 0
+					DoCommand("SaveFile")
+					
+				End
 				Begin BuildProjectStep Build
 				End
 			End
@@ -12,6 +16,10 @@
 				End
 			End
 			Begin BuildStepList Xojo Cloud
+				Begin IDEScriptBuildStep Script11 , AppliesTo = 0
+					DoCommand("SaveFile")
+					
+				End
 				Begin BuildProjectStep Build
 				End
 			End

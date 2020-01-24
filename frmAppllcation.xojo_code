@@ -70,42 +70,6 @@ Begin WebPage frmAppllcation
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
-   Begin WebLabel Label4
-      Cursor          =   1
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   22
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   171
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   False
-      LockVertical    =   True
-      Multiline       =   False
-      Scope           =   0
-      Style           =   "816938816"
-      TabOrder        =   0
-      Text            =   "American Society of Plumbing Engineers Membership Application"
-      TextAlign       =   0
-      Top             =   4
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   607
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
    Begin conCreditCard CreditCard
       Cursor          =   0
       Enabled         =   True
@@ -687,6 +651,42 @@ Begin WebPage frmAppllcation
       _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel Label4
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   171
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   True
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "816938816"
+      TabOrder        =   0
+      Text            =   "American Society of Plumbing Engineers Membership Application"
+      TextAlign       =   0
+      Top             =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   607
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
 End
 #tag EndWebPage
 
@@ -851,17 +851,17 @@ End
 		  Dim lsStr as String
 		  lsStr = ""
 		  if  rs.Field("DonationEducation").StringValue = "1" then
-		    lsStr= "Education Fund - " + frmAppllcation.MemType.txtEducationDonations.text + "<br/>"
+		    lsStr= "Education Fund - " + MemType.txtEducationDonations.text + "<br/>"
 		  end
 		  if  rs.Field("DonationResearch").StringValue = "1" then
-		    lsStr= lsStr + "Education & Research Foundation - " + frmAppllcation.MemType.txtRFDonations.text + "<br/>"
+		    lsStr= lsStr + "Education & Research Foundation - " + MemType.txtRFDonations.text + "<br/>"
 		  end
 		  
 		  if  rs.Field("DonationSteele").StringValue = "1" then
-		    lsStr= lsStr + "Steele Scholorship - " + frmAppllcation.MemType.txtSteeleDonations.text + "<br/>"
+		    lsStr= lsStr + "Steele Scholorship - " + MemType.txtSteeleDonations.text + "<br/>"
 		  end
 		  if  rs.Field("DonationPE").StringValue = "1" then
-		    lsStr= lsStr + "PE Curriculum/Licensing Prgm - " + frmAppllcation.MemType.txtCurriculumDonations.text + "<br/>"
+		    lsStr= lsStr + "PE Curriculum/Licensing Prgm - " + MemType.txtCurriculumDonations.text + "<br/>"
 		  end
 		  lsMsg = lsMsg +  lsStr
 		  lsMsg = lsMsg +  "</strong></td></tr>"
@@ -1694,7 +1694,7 @@ End
 		    Shipping.Visible= True
 		    
 		  Case "MemType"  '2
-		    if frmAppllcation.CreditCard.mbForiegn then
+		    if CreditCard.mbForiegn then
 		      MemType.popYears.enabled = false
 		      MemType.popYears.ListIndex = 0
 		    else
@@ -1703,7 +1703,7 @@ End
 		    End
 		    MemType.Visible= True
 		    MemType.popType.SetFocus
-		    If frmAppllcation.CreditCard.mbCantShip then
+		    If CreditCard.mbCantShip then
 		      MemType.popDataBookformat.SetPopMenuValue("Download")
 		      MemType.popDataBookformat.Enabled = False
 		    else
@@ -1790,6 +1790,68 @@ End
 		        CreditCard.lblForTotalShipping.Visible = False
 		      end
 		    end
+		    
+		    
+		    msURLDesc = "New member application " + MemType.popType.Text + " " 
+		    if MemType.popYears.text <> "1" then
+		      msURLDesc = msURLDesc + MemType.popYears.text  + " Years: " + CreditCard.lblMemshipCost.text
+		    else
+		      msURLDesc = msURLDesc + "1 Year: " + CreditCard.lblMemshipCost.text 
+		    end
+		    
+		    msURLDesc = msURLDesc + " // " + MemType.popDataBookformat.Text.ReplaceAll("&", "%26") + " Databook: " + CreditCard.lblDatabook.Text  + "  /  " 
+		    
+		    If CreditCard.lblForTotalShipping.Visible then
+		      msURLDesc = msURLDesc + " / Foriegn Shipping cost: " + CreditCard.lblForTotalShipping.Text + " / "
+		    end
+		    
+		    dim lsCont as String
+		    lsCont = "New member application  " + MemType.popType.Text + " / Contributions: / " 
+		    'lsCont = msURLDesc
+		    if MemType.chkEducation.value then
+		      lsCont =  lsCont + " / Education Fund $" + MemType.txtEducationDonations.Text
+		    end
+		    if MemType.chkResearch.value then
+		      lsCont = lsCont +  " / Research Foundation $" + MemType.txtRFDonations.Text
+		    end
+		    if MemType.chkSteele.value then
+		      lsCont = lsCont +  " / Steele Scholorship $" + MemType.txtSteeleDonations.Text
+		    end
+		    if MemType.chkPEDon.value then
+		      lsCont = lsCont +  " / PE Curriculum - Licensing Program $" + MemType.txtCurriculumDonations.Text
+		    end
+		    msDesc = lsCont
+		    msURLDesc = msURLDesc.ReplaceAll("/", "<br>")  + lsCont.ReplaceAll("/", "<br>") 
+		    
+		    Confirmation.lblTotalDonations.Text = CreditCard.lblTotalDonations.Text
+		    msURLDesc = msURLDesc + "<br><br>" + "Total Contributions: " + CreditCard.lblTotalDonations.Text  + "//"
+		    msURLDesc = msURLDesc.ReplaceAll("/", "<br>") 
+		    
+		    lsCont =  lsCont.ReplaceAll(" / ", EndOfLine)
+		    Confirmation.lblDonations.Text =  lsCont
+		    
+		    Confirmation.lblMemshipCost.Text = CreditCard.lblMemshipCost.Text
+		    if CreditCard.lblDiscount.Text <> "$0.00" then
+		      msURLDesc = msURLDesc + "Membership Discount: " + CreditCard.lblDiscount.Text
+		    end
+		    
+		    Dim ldTemp as Double = CreditCard.lblMemshipCost.Text.Replace("$", "").Val * MemType.popYears.text.val
+		    msURLDesc = msURLDesc + "<br>" + "Membership Cost: " + Format(ldTemp, "$0.00")
+		    
+		    Confirmation.lblGrandTotal.Text = CreditCard.lblGrandTotal.Text
+		    If CreditCard.lblDiscount.Text <> "$0.00" then
+		      msURLDesc = msURLDesc + " / Discount: "+ CreditCard.lblDiscount.Text
+		    end
+		    if CreditCard.lblForDiscountAmount.Text <> "$0.00" then
+		      msURLDesc = msURLDesc + " / Foriegn Discount: "+ CreditCard.lblForDiscountAmount.Text
+		    end
+		    msURLDesc = msURLDesc.ReplaceAll("/", "<br>")
+		    
+		    msURLDesc = msURLDesc + "<br><br>" + "Grand Total: " + CreditCard.lblGrandTotal.Text
+		    
+		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
+		    
+		    MsgBox(msURLDesc)
 		    
 		    btnNext.Caption = "Next"
 		    
@@ -1939,29 +2001,13 @@ End
 		  '
 		  'lsStr = DefineEncoding(lsStr, Encodings.UTF8)
 		  
-		  Dim lsDesc as String
-		  lsDesc = "New Member Application " +MemType.popType.Text + " / " + MemType.popDataBookformat.Text
-		  if MemType.chkEducation.Value then
-		    lsDesc = lsDesc + " / " + "Donation to Education: " + Str(App.gdDonationEducation)
-		  end
-		  if MemType.chkResearch.Value then
-		    lsDesc = lsDesc + " / " + "Donation to Research Foundation: " + Str(App.gdDonationResearch)
-		  end
-		  if MemType.chkSteele.Value then
-		    lsDesc = lsDesc + " / " + "Donation to Alfred Steele Scholarship: " + Str(App.gdDonationSteele)
-		  end
-		  if MemType.chkPEDon.Value then
-		    lsDesc = lsDesc + " / " + "PE Curriculum/Licensing Prgm: " + Str(App.gdDonationPE)
-		  end
 		  
-		  
-		  msDesc = lsDesc
 		  
 		  dicAuth.Value("x_email") = CreditCard.txtCCEmail.Text
 		  dicAuth.Value("x_card_num") = CreditCard.txtCCNumber.Text
 		  dicAuth.Value("x_exp_date") = CreditCard.txtExpMonth.Text + CreditCard.txtExpYear.Text
 		  dicAuth.Value("x_card_code") = CreditCard.txtCVV.Text
-		  dicAuth.Value("x_description") = lsDesc
+		  dicAuth.Value("x_description") = msDesc
 		  
 		  
 		  dicAuth.Value("x_amount") = CreditCard.lblGrandTotal.Text.Mid(2)
@@ -2105,7 +2151,7 @@ End
 		          CreditCard.mbForiegn = True
 		          CreditCard.msCountry = Details.popBusCountryCode.RowTag(Details.popBusCountryCode.ListIndex)
 		          CreditCard.msPostalCode = Details.txtBusZip.Text
-		          frmAppllcation.Shipping.CalculateShipping
+		          Shipping.CalculateShipping
 		        else
 		          msCurrentScreen = "MemType"
 		          CreditCard.mbForiegn = False
@@ -2116,7 +2162,7 @@ End
 		          CreditCard.mbForiegn = True
 		          CreditCard.msCountry = Details.popResCountryCode.RowTag(Details.popResCountryCode.ListIndex)
 		          CreditCard.msPostalCode = Details.txtResZip.Text
-		          frmAppllcation.Shipping.CalculateShipping
+		          Shipping.CalculateShipping
 		        else
 		          msCurrentScreen = "MemType"
 		          CreditCard.mbForiegn = False
@@ -2388,6 +2434,10 @@ End
 
 	#tag Property, Flags = &h0
 		msEmailAddress() As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msURLDesc As String
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
