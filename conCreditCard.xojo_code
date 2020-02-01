@@ -2012,11 +2012,11 @@ End
 		  
 		  oSQL.AddFields  "expenceType",                                                      "NumMultiYear",     "IsMultiYear",              "IsForiegn",  "ForShipCost",  "MemPrice"
 		  oSQL.AddValues frmAppllcation.MemInfo.cboExpenceType.Text, frmAppllcation.MemType.popYears.Text.Val, frmAppllcation.MemType.popYears.Text.Val > 1,_
-		    mbForiegn,  mdShipping,       mdTotalMembershipCost
+		  mbForiegn,  mdShipping,       mdTotalMembershipCost
 		  
 		  oSQL.AddFields  "Donations",                       "DataBookFormat",                                                              "TotalDonations", "DataBookCost"
 		  oSQL.AddValues  frmAppllcation.msDesc,        frmAppllcation.MemType.popDataBookformat.Text, _
-		   frmAppllcation.MemType.lblTotalDonations.Text.Replace("$", ""), _
+		  frmAppllcation.MemType.lblTotalDonations.Text.Replace("$", ""), _
 		  frmAppllcation.MemType.lblDatabook.Text.Replace("$", "")
 		  
 		  if Session.gnRecNo <> 0 then
@@ -2030,7 +2030,7 @@ End
 		  end
 		  
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("DB1412") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end

@@ -2621,7 +2621,7 @@ End
 		  end
 		  
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("DB1411") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end

@@ -37,6 +37,10 @@ Inherits WebSession
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
+		gnPersonID As Integer = 0
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
 		gnRecNo As Integer = 0
 	#tag EndProperty
 

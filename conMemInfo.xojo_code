@@ -2401,7 +2401,7 @@ End
 		  
 		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("DB 1407 ") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end

@@ -1624,7 +1624,7 @@ End
 		  oSQL.AddValues popType.Text, lsStr,                           chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
 		  oSQL.AddFields "MemPrice",    "IsMultiYear",  "NumMultiYear",    "IsForiegn",   "ForShipCost", "Donations",  "TotalDonations"
-		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost, frmAppllcation.msDesc, lblTotalDonations.Text
+		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost, frmAppllcation.msDesc, lblTotalDonations.Text.Replace("$", "")
 		  
 		  
 		  if Session.gnRecNo <> 0 then
@@ -1640,7 +1640,7 @@ End
 		  end
 		  
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("1410a") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end

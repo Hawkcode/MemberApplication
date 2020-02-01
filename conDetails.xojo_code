@@ -114,7 +114,7 @@ Begin WebContainer conDetails
       Multiline       =   True
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   16
+      TabOrder        =   23
       Text            =   "Street Address:"
       TextAlign       =   0
       Top             =   85
@@ -150,7 +150,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   10
+      TabOrder        =   21
       Text            =   "Business:"
       TextAlign       =   0
       Top             =   9
@@ -186,7 +186,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   32
+      TabOrder        =   25
       Text            =   "Phone:"
       TextAlign       =   0
       Top             =   235
@@ -222,7 +222,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   11
+      TabOrder        =   28
       Text            =   "Title:"
       TextAlign       =   0
       Top             =   33
@@ -258,7 +258,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   13
+      TabOrder        =   22
       Text            =   "Bus. Name:"
       TextAlign       =   1
       Top             =   58
@@ -294,7 +294,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   30
+      TabOrder        =   24
       Text            =   "Country:"
       TextAlign       =   0
       Top             =   210
@@ -336,7 +336,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   24
+      TabOrder        =   33
       Text            =   ""
       TextAlign       =   0
       Top             =   160
@@ -379,7 +379,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   14
+      TabOrder        =   30
       Text            =   ""
       TextAlign       =   0
       Top             =   58
@@ -422,7 +422,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   25
+      TabOrder        =   34
       Text            =   ""
       TextAlign       =   0
       Top             =   185
@@ -430,44 +430,6 @@ Begin WebContainer conDetails
       VerticalCenter  =   0
       Visible         =   True
       Width           =   33
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextArea txtBusStreetAddr
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   74
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   552
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      ReadOnly        =   False
-      Scope           =   0
-      ScrollPosition  =   0
-      Style           =   "1836658647"
-      TabOrder        =   17
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   83
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -503,7 +465,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   12
+      TabOrder        =   29
       Text            =   ""
       TextAlign       =   0
       Top             =   33
@@ -546,7 +508,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   26
+      TabOrder        =   35
       Text            =   ""
       TextAlign       =   0
       Top             =   185
@@ -589,7 +551,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   33
+      TabOrder        =   37
       Text            =   ""
       TextAlign       =   0
       Top             =   235
@@ -626,7 +588,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "343801855"
-      TabOrder        =   34
+      TabOrder        =   0
       Text            =   "ASPE is unable to ship to PO boxes."
       TextAlign       =   2
       Top             =   247
@@ -662,7 +624,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   15
+      TabOrder        =   3
       Text            =   "Street Address:"
       TextAlign       =   0
       Top             =   33
@@ -698,7 +660,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   9
+      TabOrder        =   2
       Text            =   "Residence:"
       TextAlign       =   0
       Top             =   9
@@ -734,7 +696,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   22
+      TabOrder        =   4
       Text            =   "City:"
       TextAlign       =   0
       Top             =   110
@@ -770,7 +732,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   28
+      TabOrder        =   7
       Text            =   "Phone Home:"
       TextAlign       =   0
       Top             =   186
@@ -806,7 +768,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   31
+      TabOrder        =   19
       Text            =   "Cell:"
       TextAlign       =   0
       Top             =   186
@@ -842,7 +804,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   29
+      TabOrder        =   6
       Text            =   "Country:"
       TextAlign       =   0
       Top             =   160
@@ -884,7 +846,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   8
+      TabOrder        =   20
       Text            =   ""
       TextAlign       =   0
       Top             =   186
@@ -927,7 +889,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   7
+      TabOrder        =   16
       Text            =   ""
       TextAlign       =   0
       Top             =   186
@@ -970,7 +932,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   3
+      TabOrder        =   12
       Text            =   ""
       TextAlign       =   0
       Top             =   110
@@ -1013,7 +975,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   4
+      TabOrder        =   13
       Text            =   ""
       TextAlign       =   0
       Top             =   135
@@ -1021,44 +983,6 @@ Begin WebContainer conDetails
       VerticalCenter  =   0
       Visible         =   True
       Width           =   33
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin WebTextArea txtResStreetAddr
-      CueText         =   ""
-      Cursor          =   0
-      Enabled         =   True
-      HasFocusRing    =   True
-      Height          =   74
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   125
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      ReadOnly        =   False
-      Scope           =   0
-      ScrollPosition  =   0
-      Style           =   "1836658647"
-      TabOrder        =   2
-      Text            =   ""
-      TextAlign       =   0
-      Top             =   33
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   312
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1094,7 +1018,7 @@ Begin WebContainer conDetails
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   5
+      TabOrder        =   14
       Text            =   ""
       TextAlign       =   0
       Top             =   135
@@ -1131,7 +1055,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   0
+      TabOrder        =   8
       Text            =   "Preferred Mailing Address:"
       TextAlign       =   0
       Top             =   223
@@ -1168,7 +1092,7 @@ Begin WebContainer conDetails
       RowCount        =   1
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   1
+      TabOrder        =   18
       Top             =   222
       VerticalCenter  =   0
       Visible         =   True
@@ -1202,7 +1126,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   23
+      TabOrder        =   17
       Text            =   " Zip / Postal Code:"
       TextAlign       =   0
       Top             =   135
@@ -1238,7 +1162,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   21
+      TabOrder        =   5
       Text            =   "State:"
       TextAlign       =   0
       Top             =   133
@@ -1274,7 +1198,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   20
+      TabOrder        =   27
       Text            =   "State:"
       TextAlign       =   0
       Top             =   185
@@ -1310,7 +1234,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   19
+      TabOrder        =   38
       Text            =   " Zip / Postal Code:"
       TextAlign       =   0
       Top             =   188
@@ -1346,7 +1270,7 @@ Begin WebContainer conDetails
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   18
+      TabOrder        =   26
       Text            =   "City:"
       TextAlign       =   0
       Top             =   160
@@ -1382,7 +1306,7 @@ Begin WebContainer conDetails
       Multiline       =   True
       Scope           =   0
       Style           =   "1005678785"
-      TabOrder        =   35
+      TabOrder        =   1
       Text            =   "Please make sure your address is correct. Including any suite or floor numbers. If ASPE has to reship, you will be responsible for the cost of reshipping the new member packet."
       TextAlign       =   0
       Top             =   282
@@ -1419,7 +1343,7 @@ Begin WebContainer conDetails
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   6
+      TabOrder        =   15
       Text            =   ""
       Top             =   161
       VerticalCenter  =   0
@@ -1455,9 +1379,224 @@ Begin WebContainer conDetails
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   27
+      TabOrder        =   36
       Text            =   ""
       Top             =   210
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResAddr1
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   9
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   33
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResAddr2
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   10
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   58
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtResAddr3
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   125
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   11
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   85
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtBusAddr1
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   552
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   31
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   85
+      Type            =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   312
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtBusAddr2
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   ""
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   552
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   32
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   110
+      Type            =   0
       VerticalCenter  =   0
       Visible         =   True
       Width           =   312
@@ -1576,8 +1715,8 @@ End
 		  
 		  Session.gsAddressPref = lsPrefered
 		  
-		  oSQL.AddFields "resStreetAddress",        "resCity",          "mailPref"
-		  oSQL.AddValues txtResStreetAddr.Text , txtResCity.Text, lsPrefered  
+		  oSQL.AddFields "resStreetAddress",                                                                                 "resCity",          "mailPref",     "PersonID"
+		  oSQL.AddValues txtResAddr1.Text + " " + txtResAddr2.Text + " " + txtResAddr3.Text  , txtResCity.Text, lsPrefered, Session.gnPersonID  
 		  
 		  lsStr = popResCountryCode.Text
 		  if lsStr = "United States" then
@@ -1589,7 +1728,7 @@ End
 		  
 		  
 		  oSQL.AddFields "busName",           "busTitle",          "busStreetAddress",      "busCity",           "busState"
-		  oSQL.AddValues txtBusName.text, txtBusTitle.Text, txtBusStreetAddr.Text, txtBusCity.Text, txtBusState.Text
+		  oSQL.AddValues txtBusName.text, txtBusTitle.Text, txtBusAddr1.Text + " " + txtBusAddr2.Text, txtBusCity.Text, txtBusState.Text
 		  
 		  lsStr = popBusCountryCode.Text
 		  if lsStr = "United States" then
@@ -1619,7 +1758,7 @@ End
 		  end
 		  
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("DB1410") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end
@@ -1667,13 +1806,22 @@ End
 		  
 		  
 		  if radMail.CellSelected(0,0) then
-		    if txtResStreetAddr.Text.InStr(0, "PO Box") > 0 then
-		      txtResStreetAddr.Style = EntryFieldsError
+		    if txtResAddr1.Text.InStr(0, "PO Box") > 0 then
+		      txtResAddr1.Style = EntryFieldsError
 		      lbReturnVal = False
 		    end
+		    if txtResAddr2.Text.InStr(0, "PO Box") > 0 then
+		      txtResAddr2.Style = EntryFieldsError
+		      lbReturnVal = False
+		    end
+		    
 		  else
-		    if txtBusStreetAddr.Text.InStr(0, "PO Box") > 0 then
-		      txtBusStreetAddr.Style = EntryFieldsError
+		    if txtBusAddr1.Text.InStr(0, "PO Box") > 0 then
+		      txtBusAddr1.Style = EntryFieldsError
+		      lbReturnVal = False
+		    end
+		    if txtBusAddr2.Text.InStr(0, "PO Box") > 0 then
+		      txtBusAddr2.Style = EntryFieldsError
 		      lbReturnVal = False
 		    end
 		  end
@@ -1682,20 +1830,23 @@ End
 		    MsgBox("PO Box is not allowed in primary address. ASPE only ships to a physical address.")
 		    lbReturnVal = False
 		  else
-		    txtBusStreetAddr.Style = EntryFields
-		    txtResStreetAddr.Style = EntryFields
+		    txtResAddr1.Style = EntryFields
+		    txtResAddr2.Style = EntryFields
+		    txtBusAddr1.Style = EntryFields
+		    txtBusAddr2.Style = EntryFields
+		    
 		  end
 		  
 		  
 		  if radMail.CellSelected(0, 1) then 
-		    lbReturnVal = SetValid(DidValidateArea(txtBusStreetAddr), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtBusAddr1), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtBusCity), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtBusState), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtBusZip), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtPhoneBus), lbReturnVal)
 		    lbReturnVal = SetValid(popBusCountryCode.ListIndex <> -1, lbReturnVal)
 		  else
-		    lbReturnVal = SetValid(DidValidateArea(txtResStreetAddr), lbReturnVal)
+		    lbReturnVal = SetValid(DidValidate(txtResAddr1), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtPhoneHome), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtResCity), lbReturnVal)
 		    lbReturnVal = SetValid(DidValidate(txtResState), lbReturnVal)
@@ -1724,14 +1875,6 @@ End
 
 #tag EndWindowCode
 
-#tag Events txtBusStreetAddr
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidateArea(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag Events txtPhoneCell
 	#tag Event
 		Sub LostFocus()
@@ -1760,14 +1903,6 @@ End
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
-		  
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events txtResStreetAddr
-	#tag Event
-		Sub LostFocus()
-		  Call DidValidateArea(Me)
 		  
 		End Sub
 	#tag EndEvent

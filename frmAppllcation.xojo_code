@@ -93,6 +93,7 @@ Begin WebPage frmAppllcation
       mdMulti2YearPercent=   5
       mdMulti3YearPercent=   10
       mdShipping      =   0.0
+      mdTotalMembershipCost=   0.0
       mnMultYearNumOf =   1
       msCountry       =   ""
       msHeight        =   "1.5"
@@ -702,6 +703,60 @@ End
 		End Sub
 	#tag EndEvent
 
+
+	#tag Method, Flags = &h0
+		Sub BuildSuffix()
+		  Dim lsSuffix As String
+		  
+		  if MemInfo.chkPE.Value then
+		    lsSuffix = "P.E."
+		  end
+		  
+		  'if MemInfo.chkCET.Value then
+		  'if lsSuffix = "" then 
+		  'lsSuffix = "CET"
+		  'else
+		  'lsSuffix = lsSuffix + ", CET"
+		  'end
+		  'end
+		  
+		  if MemInfo.chkCPD.Value then
+		    if lsSuffix = "" then 
+		      lsSuffix = "CPD"
+		    else
+		      lsSuffix = lsSuffix + ", CPD"
+		    end
+		  end
+		  
+		  if MemInfo.chkLeedAP.Value then
+		    if lsSuffix = "" then 
+		      lsSuffix = "Leed AP"
+		    else
+		      lsSuffix = lsSuffix + ", Leed AP"
+		    end
+		  end
+		  
+		  if MemInfo.chkPEng.Value then
+		    if lsSuffix = "" then 
+		      lsSuffix = "P. Eng"
+		    else
+		      lsSuffix = lsSuffix + ", P. Eng"
+		    end
+		  end
+		  
+		  if MemInfo.chkGradEngr.Value then
+		    if lsSuffix = "" then 
+		      lsSuffix = "Graduate Engineer"
+		    else
+		      lsSuffix = lsSuffix + ", Graduate Engineer"
+		    end
+		  end
+		  
+		  msNameSuffix = lsSuffix
+		  
+		  
+		End Sub
+	#tag EndMethod
 
 	#tag Method, Flags = &h0
 		Function CreateMsg() As String
@@ -1688,7 +1743,7 @@ End
 		    
 		  Case "Details"  '1a
 		    Details.Visible= True
-		    Details.txtResStreetAddr.SetFocus
+		    Details.txtResAddr1.SetFocus
 		    
 		  Case "Shipping"  '1a
 		    Shipping.Visible= True
@@ -1851,7 +1906,7 @@ End
 		    
 		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
 		    
-		    MsgBox(msURLDesc)
+		    'MsgBox(msURLDesc) 'RSA url param
 		    
 		    btnNext.Caption = "Next"
 		    
@@ -1906,6 +1961,111 @@ End
 		    
 		  end
 		End Sub
+	#tag EndMethod
+
+	#tag Method, Flags = &h0
+		Function SavePeople() As Boolean
+		  
+		  Dim lsStr as String
+		  Dim lnLen as Integer
+		  Dim oSQL as new cSmartSQL
+		  Dim rs as RecordSet
+		  Dim lnRecNo as Integer
+		  
+		  Dim lsSql as string = "Select PersonID from tblPeople where email = '" + MemInfo.txtPrimaryEmail.Text + _
+		  "' or AlternateEmail = '" +  MemInfo.txtPrimaryEmail.Text + "' "
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  if rs.RecordCount <> 0 then
+		    Session.gnPersonID = rs.Field("PersonID").IntegerValue
+		  else
+		    Session.gnPersonID = 0
+		  end
+		  
+		  
+		  Dim TempSes As Session = Session
+		  
+		  Dim lsBCountry, lsRCountry As String
+		  'Me.MouseCursor = System.Cursors.Wait
+		  lsBCountry = Details.popBusCountryCode.Text
+		  lsRCountry = Details.popResCountryCode.Text
+		  if lsBCountry = "United States" then
+		    lsBCountry = ""
+		  end
+		  if lsRCountry = "United States" then
+		    lsRCountry = ""
+		  end
+		  
+		  
+		  oSQL.AddTable "tblpeople"
+		  
+		  if Session.gnPersonID = 0 then
+		    oSQL.StatementType = eStatementType.Type_Insert
+		  else
+		    oSQL.StatementType = eStatementType.Type_Update
+		    oSQL.AddSimpleWhereClause "PersonID",  Session.gnPersonID
+		  end
+		  
+		  oSql.ClearFields
+		  oSQL.ClearValues
+		  
+		  
+		  BuildSuffix
+		  oSQL.AddFields "NamePrefix",                             "FirstName",                  "Middle",                        "LastName",                "NameSuffix"
+		  oSQL.AddValues MemInfo.popNamePrefix.Text, MemInfo.txtFirst.Text, MemInfo.txtMiddle.Text, MemInfo.txtLast.Text, msNameSuffix
+		  
+		  oSQL.AddFields              "Email",                           "AlternateEmail",                                      "DateUpdated",         "UpdatedBy" , _
+		  "DateEntered",           "EnteredBy" ,   "BadgeName"
+		  oSQL.AddValues MemInfo.txtPrimaryEmail.Text, MemInfo.txtSecondaryEmail.Text,          Today.SQLDateTime,  "AppSystem",  _
+		  Today.SQLDateTime,  "NewApp",    MemInfo.txtNick.Text
+		  
+		  
+		  
+		  if Details.radMail.CellSelected(0, 1) then 
+		    'Work
+		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity", _
+		    "PState",                            "PZip",                           "PCountry",  "PPhone",                          "DONotContact"
+		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text, _
+		    Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text, 0
+		    
+		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity", _
+		    "SState",                            "SZip",                           "SCountry", "SPhone"
+		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text, _
+		    Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text
+		    
+		  else
+		    'Res
+		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity", _
+		    "PState",                            "PZip",                           "PCountry",                                    "PPhone",                          "DONotContact"
+		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text, _
+		    Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text, 0
+		    
+		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity", _
+		    "SState",                            "SZip",                           "SCountry",          "SPhone"
+		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text, _
+		    Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text
+		    
+		    
+		  end
+		  
+		  oSQL.AddFields "AccessLvl",   "MemStatus"
+		  oSQL.AddValues "None",     "None"
+		  
+		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
+		  
+		  if Session.sesAspeDB.CheckDBError("DB1409") then Return false
+		  
+		  if Session.gnPersonID = 0 then
+		    Session.gnPersonID = Session.sesAspeDB.LastID("tblpeople")
+		  end
+		  
+		  
+		  oSql.Reset
+		  
+		  Return True
+		  
+		  
+		  
+		End Function
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
@@ -2143,6 +2303,7 @@ End
 		        Msgbox("Invalid Input: Look for fields outlined in red!")
 		        return
 		      end
+		      if not SavePeople then return
 		      if not Details.SaveMemInfo then return
 		      
 		      if Session.gsAddressPref = "Work" then
@@ -2351,7 +2512,7 @@ End
 		  
 		  
 		  
-		  if Session.sesAspeDB.CheckDBError then
+		  if Session.sesAspeDB.CheckDBError("DB1408") then
 		    MsgBox(Session.sesAspeDB.ErrorMessage)
 		    Return False
 		  end
@@ -2434,6 +2595,10 @@ End
 
 	#tag Property, Flags = &h0
 		msEmailAddress() As String
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		msNameSuffix As String
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -2768,5 +2933,17 @@ End
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msURLDesc"
+		Group="Behavior"
+		Type="String"
+		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="msNameSuffix"
+		Group="Behavior"
+		Type="String"
+		EditorType="MultiLineEditor"
 	#tag EndViewProperty
 #tag EndViewBehavior
