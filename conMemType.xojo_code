@@ -1623,6 +1623,11 @@ End
 		  oSQL.AddFields "MemType",      "DataBookFormat",  "DonationEducation", "DonationResearch", "DonationSteele", "DonationPE"
 		  oSQL.AddValues popType.Text, lsStr,                           chkEducation.Value,   chkResearch.Value,  chkSteele.Value, chkPEDon.Value
 		  
+		  if popType.Text = "Affiliate" or popType.Text = "Governmental" then
+		    oSQL.AddFields "ApprovedVPM"
+		    oSQL.AddValues  1
+		  end
+		  
 		  oSQL.AddFields "MemPrice",    "IsMultiYear",  "NumMultiYear",    "IsForiegn",   "ForShipCost", "Donations",  "TotalDonations"
 		  oSQL.AddValues mdTotalCost, lbIsMultiYear,    lnNumMultiYear,   lbIsForiegn,  mdForShippingCost, frmAppllcation.msDesc, lblTotalDonations.Text.Replace("$", "")
 		  
