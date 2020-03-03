@@ -32,8 +32,6 @@ Inherits MySQLCommunityServer
 		  'lsServer as String, lsUser as String, lsDataBaseName as String,  lsPassword as String, lnPort as Int16
 		  
 		  
-		  self.SQLExecute("Set NameS 'utf8'")
-		  
 		  
 		  self.DatabaseName = gsDatabaseNameWS   ' "aspesql3" 'lsDataBaseName
 		  self.Password = gsPasswordWS     '"7Ut6ctxL"  'lsPassword
@@ -47,6 +45,8 @@ Inherits MySQLCommunityServer
 		    MsgBox(self.ErrorMessage)
 		    return false
 		  end
+		  
+		  self.SQLExecute("Set NameS 'utf8'")
 		  
 		  
 		  'gsConnectionStr = "mysql://host='" + gsHost + "', port=3306, user='" + gsUserName + "', password='" + gsPassword + "', dbname='" + gsDatabaseName + "', timeout=5"

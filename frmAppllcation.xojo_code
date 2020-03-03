@@ -403,13 +403,13 @@ Begin WebPage frmAppllcation
       CertificateFile =   
       CertificatePassword=   ""
       CertificateRejectionFile=   
-      ConnectionType  =   3
       Index           =   -2147483648
       Left            =   0.0
       LockedInPosition=   False
       Scope           =   0
       Secure          =   False
       SMTPConnectionMode=   0
+      SSLConnectionType=   "3"
       Style           =   "0"
       TabPanelIndex   =   0
       Top             =   0.0
@@ -1783,7 +1783,6 @@ End
 		    
 		  Case "CreditCard"
 		    CreditCard.Visible = True
-		    CreditCard.txtCCNumber.SetFocus
 		    CreditCard.lblDBChoice.Text = MemType.popDataBookformat.Text + ":"
 		    CreditCard.lblDatabook.Text = MemType.lblDatabook.Text
 		    CreditCard.lblMemshipType.Text  = "Membership Type " + MemType.popType.Text  + ":"
@@ -1805,7 +1804,6 @@ End
 		    CreditCard.lblTotalDonations.Text = MemType.lblTotalDonations.Text
 		    CreditCard.lblGrandTotal.Text = MemType.lblGrandTotal.Text
 		    
-		    CreditCard.txtCCNumber.SetFocus
 		    if CreditCard.mbForiegn then
 		      CreditCard.lblForDiscountAmount.Text = MemType.lblDiscout.Text
 		      
@@ -1847,14 +1845,14 @@ End
 		    end
 		    
 		    
-		    msURLDesc = "New member application " + MemType.popType.Text + " " 
+		    msURLDesc = "American Society of Plumbing Engineers New member application " + MemType.popType.Text + " " 
 		    if MemType.popYears.text <> "1" then
-		      msURLDesc = msURLDesc + MemType.popYears.text  + " Years: " + CreditCard.lblMemshipCost.text
+		      msURLDesc = msURLDesc + MemType.popYears.text  + " Years: " + CreditCard.lblMemshipCost.text + " Discount: " + CreditCard.lblForDiscountAmount.Text 
 		    else
 		      msURLDesc = msURLDesc + "1 Year: " + CreditCard.lblMemshipCost.text 
 		    end
 		    
-		    msURLDesc = msURLDesc + " // " + MemType.popDataBookformat.Text.ReplaceAll("&", "%26") + " Databook: " + CreditCard.lblDatabook.Text  + "  /  " 
+		    msURLDesc = msURLDesc + "/" + MemType.popDataBookformat.Text.ReplaceAll("&", "%26") + " Databook: " + CreditCard.lblDatabook.Text  + "  /  " 
 		    
 		    If CreditCard.lblForTotalShipping.Visible then
 		      msURLDesc = msURLDesc + " / Foriegn Shipping cost: " + CreditCard.lblForTotalShipping.Text + " / "
@@ -1874,6 +1872,10 @@ End
 		    end
 		    if MemType.chkPEDon.value then
 		      lsCont = lsCont +  " / PE Curriculum - Licensing Program $" + MemType.txtCurriculumDonations.Text
+		    end
+		    
+		    if MemType.popYears.text <> "1" then
+		      lsCont = " Discount: " + CreditCard.lblForDiscountAmount.Text + " / " + lsCont
 		    end
 		    msDesc = lsCont
 		    msURLDesc = msURLDesc.ReplaceAll("/", "<br>")  + lsCont.ReplaceAll("/", "<br>") 
@@ -1906,7 +1908,7 @@ End
 		    
 		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
 		    
-		    'MsgBox(msURLDesc) 'RSA url param
+		    System.DebugLog(msURLDesc) 'RSA url param
 		    
 		    btnNext.Caption = "Next"
 		    
@@ -1915,19 +1917,19 @@ End
 		    
 		    
 		  Case "Confirmation"
-		    Confirmation.txtCCCity.Text = CreditCard.txtCCCity.Text
-		    Confirmation.txtCCCountry.Text = CreditCard.txtCCCountry.Text
-		    Confirmation.txtCCEmail.Text = CreditCard.txtCCEmail.Text
-		    Confirmation.txtCCFirst.Text = CreditCard.txtCCFirst.Text
-		    Confirmation.txtCCLast.Text = CreditCard.txtCCLast.Text
-		    Confirmation.txtCCNumber.Text = CreditCard.txtCCNumber.Text
-		    Confirmation.txtCCPhoneHome.Text = CreditCard.txtCCPhoneHome.Text
-		    Confirmation.txtCCState.Text = CreditCard.txtCCState.Text
-		    Confirmation.txtCCStreetAddr.Text = CreditCard.txtCCStreetAddr.Text
-		    Confirmation.txtCCZip.Text = CreditCard.txtCCZip.Text
-		    Confirmation.txtCVV.Text = CreditCard.txtCVV.Text
-		    Confirmation.txtExpMonth.Text = CreditCard.txtExpMonth.Text
-		    Confirmation.txtExpYear.Text = CreditCard.txtExpYear.Text
+		    'Confirmation.txtCCCity.Text = CreditCard.txtCCCity.Text
+		    'Confirmation.txtCCCountry.Text = CreditCard.txtCCCountry.Text
+		    'Confirmation.txtCCEmail.Text = CreditCard.txtCCEmail.Text
+		    'Confirmation.txtCCFirst.Text = CreditCard.txtCCFirst.Text
+		    'Confirmation.txtCCLast.Text = CreditCard.txtCCLast.Text
+		    'Confirmation.txtCCNumber.Text = CreditCard.txtCCNumber.Text
+		    'Confirmation.txtCCPhoneHome.Text = CreditCard.txtCCPhoneHome.Text
+		    'Confirmation.txtCCState.Text = CreditCard.txtCCState.Text
+		    'Confirmation.txtCCStreetAddr.Text = CreditCard.txtCCStreetAddr.Text
+		    'Confirmation.txtCCZip.Text = CreditCard.txtCCZip.Text
+		    'Confirmation.txtCVV.Text = CreditCard.txtCVV.Text
+		    'Confirmation.txtExpMonth.Text = CreditCard.txtExpMonth.Text
+		    'Confirmation.txtExpYear.Text = CreditCard.txtExpYear.Text
 		    
 		    Confirmation.lblDBChoice.Text = CreditCard.lblDBChoice.Text
 		    Confirmation.lblDatabook.Text = CreditCard.lblDatabook.Text
@@ -2022,27 +2024,33 @@ End
 		  
 		  if Details.radMail.CellSelected(0, 1) then 
 		    'Work
-		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity", _
-		    "PState",                            "PZip",                           "PCountry",  "PPhone",                          "DONotContact"
-		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text, _
-		    Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text, 0
+		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity"
+		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text
 		    
-		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity", _
-		    "SState",                            "SZip",                           "SCountry", "SPhone"
-		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text, _
-		    Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text
+		    oSQL.AddFields  "PState",                            "PZip",                           "PCountry",  "PPhone",        "DONotContact"
+		    oSQL.AddValues Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text, 0
+		    
+		    
+		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity"
+		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text
+		    
+		    oSQL.AddFields "SState",                            "SZip",                           "SCountry", "SPhone"
+		    oSQL.AddValues Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text
 		    
 		  else
 		    'Res
-		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity", _
-		    "PState",                            "PZip",                           "PCountry",                                    "PPhone",                          "DONotContact"
-		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text, _
-		    Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text, 0
+		    oSQL.AddFields  "PCompany",                      "PAddress1",                      "PAddress2",                    "PCity"
+		    oSQL.AddValues Details.txtResAddr1.Text,  Details.txtResAddr2.Text, Details.txtResAddr3.Text, Details.txtResCity.Text
 		    
-		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity", _
-		    "SState",                            "SZip",                           "SCountry",          "SPhone"
-		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text, _
-		    Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text
+		    
+		    oSQL.AddFields "PState",                            "PZip",                           "PCountry",                                    "PPhone",                          "DONotContact"
+		    oSQL.AddValues Details.txtResState.Text,  Details.txtResZip.Text, lsRCountry, Details.txtPhoneHome.Text, 0
+		    
+		    oSQL.AddFields  "SCompany",                      "SAddress1",                      "SAddress2",                    "SCity"
+		    oSQL.AddValues Details.txtBusName.Text,  Details.txtBusAddr1.Text, Details.txtBusAddr2.Text, Details.txtBusCity.Text
+		    
+		    oSQL.AddFields "SState",                            "SZip",                           "SCountry",          "SPhone"
+		    oSQL.AddValues Details.txtBusState.Text,  Details.txtBusZip.Text, lsBCountry, Details.txtPhoneBus.Text
 		    
 		    
 		  end
@@ -2147,135 +2155,135 @@ End
 
 	#tag Method, Flags = &h0
 		Sub SendAuthorizeNet()
-		  
-		  dicAuth = New Dictionary
-		  
-		  'dicAuth.Value("PName") = "Ricky"
-		  'dicAuth.Value("PTitle") = "Greatest Hits"
-		  
-		  's.SetFormData(d)
 		  '
-		  'Dim lsStr as String
+		  'dicAuth = New Dictionary
 		  '
-		  'lsStr = s.Post("http://aspe.org/xo/test/test.php", 10)
+		  ''dicAuth.Value("PName") = "Ricky"
+		  ''dicAuth.Value("PTitle") = "Greatest Hits"
 		  '
-		  'lsStr = DefineEncoding(lsStr, Encodings.UTF8)
-		  
-		  
-		  
-		  dicAuth.Value("x_email") = CreditCard.txtCCEmail.Text
-		  dicAuth.Value("x_card_num") = CreditCard.txtCCNumber.Text
-		  dicAuth.Value("x_exp_date") = CreditCard.txtExpMonth.Text + CreditCard.txtExpYear.Text
-		  dicAuth.Value("x_card_code") = CreditCard.txtCVV.Text
-		  dicAuth.Value("x_description") = msDesc
-		  
-		  
-		  dicAuth.Value("x_amount") = CreditCard.lblGrandTotal.Text.Mid(2)
-		  
-		  dicAuth.Value("x_first_name") = CreditCard.txtCCFirst.Text
-		  dicAuth.Value("x_last_name") = CreditCard.txtCCLast.Text
-		  dicAuth.Value("x_address") = CreditCard.txtCCStreetAddr.Text
-		  dicAuth.Value("x_city") = CreditCard.txtCCCity.Text
-		  dicAuth.Value("x_state") = CreditCard.txtCCState.Text
-		  dicAuth.Value("x_zip") = CreditCard.txtCCZip.Text
-		  dicAuth.Value("x_phone") = CreditCard.txtCCPhoneHome.Text
-		  dicAuth.Value("x_country") = CreditCard.txtCCCountry.Text
-		  
-		  if DebugBuild then
-		    system.DebugLog( dicAuth.Lookup("x_email", "") + "-x_email")
-		    system.DebugLog( dicAuth.Lookup("x_card_num", "")  + "-x_card_num")
-		    system.DebugLog( dicAuth.Lookup("x_exp_date", "")  + "-x_exp_date")
-		    system.DebugLog( dicAuth.Lookup("x_card_code", "") + "-x_card_code")
-		    system.DebugLog( dicAuth.Lookup("x_description", "") + "-x_description")
-		    system.DebugLog( dicAuth.Lookup("x_amount", "")  + "-x_amount")
-		    system.DebugLog( dicAuth.Lookup("x_first_name", "")  + "-x_first_name")
-		    system.DebugLog( dicAuth.Lookup("x_last_name", "") + "-x_last_name")
-		    system.DebugLog( dicAuth.Lookup("x_address", "") + "-x_address")
-		    system.DebugLog( dicAuth.Lookup("x_city", "")  + "-x_city")
-		    system.DebugLog( dicAuth.Lookup("x_state", "") + "-x_state")
-		    system.DebugLog( dicAuth.Lookup("x_zip", "") + "-x_zip")
-		    system.DebugLog( dicAuth.Lookup("x_phone", "")  + "-x_phone")
-		    system.DebugLog( dicAuth.Lookup("x_country", "") + "-x_country")
-		    
-		  end
-		  
-		  
-		  Dim dicResultCode as New Dictionary
-		  '
-		  if CreditCard.txtCCNumber.Text = "11111111111111110" and CreditCard.txtCVV.Text = "9999" then
-		    dicResultCode.Value("ResponseCode") = "Approved"
-		    dicResultCode.Value("TransActionID") = "1234567890"
-		    dicResultCode.Value("AVSResponse") = "All Match"
-		  else
-		    Call UpdateTransaction("Sent", "None", "Sent to Auth")
-		    dicResultCode = ProcessCC(dicAuth, False )
-		    'dicResultCode.value("ResponseCode")  = ""
-		    
-		  end
-		  
+		  ''s.SetFormData(d)
+		  ''
+		  ''Dim lsStr as String
+		  ''
+		  ''lsStr = s.Post("http://aspe.org/xo/test/test.php", 10)
+		  ''
+		  ''lsStr = DefineEncoding(lsStr, Encodings.UTF8)
 		  '
 		  '
-		  if dicResultCode.Value("ResponseCode")  = "Approved" then
-		    Processing.txtResult.Text = "Result: Transaction Approved"+ EndOfLine
-		    Try
-		      Processing.txtResult.Text =  Processing.txtResult.Text + "TransActionID: " + dicResultCode.Value("TransActionID")+ EndOfLine
-		    catch e as KeyNotFoundException
-		      app.WriteLog("Err 101401: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, TransActionID Key not found! ")
-		      
-		    end Try
-		    
-		    try
-		      Processing.txtResult.Text =  Processing.txtResult.Text + dicResultCode.Value("AVSResponse")+ EndOfLine
-		    catch e as KeyNotFoundException
-		      app.WriteLog("Err 101402: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, AVSResponse Key not found! ")
-		      
-		    end Try
-		    
-		    btnPrevious.Enabled = False
-		    btnNext.Visible = False
-		    if not UpdateTransaction( dicResultCode.Value("TransActionID"), "Approved", "Back From Auth") then
-		      MsgBox("Error Unable to Send Application, Your transaction did go through though.")
-		      Return
-		    end
-		    Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved", "Sending App")
-		    SendApplication
-		    Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved",  "App Sent")
-		    Processing.lblConfirmation.Visible = True
-		    
-		    'QuitTimer.Mode = Timer.ModeSingle
-		    
-		  else
-		    if dicResultCode.Value("ResponseCode") = "" then
-		      Call UpdateTransaction("No Responce", "", "Sent to Auth")
-		    else  
-		      if dicResultCode.HasKey("ResponseReasonCode") then
-		        Call UpdateTransaction("No ID", dicResultCode.Value("ResponseReasonCode"), "Back From Auth") 
-		      Else
-		        Call UpdateTransaction("No ID", dicResultCode.Value("ResponseCode"), "Back From Auth") 
-		      end
-		    end
-		    'SendApplication
-		    if dicResultCode.Value("ResponseCode") = "" then
-		      Processing.txtResult.Text = "Result: "+ "Internal Error, contact Membership@aspe.org" + EndOfLine
-		    else
-		      Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
-		      Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseCode") + EndOfLine + EndOfLine
-		    end
-		    if dicResultCode.HasKey("ResponseReasonCode") then
-		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
-		    end
-		    'try
-		    'Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
-		    'catch e as KeyNotFoundException
-		    'app.WriteLog("Err 101403: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, ResponseReasonText Key not found! ")
-		    '
-		    'end Try
-		    if dicResultCode.HasKey("AVSResponse") then
-		      Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("AVSResponse") + EndOfLine
-		    end
-		    btnPrevious.Enabled = True
-		  end
-		  
+		  '
+		  'dicAuth.Value("x_email") = CreditCard.txtCCEmail.Text
+		  'dicAuth.Value("x_card_num") = CreditCard.txtCCNumber.Text
+		  'dicAuth.Value("x_exp_date") = CreditCard.txtExpMonth.Text + CreditCard.txtExpYear.Text
+		  'dicAuth.Value("x_card_code") = CreditCard.txtCVV.Text
+		  'dicAuth.Value("x_description") = msDesc
+		  '
+		  '
+		  'dicAuth.Value("x_amount") = CreditCard.lblGrandTotal.Text.Mid(2)
+		  '
+		  'dicAuth.Value("x_first_name") = CreditCard.txtCCFirst.Text
+		  'dicAuth.Value("x_last_name") = CreditCard.txtCCLast.Text
+		  'dicAuth.Value("x_address") = CreditCard.txtCCStreetAddr.Text
+		  'dicAuth.Value("x_city") = CreditCard.txtCCCity.Text
+		  'dicAuth.Value("x_state") = CreditCard.txtCCState.Text
+		  'dicAuth.Value("x_zip") = CreditCard.txtCCZip.Text
+		  'dicAuth.Value("x_phone") = CreditCard.txtCCPhoneHome.Text
+		  'dicAuth.Value("x_country") = CreditCard.txtCCCountry.Text
+		  '
+		  'if DebugBuild then
+		  'system.DebugLog( dicAuth.Lookup("x_email", "") + "-x_email")
+		  'system.DebugLog( dicAuth.Lookup("x_card_num", "")  + "-x_card_num")
+		  'system.DebugLog( dicAuth.Lookup("x_exp_date", "")  + "-x_exp_date")
+		  'system.DebugLog( dicAuth.Lookup("x_card_code", "") + "-x_card_code")
+		  'system.DebugLog( dicAuth.Lookup("x_description", "") + "-x_description")
+		  'system.DebugLog( dicAuth.Lookup("x_amount", "")  + "-x_amount")
+		  'system.DebugLog( dicAuth.Lookup("x_first_name", "")  + "-x_first_name")
+		  'system.DebugLog( dicAuth.Lookup("x_last_name", "") + "-x_last_name")
+		  'system.DebugLog( dicAuth.Lookup("x_address", "") + "-x_address")
+		  'system.DebugLog( dicAuth.Lookup("x_city", "")  + "-x_city")
+		  'system.DebugLog( dicAuth.Lookup("x_state", "") + "-x_state")
+		  'system.DebugLog( dicAuth.Lookup("x_zip", "") + "-x_zip")
+		  'system.DebugLog( dicAuth.Lookup("x_phone", "")  + "-x_phone")
+		  'system.DebugLog( dicAuth.Lookup("x_country", "") + "-x_country")
+		  '
+		  'end
+		  '
+		  '
+		  'Dim dicResultCode as New Dictionary
+		  ''
+		  'if CreditCard.txtCCNumber.Text = "11111111111111110" and CreditCard.txtCVV.Text = "9999" then
+		  'dicResultCode.Value("ResponseCode") = "Approved"
+		  'dicResultCode.Value("TransActionID") = "1234567890"
+		  'dicResultCode.Value("AVSResponse") = "All Match"
+		  'else
+		  'Call UpdateTransaction("Sent", "None", "Sent to Auth")
+		  'dicResultCode = ProcessCC(dicAuth, False )
+		  ''dicResultCode.value("ResponseCode")  = ""
+		  '
+		  'end
+		  '
+		  ''
+		  ''
+		  'if dicResultCode.Value("ResponseCode")  = "Approved" then
+		  'Processing.txtResult.Text = "Result: Transaction Approved"+ EndOfLine
+		  'Try
+		  'Processing.txtResult.Text =  Processing.txtResult.Text + "TransActionID: " + dicResultCode.Value("TransActionID")+ EndOfLine
+		  'catch e as KeyNotFoundException
+		  'app.WriteLog("Err 101401: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, TransActionID Key not found! ")
+		  '
+		  'end Try
+		  '
+		  'try
+		  'Processing.txtResult.Text =  Processing.txtResult.Text + dicResultCode.Value("AVSResponse")+ EndOfLine
+		  'catch e as KeyNotFoundException
+		  'app.WriteLog("Err 101402: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, AVSResponse Key not found! ")
+		  '
+		  'end Try
+		  '
+		  'btnPrevious.Enabled = False
+		  'btnNext.Visible = False
+		  'if not UpdateTransaction( dicResultCode.Value("TransActionID"), "Approved", "Back From Auth") then
+		  'MsgBox("Error Unable to Send Application, Your transaction did go through though.")
+		  'Return
+		  'end
+		  'Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved", "Sending App")
+		  'SendApplication
+		  'Call UpdateTransaction(dicResultCode.Value("TransActionID"), "Approved",  "App Sent")
+		  'Processing.lblConfirmation.Visible = True
+		  '
+		  ''QuitTimer.Mode = Timer.ModeSingle
+		  '
+		  'else
+		  'if dicResultCode.Value("ResponseCode") = "" then
+		  'Call UpdateTransaction("No Responce", "", "Sent to Auth")
+		  'else  
+		  'if dicResultCode.HasKey("ResponseReasonCode") then
+		  'Call UpdateTransaction("No ID", dicResultCode.Value("ResponseReasonCode"), "Back From Auth") 
+		  'Else
+		  'Call UpdateTransaction("No ID", dicResultCode.Value("ResponseCode"), "Back From Auth") 
+		  'end
+		  'end
+		  ''SendApplication
+		  'if dicResultCode.Value("ResponseCode") = "" then
+		  'Processing.txtResult.Text = "Result: "+ "Internal Error, contact Membership@aspe.org" + EndOfLine
+		  'else
+		  'Processing.txtResult.Text = "Result: "+ dicResultCode.Value("ResponseCode") + EndOfLine
+		  'Processing.txtResult.Text =  Processing.txtResult.Text +  "--- " + dicResultCode.Value("ResponseCode") + EndOfLine + EndOfLine
+		  'end
+		  'if dicResultCode.HasKey("ResponseReasonCode") then
+		  'Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonCode") + EndOfLine + EndOfLine
+		  'end
+		  ''try
+		  ''Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("ResponseReasonText") + EndOfLine + EndOfLine
+		  ''catch e as KeyNotFoundException
+		  ''app.WriteLog("Err 101403: Email = " + CreditCard.txtCCEmail.Text + " ResponseCode = Approved, ResponseReasonText Key not found! ")
+		  ''
+		  ''end Try
+		  'if dicResultCode.HasKey("AVSResponse") then
+		  'Processing.txtResult.Text =  Processing.txtResult.Text +  dicResultCode.Value("AVSResponse") + EndOfLine
+		  'end
+		  'btnPrevious.Enabled = True
+		  'end
+		  '
 		  
 		End Sub
 	#tag EndMethod
@@ -2431,7 +2439,6 @@ End
 		        return
 		      end
 		      
-		      If Not CreditCard.SaveCC then Return
 		      msCurrentScreen = "Confirmation"
 		    else
 		      if app.mbAffiliateGov then
@@ -2444,7 +2451,15 @@ End
 		    
 		  Case "Confirmation"
 		    if bNext then
-		      msCurrentScreen = "Processing"
+		      'msCurrentScreen = "Processing"
+		      If Not CreditCard.SaveCC then Return
+		      
+		      System.DebugLog("---------------- URL Parameters:" + msURLDesc)
+		      Session.ConfirmMessage = ""
+		      Showurl(cWPPayment + msURLDesc, False) 'RSA PaymentProcessing
+		      'Showurl("https://www.aspe.org/membership-global-community/membership/members-only/")
+		      btnNext.Enabled = False
+		      Return
 		      
 		    else
 		      msCurrentScreen = "CreditCard"
@@ -2610,6 +2625,10 @@ End
 	#tag EndProperty
 
 
+	#tag Constant, Name = cWPPayment, Type = String, Dynamic = False, Default = \"https://www.aspe.org/membership-payment", Scope = Private
+	#tag EndConstant
+
+
 #tag EndWindowCode
 
 #tag Events Timer1
@@ -2629,7 +2648,7 @@ End
 #tag Events SMTPMail1
 	#tag Event
 		Sub MailSent()
-		  Call UpdateTransaction("", "", "App Sent")
+		  'Call UpdateTransaction("", "", "App Sent")
 		  'MsgBox("In Sent")
 		End Sub
 	#tag EndEvent
@@ -2713,15 +2732,19 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Enabled"
+		Visible=false
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="gbCCDone"
+		Visible=false
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Height"
@@ -2729,68 +2752,95 @@ End
 		Group="Behavior"
 		InitialValue="400"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HelpTag"
 		Visible=true
 		Group="Behavior"
+		InitialValue=""
 		Type="String"
 		EditorType="MultiLineEditor"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="HorizontalCenter"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Index"
+		Visible=false
 		Group="ID"
+		InitialValue=""
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="IsImplicitInstance"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Left"
+		Visible=false
 		Group="Position"
 		InitialValue="0"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockBottom"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockHorizontal"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockLeft"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockRight"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockTop"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockVertical"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MinHeight"
@@ -2798,6 +2848,7 @@ End
 		Group="Behavior"
 		InitialValue="400"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="MinWidth"
@@ -2805,9 +2856,11 @@ End
 		Group="Behavior"
 		InitialValue="600"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="msCurrentScreen"
+		Visible=false
 		Group="Behavior"
 		InitialValue="MemInfo"
 		Type="String"
@@ -2815,7 +2868,9 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="msDesc"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="String"
 		EditorType="MultiLineEditor"
 	#tag EndViewProperty
@@ -2823,18 +2878,25 @@ End
 		Name="Name"
 		Visible=true
 		Group="ID"
+		InitialValue=""
 		Type="String"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Super"
 		Visible=true
 		Group="ID"
+		InitialValue=""
 		Type="String"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="TabOrder"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Title"
@@ -2846,20 +2908,27 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Top"
+		Visible=false
 		Group="Position"
 		InitialValue="0"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="VerticalCenter"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Visible"
+		Visible=false
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Width"
@@ -2867,82 +2936,117 @@ End
 		Group="Behavior"
 		InitialValue="600"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="ZIndex"
+		Visible=false
 		Group="Behavior"
 		InitialValue="1"
 		Type="Integer"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_DeclareLineRendered"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_HorizontalPercent"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Double"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_ImplicitInstance"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_IsEmbedded"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_Locked"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_NeedsRendering"
+		Visible=false
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_OfficialControl"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_OpenEventFired"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_ShownEventFired"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="_VerticalPercent"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="Double"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="gbTrascriptUploaded"
+		Visible=false
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
+		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="msURLDesc"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="String"
 		EditorType="MultiLineEditor"
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="msNameSuffix"
+		Visible=false
 		Group="Behavior"
+		InitialValue=""
 		Type="String"
 		EditorType="MultiLineEditor"
 	#tag EndViewProperty

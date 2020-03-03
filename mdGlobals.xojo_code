@@ -27,32 +27,6 @@ Protected Module mdGlobals
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function CheckDate(lsDate as DatabaseCursorField) As String
-		  
-		  if lsDate.StringValue <> "" and  lsDate <> nil and  lsDate.StringValue <> "0-00-00 00:00:00"  then
-		    Return lsDate.DateValue.ShortDate
-		    
-		  end
-		  
-		  Return ""
-		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Function CheckDateText(lsDate as String) As Date
-		  Dim ldDate as Date
-		  
-		  ldDate = StrToDate(lsDate)
-		  if lsDate <> ""  then
-		    Return ldDate
-		    
-		  end
-		  
-		  Return nil
-		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
 		Function ChkStr(lsStr as Variant) As String
 		  
 		  if lsStr = nil then
@@ -62,24 +36,6 @@ Protected Module mdGlobals
 		  end
 		  
 		End Function
-	#tag EndMethod
-
-	#tag Method, Flags = &h0
-		Sub CopyFolder(FoldernameFrom as folderItem, FoldernameTo as folderitem)
-		  
-		  Dim i as integer
-		  if FoldernameFrom.Directory = false then return
-		  FoldernameTo.CreateAsFolder
-		  for i = 1 to FoldernameFrom.Count
-		    if FoldernameFrom.item(i).Directory then
-		      dim subfolder as FolderItem = GetFolderItem(FoldernameTo.AbsolutePath + FoldernameFrom.Item(i).Name)
-		      CopyFolder (FoldernameFrom.item(i),subfolder)
-		    else
-		      dim subfile as FolderItem = GetFolderItem(FoldernameTo.AbsolutePath + FoldernameFrom.Item(i).Name)
-		      FoldernameFrom.Item(i).CopyFileTo (subfile)
-		    end if
-		  next
-		End Sub
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
@@ -1119,223 +1075,303 @@ Protected Module mdGlobals
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="gbClose"
+			Visible=false
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gbGroupSent"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gbLookUpPID"
+			Visible=false
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gbOrderIsARegistration"
+			Visible=false
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gbPostPayment"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gbRegistrationActive"
+			Visible=false
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gCurrentUser"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdPayment"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdTotalDue"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnEmailPort"
+			Visible=false
 			Group="Behavior"
 			InitialValue="465"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnFinanceHeight"
+			Visible=false
 			Group="Behavior"
 			InitialValue="600"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnFinanceLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="20"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnFInanceTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="50"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnFinanceWidth"
+			Visible=false
 			Group="Behavior"
 			InitialValue="980"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnHomeLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="10"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnHomeTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="100"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnOrderID"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnOrderLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="200"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnOrderTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="200"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnPeopleLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="200"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnPeopleTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="200"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnRegistrationLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="10"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnRegistrationTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="100"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnSearchHeight"
+			Visible=false
 			Group="Behavior"
 			InitialValue="690"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnSearchLeft"
+			Visible=false
 			Group="Behavior"
 			InitialValue="100"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnSearchTop"
+			Visible=false
 			Group="Behavior"
 			InitialValue="100"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnSearchWidth"
+			Visible=false
 			Group="Behavior"
 			InitialValue="1075"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gPrintSettings"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsDefaultEvent"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsDefaultEventName"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsFromEmail"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsFromName"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsName"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsOS"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsPathDelimiter"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsReportName"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsSMTPPassword"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsSMTPServer"
+			Visible=false
 			Group="Behavior"
 			InitialValue="aspe.zmailcloud.com"
 			Type="String"
@@ -1343,26 +1379,35 @@ Protected Module mdGlobals
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsSMTPUserID"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsSql"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsTempName"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gTempPID"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Index"
@@ -1370,6 +1415,7 @@ Protected Module mdGlobals
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -1377,18 +1423,23 @@ Protected Module mdGlobals
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Super"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Top"
@@ -1396,6 +1447,39 @@ Protected Module mdGlobals
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="cnBulkEmailPort"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="Integer"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="csBulkEmailSMTPPassword"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="csBulkMailSMTPServer"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="String"
+			EditorType=""
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="csBulkMailSMTPUserID"
+			Visible=false
+			Group="Behavior"
+			InitialValue=""
+			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Module

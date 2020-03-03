@@ -23,7 +23,7 @@ Inherits WebApplication
 		Function UnhandledException(Error As RuntimeException) As Boolean
 		  dim ls as String
 		  
-		  ls = "Runtime Exception: " + "Err 08261235: Email = " + frmAppllcation.CreditCard.txtCCEmail.Text + " " + Error.Type + EndOfLine + _
+		  ls = "Runtime Exception: " + "Err 08261235: Email = " +  Error.Type + EndOfLine + _
 		  "                           Reason: " + error.Reason + EndOfLine + _
 		  "                     Error Number: " + error.ErrorNumber.ToText + EndOfLine + _
 		  "                          Message: " + error.Message + EndOfLine + _
@@ -129,105 +129,139 @@ Inherits WebApplication
 	#tag ViewBehavior
 		#tag ViewProperty
 			Name="gdAffiliateCoupon"
+			Visible=false
 			Group="Behavior"
 			InitialValue="-90"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdAffiliateMemberPrice"
+			Visible=false
 			Group="Behavior"
 			InitialValue="190"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdAssociateCoupon"
+			Visible=false
 			Group="Behavior"
 			InitialValue="-70"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdAssociateMemberPrice"
+			Visible=false
 			Group="Behavior"
 			InitialValue="170"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdDataBookBoth"
+			Visible=false
 			Group="Behavior"
 			InitialValue="50"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdDonationEducation"
+			Visible=false
 			Group="Behavior"
 			InitialValue="25"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdDonationPE"
+			Visible=false
 			Group="Behavior"
 			InitialValue="25"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdDonationResearch"
+			Visible=false
 			Group="Behavior"
 			InitialValue="25"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdDonationSteele"
+			Visible=false
 			Group="Behavior"
 			InitialValue="25"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdFullCoupon"
+			Visible=false
 			Group="Behavior"
 			InitialValue="-90"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdFullMemberPrice"
+			Visible=false
 			Group="Behavior"
 			InitialValue="190"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdGovernCoupon"
+			Visible=false
 			Group="Behavior"
 			InitialValue="-90"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdGovernmental"
+			Visible=false
 			Group="Behavior"
 			InitialValue="190"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdSpecialCoupon"
+			Visible=false
 			Group="Behavior"
 			InitialValue="-90"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdSpecialMemberPrice"
+			Visible=false
 			Group="Behavior"
 			InitialValue="190"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gdStudentMemberPrice"
+			Visible=false
 			Group="Behavior"
 			InitialValue="30"
 			Type="Double"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="mbAffiliateGov"
+			Visible=false
 			Group="Behavior"
 			InitialValue="False"
 			Type="Boolean"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class
