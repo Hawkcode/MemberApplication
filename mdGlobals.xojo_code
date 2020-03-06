@@ -626,9 +626,11 @@ Protected Module mdGlobals
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function Today() As Date
-		  Dim dtNow as Date
-		  dtNow = New Date
+		Function Today() As DateTime
+		  Var Server As DateTime = DateTime.now
+		  Var dtNow As New DateTime(Server.SecondsFrom1970, New TimeZone("America/Chicago"))
+		  
+		  
 		  Return dtNow
 		  
 		End Function
@@ -1463,7 +1465,7 @@ Protected Module mdGlobals
 			Group="Behavior"
 			InitialValue=""
 			Type="String"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="csBulkMailSMTPServer"
@@ -1471,7 +1473,7 @@ Protected Module mdGlobals
 			Group="Behavior"
 			InitialValue=""
 			Type="String"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="csBulkMailSMTPUserID"
@@ -1479,7 +1481,7 @@ Protected Module mdGlobals
 			Group="Behavior"
 			InitialValue=""
 			Type="String"
-			EditorType=""
+			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Module

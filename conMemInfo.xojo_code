@@ -2365,6 +2365,10 @@ End
 		  ldBDay.Day = txtBDayDay.Text.Val
 		  ldBDay.Year = txtBDayYear.Text.Val
 		  
+		  if Session.gnPersonID = 0 then
+		    oSQL.AddFields "LoggedDt"
+		    oSQL.AddValues  Today.SQLDateTime
+		  end
 		  
 		  oSQL.AddFields "prefix",                       "firstName",  "nickName",  "middleName",  "lastName",   "birthDate"
 		  oSQL.AddValues popNamePrefix.Text, txtFirst.Text, txtNick.Text, txtMiddle.Text, txtLast.Text, ldBDay.SQLDate

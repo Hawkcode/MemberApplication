@@ -2012,10 +2012,11 @@ End
 		  
 		  
 		  BuildSuffix
+		  
 		  oSQL.AddFields "NamePrefix",                             "FirstName",                  "Middle",                        "LastName",                "NameSuffix"
 		  oSQL.AddValues MemInfo.popNamePrefix.Text, MemInfo.txtFirst.Text, MemInfo.txtMiddle.Text, MemInfo.txtLast.Text, msNameSuffix
 		  
-		  oSQL.AddFields              "Email",                           "AlternateEmail",                                      "DateUpdated",         "UpdatedBy" , _
+		  oSQL.AddFields              "Email",                           "AlternateEmail",     "DateUpdated",         "UpdatedBy" , _
 		  "DateEntered",           "EnteredBy" ,   "BadgeName"
 		  oSQL.AddValues MemInfo.txtPrimaryEmail.Text, MemInfo.txtSecondaryEmail.Text,          Today.SQLDateTime,  "AppSystem",  _
 		  Today.SQLDateTime,  "NewApp",    MemInfo.txtNick.Text
