@@ -92,7 +92,6 @@ Begin WebPage frmAppllcation
       mdMulti1YearPercent=   1
       mdMulti2YearPercent=   5
       mdMulti3YearPercent=   10
-      mdShipping      =   0.0
       mdTotalMembershipCost=   0.0
       mnMultYearNumOf =   1
       msCountry       =   ""
@@ -1814,7 +1813,8 @@ End
 		      CreditCard.lblForShipping.Visible = Not CreditCard.mbCantShip
 		      Confirmation.lblForShipping.Visible = Not CreditCard.mbCantShip
 		      CreditCard.lblForTotalShipping.Visible = Not CreditCard.mbCantShip
-		      CreditCard.lblForTotalShipping.Text = Format(CreditCard.mdShipping, "\$###0.00")
+		      CreditCard.lblForTotalShipping.Text = Format(frmAppllcation.mdShipping, "\$###0.00")
+		      CreditCard.lblForShipping.Visible = True
 		      'CreditCard.lblForDiscountAmount.Text = Format(CreditCard.lblForDiscountAmount.Text.Val, "\$###0.00")
 		      if CreditCard.lblDBChoice.Text = "Download:" then
 		        CreditCard.lblForShipping.Visible = False
@@ -2058,6 +2058,10 @@ End
 		  
 		  oSQL.AddFields "AccessLvl",   "MemStatus"
 		  oSQL.AddValues "None",     "None"
+		  
+		  oSQL.AddFields "WOA"
+		  oSQL.AddValues frmAppllcation.MemInfo.chkJoinWOA.Value
+		  
 		  
 		  Session.sesAspeDB.SQLExecute(oSQL.SQL)
 		  
@@ -2594,6 +2598,10 @@ End
 		gbTrascriptUploaded As Boolean = False
 	#tag EndProperty
 
+	#tag Property, Flags = &h0
+		mdShipping As Double = 0
+	#tag EndProperty
+
 	#tag Property, Flags = &h21
 		Private mfwPort As XojoCloud.FirewallPort
 	#tag EndProperty
@@ -3050,5 +3058,13 @@ End
 		InitialValue=""
 		Type="String"
 		EditorType="MultiLineEditor"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="mdShipping"
+		Visible=false
+		Group="Behavior"
+		InitialValue="0"
+		Type="Double"
+		EditorType=""
 	#tag EndViewProperty
 #tag EndViewBehavior

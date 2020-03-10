@@ -917,7 +917,7 @@ End
 		  
 		  oSQL.AddFields  "expenceType",                                                      "NumMultiYear",     "IsMultiYear",              "IsForiegn",  "ForShipCost",  "MemPrice"
 		  oSQL.AddValues frmAppllcation.MemInfo.cboExpenceType.Text, frmAppllcation.MemType.popYears.Text.Val, frmAppllcation.MemType.popYears.Text.Val > 1,_
-		  mbForiegn,  mdShipping,       mdTotalMembershipCost
+		  mbForiegn,  frmAppllcation.mdShipping,       mdTotalMembershipCost
 		  
 		  oSQL.AddFields  "Donations",                       "DataBookFormat",                                                              "TotalDonations", "DataBookCost"
 		  oSQL.AddValues  frmAppllcation.msDesc,        frmAppllcation.MemType.popDataBookformat.Text, _
@@ -1011,10 +1011,6 @@ End
 
 	#tag Property, Flags = &h0
 		mdMulti3YearPercent As Integer = 10
-	#tag EndProperty
-
-	#tag Property, Flags = &h0
-		mdShipping As Double = 0
 	#tag EndProperty
 
 	#tag Property, Flags = &h0
@@ -1385,14 +1381,6 @@ End
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="mdShipping"
-		Visible=false
-		Group="Behavior"
-		InitialValue="0"
-		Type="Double"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty

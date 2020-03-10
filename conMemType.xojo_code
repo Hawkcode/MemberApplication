@@ -1503,7 +1503,7 @@ Begin WebContainer conMemType
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   799
+      Left            =   789
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -1520,7 +1520,7 @@ Begin WebContainer conMemType
       Top             =   248
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   102
+      Width           =   112
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1710,28 +1710,31 @@ End
 		  frmAppllcation.CreditCard.mdTotalMembershipCost = mdTotalCost
 		  
 		  lblDiscout.Text = Format(mdDiscountAmmount * -1 , "\$-###0.00")
-		  lblShipping.text = Format(frmAppllcation.CreditCard.mdShipping, "\$###0.00")
+		  lblShipping.text = Format(frmAppllcation.mdShipping, "\$###0.00")
 		  lblShipping.Visible = True
 		  
 		  Dim ldDataBook as Double
 		  
 		  
-		  If popDataBookformat.Text = "CD & Softcover (Additional Cost)" then
+		  If popDataBookformat.Text = "CD & Softcover (Additional Cost)" or _
+		    popDataBookformat.Text = "CD" or _
+		    popDataBookformat.Text = "Softcover" then
 		    If frmAppllcation.CreditCard.mbForiegn And  popDataBookformat.Text <> "Download" then
-		      ldDataBook = frmAppllcation.CreditCard.mdShipping
-		      mdForShippingCost = frmAppllcation.CreditCard.mdShipping
+		      ldDataBook = frmAppllcation.mdShipping
+		      mdForShippingCost = frmAppllcation.mdShipping
 		      
-		    else
+		    elseif popDataBookformat.Text = "CD & Softcover (Additional Cost)" then
 		      ldDataBook = App.gdDataBookBoth * popYears.Text.Val
 		      lblShipping.Visible = False
 		      mdForShippingCost = 0
+		    else
+		      ldDataBook =0
+		      lblDatabook.Text = "$0.00"
+		      lblShipping.Visible = False
+		      mdForShippingCost = 0
+		      
 		    end
 		    lblDatabook.Text = Format(ldDataBook, "\$###0.00")
-		  else
-		    ldDataBook =0
-		    lblDatabook.Text = "$0.00"
-		    lblShipping.Visible = False
-		    mdForShippingCost = 0
 		    
 		  end
 		  

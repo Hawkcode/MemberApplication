@@ -151,7 +151,7 @@ End
 		    frmAppllcation.CreditCard.mbCantShip = True
 		  else
 		    ldTotal = req.ChargeTotal.Val + 10.00
-		    frmAppllcation.CreditCard.mdShipping = ldTotal
+		    frmAppllcation.mdShipping = ldTotal
 		    lblShipping.text = "If you elect to have your member packet and handbook shipped to you rather than downloaded your charge will be: " + EndOfLine + EndOfLine +_ 
 		    Format(ldTotal, "\$###0.00") + " using " + Services(lnCnt, 0) 
 		    'ResultLabel.text = ResultLabel.text + req.ChargeCurrencyCode + chr(10) + req.AlertMessage
