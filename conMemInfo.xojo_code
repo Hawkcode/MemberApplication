@@ -2059,7 +2059,7 @@ Begin WebContainer conMemInfo
       TabOrder        =   52
       Text            =   "If you are 35 years old or younger you will automatically become a member of the ASPE Young Profesionals (AYP) special interest group."
       TextAlign       =   1
-      Top             =   268
+      Top             =   259
       VerticalCenter  =   0
       Visible         =   True
       Width           =   348
@@ -2077,7 +2077,7 @@ Begin WebContainer conMemInfo
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   22
+      Height          =   34
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -2089,16 +2089,16 @@ Begin WebContainer conMemInfo
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Multiline       =   False
+      Multiline       =   True
       Scope           =   0
       Style           =   "1126752408"
       TabOrder        =   15
-      Text            =   "P.E. / P.Eng License#,State-Provice"
+      Text            =   "P.E. / P.Eng License#,State-Provice. You will not be recorded as P.E. or P.Eng if not complete."
       TextAlign       =   0
-      Top             =   328
+      Top             =   316
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   282
+      Width           =   447
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -2515,12 +2515,14 @@ End
 		    lbReturnVal = False
 		  end
 		  
-		  if chkPE.value and txtPEState.Text = "" then
+		  
+		  if (chkPE.Value or chkPEng.value) and txtPEState.Text = "" then
 		    txtPEState.Style = EntryFieldsError
 		    lbReturnVal = False
 		  else
 		    txtPEState.Style = EntryFields
 		  end
+		  
 		  
 		  Return lbReturnVal
 		  
@@ -2560,6 +2562,36 @@ End
 		Sub LostFocus()
 		  Call DidValidate(Me)
 		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkPE
+	#tag Event
+		Sub ValueChanged()
+		  If me.Value then
+		    Msgbox("You must enter your license number and State/Provice below. " + EndOfLine + _
+		    "Enter in the format indicated.")
+		    if txtPEState.Text = "" then
+		      txtPEState.Style = EntryFieldsError
+		    end
+		  else
+		    txtPEState.Style = EntryFields
+		  end
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events chkPEng
+	#tag Event
+		Sub ValueChanged()
+		  If me.Value then
+		    Msgbox("You must enter your license number and State/Provice below. " + EndOfLine + _
+		    "Enter in the format indicated.")
+		    if txtPEState.Text = "" then
+		      txtPEState.Style = EntryFieldsError
+		    end
+		  else
+		    txtPEState.Style = EntryFields
+		  end
 		End Sub
 	#tag EndEvent
 #tag EndEvents
@@ -2666,7 +2698,10 @@ End
 #tag Events txtPEState
 	#tag Event
 		Sub LostFocus()
-		  'break
+		  if (chkPE.Value or chkPEng.value) and me.Text <> "" then
+		    me.Style = EntryFields
+		  end
+		  
 		End Sub
 	#tag EndEvent
 #tag EndEvents
