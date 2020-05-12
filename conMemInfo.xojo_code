@@ -2474,7 +2474,8 @@ End
 		  lbReturnVal = SetValid(DidValidate(txtBDayMonth), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtBDayDay), lbReturnVal)
 		  lbReturnVal = SetValid(DidValidate(txtBDayYear), lbReturnVal)
-		  'lbReturnVal = SetValid(DidValidate(txtSecondaryEmail), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtPrimaryEmail), lbReturnVal)
+		  lbReturnVal = SetValid(DidValidate(txtSecondaryEmail), lbReturnVal)
 		  'lbReturnVal = SetValid((cboChapterName.ListIndex >=0), lbReturnVal)
 		  
 		  
