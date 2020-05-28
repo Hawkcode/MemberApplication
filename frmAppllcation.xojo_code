@@ -1908,6 +1908,8 @@ End
 		    
 		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
 		    
+		    msURLDesc = msURLDesc + "&PersonID=" + Session.gnPersonID.ToString + "Email=" + MemInfo.txtPrimaryEmail.Text
+		    
 		    System.DebugLog(msURLDesc) 'RSA url param
 		    
 		    btnNext.Caption = "Next"
