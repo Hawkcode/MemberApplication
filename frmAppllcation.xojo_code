@@ -558,7 +558,7 @@ Begin WebPage frmAppllcation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   721
+      Left            =   675
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -572,7 +572,7 @@ Begin WebPage frmAppllcation
       Top             =   426
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   100
+      Width           =   146
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -592,7 +592,7 @@ Begin WebPage frmAppllcation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   609
+      Left            =   517
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -606,7 +606,7 @@ Begin WebPage frmAppllcation
       Top             =   426
       VerticalCenter  =   0
       Visible         =   False
-      Width           =   100
+      Width           =   146
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1908,7 +1908,7 @@ End
 		    
 		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
 		    
-		    msURLDesc = msURLDesc + "&PersonID=" + Session.gnPersonID.ToString + "Email=" + MemInfo.txtPrimaryEmail.Text
+		    msURLDesc = msURLDesc + "&PersonID=" + Session.gnPersonID.ToString + "&Email=" + MemInfo.txtPrimaryEmail.Text
 		    
 		    System.DebugLog(msURLDesc) 'RSA url param
 		    
@@ -2015,7 +2015,7 @@ End
 		  
 		  BuildSuffix
 		  
-		  oSQL.AddFields "NamePrefix",                             "FirstName",                  "Middle",                        "LastName",                "NameSuffix"
+		  oSQL.AddFields "NamePrefix",               "FirstName",          "Middle",                "LastName",           "NameSuffix"
 		  oSQL.AddValues MemInfo.popNamePrefix.Text, MemInfo.txtFirst.Text, MemInfo.txtMiddle.Text, MemInfo.txtLast.Text, msNameSuffix
 		  
 		  oSQL.AddFields              "Email",                           "AlternateEmail",     "DateUpdated",         "UpdatedBy" , _
@@ -2058,11 +2058,17 @@ End
 		    
 		  end
 		  
-		  oSQL.AddFields "AccessLvl",   "MemStatus"
-		  oSQL.AddValues "None",     "None"
+		  oSQL.AddFields "AccessLvl",   "MemStatus", "HeardAbout"
+		  oSQL.AddValues "None",     "None",         MemInfo.cboHeardAbout.Text
 		  
-		  oSQL.AddFields "WOA"
-		  oSQL.AddValues frmAppllcation.MemInfo.chkJoinWOA.Value
+		  oSQL.AddFields "WOA",                    "FireProtection",                "Plumbing",                "HVAC",                "MedGas"
+		  oSQL.AddValues MemInfo.chkJoinWOA.Value, MemInfo.chkFireProtection.Value, MemInfo.chkPlumbing.Value, MemInfo.chkHVAC.Value, MemInfo.chkMedGas.Value
+		  
+		  oSQL.AddFields "IAPMO",                "MCCA",                "NSPE",                "ASHRAE",                "ICC",                "PCA"
+		  oSQL.AddValues MemInfo.chkIAPMO.Value, MemInfo.chkMCCA.Value, MemInfo.chkNSPE.Value, MemInfo.chkASHRAE.Value, MemInfo.chkICC.Value, MemInfo.chkPCA.Value
+		  
+		  oSQL.AddFields "ASSE",                 "CellPhone"        
+		  oSQL.AddValues MemInfo.chkASSE.Value, Details.txtPhoneCell.Text
 		  
 		  
 		  Session.sesAspeDB.SQLExecute(oSQL.SQL)

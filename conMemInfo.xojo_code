@@ -520,7 +520,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   "Pick the chapter that you would like to belong to. Normally the closest."
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   763
+      Left            =   765
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -534,7 +534,7 @@ Begin WebContainer conMemInfo
       TabOrder        =   25
       Text            =   "Chapter affiliation?"
       TextAlign       =   0
-      Top             =   56
+      Top             =   49
       VerticalCenter  =   0
       Visible         =   True
       Width           =   127
@@ -1521,7 +1521,7 @@ Begin WebContainer conMemInfo
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   ""
-      Left            =   763
+      Left            =   765
       ListCount       =   0
       ListIndex       =   -1
       LockBottom      =   False
@@ -1535,7 +1535,7 @@ Begin WebContainer conMemInfo
       Style           =   "1836658647"
       TabOrder        =   30
       Text            =   ""
-      Top             =   77
+      Top             =   70
       VerticalCenter  =   0
       Visible         =   True
       Width           =   127
@@ -2142,6 +2142,40 @@ Begin WebContainer conMemInfo
       VerticalCenter  =   0
       Visible         =   True
       Width           =   447
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebCheckbox chkICC
+      Caption         =   "ICC"
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   755
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   0
+      Style           =   "0"
+      TabOrder        =   37
+      Top             =   101
+      Value           =   False
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   66
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0

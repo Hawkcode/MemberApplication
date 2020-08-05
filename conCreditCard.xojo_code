@@ -746,6 +746,42 @@ Begin WebContainer conCreditCard
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
+   Begin WebLabel Label1
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   318
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   606
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   True
+      Scope           =   2
+      Style           =   "1022140415"
+      TabOrder        =   40
+      Text            =   "All applications must be entered manually and be reviewed by our Vice President of Membership. This process can take up to 2 weeks.\n\nYou will be sent a “Welcome to ASPE” email with an attached payment receipt, login information and a PDF of your membership card once this process is complete. \n                                                                    Until then, when your payment has been successfully received, you will be emailed temporary credentials that will allow you to log in to the ASPE.org website."
+      TextAlign       =   1
+      Top             =   33
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   284
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
 End
 #tag EndWebPage
 
