@@ -2205,6 +2205,25 @@ End
 	#tag EndEvent
 
 
+	#tag Method, Flags = &h21
+		Private Sub DeleteOld(lsEmail As String)
+		  
+		  Var lsSql As String
+		  
+		  lsSql = "Delete FROM memapplications " +_
+		  "WHERE trakdata.memapplications.LoggedDt > DATE_SUB('" + Today.SQLDate + "', INTERVAL 1 MONTH) " +_
+		  "and emailAddress = '" + lsEmail + "' "
+		  
+		  Session.sesAspeDB.SQLExecute(lsSQL)
+		  
+		  if Session.sesAspeDB.CheckDBError("DB 1517 Error deleteing dup records") then
+		    MsgBox("Please try again but refreshing page and starting over.")
+		  end
+		  
+		  
+		End Sub
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Function DidValidate(lbObj as WebTextField) As Boolean
 		  'Returns true if field validated
@@ -2382,6 +2401,9 @@ End
 		  'Me.MouseCursor = System.Cursors.Wait
 		  
 		  if Session.gnRecNo = 0 then
+		    
+		    DeleteOld(txtPrimaryEmail.Text)
+		    
 		    oSQL.StatementType = eStatementType.Type_Insert
 		  else
 		    oSQL.StatementType = eStatementType.Type_Update
