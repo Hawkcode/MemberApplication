@@ -2469,9 +2469,10 @@ End
 		      
 		      System.DebugLog("---------------- URL Parameters:" + msURLDesc)
 		      Session.ConfirmMessage = ""
-		      Showurl(cWPPayment + msURLDesc, False) 'RSA PaymentProcessing
+		      Showurl(cWPPayment + msURLDesc, True) 'RSA PaymentProcessing
 		      'Showurl("https://www.aspe.org/membership-global-community/membership/members-only/")
 		      btnNext.Enabled = False
+		      btnPrevious.Enabled = False
 		      Return
 		      
 		    else
