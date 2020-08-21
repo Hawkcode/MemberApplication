@@ -2012,6 +2012,12 @@ End
 		  oSql.ClearFields
 		  oSQL.ClearValues
 		  
+		  Dim ldBDay As Date
+		  ldBDay = New Date
+		  ldBDay.Month = MemInfo.txtBDayMonth.text.Val
+		  ldBDay.Day = MemInfo.txtBDayDay.Text.Val
+		  ldBDay.Year = MemInfo.txtBDayYear.Text.Val
+		  
 		  
 		  BuildSuffix
 		  
@@ -2019,9 +2025,9 @@ End
 		  oSQL.AddValues MemInfo.popNamePrefix.Text, MemInfo.txtFirst.Text, MemInfo.txtMiddle.Text, MemInfo.txtLast.Text, msNameSuffix
 		  
 		  oSQL.AddFields              "Email",                           "AlternateEmail",     "DateUpdated",         "UpdatedBy" , _
-		  "DateEntered",           "EnteredBy" ,   "BadgeName"
+		  "DateEntered",           "EnteredBy" ,   "BadgeName",  "birthDay"
 		  oSQL.AddValues MemInfo.txtPrimaryEmail.Text, MemInfo.txtSecondaryEmail.Text,          Today.SQLDateTime,  "AppSystem",  _
-		  Today.SQLDateTime,  "NewApp",    MemInfo.txtNick.Text
+		  Today.SQLDateTime,  "NewApp",    MemInfo.txtNick.Text, ldBDay.SQLDate
 		  
 		  
 		  
