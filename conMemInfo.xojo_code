@@ -2302,6 +2302,30 @@ End
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h21
+		Private Function IsMember(lsEmail As String) As Boolean
+		  Dim rs as RecordSet
+		  Dim lsSql As String
+		  
+		  lsSql = "Select MemStatus, PersonID from tblPeople Where email = '" + lsEmail + "' "
+		  
+		  rs = Session.sesAspeDB.SQLSelect(lsSql)
+		  
+		  if Session.sesAspeDB.CheckDBError("DB 1550 ") then
+		    MsgBox(Session.sesAspeDB.ErrorMessage)
+		    Return False
+		  end
+		  
+		  If rs.Field("MemStatus").StringValue = "Active Member" then
+		    Return True
+		  else
+		    Return False
+		  end
+		  
+		  
+		End Function
+	#tag EndMethod
+
 	#tag Method, Flags = &h0
 		Sub LoadChapters()
 		  Dim lsSql as String
@@ -2495,6 +2519,8 @@ End
 		Function ValidateAll() As Boolean
 		  'loop through controls to validate each one.
 		  
+		  
+		  
 		  Dim lnX, lnCount As Integer
 		  Dim IbValid, lbReturnVal as Boolean
 		  lbReturnVal = True
@@ -2656,6 +2682,12 @@ End
 	#tag Event
 		Sub LostFocus()
 		  Call DidValidate(Me)
+		  If IsMember(me.text) then
+		    MessageBox("You are already a member, Please go to the renewal page, you are on the New Member Application!")
+		    frmAppllcation.btnNext.Enabled = False
+		    Return 
+		  end
+		  
 		  
 		End Sub
 	#tag EndEvent
