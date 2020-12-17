@@ -31,6 +31,42 @@ Begin WebContainer conConfirmation
    _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
+   Begin WebLabel Label5
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   29
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   True
+      LockLeft        =   False
+      LockRight       =   False
+      LockTop         =   False
+      LockVertical    =   True
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "343801855"
+      TabOrder        =   0
+      Text            =   "You must use Chrome or Firefox"
+      TextAlign       =   2
+      Top             =   343
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   870
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
    Begin WebLabel Label1
       Cursor          =   1
       Enabled         =   True

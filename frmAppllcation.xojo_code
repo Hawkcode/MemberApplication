@@ -659,7 +659,43 @@ Begin WebPage frmAppllcation
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   171
+      Left            =   448
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   False
+      LockRight       =   True
+      LockTop         =   False
+      LockVertical    =   True
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "816938816"
+      TabOrder        =   0
+      Text            =   "American Society of Plumbing Engineers Membership Application"
+      TextAlign       =   3
+      Top             =   0
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   482
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label5
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   29
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   True
@@ -669,14 +705,14 @@ Begin WebPage frmAppllcation
       LockVertical    =   True
       Multiline       =   False
       Scope           =   0
-      Style           =   "816938816"
+      Style           =   "343801855"
       TabOrder        =   0
-      Text            =   "American Society of Plumbing Engineers Membership Application"
-      TextAlign       =   0
-      Top             =   0
+      Text            =   "You must use Chrome or Firefox"
+      TextAlign       =   1
+      Top             =   -2
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   607
+      Width           =   335
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -1908,7 +1944,7 @@ End
 		    
 		    msURLDesc = "/?Total=" + CreditCard.lblGrandTotal.Text + "&Description=" + msURLDesc
 		    
-		    msURLDesc = msURLDesc + "&PersonID=" + Session.gnPersonID.ToString + "&Email=" + MemInfo.txtPrimaryEmail.Text
+		    msURLDesc = msURLDesc + "&PersonID=" + Session.gnPersonID.ToString + "&email=" + MemInfo.txtPrimaryEmail.Text
 		    
 		    System.DebugLog(msURLDesc) 'RSA url param
 		    

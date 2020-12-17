@@ -660,7 +660,7 @@ Begin WebContainer conMemInfo
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
-      CueText         =   ""
+      CueText         =   "Email cannot be shared, unique to you!"
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   True
@@ -703,7 +703,7 @@ Begin WebContainer conMemInfo
       AutoCapitalize  =   True
       AutoComplete    =   True
       AutoCorrect     =   True
-      CueText         =   ""
+      CueText         =   "Email cannot be shared, unique to you!"
       Cursor          =   0
       Enabled         =   True
       HasFocusRing    =   True
