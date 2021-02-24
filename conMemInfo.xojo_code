@@ -86,7 +86,7 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   3
+      TabOrder        =   4
       Text            =   "Middle Name:"
       TextAlign       =   0
       Top             =   1
@@ -122,7 +122,7 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   4
+      TabOrder        =   5
       Text            =   "Last Name:"
       TextAlign       =   0
       Top             =   1
@@ -531,7 +531,7 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   25
+      TabOrder        =   27
       Text            =   "Chapter affiliation?"
       TextAlign       =   0
       Top             =   49
@@ -567,7 +567,7 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   1
+      TabOrder        =   2
       Text            =   "First Name:"
       TextAlign       =   0
       Top             =   1
@@ -603,13 +603,13 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   38
+      TabOrder        =   40
       Text            =   "Primary Email:"
-      TextAlign       =   0
-      Top             =   123
+      TextAlign       =   3
+      Top             =   107
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   108
+      Width           =   95
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -639,10 +639,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "418528476"
-      TabOrder        =   40
+      TabOrder        =   43
       Text            =   "Secondary Email:"
       TextAlign       =   0
-      Top             =   123
+      Top             =   135
       VerticalCenter  =   0
       Visible         =   True
       Width           =   125
@@ -668,7 +668,7 @@ Begin WebContainer conMemInfo
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   132
+      Left            =   124
       LimitText       =   0
       LockBottom      =   False
       LockedInPosition=   False
@@ -681,10 +681,10 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   39
+      TabOrder        =   41
       Text            =   ""
       TextAlign       =   0
-      Top             =   122
+      Top             =   106
       Type            =   2
       VerticalCenter  =   0
       Visible         =   True
@@ -724,10 +724,10 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   41
+      TabOrder        =   44
       Text            =   ""
       TextAlign       =   0
-      Top             =   123
+      Top             =   135
       Type            =   2
       VerticalCenter  =   0
       Visible         =   True
@@ -761,7 +761,7 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   5
+      TabOrder        =   6
       Text            =   "Nickname:"
       TextAlign       =   0
       Top             =   1
@@ -796,7 +796,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   26
+      TabOrder        =   28
       Top             =   77
       Value           =   False
       VerticalCenter  =   0
@@ -830,7 +830,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   27
+      TabOrder        =   29
       Top             =   77
       Value           =   False
       VerticalCenter  =   0
@@ -864,7 +864,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   28
+      TabOrder        =   30
       Top             =   77
       Value           =   False
       VerticalCenter  =   0
@@ -898,7 +898,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   29
+      TabOrder        =   31
       Top             =   77
       Value           =   False
       VerticalCenter  =   0
@@ -933,10 +933,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   31
+      TabOrder        =   32
       Text            =   "Organizations:"
       TextAlign       =   0
-      Top             =   91
+      Top             =   76
       VerticalCenter  =   0
       Visible         =   True
       Width           =   102
@@ -1140,9 +1140,9 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   49
+      TabOrder        =   52
       Text            =   ""
-      Top             =   200
+      Top             =   217
       VerticalCenter  =   0
       Visible         =   True
       Width           =   173
@@ -1175,10 +1175,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   48
+      TabOrder        =   51
       Text            =   "How did you hear about ASPE?"
       TextAlign       =   0
-      Top             =   200
+      Top             =   217
       VerticalCenter  =   0
       Visible         =   True
       Width           =   185
@@ -1210,8 +1210,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   42
-      Top             =   148
+      TabOrder        =   45
+      Top             =   165
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1246,7 +1246,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   6
+      TabOrder        =   1
       Text            =   ""
       Top             =   21
       VerticalCenter  =   0
@@ -1453,10 +1453,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   50
+      TabOrder        =   53
       Text            =   "Women of ASPE Sponsor:"
       TextAlign       =   0
-      Top             =   200
+      Top             =   217
       VerticalCenter  =   0
       Visible         =   False
       Width           =   161
@@ -1495,10 +1495,10 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   53
+      TabOrder        =   56
       Text            =   ""
       TextAlign       =   0
-      Top             =   200
+      Top             =   217
       Type            =   0
       VerticalCenter  =   0
       Visible         =   False
@@ -1533,7 +1533,7 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   30
+      TabOrder        =   25
       Text            =   ""
       Top             =   70
       VerticalCenter  =   0
@@ -1636,10 +1636,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   32
+      TabOrder        =   33
       Text            =   "Select the expense type:"
       TextAlign       =   3
-      Top             =   89
+      Top             =   79
       VerticalCenter  =   0
       Visible         =   True
       Width           =   168
@@ -1673,9 +1673,9 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   33
+      TabOrder        =   26
       Text            =   ""
-      Top             =   89
+      Top             =   79
       VerticalCenter  =   0
       Visible         =   True
       Width           =   127
@@ -1707,7 +1707,7 @@ Begin WebContainer conMemInfo
       Scope           =   0
       Style           =   "560340991"
       TabOrder        =   -1
-      Top             =   168
+      Top             =   185
       VerticalCenter  =   0
       Visible         =   True
       Width           =   525
@@ -1739,8 +1739,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   44
-      Top             =   169
+      TabOrder        =   47
+      Top             =   186
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1773,8 +1773,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   45
-      Top             =   169
+      TabOrder        =   48
+      Top             =   186
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1807,8 +1807,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   46
-      Top             =   169
+      TabOrder        =   49
+      Top             =   186
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1841,8 +1841,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   47
-      Top             =   169
+      TabOrder        =   50
+      Top             =   186
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -1876,10 +1876,10 @@ Begin WebContainer conMemInfo
       Multiline       =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   43
+      TabOrder        =   46
       Text            =   "Specialty Field:"
       TextAlign       =   3
-      Top             =   169
+      Top             =   186
       VerticalCenter  =   0
       Visible         =   True
       Width           =   118
@@ -1914,10 +1914,10 @@ Begin WebContainer conMemInfo
       Scope           =   0
       ScrollPosition  =   0
       Style           =   "0"
-      TabOrder        =   55
+      TabOrder        =   58
       Text            =   ""
       TextAlign       =   0
-      Top             =   293
+      Top             =   310
       VerticalCenter  =   0
       Visible         =   True
       Width           =   405
@@ -1950,10 +1950,10 @@ Begin WebContainer conMemInfo
       Multiline       =   True
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   2
+      TabOrder        =   3
       Text            =   "What do you think ASPE will provide for your career? What makes being an ASPE member important to you?"
       TextAlign       =   0
-      Top             =   259
+      Top             =   276
       VerticalCenter  =   0
       Visible         =   True
       Width           =   396
@@ -1985,8 +1985,8 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   54
-      Top             =   228
+      TabOrder        =   57
+      Top             =   245
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
@@ -2020,10 +2020,10 @@ Begin WebContainer conMemInfo
       Multiline       =   True
       Scope           =   0
       Style           =   "1126752408"
-      TabOrder        =   51
+      TabOrder        =   54
       Text            =   "Join Women of ASPE (WOA) special interest group?"
       TextAlign       =   0
-      Top             =   231
+      Top             =   248
       VerticalCenter  =   0
       Visible         =   True
       Width           =   299
@@ -2056,10 +2056,10 @@ Begin WebContainer conMemInfo
       Multiline       =   True
       Scope           =   0
       Style           =   "776128260"
-      TabOrder        =   52
+      TabOrder        =   55
       Text            =   "If you are 35 years old or younger you will automatically become a member of the ASPE Young Profesionals (AYP) special interest group."
       TextAlign       =   1
-      Top             =   259
+      Top             =   276
       VerticalCenter  =   0
       Visible         =   True
       Width           =   348
@@ -2095,7 +2095,7 @@ Begin WebContainer conMemInfo
       TabOrder        =   15
       Text            =   "P.E. / P.Eng License#,State-Provice. You will not be recorded as P.E. or P.Eng if not complete."
       TextAlign       =   0
-      Top             =   316
+      Top             =   333
       VerticalCenter  =   0
       Visible         =   True
       Width           =   447
@@ -2134,10 +2134,10 @@ Begin WebContainer conMemInfo
       ReadOnly        =   False
       Scope           =   0
       Style           =   "1836658647"
-      TabOrder        =   56
+      TabOrder        =   59
       Text            =   ""
       TextAlign       =   0
-      Top             =   351
+      Top             =   368
       Type            =   0
       VerticalCenter  =   0
       Visible         =   True
@@ -2170,12 +2170,91 @@ Begin WebContainer conMemInfo
       LockVertical    =   False
       Scope           =   0
       Style           =   "0"
-      TabOrder        =   37
+      TabOrder        =   38
       Top             =   101
       Value           =   False
       VerticalCenter  =   0
       Visible         =   True
       Width           =   66
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebLabel Label33
+      Cursor          =   1
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   15
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Multiline       =   False
+      Scope           =   0
+      Style           =   "1126752408"
+      TabOrder        =   39
+      Text            =   "Verify Email:"
+      TextAlign       =   3
+      Top             =   136
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   95
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin WebTextField txtPrimaryEmailVerify
+      AutoCapitalize  =   True
+      AutoComplete    =   True
+      AutoCorrect     =   True
+      CueText         =   "Must match Primary Email exactly!"
+      Cursor          =   0
+      Enabled         =   True
+      HasFocusRing    =   True
+      Height          =   22
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   124
+      LimitText       =   0
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Password        =   False
+      ReadOnly        =   False
+      Scope           =   0
+      Style           =   "1836658647"
+      TabOrder        =   42
+      Text            =   ""
+      TextAlign       =   0
+      Top             =   135
+      Type            =   2
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   315
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -2789,6 +2868,17 @@ End
 		Sub LostFocus()
 		  if (chkPE.Value or chkPEng.value) and me.Text <> "" then
 		    me.Style = EntryFields
+		  end
+		  
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events txtPrimaryEmailVerify
+	#tag Event
+		Sub LostFocus()
+		  If txtPrimaryEmail.Text <>  txtPrimaryEmailVerify.Text then
+		    txtPrimaryEmailVerify.Text = ""
+		    txtPrimaryEmail.SetFocus
 		  end
 		  
 		End Sub

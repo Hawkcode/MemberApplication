@@ -709,7 +709,7 @@ Begin WebPage frmAppllcation
       TabOrder        =   0
       Text            =   "You must use Chrome or Firefox"
       TextAlign       =   1
-      Top             =   -2
+      Top             =   -6
       VerticalCenter  =   0
       Visible         =   True
       Width           =   335
