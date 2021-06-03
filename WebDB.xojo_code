@@ -98,30 +98,56 @@ Inherits MySQLCommunityServer
 
 	#tag ViewBehavior
 		#tag ViewProperty
+			Name="IsSSLConnection"
+			Visible=true
+			Group=""
+			InitialValue=""
+			Type="Boolean"
+			EditorType="Boolean"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="SSLAuthorityFolder"
+			Visible=true
+			Group=""
+			InitialValue=""
+			Type="FolderItem"
+			EditorType="FolderItem"
+		#tag EndViewProperty
+		#tag ViewProperty
 			Name="dbWeb"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnDBConnectError"
+			Visible=false
 			Group="Behavior"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gnDBPortWS"
+			Visible=false
 			Group="Behavior"
 			InitialValue="3306"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsConnectionStr"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsDatabaseNameWS"
+			Visible=false
 			Group="Behavior"
 			InitialValue="d7upgradedb"
 			Type="String"
@@ -129,6 +155,7 @@ Inherits MySQLCommunityServer
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsHostWS"
+			Visible=false
 			Group="Behavior"
 			InitialValue="127.0.0.1"
 			Type="String"
@@ -136,6 +163,7 @@ Inherits MySQLCommunityServer
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsPasswordWS"
+			Visible=false
 			Group="Behavior"
 			InitialValue="2fEzdTCdi"
 			Type="String"
@@ -143,6 +171,7 @@ Inherits MySQLCommunityServer
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsUserNameWS"
+			Visible=false
 			Group="Behavior"
 			InitialValue="d7upgradedb"
 			Type="String"
@@ -150,7 +179,9 @@ Inherits MySQLCommunityServer
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="gsWConnectionStr"
+			Visible=false
 			Group="Behavior"
+			InitialValue=""
 			Type="String"
 			EditorType="MultiLineEditor"
 		#tag EndViewProperty
@@ -160,6 +191,7 @@ Inherits MySQLCommunityServer
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -167,58 +199,77 @@ Inherits MySQLCommunityServer
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Name"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Port"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="Integer"
 			EditorType="Integer"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SecureAuth"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="Boolean"
 			EditorType="Boolean"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLAuthority"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="FolderItem"
 			EditorType="FolderItem"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLAuthorityDirectory"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="FolderItem"
 			EditorType="FolderItem"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLCertificate"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="FolderItem"
 			EditorType="FolderItem"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLCipher"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="String"
 			EditorType="String"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLKey"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="FolderItem"
 			EditorType="FolderItem"
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="SSLMode"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="Boolean"
 			EditorType="Boolean"
 		#tag EndViewProperty
@@ -226,11 +277,15 @@ Inherits MySQLCommunityServer
 			Name="Super"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="TimeOut"
 			Visible=true
+			Group=""
+			InitialValue=""
 			Type="Integer"
 			EditorType="Integer"
 		#tag EndViewProperty
@@ -240,6 +295,7 @@ Inherits MySQLCommunityServer
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

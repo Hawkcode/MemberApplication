@@ -349,7 +349,7 @@ Begin WebPage frmAppllcation
       Scope           =   0
       Style           =   "0"
       TabOrder        =   -1
-      TabPanelIndex   =   0
+      TabPanelIndex   =   "0"
       Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
@@ -410,7 +410,7 @@ Begin WebPage frmAppllcation
       SMTPConnectionMode=   0
       SSLConnectionType=   "3"
       Style           =   "0"
-      TabPanelIndex   =   0
+      TabPanelIndex   =   "0"
       Top             =   0.0
    End
    Begin WebTimer QuitTimer
@@ -432,7 +432,7 @@ Begin WebPage frmAppllcation
       Scope           =   0
       Style           =   "0"
       TabOrder        =   -1
-      TabPanelIndex   =   0
+      TabPanelIndex   =   "0"
       Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1

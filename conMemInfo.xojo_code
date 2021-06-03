@@ -2057,7 +2057,7 @@ Begin WebContainer conMemInfo
       Scope           =   0
       Style           =   "776128260"
       TabOrder        =   55
-      Text            =   "If you are 35 years old or younger you will automatically become a member of the ASPE Young Profesionals (AYP) special interest group."
+      Text            =   "If you are 35 years old or younger you will automatically become a member of the ASPE Young Professionals (AYP) special interest group."
       TextAlign       =   1
       Top             =   276
       VerticalCenter  =   0
@@ -2348,10 +2348,16 @@ End
 		      lbValid = False
 		    end
 		    
-		  Case "txtBDayYear"
+		  Case "txtBDayYear" 
 		    ln = lbObj.Text.Val
-		    
-		    If ln < 1914 or ln > 2000 then
+		    Dim lnNow As Integer = Today.Year
+		    if lnNow - ln < 18 then
+		      lbObj.Style = EntryFieldsError
+		      lbValid = False
+		      Exit
+		    end   
+		    'Changed
+		    If ln < 1914 then
 		      lbObj.Style = EntryFieldsError
 		      lbValid = False
 		      Exit

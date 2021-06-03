@@ -3,7 +3,7 @@ WebStyle stlLabelMiddleRed
 Inherits stlRectBG
 	#tag WebStyleStateGroup
 		text-align=center
-		text-decoration=False false false false false
+		text-decoration=false false false false false
 		text-color=FF0000FF
 		text-size=120%
 	#tag EndWebStyleStateGroup
